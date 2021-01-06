@@ -1,0 +1,22 @@
+﻿/osver:6.2
+/appcontainer
+"/runtime:mrt100_app"
+/eh:clr
+/pdb
+"/nativeLink:C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.compiler\2.2.8-rel-28605-00\tools\x86\ilc\lib\Native\vmath.lib"
+/customImports
+/methodBodyFolding
+"C:\Users\jhset\source\repos\e621.NET\e621.NET\obj\x86\Release\ilc\intermediate\MDIL\e621.NET.mdilexe"
+"/i:C:\Users\jhset\source\repos\e621.NET\e621.NET\obj\x86\Release\ilc\intermediate\MDIL"
+"/out:C:\Users\jhset\source\repos\e621.NET\e621.NET\obj\x86\Release\ilc\intermediate\Native\e621.NET.exe"
+"/pdbAltPath:C:\Users\jhset\source\repos\e621.NET\e621.NET\bin\x86\Release\ilc"
+"/res:C:\Users\jhset\source\repos\e621.NET\e621.NET\obj\x86\Release\ilc\intermediate\Native.res"
+"/i:C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.7-rel-28605-00\tools\SharedLibrary\ret\MDIL"
+/shimexe
+"/classlib:SharedLibrary"
+"/sourcelink:C:\Users\jhset\source\repos\e621.NET\e621.NET\obj\x86\Release\ilc\intermediate\ILTransformed\Microsoft.Toolkit.Parsers.srclink"
+"/sourcelink:C:\Users\jhset\source\repos\e621.NET\e621.NET\obj\x86\Release\ilc\intermediate\ILTransformed\Microsoft.Toolkit.srclink"
+"/sourcelink:C:\Users\jhset\source\repos\e621.NET\e621.NET\obj\x86\Release\ilc\intermediate\ILTransformed\Microsoft.Toolkit.Uwp.srclink"
+"/sourcelink:C:\Users\jhset\source\repos\e621.NET\e621.NET\obj\x86\Release\ilc\intermediate\ILTransformed\Microsoft.Toolkit.Uwp.UI.Animations.srclink"
+"/sourcelink:C:\Users\jhset\source\repos\e621.NET\e621.NET\obj\x86\Release\ilc\intermediate\ILTransformed\Microsoft.Toolkit.Uwp.UI.Controls.srclink"
+"/sourcelink:C:\Users\jhset\source\repos\e621.NET\e621.NET\obj\x86\Release\ilc\intermediate\ILTransformed\Microsoft.Toolkit.Uwp.UI.srclink"

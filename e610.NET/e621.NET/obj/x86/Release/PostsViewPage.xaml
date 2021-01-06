@@ -1,0 +1,106 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="e621.NET.PostsViewPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:e621.NET"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:control="using:Microsoft.UI.Xaml.Controls"
+    xmlns:uwpcontrols="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Default">
+                    <AcrylicBrush x:Key="SideBar"
+                          BackgroundSource="HostBackdrop"
+                          TintColor="#001439"
+                          TintOpacity="0.8" 
+                          FallbackColor="#001439"/>
+                    <AcrylicBrush x:Key="MainBackground"
+                          BackgroundSource="HostBackdrop"
+                          TintColor="#001439"
+                          TintOpacity="0.4"
+                          FallbackColor="#001439"/>
+                    <SolidColorBrush x:Key="TextBackgound" Color="#FF464646"/>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!--Sidebar StackPanel-->
+        <StackPanel Grid.Column="0" Orientation="Vertical" Background="{ThemeResource SideBar}">
+            <!--Search Title, Bar, and Button-->
+            <TextBlock Text="Search" FontSize="18" Margin="10,10,10,0"  HorizontalAlignment="Center"/>
+            <StackPanel Orientation="Vertical" Margin="10,10,10,10">
+                <TextBox x:ConnectionId='13' Width="auto" Height="Auto" x:Name="SearchBox"
+                     VerticalAlignment="Top" HorizontalAlignment="Stretch"
+                     TextWrapping="Wrap"                            />
+                <Button x:ConnectionId='14' x:Name="SearchButton"                              HorizontalAlignment="Stretch" Margin="0,5,0,0">
+                    <SymbolIcon Symbol="Accept"/>
+                </Button>
+            </StackPanel>
+
+            <!--Progressbar, Hidden under Search Button-->
+            <control:ProgressBar x:ConnectionId='8' x:Name="LoadingBar" IsIndeterminate="True" Visibility="Collapsed"  Margin="0,0,0,0"
+                         Height="3" Foreground="White" Width="150"
+                         ShowPaused="False" ShowError="False"/>
+            
+            <!--Post Count Control-->
+            <TextBlock Text="Post Count" FontSize="18" Margin="10,0,10,0" HorizontalAlignment="Center"/>
+            <Slider x:ConnectionId='9' x:Name="PostCountSlider" Margin="10,0,10,0" Maximum="300" Minimum="25" StepFrequency="5" 
+                                                      />
+
+            <!--Page controls and number-->
+            <TextBlock Text="Page" FontSize="18" Margin="10,0,10,5" HorizontalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:ConnectionId='10' x:Name="BackPage" Margin="0,0,5,0"                         >
+                    <SymbolIcon Symbol="Back"/>
+                </Button>
+                <TextBlock x:ConnectionId='11'                           FontSize="20" Margin="0,0,0,0"/>
+                <Button x:ConnectionId='12' x:Name="ForwardPage"                             Margin="5,0,0,0">
+                    <SymbolIcon Symbol="Forward"/>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        <!--Thumbnail type toggle-->
+        <StackPanel Grid.Column="0" VerticalAlignment="Bottom" Margin="10,0,0,10">
+            <ToggleSwitch x:ConnectionId='7' x:Name="thumbnailSource" IsOn="False" OffContent="Thumbnail" OnContent="Sample"                                  />
+        </StackPanel>
+
+        <!--Posts View-->
+        <Grid Background="{ThemeResource MainBackground}" Grid.Column="1" VerticalAlignment="Stretch">
+            <GridView x:ConnectionId='2' x:Name="ImageGrid"                                        
+                  HorizontalAlignment="Stretch" 
+                                                  IsItemClickEnabled="True">
+                <GridView.ItemTemplate>
+                    <DataTemplate                        >
+                        <Grid x:ConnectionId='4' Margin="10,0,0,10">
+                            <Image x:ConnectionId='5' Source="{Binding ThumbURL}"                                                                />
+                            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="{ThemeResource TextBackgound}">
+                                <TextBlock x:ConnectionId='6'                          Margin="0,-4,0,0"/>
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+                <GridView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <uwpcontrols:StaggeredPanel DesiredColumnWidth="100"
+                                                 HorizontalAlignment="Stretch"
+                                                 VerticalAlignment="Top"
+                                                 ColumnSpacing="10"
+                                                 RowSpacing="10" />
+                    </ItemsPanelTemplate>
+                </GridView.ItemsPanel>
+            </GridView>
+        </Grid>
+    </Grid>
+</Page>
+
