@@ -19,12 +19,16 @@ e610.NET is an e621 windows client built on UWP.
 ## Upcoming Features
 * Posts View
 	* Multiselect mode for mass saving
+	* Enable safe mode
 	* *Maybe:* Change size of images
 	* *Maybe:* Infinite scrolling
 * Single Posts View
 	* Favorite Posts
 	* Open pools
 	* Save Images
+	* Comments
+* Account
+	* Blacklist Editing
 * Pool Search
 	* Search pools by name, Description, artist, etc
 	* See latest updated pools
