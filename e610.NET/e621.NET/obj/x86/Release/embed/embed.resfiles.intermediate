@@ -1,5 +1,6 @@
-AccountsPage.xbf
 App.xbf
-MainPage.xbf
-PostsViewPage.xbf
-SinglePostView.xbf
+Pages\AccountsPage.xbf
+Pages\MainPage.xbf
+Pages\PoolView.xbf
+Pages\PostsViewPage.xbf
+Pages\SinglePostView.xbf

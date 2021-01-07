@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="VLC" version="1.0" primary="true">
+		<Qualifiers>
+			<Language>EN-US,FR-FR</Language>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="VLC">
+				<NamedResource name="VLC.xr.xml" uri="ms-resource://VLC/Files/VLC/VLC.xr.xml">
+					<Candidate type="Path">
+						<Value>VLC\VLC.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xaml" uri="ms-resource://VLC/Files/VLC/Themes/Generic.xaml">
+						<Candidate type="Path">
+							<Value>VLC\Themes\Generic.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.xbf" uri="ms-resource://VLC/Files/VLC/Themes/Generic.xbf">
+						<Candidate type="Path">
+							<Value>VLC\Themes\Generic.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="VLC">
+			<ResourceMapSubtree name="Resources">
+				<NamedResource name="All" uri="ms-resource://VLC/VLC/Resources/All">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Tous</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>All</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="AspectRatio" uri="ms-resource://VLC/VLC/Resources/AspectRatio">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Proportions</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Aspect Ratio</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceFilter" uri="ms-resource://VLC/VLC/Resources/DeinterlaceFilter">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Filtre de désentrelacement</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Deinterlace filter</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Blend" uri="ms-resource://VLC/VLC/Resources/DeinterlaceMode_Blend">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Fondu</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Blend</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Bob" uri="ms-resource://VLC/VLC/Resources/DeinterlaceMode_Bob">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Bob</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Bob</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Disabled" uri="ms-resource://VLC/VLC/Resources/DeinterlaceMode_Disabled">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Désactivé</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Disabled</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Discard" uri="ms-resource://VLC/VLC/Resources/DeinterlaceMode_Discard">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Ignorer</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Discard</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_IVTC" uri="ms-resource://VLC/VLC/Resources/DeinterlaceMode_IVTC">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Film NTSC (IVTC)</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Film NTSC (IVTC)</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Linear" uri="ms-resource://VLC/VLC/Resources/DeinterlaceMode_Linear">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Linéaire</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Linear</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Mean" uri="ms-resource://VLC/VLC/Resources/DeinterlaceMode_Mean">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Moyenne</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Mean</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Phosphor" uri="ms-resource://VLC/VLC/Resources/DeinterlaceMode_Phosphor">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Phosphore</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Phosphor</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_X" uri="ms-resource://VLC/VLC/Resources/DeinterlaceMode_X">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>X</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>X</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Yadif" uri="ms-resource://VLC/VLC/Resources/DeinterlaceMode_Yadif">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Yadif</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Yadif</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Yadif2x" uri="ms-resource://VLC/VLC/Resources/DeinterlaceMode_Yadif2x">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Yadif (2x)</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Yadif (2x)</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ExitFullScreen" uri="ms-resource://VLC/VLC/Resources/ExitFullScreen">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Quitter le mode plein écran</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Exit Full Screen</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FullScreen" uri="ms-resource://VLC/VLC/Resources/FullScreen">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Plein écran</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Full Screen</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LeaveMiniView" uri="ms-resource://VLC/VLC/Resources/LeaveMiniView">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Quitter la vue miniature</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Leave mini view</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Mute" uri="ms-resource://VLC/VLC/Resources/Mute">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Muet</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Mute</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="None" uri="ms-resource://VLC/VLC/Resources/None">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Aucun</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>None</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="One" uri="ms-resource://VLC/VLC/Resources/One">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Un</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>One</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Pause" uri="ms-resource://VLC/VLC/Resources/Pause">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Suspendre</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Pause</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Play" uri="ms-resource://VLC/VLC/Resources/Play">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Lecture</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Play</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PlayInMiniView" uri="ms-resource://VLC/VLC/Resources/PlayInMiniView">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Lire en vue miniature</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Play in mini view</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Repeat" uri="ms-resource://VLC/VLC/Resources/Repeat">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Répéter {0}</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Repeat {0}</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ShowAudioSelectionMenu" uri="ms-resource://VLC/VLC/Resources/ShowAudioSelectionMenu">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Afficher le menu de sélection audio</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Show audio selection menu</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ShowClosedCaptionMenu" uri="ms-resource://VLC/VLC/Resources/ShowClosedCaptionMenu">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Afficher le menu des sous-titres</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Show closed caption menu</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Stop" uri="ms-resource://VLC/VLC/Resources/Stop">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Arrêter</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Stop</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Volume" uri="ms-resource://VLC/VLC/Resources/Volume">
+					<Candidate qualifiers="Language-FR-FR" type="String">
+						<Value>Volume</Value>
+					</Candidate>
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Volume</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

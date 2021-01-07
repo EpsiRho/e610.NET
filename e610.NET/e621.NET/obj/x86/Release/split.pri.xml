@@ -1,0 +1,2647 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="e610.NET" version="1.0" primary="true">
+		<Qualifiers>
+			<AlternateForm>LIGHTUNPLATED,UNPLATED</AlternateForm>
+			<Language>EN-US</Language>
+			<Scale>200</Scale>
+			<TargetSize>256,16,24,32,48</TargetSize>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://e610.NET/Files/App.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="e621.NET.xr.xml" uri="ms-resource://e610.NET/Files/e621.NET.xr.xml">
+				<Candidate type="Path">
+					<Value>e621.NET.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="libvlc.dll" uri="ms-resource://e610.NET/Files/libvlc.dll">
+				<Candidate type="Path">
+					<Value>libvlc.dll</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="libvlc.lib" uri="ms-resource://e610.NET/Files/libvlc.lib">
+				<Candidate type="Path">
+					<Value>libvlc.lib</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="libvlccore.dll" uri="ms-resource://e610.NET/Files/libvlccore.dll">
+				<Candidate type="Path">
+					<Value>libvlccore.dll</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="libvlccore.lib" uri="ms-resource://e610.NET/Files/libvlccore.lib">
+				<Candidate type="Path">
+					<Value>libvlccore.lib</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="LargeTile.png" uri="ms-resource://e610.NET/Files/Assets/LargeTile.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\LargeTile.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LockScreenLogo.png" uri="ms-resource://e610.NET/Files/Assets/LockScreenLogo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\LockScreenLogo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallTile.png" uri="ms-resource://e610.NET/Files/Assets/SmallTile.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\SmallTile.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://e610.NET/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://e610.NET/Files/Assets/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square150x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://e610.NET/Files/Assets/Square44x44Logo.png">
+					<Candidate qualifiers="TargetSize-48, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-48, AlternateForm-LIGHTUNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-48" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-48.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-32, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-32, AlternateForm-LIGHTUNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-32" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-32.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-256, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-256, AlternateForm-LIGHTUNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-256" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-256.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-24, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-24, AlternateForm-LIGHTUNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-24" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-24.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-16, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-16, AlternateForm-LIGHTUNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-16" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-16.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://e610.NET/Files/Assets/StoreLogo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\StoreLogo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://e610.NET/Files/Assets/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Wide310x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Microsoft.Toolkit.Uwp.UI.Controls">
+				<NamedResource name="Microsoft.Toolkit.Uwp.UI.Controls.xr.xml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/Microsoft.Toolkit.Uwp.UI.Controls.xr.xml">
+					<Candidate type="Path">
+						<Value>Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="BladeView">
+					<NamedResource name="BladeView.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/BladeView/BladeView.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\BladeView\BladeView.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="BladeView.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/BladeView/BladeView.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="CameraPreview">
+					<NamedResource name="CameraPreview.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/CameraPreview/CameraPreview.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\CameraPreview\CameraPreview.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="CameraPreview.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/CameraPreview/CameraPreview.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Carousel">
+					<NamedResource name="Carousel.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/Carousel/Carousel.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\Carousel\Carousel.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Carousel.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/Carousel/Carousel.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="DropShadowPanel">
+					<NamedResource name="DropShadowPanel.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/DropShadowPanel/DropShadowPanel.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\DropShadowPanel\DropShadowPanel.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="DropShadowPanel.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/DropShadowPanel/DropShadowPanel.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Expander">
+					<NamedResource name="Expander.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/Expander/Expander.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\Expander\Expander.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Expander.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/Expander/Expander.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Eyedropper">
+					<NamedResource name="Eyedropper.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/Eyedropper/Eyedropper.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\Eyedropper\Eyedropper.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Eyedropper.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/Eyedropper/Eyedropper.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="EyedropperToolButton.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/Eyedropper/EyedropperToolButton.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\Eyedropper\EyedropperToolButton.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="EyedropperToolButton.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/Eyedropper/EyedropperToolButton.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="GridSplitter">
+					<NamedResource name="GridSplitter.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/GridSplitter/GridSplitter.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\GridSplitter\GridSplitter.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="GridSplitter.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/GridSplitter/GridSplitter.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="HeaderedContentControl">
+					<NamedResource name="HeaderedContentControl.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedContentControl/HeaderedContentControl.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\HeaderedContentControl\HeaderedContentControl.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="HeaderedContentControl.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedContentControl/HeaderedContentControl.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="HeaderedItemsControl">
+					<NamedResource name="HeaderedItemsControl.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedItemsControl/HeaderedItemsControl.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\HeaderedItemsControl\HeaderedItemsControl.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="HeaderedItemsControl.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedItemsControl/HeaderedItemsControl.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="HeaderedTextBlock">
+					<NamedResource name="HeaderedTextBlock.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedTextBlock/HeaderedTextBlock.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\HeaderedTextBlock\HeaderedTextBlock.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="HeaderedTextBlock.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedTextBlock/HeaderedTextBlock.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="ImageCropper">
+					<NamedResource name="ImageCropper.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropper.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\ImageCropper\ImageCropper.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ImageCropper.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropper.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ImageCropperThumb.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropperThumb.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\ImageCropper\ImageCropperThumb.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ImageCropperThumb.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropperThumb.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="ImageEx">
+					<NamedResource name="ImageEx.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/ImageEx/ImageEx.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\ImageEx\ImageEx.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ImageEx.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/ImageEx/ImageEx.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="InAppNotification">
+					<NamedResource name="InAppNotification.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/InAppNotification.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\InAppNotification\InAppNotification.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="InAppNotification.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/InAppNotification.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="Styles">
+						<NamedResource name="MSEdgeNotificationStyle.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/MSEdgeNotificationStyle.xaml">
+							<Candidate type="Path">
+								<Value>Microsoft.Toolkit.Uwp.UI.Controls\InAppNotification\Styles\MSEdgeNotificationStyle.xaml</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="MSEdgeNotificationStyle.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/MSEdgeNotificationStyle.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="VSCodeNotificationStyle.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/VSCodeNotificationStyle.xaml">
+							<Candidate type="Path">
+								<Value>Microsoft.Toolkit.Uwp.UI.Controls\InAppNotification\Styles\VSCodeNotificationStyle.xaml</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="VSCodeNotificationStyle.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/VSCodeNotificationStyle.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="InfiniteCanvas">
+					<NamedResource name="InfiniteCanvas.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/InfiniteCanvas/InfiniteCanvas.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\InfiniteCanvas\InfiniteCanvas.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="InfiniteCanvas.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/InfiniteCanvas/InfiniteCanvas.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="LayoutTransformControl">
+					<NamedResource name="LayoutTransformControl.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/LayoutTransformControl/LayoutTransformControl.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\LayoutTransformControl\LayoutTransformControl.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="LayoutTransformControl.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/LayoutTransformControl/LayoutTransformControl.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Loading">
+					<NamedResource name="Loading.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/Loading/Loading.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\Loading\Loading.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Loading.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/Loading/Loading.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="MarkdownTextBlock">
+					<NamedResource name="MarkdownTextBlock.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock/MarkdownTextBlock.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\MarkdownTextBlock\MarkdownTextBlock.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="MarkdownTextBlock.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock/MarkdownTextBlock.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="MasterDetailsView">
+					<NamedResource name="MasterDetailsView.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/MasterDetailsView/MasterDetailsView.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\MasterDetailsView\MasterDetailsView.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="MasterDetailsView.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/MasterDetailsView/MasterDetailsView.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Menu">
+					<NamedResource name="Menu.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/Menu/Menu.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\Menu\Menu.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Menu.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/Menu/Menu.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="OrbitView">
+					<NamedResource name="OrbitView.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/OrbitView/OrbitView.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\OrbitView\OrbitView.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="OrbitView.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/OrbitView/OrbitView.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="RadialGauge">
+					<NamedResource name="RadialGauge.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/RadialGauge/RadialGauge.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\RadialGauge\RadialGauge.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="RadialGauge.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/RadialGauge/RadialGauge.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="RadialProgressBar">
+					<NamedResource name="RadialProgressBar.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/RadialProgressBar/RadialProgressBar.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\RadialProgressBar\RadialProgressBar.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="RadialProgressBar.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/RadialProgressBar/RadialProgressBar.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="RangeSelector">
+					<NamedResource name="RangeSelector.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/RangeSelector/RangeSelector.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\RangeSelector\RangeSelector.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="RangeSelector.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/RangeSelector/RangeSelector.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="RemoteDevicePicker">
+					<NamedResource name="RemoteDevicePicker.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/RemoteDevicePicker/RemoteDevicePicker.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\RemoteDevicePicker\RemoteDevicePicker.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="RemoteDevicePicker.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/RemoteDevicePicker/RemoteDevicePicker.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="RotatorTile">
+					<NamedResource name="RotatorTile.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/RotatorTile/RotatorTile.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\RotatorTile\RotatorTile.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="RotatorTile.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/RotatorTile/RotatorTile.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="ScrollHeader">
+					<NamedResource name="ScrollHeader.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/ScrollHeader/ScrollHeader.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\ScrollHeader\ScrollHeader.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="ScrollHeader.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/ScrollHeader/ScrollHeader.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="TabView">
+					<NamedResource name="TabView.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TabView/TabView.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\TabView\TabView.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="TabView.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TabView/TabView.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="TextToolbar">
+					<NamedResource name="TextToolbar.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/TextToolbar.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\TextToolbar\TextToolbar.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="TextToolbar.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/TextToolbar.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="Symbols">
+						<NamedResource name="Symbols.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/Symbols/Symbols.xaml">
+							<Candidate type="Path">
+								<Value>Microsoft.Toolkit.Uwp.UI.Controls\TextToolbar\Symbols\Symbols.xaml</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Symbols.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/Symbols/Symbols.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ToolbarItems">
+						<NamedResource name="ToolbarButton.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/ToolbarItems/ToolbarButton.xaml">
+							<Candidate type="Path">
+								<Value>Microsoft.Toolkit.Uwp.UI.Controls\TextToolbar\ToolbarItems\ToolbarButton.xaml</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ToolbarButton.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/ToolbarItems/ToolbarButton.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ToolbarSeparator.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/ToolbarItems/ToolbarSeparator.xaml">
+							<Candidate type="Path">
+								<Value>Microsoft.Toolkit.Uwp.UI.Controls\TextToolbar\ToolbarItems\ToolbarSeparator.xaml</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="ToolbarSeparator.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/ToolbarItems/ToolbarSeparator.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/Themes/Generic.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\Themes\Generic.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="TileControl">
+					<NamedResource name="TileControl.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TileControl/TileControl.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="TileControl.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TileControl/TileControl.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="TokenizingTextBox">
+					<NamedResource name="TokenizingTextBox.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TokenizingTextBox/TokenizingTextBox.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\TokenizingTextBox\TokenizingTextBox.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="TokenizingTextBox.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TokenizingTextBox/TokenizingTextBox.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="TokenizingTextBoxItem.AutoSuggestBox.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TokenizingTextBox/TokenizingTextBoxItem.AutoSuggestBox.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\TokenizingTextBox\TokenizingTextBoxItem.AutoSuggestBox.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="TokenizingTextBoxItem.AutoSuggestBox.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TokenizingTextBox/TokenizingTextBoxItem.AutoSuggestBox.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="TokenizingTextBoxItem.Token.xaml" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TokenizingTextBox/TokenizingTextBoxItem.Token.xaml">
+						<Candidate type="Path">
+							<Value>Microsoft.Toolkit.Uwp.UI.Controls\TokenizingTextBox\TokenizingTextBoxItem.Token.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="TokenizingTextBoxItem.Token.xbf" uri="ms-resource://e610.NET/Files/Microsoft.Toolkit.Uwp.UI.Controls/TokenizingTextBox/TokenizingTextBoxItem.Token.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Microsoft.UI.Xaml">
+				<ResourceMapSubtree name="DensityStyles">
+					<NamedResource name="Compact.xbf" uri="ms-resource://e610.NET/Files/Microsoft.UI.Xaml/DensityStyles/Compact.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Pages">
+				<NamedResource name="AccountsPage.xbf" uri="ms-resource://e610.NET/Files/Pages/AccountsPage.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MainPage.xbf" uri="ms-resource://e610.NET/Files/Pages/MainPage.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PoolView.xbf" uri="ms-resource://e610.NET/Files/Pages/PoolView.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PostsViewPage.xbf" uri="ms-resource://e610.NET/Files/Pages/PostsViewPage.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SinglePostView.xbf" uri="ms-resource://e610.NET/Files/Pages/SinglePostView.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="plugins">
+				<ResourceMapSubtree name="access">
+					<NamedResource name="libaccess_concat_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libaccess_concat_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libaccess_concat_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libaccess_imem_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libaccess_imem_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libaccess_imem_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libaccess_mms_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libaccess_mms_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libaccess_mms_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libaccess_realrtsp_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libaccess_realrtsp_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libaccess_realrtsp_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libaccess_winrt_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libaccess_winrt_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libaccess_winrt_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libattachment_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libattachment_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libattachment_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libdsm_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libdsm_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libdsm_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libfilesystem_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libfilesystem_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libfilesystem_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libftp_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libftp_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libftp_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libhttps_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libhttps_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libhttps_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libhttp_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libhttp_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libhttp_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libidummy_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libidummy_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libidummy_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libimem_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libimem_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libimem_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="liblive555_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/liblive555_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\liblive555_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libnfs_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libnfs_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libnfs_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="librtp_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/librtp_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\librtp_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libsatip_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libsatip_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libsatip_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libsdp_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libsdp_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libsdp_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libsftp_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libsftp_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libsftp_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libshm_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libshm_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libshm_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libtcp_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libtcp_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libtcp_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libtimecode_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libtimecode_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libtimecode_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libudp_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libudp_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libudp_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libvdr_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access/libvdr_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access\libvdr_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="access_output">
+					<NamedResource name="libaccess_output_dummy_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access_output/libaccess_output_dummy_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access_output\libaccess_output_dummy_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libaccess_output_file_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access_output/libaccess_output_file_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access_output\libaccess_output_file_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libaccess_output_http_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access_output/libaccess_output_http_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access_output\libaccess_output_http_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libaccess_output_livehttp_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access_output/libaccess_output_livehttp_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access_output\libaccess_output_livehttp_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libaccess_output_shout_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access_output/libaccess_output_shout_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access_output\libaccess_output_shout_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libaccess_output_udp_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/access_output/libaccess_output_udp_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\access_output\libaccess_output_udp_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="audio_filter">
+					<NamedResource name="libaudiobargraph_a_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libaudiobargraph_a_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libaudiobargraph_a_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libaudio_format_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libaudio_format_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libaudio_format_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libchorus_flanger_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libchorus_flanger_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libchorus_flanger_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libcompressor_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libcompressor_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libcompressor_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libdolby_surround_decoder_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libdolby_surround_decoder_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libdolby_surround_decoder_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libequalizer_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libequalizer_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libequalizer_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libgain_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libgain_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libgain_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libheadphone_channel_mixer_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libheadphone_channel_mixer_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libheadphone_channel_mixer_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libkaraoke_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libkaraoke_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libkaraoke_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmad_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libmad_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libmad_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmono_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libmono_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libmono_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libnormvol_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libnormvol_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libnormvol_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libparam_eq_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libparam_eq_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libparam_eq_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libremap_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libremap_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libremap_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libsamplerate_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libsamplerate_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libsamplerate_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libscaletempo_pitch_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libscaletempo_pitch_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libscaletempo_pitch_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libscaletempo_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libscaletempo_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libscaletempo_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libsimple_channel_mixer_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libsimple_channel_mixer_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libsimple_channel_mixer_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libspatialaudio_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libspatialaudio_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libspatialaudio_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libspatializer_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libspatializer_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libspatializer_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libspeex_resampler_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libspeex_resampler_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libspeex_resampler_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstereo_widen_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libstereo_widen_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libstereo_widen_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libtospdif_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libtospdif_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libtospdif_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libtrivial_channel_mixer_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libtrivial_channel_mixer_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libtrivial_channel_mixer_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libugly_resampler_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_filter/libugly_resampler_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_filter\libugly_resampler_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="audio_mixer">
+					<NamedResource name="libfloat_mixer_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_mixer/libfloat_mixer_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_mixer\libfloat_mixer_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libinteger_mixer_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_mixer/libinteger_mixer_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_mixer\libinteger_mixer_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="audio_output">
+					<NamedResource name="libadummy_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_output/libadummy_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_output\libadummy_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libafile_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_output/libafile_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_output\libafile_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libamem_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_output/libamem_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_output\libamem_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libwasapi_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_output/libwasapi_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_output\libwasapi_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libwinstore_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/audio_output/libwinstore_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\audio_output\libwinstore_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="codec">
+					<NamedResource name="libadpcm_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libadpcm_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libadpcm_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libaes3_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libaes3_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libaes3_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libaraw_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libaraw_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libaraw_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libavcodec_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libavcodec_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libavcodec_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libcc_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libcc_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libcc_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libcdg_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libcdg_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libcdg_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libcvdsub_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libcvdsub_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libcvdsub_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libd3d11va_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libd3d11va_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libd3d11va_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libdca_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libdca_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libdca_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libddummy_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libddummy_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libddummy_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libdvbsub_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libdvbsub_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libdvbsub_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libedummy_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libedummy_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libedummy_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libflac_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libflac_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libflac_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libfluidsynth_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libfluidsynth_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libfluidsynth_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libg711_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libg711_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libg711_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libjpeg_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libjpeg_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libjpeg_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libkate_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libkate_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libkate_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="liblibass_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/liblibass_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\liblibass_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="liblibmpeg2_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/liblibmpeg2_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\liblibmpeg2_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="liblpcm_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/liblpcm_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\liblpcm_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmft_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libmft_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libmft_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmpg123_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libmpg123_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libmpg123_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="liboggspots_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/liboggspots_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\liboggspots_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libopus_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libopus_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libopus_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpng_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libpng_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libpng_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="librawvideo_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/librawvideo_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\librawvideo_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="librtpvideo_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/librtpvideo_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\librtpvideo_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libscte18_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libscte18_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libscte18_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libscte27_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libscte27_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libscte27_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libspdif_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libspdif_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libspdif_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libspeex_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libspeex_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libspeex_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libspudec_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libspudec_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libspudec_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstl_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libstl_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libstl_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libsubsdec_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libsubsdec_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libsubsdec_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libsubstx3g_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libsubstx3g_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libsubstx3g_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libsubsusf_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libsubsusf_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libsubsusf_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libsvcdsub_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libsvcdsub_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libsvcdsub_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libt140_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libt140_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libt140_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libtextst_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libtextst_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libtextst_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libtheora_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libtheora_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libtheora_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libttml_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libttml_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libttml_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libuleaddvaudio_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libuleaddvaudio_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libuleaddvaudio_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libvorbis_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libvorbis_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libvorbis_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libvpx_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libvpx_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libvpx_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libwebvtt_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libwebvtt_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libwebvtt_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libzvbi_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/codec/libzvbi_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\codec\libzvbi_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="control">
+					<NamedResource name="libdummy_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/control/libdummy_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\control\libdummy_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libgestures_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/control/libgestures_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\control\libgestures_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libhotkeys_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/control/libhotkeys_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\control\libhotkeys_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libnetsync_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/control/libnetsync_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\control\libnetsync_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="d3d11">
+					<NamedResource name="libdirect3d11_filters_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/d3d11/libdirect3d11_filters_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\d3d11\libdirect3d11_filters_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="demux">
+					<NamedResource name="libadaptive_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libadaptive_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libadaptive_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libaiff_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libaiff_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libaiff_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libasf_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libasf_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libasf_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libau_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libau_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libau_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libavi_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libavi_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libavi_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libcaf_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libcaf_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libcaf_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libdemuxdump_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libdemuxdump_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libdemuxdump_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libdemux_cdg_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libdemux_cdg_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libdemux_cdg_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libdemux_chromecast_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libdemux_chromecast_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libdemux_chromecast_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libdemux_stl_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libdemux_stl_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libdemux_stl_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libdiracsys_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libdiracsys_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libdiracsys_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libdirectory_demux_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libdirectory_demux_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libdirectory_demux_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libes_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libes_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libes_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libflacsys_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libflacsys_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libflacsys_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libgme_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libgme_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libgme_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libh26x_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libh26x_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libh26x_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libimage_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libimage_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libimage_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmjpeg_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libmjpeg_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libmjpeg_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmkv_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libmkv_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libmkv_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmp4_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libmp4_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libmp4_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmpc_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libmpc_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libmpc_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmpgv_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libmpgv_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libmpgv_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libnoseek_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libnoseek_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libnoseek_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libnsc_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libnsc_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libnsc_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libnsv_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libnsv_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libnsv_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libnuv_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libnuv_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libnuv_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libogg_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libogg_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libogg_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libplaylist_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libplaylist_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libplaylist_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libps_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libps_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libps_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpva_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libpva_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libpva_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="librawaud_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/librawaud_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\librawaud_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="librawdv_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/librawdv_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\librawdv_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="librawvid_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/librawvid_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\librawvid_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libreal_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libreal_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libreal_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libsid_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libsid_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libsid_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libsmf_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libsmf_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libsmf_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libsubtitle_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libsubtitle_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libsubtitle_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libts_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libts_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libts_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libtta_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libtta_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libtta_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libty_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libty_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libty_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libvc1_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libvc1_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libvc1_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libvobsub_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libvobsub_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libvobsub_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libvoc_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libvoc_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libvoc_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libwav_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libwav_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libwav_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libxa_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/demux/libxa_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\demux\libxa_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="keystore">
+					<NamedResource name="libfile_keystore_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/keystore/libfile_keystore_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\keystore\libfile_keystore_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmemory_keystore_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/keystore/libmemory_keystore_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\keystore\libmemory_keystore_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="logger">
+					<NamedResource name="libconsole_logger_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/logger/libconsole_logger_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\logger\libconsole_logger_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libfile_logger_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/logger/libfile_logger_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\logger\libfile_logger_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="lua">
+					<NamedResource name="liblua_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/lua/liblua_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\lua\liblua_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="meta_engine">
+					<NamedResource name="libfolder_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/meta_engine/libfolder_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\meta_engine\libfolder_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libtaglib_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/meta_engine/libtaglib_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\meta_engine\libtaglib_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="misc">
+					<NamedResource name="libaddonsfsstorage_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/misc/libaddonsfsstorage_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\misc\libaddonsfsstorage_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libaddonsvorepository_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/misc/libaddonsvorepository_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\misc\libaddonsvorepository_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libaudioscrobbler_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/misc/libaudioscrobbler_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\misc\libaudioscrobbler_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libexport_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/misc/libexport_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\misc\libexport_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libfingerprinter_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/misc/libfingerprinter_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\misc\libfingerprinter_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libgnutls_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/misc/libgnutls_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\misc\libgnutls_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="liblogger_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/misc/liblogger_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\misc\liblogger_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstats_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/misc/libstats_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\misc\libstats_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libvod_rtsp_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/misc/libvod_rtsp_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\misc\libvod_rtsp_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libxml_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/misc/libxml_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\misc\libxml_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="mux">
+					<NamedResource name="libmux_asf_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/mux/libmux_asf_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\mux\libmux_asf_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmux_avi_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/mux/libmux_avi_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\mux\libmux_avi_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmux_dummy_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/mux/libmux_dummy_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\mux\libmux_dummy_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmux_mp4_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/mux/libmux_mp4_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\mux\libmux_mp4_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmux_mpjpeg_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/mux/libmux_mpjpeg_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\mux\libmux_mpjpeg_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmux_ogg_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/mux/libmux_ogg_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\mux\libmux_ogg_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmux_ps_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/mux/libmux_ps_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\mux\libmux_ps_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmux_ts_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/mux/libmux_ts_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\mux\libmux_ts_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmux_wav_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/mux/libmux_wav_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\mux\libmux_wav_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="packetizer">
+					<NamedResource name="libpacketizer_a52_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/packetizer/libpacketizer_a52_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\packetizer\libpacketizer_a52_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpacketizer_copy_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/packetizer/libpacketizer_copy_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\packetizer\libpacketizer_copy_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpacketizer_dirac_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/packetizer/libpacketizer_dirac_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\packetizer\libpacketizer_dirac_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpacketizer_dts_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/packetizer/libpacketizer_dts_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\packetizer\libpacketizer_dts_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpacketizer_flac_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/packetizer/libpacketizer_flac_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\packetizer\libpacketizer_flac_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpacketizer_h264_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/packetizer/libpacketizer_h264_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\packetizer\libpacketizer_h264_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpacketizer_hevc_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/packetizer/libpacketizer_hevc_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\packetizer\libpacketizer_hevc_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpacketizer_mlp_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/packetizer/libpacketizer_mlp_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\packetizer\libpacketizer_mlp_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpacketizer_mpeg4audio_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/packetizer/libpacketizer_mpeg4audio_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\packetizer\libpacketizer_mpeg4audio_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpacketizer_mpeg4video_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/packetizer/libpacketizer_mpeg4video_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\packetizer\libpacketizer_mpeg4video_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpacketizer_mpegaudio_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/packetizer/libpacketizer_mpegaudio_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\packetizer\libpacketizer_mpegaudio_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpacketizer_mpegvideo_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/packetizer/libpacketizer_mpegvideo_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\packetizer\libpacketizer_mpegvideo_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpacketizer_vc1_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/packetizer/libpacketizer_vc1_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\packetizer\libpacketizer_vc1_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="services_discovery">
+					<NamedResource name="libmediadirs_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/services_discovery/libmediadirs_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\services_discovery\libmediadirs_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmicrodns_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/services_discovery/libmicrodns_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\services_discovery\libmicrodns_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpodcast_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/services_discovery/libpodcast_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\services_discovery\libpodcast_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libsap_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/services_discovery/libsap_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\services_discovery\libsap_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libupnp_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/services_discovery/libupnp_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\services_discovery\libupnp_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="spu">
+					<NamedResource name="libaudiobargraph_v_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/spu/libaudiobargraph_v_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\spu\libaudiobargraph_v_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="liblogo_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/spu/liblogo_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\spu\liblogo_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmarq_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/spu/libmarq_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\spu\libmarq_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmosaic_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/spu/libmosaic_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\spu\libmosaic_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libremoteosd_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/spu/libremoteosd_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\spu\libremoteosd_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="librss_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/spu/librss_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\spu\librss_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libsubsdelay_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/spu/libsubsdelay_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\spu\libsubsdelay_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="stream_extractor">
+					<NamedResource name="libarchive_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_extractor/libarchive_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_extractor\libarchive_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="stream_filter">
+					<NamedResource name="libadf_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_filter/libadf_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_filter\libadf_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libcache_block_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_filter/libcache_block_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_filter\libcache_block_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libcache_read_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_filter/libcache_read_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_filter\libcache_read_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libhds_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_filter/libhds_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_filter\libhds_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libinflate_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_filter/libinflate_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_filter\libinflate_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="librecord_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_filter/librecord_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_filter\librecord_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libskiptags_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_filter/libskiptags_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_filter\libskiptags_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="stream_out">
+					<NamedResource name="libstream_out_autodel_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_autodel_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_autodel_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_bridge_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_bridge_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_bridge_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_chromecast_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_chromecast_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_chromecast_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_cycle_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_cycle_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_cycle_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_delay_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_delay_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_delay_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_description_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_description_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_description_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_display_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_display_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_display_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_dummy_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_dummy_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_dummy_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_duplicate_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_duplicate_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_duplicate_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_es_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_es_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_es_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_gather_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_gather_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_gather_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_mosaic_bridge_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_mosaic_bridge_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_mosaic_bridge_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_record_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_record_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_record_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_rtp_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_rtp_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_rtp_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_setid_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_setid_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_setid_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_smem_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_smem_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_smem_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_standard_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_standard_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_standard_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_stats_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_stats_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_stats_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libstream_out_transcode_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/stream_out/libstream_out_transcode_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\stream_out\libstream_out_transcode_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="text_renderer">
+					<NamedResource name="libfreetype_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/text_renderer/libfreetype_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\text_renderer\libfreetype_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libtdummy_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/text_renderer/libtdummy_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\text_renderer\libtdummy_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="video_chroma">
+					<NamedResource name="libchain_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libchain_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libchain_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libgrey_yuv_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libgrey_yuv_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libgrey_yuv_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libi420_10_p010_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libi420_10_p010_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libi420_10_p010_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libi420_nv12_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libi420_nv12_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libi420_nv12_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libi420_rgb_mmx_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libi420_rgb_mmx_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libi420_rgb_mmx_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libi420_rgb_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libi420_rgb_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libi420_rgb_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libi420_rgb_sse2_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libi420_rgb_sse2_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libi420_rgb_sse2_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libi420_yuy2_mmx_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libi420_yuy2_mmx_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libi420_yuy2_mmx_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libi420_yuy2_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libi420_yuy2_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libi420_yuy2_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libi420_yuy2_sse2_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libi420_yuy2_sse2_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libi420_yuy2_sse2_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libi422_i420_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libi422_i420_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libi422_i420_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libi422_yuy2_mmx_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libi422_yuy2_mmx_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libi422_yuy2_mmx_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libi422_yuy2_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libi422_yuy2_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libi422_yuy2_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libi422_yuy2_sse2_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libi422_yuy2_sse2_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libi422_yuy2_sse2_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="librv32_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/librv32_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\librv32_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libswscale_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libswscale_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libswscale_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libyuvp_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libyuvp_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libyuvp_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libyuy2_i420_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libyuy2_i420_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libyuy2_i420_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libyuy2_i422_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_chroma/libyuy2_i422_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_chroma\libyuy2_i422_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="video_filter">
+					<NamedResource name="libadjust_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libadjust_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libadjust_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libalphamask_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libalphamask_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libalphamask_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libanaglyph_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libanaglyph_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libanaglyph_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libantiflicker_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libantiflicker_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libantiflicker_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libball_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libball_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libball_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libblendbench_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libblendbench_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libblendbench_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libblend_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libblend_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libblend_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libbluescreen_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libbluescreen_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libbluescreen_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libcanvas_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libcanvas_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libcanvas_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libcolorthres_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libcolorthres_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libcolorthres_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libcroppadd_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libcroppadd_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libcroppadd_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libdeinterlace_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libdeinterlace_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libdeinterlace_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libedgedetection_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libedgedetection_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libedgedetection_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="liberase_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/liberase_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\liberase_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libextract_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libextract_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libextract_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libfps_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libfps_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libfps_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libfreeze_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libfreeze_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libfreeze_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libgaussianblur_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libgaussianblur_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libgaussianblur_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libgradfun_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libgradfun_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libgradfun_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libgradient_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libgradient_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libgradient_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libgrain_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libgrain_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libgrain_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libhqdn3d_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libhqdn3d_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libhqdn3d_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libinvert_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libinvert_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libinvert_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmagnify_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libmagnify_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libmagnify_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmirror_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libmirror_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libmirror_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmotionblur_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libmotionblur_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libmotionblur_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libmotiondetect_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libmotiondetect_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libmotiondetect_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="liboldmovie_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/liboldmovie_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\liboldmovie_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libposterize_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libposterize_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libposterize_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpostproc_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libpostproc_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libpostproc_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpsychedelic_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libpsychedelic_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libpsychedelic_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libpuzzle_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libpuzzle_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libpuzzle_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libripple_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libripple_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libripple_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="librotate_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/librotate_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\librotate_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libscale_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libscale_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libscale_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libscene_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libscene_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libscene_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libsepia_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libsepia_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libsepia_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libsharpen_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libsharpen_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libsharpen_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libtransform_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libtransform_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libtransform_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libvhs_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libvhs_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libvhs_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libwave_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_filter/libwave_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_filter\libwave_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="video_output">
+					<NamedResource name="libdirect3d11_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_output/libdirect3d11_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_output\libdirect3d11_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libdrawable_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_output/libdrawable_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_output\libdrawable_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libflaschen_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_output/libflaschen_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_output\libflaschen_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libvdummy_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_output/libvdummy_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_output\libvdummy_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libvmem_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_output/libvmem_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_output\libvmem_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libyuv_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_output/libyuv_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_output\libyuv_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="video_splitter">
+					<NamedResource name="libclone_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_splitter/libclone_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_splitter\libclone_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="libwall_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/video_splitter/libwall_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\video_splitter\libwall_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="visualization">
+					<NamedResource name="libvisual_plugin.dll" uri="ms-resource://e610.NET/Files/plugins/visualization/libvisual_plugin.dll">
+						<Candidate type="Path">
+							<Value>plugins\visualization\libvisual_plugin.dll</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Properties">
+				<NamedResource name="Default.rd.xml" uri="ms-resource://e610.NET/Files/Properties/Default.rd.xml">
+					<Candidate type="Path">
+						<Value>Properties\Default.rd.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="VLC">
+				<NamedResource name="VLC.xr.xml" uri="ms-resource://e610.NET/Files/VLC/VLC.xr.xml">
+					<Candidate type="Path">
+						<Value>VLC\VLC.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xaml" uri="ms-resource://e610.NET/Files/VLC/Themes/Generic.xaml">
+						<Candidate type="Path">
+							<Value>VLC\Themes\Generic.xaml</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Generic.xbf" uri="ms-resource://e610.NET/Files/VLC/Themes/Generic.xbf">
+						<Candidate type="Path">
+							<Value>VLC\Themes\Generic.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinMetadata">
+				<NamedResource name="Windows.winmd" uri="ms-resource://e610.NET/Files/WinMetadata/Windows.winmd">
+					<Candidate type="Path">
+						<Value>WinMetadata\Windows.winmd</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Toolkit.Uwp.UI.Controls">
+			<ResourceMapSubtree name="Resources">
+				<NamedResource name="TextToolbarStrings_BoldLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_BoldLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Bold</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_CancelLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_CancelLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cancel</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_CodeLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_CodeLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Code</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_CreateLinkLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_CreateLinkLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Create Link</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_EmptyTextLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_EmptyTextLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Empty Text</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_HeaderLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_HeaderLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Header</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_ItalicsLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_ItalicsLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Italics</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_LabelLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_LabelLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Label</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_LinkInvalidLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_LinkInvalidLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Link Invalid</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_LinkLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_LinkLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Link</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_ListLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_ListLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>List</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_OkLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_OkLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Ok</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_OrderedListLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_OrderedListLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Ordered List</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_QuoteLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_QuoteLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Quote</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_RelativeLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_RelativeLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Relative</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_StrikethroughLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_StrikethroughLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Strikethrough</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_UnderlineLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_UnderlineLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Underline</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_UrlLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_UrlLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Url</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TextToolbarStrings_WarningLabel" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/TextToolbarStrings_WarningLabel">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Warning</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WindowsCommunityToolkit_BladeView_ExpandButton_Collapsed" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/WindowsCommunityToolkit_BladeView_ExpandButton_Collapsed">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Collapse Blade</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WindowsCommunityToolkit_BladeView_ExpandButton_Expanded" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/WindowsCommunityToolkit_BladeView_ExpandButton_Expanded">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Expand Blade</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WindowsCommunityToolkit_GridSplitter_AutomationName" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/WindowsCommunityToolkit_GridSplitter_AutomationName">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>GridSpliter</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WindowsCommunityToolkit_InAppNotification_Events_NewNotificationMessage" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/WindowsCommunityToolkit_InAppNotification_Events_NewNotificationMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>New notification</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WindowsCommunityToolkit_InAppNotification_NameProperty" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/WindowsCommunityToolkit_InAppNotification_NameProperty">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Notification</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WindowsCommunityToolkit_TokenizingTextBoxItem_MenuFlyout_Remove" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/WindowsCommunityToolkit_TokenizingTextBoxItem_MenuFlyout_Remove">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Remove</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WindowsCommunityToolkit_TokenizingTextBox_MenuFlyout_SelectAll" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/WindowsCommunityToolkit_TokenizingTextBox_MenuFlyout_SelectAll">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Select All</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="WindowsCommunityToolkit_TabView_CloseButton">
+					<ResourceMapSubtree name="[using:Windows.UI.Xaml.Automation]AutomationProperties">
+						<NamedResource name="Name" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/WindowsCommunityToolkit_TabView_CloseButton/[using:Windows.UI.Xaml.Automation]AutomationProperties/Name">
+							<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+								<Value>Close tab</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="[using:Windows.UI.Xaml.Controls]ToolTipService">
+						<NamedResource name="ToolTip" uri="ms-resource://e610.NET/Microsoft.Toolkit.Uwp.UI.Controls/Resources/WindowsCommunityToolkit_TabView_CloseButton/[using:Windows.UI.Xaml.Controls]ToolTipService/ToolTip">
+							<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+								<Value>Close tab</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Xaml.Interactions">
+			<ResourceMapSubtree name="Strings">
+				<NamedResource name="CallMethodActionValidMethodNotFoundExceptionMessage" uri="ms-resource://e610.NET/Microsoft.Xaml.Interactions/Strings/CallMethodActionValidMethodNotFoundExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot find method named {0} on object of type {1} that matches the expected signature.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CannotAttachBehaviorMultipleTimesExceptionMessage" uri="ms-resource://e610.NET/Microsoft.Xaml.Interactions/Strings/CannotAttachBehaviorMultipleTimesExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>An instance of a behavior cannot be attached to more than one object at a time.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="CannotFindEventNameExceptionMessage" uri="ms-resource://e610.NET/Microsoft.Xaml.Interactions/Strings/CannotFindEventNameExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot find an event named {0} on type {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ChangePropertyActionCannotFindPropertyNameExceptionMessage" uri="ms-resource://e610.NET/Microsoft.Xaml.Interactions/Strings/ChangePropertyActionCannotFindPropertyNameExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot find a property named {0} on type {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ChangePropertyActionCannotSetValueExceptionMessage" uri="ms-resource://e610.NET/Microsoft.Xaml.Interactions/Strings/ChangePropertyActionCannotSetValueExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot assign value of type {0} to property {1} of type {2}. The {1} property can be assigned only values of type {2}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ChangePropertyActionPropertyIsReadOnlyExceptionMessage" uri="ms-resource://e610.NET/Microsoft.Xaml.Interactions/Strings/ChangePropertyActionPropertyIsReadOnlyExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Property {0} defined by type {1} does not expose a set method and therefore cannot be modified.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="EventNotSupportedExceptionMessage" uri="ms-resource://e610.NET/Microsoft.Xaml.Interactions/Strings/EventNotSupportedExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Event {0} is not supported. Consider implementing a custom IBehavior to respond to this event.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="GoToStateActionTargetHasNoStateGroups" uri="ms-resource://e610.NET/Microsoft.Xaml.Interactions/Strings/GoToStateActionTargetHasNoStateGroups">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Target {0} does not define any VisualStateGroups.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidLeftOperand" uri="ms-resource://e610.NET/Microsoft.Xaml.Interactions/Strings/InvalidLeftOperand">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Binding property of type {0} cannot be used with operator {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidOperands" uri="ms-resource://e610.NET/Microsoft.Xaml.Interactions/Strings/InvalidOperands">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Binding property of type {0} and Value property of type {1} cannot be used with operator {2}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidRightOperand" uri="ms-resource://e610.NET/Microsoft.Xaml.Interactions/Strings/InvalidRightOperand">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Value property of type {0} cannot be used with operator {1}.</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Microsoft.Xaml.Interactivity">
+			<ResourceMapSubtree name="Strings">
+				<NamedResource name="CannotAttachBehaviorMultipleTimesExceptionMessage" uri="ms-resource://e610.NET/Microsoft.Xaml.Interactivity/Strings/CannotAttachBehaviorMultipleTimesExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>An instance of a behavior cannot be attached to more than one object at a time.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DuplicateBehaviorInCollectionExceptionMessage" uri="ms-resource://e610.NET/Microsoft.Xaml.Interactivity/Strings/DuplicateBehaviorInCollectionExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Cannot add an instance of a behavior to a BehaviorCollection more than once.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="InvalidAssociatedObjectExceptionMessage" uri="ms-resource://e610.NET/Microsoft.Xaml.Interactivity/Strings/InvalidAssociatedObjectExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>AssociatedObject is of type {0} but should be of type {1}.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NonActionAddedToActionCollectionExceptionMessage" uri="ms-resource://e610.NET/Microsoft.Xaml.Interactivity/Strings/NonActionAddedToActionCollectionExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Only IAction types are supported in an ActionCollection.</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NonBehaviorAddedToBehaviorCollectionExceptionMessage" uri="ms-resource://e610.NET/Microsoft.Xaml.Interactivity/Strings/NonBehaviorAddedToBehaviorCollectionExceptionMessage">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Only IBehavior types are supported in a BehaviorCollection.</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="VLC">
+			<ResourceMapSubtree name="Resources">
+				<NamedResource name="All" uri="ms-resource://e610.NET/VLC/Resources/All">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>All</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="AspectRatio" uri="ms-resource://e610.NET/VLC/Resources/AspectRatio">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Aspect Ratio</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceFilter" uri="ms-resource://e610.NET/VLC/Resources/DeinterlaceFilter">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Deinterlace filter</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Blend" uri="ms-resource://e610.NET/VLC/Resources/DeinterlaceMode_Blend">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Blend</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Bob" uri="ms-resource://e610.NET/VLC/Resources/DeinterlaceMode_Bob">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Bob</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Disabled" uri="ms-resource://e610.NET/VLC/Resources/DeinterlaceMode_Disabled">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Disabled</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Discard" uri="ms-resource://e610.NET/VLC/Resources/DeinterlaceMode_Discard">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Discard</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_IVTC" uri="ms-resource://e610.NET/VLC/Resources/DeinterlaceMode_IVTC">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Film NTSC (IVTC)</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Linear" uri="ms-resource://e610.NET/VLC/Resources/DeinterlaceMode_Linear">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Linear</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Mean" uri="ms-resource://e610.NET/VLC/Resources/DeinterlaceMode_Mean">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Mean</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Phosphor" uri="ms-resource://e610.NET/VLC/Resources/DeinterlaceMode_Phosphor">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Phosphor</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_X" uri="ms-resource://e610.NET/VLC/Resources/DeinterlaceMode_X">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>X</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Yadif" uri="ms-resource://e610.NET/VLC/Resources/DeinterlaceMode_Yadif">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Yadif</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="DeinterlaceMode_Yadif2x" uri="ms-resource://e610.NET/VLC/Resources/DeinterlaceMode_Yadif2x">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Yadif (2x)</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ExitFullScreen" uri="ms-resource://e610.NET/VLC/Resources/ExitFullScreen">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Exit Full Screen</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="FullScreen" uri="ms-resource://e610.NET/VLC/Resources/FullScreen">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Full Screen</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LeaveMiniView" uri="ms-resource://e610.NET/VLC/Resources/LeaveMiniView">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Leave mini view</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Mute" uri="ms-resource://e610.NET/VLC/Resources/Mute">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Mute</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="None" uri="ms-resource://e610.NET/VLC/Resources/None">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>None</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="One" uri="ms-resource://e610.NET/VLC/Resources/One">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>One</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Pause" uri="ms-resource://e610.NET/VLC/Resources/Pause">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Pause</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Play" uri="ms-resource://e610.NET/VLC/Resources/Play">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Play</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PlayInMiniView" uri="ms-resource://e610.NET/VLC/Resources/PlayInMiniView">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Play in mini view</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Repeat" uri="ms-resource://e610.NET/VLC/Resources/Repeat">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Repeat {0}</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ShowAudioSelectionMenu" uri="ms-resource://e610.NET/VLC/Resources/ShowAudioSelectionMenu">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Show audio selection menu</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ShowClosedCaptionMenu" uri="ms-resource://e610.NET/VLC/Resources/ShowClosedCaptionMenu">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Show closed caption menu</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Stop" uri="ms-resource://e610.NET/VLC/Resources/Stop">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Stop</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Volume" uri="ms-resource://e610.NET/VLC/Resources/Volume">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>Volume</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

@@ -1,0 +1,1420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-8T6CVI5</Machine>
+    <WindowsUser>jhset</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>0ddcdaf2-0e50-41f1-982f-1006b31e1dce</PackageIdentityName>
+    <PackageIdentityPublisher>CN=John Setta, O=John Setta, STREET=2098 Oak Dairy Ln SW, L=Huntsville, S=Alabama, PostalCode=35803, C=US</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x64\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\avcodec-58.dll">
+      <PackagePath>avcodec-58.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\avcodec.lib">
+      <PackagePath>avcodec.lib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\avdevice-58.dll">
+      <PackagePath>avdevice-58.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\avdevice.lib">
+      <PackagePath>avdevice.lib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\avfilter-7.dll">
+      <PackagePath>avfilter-7.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\avfilter.lib">
+      <PackagePath>avfilter.lib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\avformat-58.dll">
+      <PackagePath>avformat-58.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\avformat.lib">
+      <PackagePath>avformat.lib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\avutil-56.dll">
+      <PackagePath>avutil-56.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\avutil.lib">
+      <PackagePath>avutil.lib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\clrcompression.dll">
+      <PackagePath>clrcompression.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\e621.NET.dll">
+      <PackagePath>e621.NET.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\e621.NET.exe">
+      <PackagePath>e621.NET.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\e621.NET.pdb">
+      <PackagePath>e621.NET.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\FFmpegInterop.dll">
+      <PackagePath>FFmpegInterop.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\FFmpegInterop.winmd">
+      <PackagePath>FFmpegInterop.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\libvlc.dll">
+      <PackagePath>libvlc.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\libvlc.lib">
+      <PackagePath>libvlc.lib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\libvlccore.dll">
+      <PackagePath>libvlccore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\libvlccore.lib">
+      <PackagePath>libvlccore.lib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\libVLCX.dll">
+      <PackagePath>libVLCX.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\libVLCX.winmd">
+      <PackagePath>libVLCX.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Microsoft.Graphics.Canvas.dll">
+      <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Microsoft.Graphics.Canvas.winmd">
+      <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libaccess_concat_plugin.dll">
+      <PackagePath>plugins\access\libaccess_concat_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libaccess_imem_plugin.dll">
+      <PackagePath>plugins\access\libaccess_imem_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libaccess_mms_plugin.dll">
+      <PackagePath>plugins\access\libaccess_mms_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libaccess_realrtsp_plugin.dll">
+      <PackagePath>plugins\access\libaccess_realrtsp_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libaccess_winrt_plugin.dll">
+      <PackagePath>plugins\access\libaccess_winrt_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libattachment_plugin.dll">
+      <PackagePath>plugins\access\libattachment_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libdsm_plugin.dll">
+      <PackagePath>plugins\access\libdsm_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libfilesystem_plugin.dll">
+      <PackagePath>plugins\access\libfilesystem_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libftp_plugin.dll">
+      <PackagePath>plugins\access\libftp_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libhttps_plugin.dll">
+      <PackagePath>plugins\access\libhttps_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libhttp_plugin.dll">
+      <PackagePath>plugins\access\libhttp_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libidummy_plugin.dll">
+      <PackagePath>plugins\access\libidummy_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libimem_plugin.dll">
+      <PackagePath>plugins\access\libimem_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\liblive555_plugin.dll">
+      <PackagePath>plugins\access\liblive555_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libnfs_plugin.dll">
+      <PackagePath>plugins\access\libnfs_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\librtp_plugin.dll">
+      <PackagePath>plugins\access\librtp_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libsatip_plugin.dll">
+      <PackagePath>plugins\access\libsatip_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libsdp_plugin.dll">
+      <PackagePath>plugins\access\libsdp_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libsftp_plugin.dll">
+      <PackagePath>plugins\access\libsftp_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libshm_plugin.dll">
+      <PackagePath>plugins\access\libshm_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libtcp_plugin.dll">
+      <PackagePath>plugins\access\libtcp_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libtimecode_plugin.dll">
+      <PackagePath>plugins\access\libtimecode_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libudp_plugin.dll">
+      <PackagePath>plugins\access\libudp_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access\libvdr_plugin.dll">
+      <PackagePath>plugins\access\libvdr_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access_output\libaccess_output_dummy_plugin.dll">
+      <PackagePath>plugins\access_output\libaccess_output_dummy_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access_output\libaccess_output_file_plugin.dll">
+      <PackagePath>plugins\access_output\libaccess_output_file_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access_output\libaccess_output_http_plugin.dll">
+      <PackagePath>plugins\access_output\libaccess_output_http_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access_output\libaccess_output_livehttp_plugin.dll">
+      <PackagePath>plugins\access_output\libaccess_output_livehttp_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access_output\libaccess_output_shout_plugin.dll">
+      <PackagePath>plugins\access_output\libaccess_output_shout_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\access_output\libaccess_output_udp_plugin.dll">
+      <PackagePath>plugins\access_output\libaccess_output_udp_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libaudiobargraph_a_plugin.dll">
+      <PackagePath>plugins\audio_filter\libaudiobargraph_a_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libaudio_format_plugin.dll">
+      <PackagePath>plugins\audio_filter\libaudio_format_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libchorus_flanger_plugin.dll">
+      <PackagePath>plugins\audio_filter\libchorus_flanger_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libcompressor_plugin.dll">
+      <PackagePath>plugins\audio_filter\libcompressor_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libdolby_surround_decoder_plugin.dll">
+      <PackagePath>plugins\audio_filter\libdolby_surround_decoder_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libequalizer_plugin.dll">
+      <PackagePath>plugins\audio_filter\libequalizer_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libgain_plugin.dll">
+      <PackagePath>plugins\audio_filter\libgain_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libheadphone_channel_mixer_plugin.dll">
+      <PackagePath>plugins\audio_filter\libheadphone_channel_mixer_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libkaraoke_plugin.dll">
+      <PackagePath>plugins\audio_filter\libkaraoke_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libmad_plugin.dll">
+      <PackagePath>plugins\audio_filter\libmad_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libmono_plugin%281%29.dll">
+      <PackagePath>plugins\audio_filter\libmono_plugin%281%29.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libmono_plugin.dll">
+      <PackagePath>plugins\audio_filter\libmono_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libnormvol_plugin%281%29.dll">
+      <PackagePath>plugins\audio_filter\libnormvol_plugin%281%29.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libnormvol_plugin.dll">
+      <PackagePath>plugins\audio_filter\libnormvol_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libparam_eq_plugin%281%29.dll">
+      <PackagePath>plugins\audio_filter\libparam_eq_plugin%281%29.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libparam_eq_plugin.dll">
+      <PackagePath>plugins\audio_filter\libparam_eq_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libremap_plugin%281%29.dll">
+      <PackagePath>plugins\audio_filter\libremap_plugin%281%29.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libremap_plugin.dll">
+      <PackagePath>plugins\audio_filter\libremap_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libsamplerate_plugin.dll">
+      <PackagePath>plugins\audio_filter\libsamplerate_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libscaletempo_pitch_plugin.dll">
+      <PackagePath>plugins\audio_filter\libscaletempo_pitch_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libscaletempo_plugin.dll">
+      <PackagePath>plugins\audio_filter\libscaletempo_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libsimple_channel_mixer_plugin.dll">
+      <PackagePath>plugins\audio_filter\libsimple_channel_mixer_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libspatialaudio_plugin.dll">
+      <PackagePath>plugins\audio_filter\libspatialaudio_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libspatializer_plugin.dll">
+      <PackagePath>plugins\audio_filter\libspatializer_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libspeex_resampler_plugin.dll">
+      <PackagePath>plugins\audio_filter\libspeex_resampler_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libstereo_widen_plugin.dll">
+      <PackagePath>plugins\audio_filter\libstereo_widen_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libtospdif_plugin.dll">
+      <PackagePath>plugins\audio_filter\libtospdif_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libtrivial_channel_mixer_plugin.dll">
+      <PackagePath>plugins\audio_filter\libtrivial_channel_mixer_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_filter\libugly_resampler_plugin.dll">
+      <PackagePath>plugins\audio_filter\libugly_resampler_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_mixer\libfloat_mixer_plugin.dll">
+      <PackagePath>plugins\audio_mixer\libfloat_mixer_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_mixer\libinteger_mixer_plugin.dll">
+      <PackagePath>plugins\audio_mixer\libinteger_mixer_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_output\libadummy_plugin.dll">
+      <PackagePath>plugins\audio_output\libadummy_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_output\libafile_plugin.dll">
+      <PackagePath>plugins\audio_output\libafile_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_output\libamem_plugin.dll">
+      <PackagePath>plugins\audio_output\libamem_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_output\libwasapi_plugin.dll">
+      <PackagePath>plugins\audio_output\libwasapi_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\audio_output\libwinstore_plugin.dll">
+      <PackagePath>plugins\audio_output\libwinstore_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libadpcm_plugin.dll">
+      <PackagePath>plugins\codec\libadpcm_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libaes3_plugin.dll">
+      <PackagePath>plugins\codec\libaes3_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libaraw_plugin.dll">
+      <PackagePath>plugins\codec\libaraw_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libavcodec_plugin.dll">
+      <PackagePath>plugins\codec\libavcodec_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libcc_plugin.dll">
+      <PackagePath>plugins\codec\libcc_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libcdg_plugin.dll">
+      <PackagePath>plugins\codec\libcdg_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libcvdsub_plugin.dll">
+      <PackagePath>plugins\codec\libcvdsub_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libd3d11va_plugin.dll">
+      <PackagePath>plugins\codec\libd3d11va_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libdca_plugin.dll">
+      <PackagePath>plugins\codec\libdca_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libddummy_plugin.dll">
+      <PackagePath>plugins\codec\libddummy_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libdvbsub_plugin.dll">
+      <PackagePath>plugins\codec\libdvbsub_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libedummy_plugin.dll">
+      <PackagePath>plugins\codec\libedummy_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libflac_plugin.dll">
+      <PackagePath>plugins\codec\libflac_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libfluidsynth_plugin.dll">
+      <PackagePath>plugins\codec\libfluidsynth_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libg711_plugin.dll">
+      <PackagePath>plugins\codec\libg711_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libjpeg_plugin.dll">
+      <PackagePath>plugins\codec\libjpeg_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libkate_plugin.dll">
+      <PackagePath>plugins\codec\libkate_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\liblibass_plugin.dll">
+      <PackagePath>plugins\codec\liblibass_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\liblibmpeg2_plugin.dll">
+      <PackagePath>plugins\codec\liblibmpeg2_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\liblpcm_plugin.dll">
+      <PackagePath>plugins\codec\liblpcm_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libmft_plugin.dll">
+      <PackagePath>plugins\codec\libmft_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libmpg123_plugin.dll">
+      <PackagePath>plugins\codec\libmpg123_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\liboggspots_plugin.dll">
+      <PackagePath>plugins\codec\liboggspots_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libopus_plugin.dll">
+      <PackagePath>plugins\codec\libopus_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libpng_plugin.dll">
+      <PackagePath>plugins\codec\libpng_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\librawvideo_plugin.dll">
+      <PackagePath>plugins\codec\librawvideo_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\librtpvideo_plugin.dll">
+      <PackagePath>plugins\codec\librtpvideo_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libscte18_plugin.dll">
+      <PackagePath>plugins\codec\libscte18_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libscte27_plugin.dll">
+      <PackagePath>plugins\codec\libscte27_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libspdif_plugin.dll">
+      <PackagePath>plugins\codec\libspdif_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libspeex_plugin.dll">
+      <PackagePath>plugins\codec\libspeex_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libspudec_plugin.dll">
+      <PackagePath>plugins\codec\libspudec_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libstl_plugin.dll">
+      <PackagePath>plugins\codec\libstl_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libsubsdec_plugin.dll">
+      <PackagePath>plugins\codec\libsubsdec_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libsubstx3g_plugin.dll">
+      <PackagePath>plugins\codec\libsubstx3g_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libsubsusf_plugin.dll">
+      <PackagePath>plugins\codec\libsubsusf_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libsvcdsub_plugin.dll">
+      <PackagePath>plugins\codec\libsvcdsub_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libt140_plugin.dll">
+      <PackagePath>plugins\codec\libt140_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libtextst_plugin.dll">
+      <PackagePath>plugins\codec\libtextst_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libtheora_plugin.dll">
+      <PackagePath>plugins\codec\libtheora_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libttml_plugin.dll">
+      <PackagePath>plugins\codec\libttml_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libuleaddvaudio_plugin.dll">
+      <PackagePath>plugins\codec\libuleaddvaudio_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libvorbis_plugin.dll">
+      <PackagePath>plugins\codec\libvorbis_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libvpx_plugin.dll">
+      <PackagePath>plugins\codec\libvpx_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libwebvtt_plugin.dll">
+      <PackagePath>plugins\codec\libwebvtt_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\codec\libzvbi_plugin.dll">
+      <PackagePath>plugins\codec\libzvbi_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\control\libdummy_plugin.dll">
+      <PackagePath>plugins\control\libdummy_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\control\libgestures_plugin.dll">
+      <PackagePath>plugins\control\libgestures_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\control\libhotkeys_plugin.dll">
+      <PackagePath>plugins\control\libhotkeys_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\control\libnetsync_plugin.dll">
+      <PackagePath>plugins\control\libnetsync_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\d3d11\libdirect3d11_filters_plugin.dll">
+      <PackagePath>plugins\d3d11\libdirect3d11_filters_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libadaptive_plugin.dll">
+      <PackagePath>plugins\demux\libadaptive_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libaiff_plugin.dll">
+      <PackagePath>plugins\demux\libaiff_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libasf_plugin.dll">
+      <PackagePath>plugins\demux\libasf_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libau_plugin.dll">
+      <PackagePath>plugins\demux\libau_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libavi_plugin.dll">
+      <PackagePath>plugins\demux\libavi_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libcaf_plugin.dll">
+      <PackagePath>plugins\demux\libcaf_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libdemuxdump_plugin.dll">
+      <PackagePath>plugins\demux\libdemuxdump_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libdemux_cdg_plugin.dll">
+      <PackagePath>plugins\demux\libdemux_cdg_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libdemux_chromecast_plugin.dll">
+      <PackagePath>plugins\demux\libdemux_chromecast_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libdemux_stl_plugin.dll">
+      <PackagePath>plugins\demux\libdemux_stl_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libdiracsys_plugin.dll">
+      <PackagePath>plugins\demux\libdiracsys_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libdirectory_demux_plugin.dll">
+      <PackagePath>plugins\demux\libdirectory_demux_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libes_plugin.dll">
+      <PackagePath>plugins\demux\libes_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libflacsys_plugin.dll">
+      <PackagePath>plugins\demux\libflacsys_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libgme_plugin.dll">
+      <PackagePath>plugins\demux\libgme_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libh26x_plugin.dll">
+      <PackagePath>plugins\demux\libh26x_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libimage_plugin.dll">
+      <PackagePath>plugins\demux\libimage_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libmjpeg_plugin.dll">
+      <PackagePath>plugins\demux\libmjpeg_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libmkv_plugin.dll">
+      <PackagePath>plugins\demux\libmkv_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libmp4_plugin.dll">
+      <PackagePath>plugins\demux\libmp4_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libmpc_plugin.dll">
+      <PackagePath>plugins\demux\libmpc_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libmpgv_plugin.dll">
+      <PackagePath>plugins\demux\libmpgv_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libnoseek_plugin.dll">
+      <PackagePath>plugins\demux\libnoseek_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libnsc_plugin.dll">
+      <PackagePath>plugins\demux\libnsc_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libnsv_plugin.dll">
+      <PackagePath>plugins\demux\libnsv_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libnuv_plugin.dll">
+      <PackagePath>plugins\demux\libnuv_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libogg_plugin.dll">
+      <PackagePath>plugins\demux\libogg_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libplaylist_plugin.dll">
+      <PackagePath>plugins\demux\libplaylist_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libps_plugin.dll">
+      <PackagePath>plugins\demux\libps_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libpva_plugin.dll">
+      <PackagePath>plugins\demux\libpva_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\librawaud_plugin.dll">
+      <PackagePath>plugins\demux\librawaud_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\librawdv_plugin.dll">
+      <PackagePath>plugins\demux\librawdv_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\librawvid_plugin.dll">
+      <PackagePath>plugins\demux\librawvid_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libreal_plugin.dll">
+      <PackagePath>plugins\demux\libreal_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libsid_plugin.dll">
+      <PackagePath>plugins\demux\libsid_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libsmf_plugin.dll">
+      <PackagePath>plugins\demux\libsmf_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libsubtitle_plugin.dll">
+      <PackagePath>plugins\demux\libsubtitle_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libts_plugin.dll">
+      <PackagePath>plugins\demux\libts_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libtta_plugin.dll">
+      <PackagePath>plugins\demux\libtta_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libty_plugin.dll">
+      <PackagePath>plugins\demux\libty_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libvc1_plugin.dll">
+      <PackagePath>plugins\demux\libvc1_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libvobsub_plugin.dll">
+      <PackagePath>plugins\demux\libvobsub_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libvoc_plugin.dll">
+      <PackagePath>plugins\demux\libvoc_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libwav_plugin.dll">
+      <PackagePath>plugins\demux\libwav_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\demux\libxa_plugin.dll">
+      <PackagePath>plugins\demux\libxa_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\keystore\libfile_keystore_plugin.dll">
+      <PackagePath>plugins\keystore\libfile_keystore_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\keystore\libmemory_keystore_plugin.dll">
+      <PackagePath>plugins\keystore\libmemory_keystore_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\logger\libconsole_logger_plugin.dll">
+      <PackagePath>plugins\logger\libconsole_logger_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\logger\libfile_logger_plugin.dll">
+      <PackagePath>plugins\logger\libfile_logger_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\lua\liblua_plugin.dll">
+      <PackagePath>plugins\lua\liblua_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\meta_engine\libfolder_plugin.dll">
+      <PackagePath>plugins\meta_engine\libfolder_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\meta_engine\libtaglib_plugin.dll">
+      <PackagePath>plugins\meta_engine\libtaglib_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\misc\libaddonsfsstorage_plugin.dll">
+      <PackagePath>plugins\misc\libaddonsfsstorage_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\misc\libaddonsvorepository_plugin.dll">
+      <PackagePath>plugins\misc\libaddonsvorepository_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\misc\libaudioscrobbler_plugin.dll">
+      <PackagePath>plugins\misc\libaudioscrobbler_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\misc\libexport_plugin.dll">
+      <PackagePath>plugins\misc\libexport_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\misc\libfingerprinter_plugin.dll">
+      <PackagePath>plugins\misc\libfingerprinter_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\misc\libgnutls_plugin.dll">
+      <PackagePath>plugins\misc\libgnutls_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\misc\liblogger_plugin.dll">
+      <PackagePath>plugins\misc\liblogger_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\misc\libstats_plugin.dll">
+      <PackagePath>plugins\misc\libstats_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\misc\libvod_rtsp_plugin.dll">
+      <PackagePath>plugins\misc\libvod_rtsp_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\misc\libxml_plugin.dll">
+      <PackagePath>plugins\misc\libxml_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\mux\libmux_asf_plugin.dll">
+      <PackagePath>plugins\mux\libmux_asf_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\mux\libmux_avi_plugin.dll">
+      <PackagePath>plugins\mux\libmux_avi_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\mux\libmux_dummy_plugin.dll">
+      <PackagePath>plugins\mux\libmux_dummy_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\mux\libmux_mp4_plugin.dll">
+      <PackagePath>plugins\mux\libmux_mp4_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\mux\libmux_mpjpeg_plugin.dll">
+      <PackagePath>plugins\mux\libmux_mpjpeg_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\mux\libmux_ogg_plugin.dll">
+      <PackagePath>plugins\mux\libmux_ogg_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\mux\libmux_ps_plugin.dll">
+      <PackagePath>plugins\mux\libmux_ps_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\mux\libmux_ts_plugin.dll">
+      <PackagePath>plugins\mux\libmux_ts_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\mux\libmux_wav_plugin.dll">
+      <PackagePath>plugins\mux\libmux_wav_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\packetizer\libpacketizer_a52_plugin.dll">
+      <PackagePath>plugins\packetizer\libpacketizer_a52_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\packetizer\libpacketizer_copy_plugin.dll">
+      <PackagePath>plugins\packetizer\libpacketizer_copy_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\packetizer\libpacketizer_dirac_plugin.dll">
+      <PackagePath>plugins\packetizer\libpacketizer_dirac_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\packetizer\libpacketizer_dts_plugin.dll">
+      <PackagePath>plugins\packetizer\libpacketizer_dts_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\packetizer\libpacketizer_flac_plugin.dll">
+      <PackagePath>plugins\packetizer\libpacketizer_flac_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\packetizer\libpacketizer_h264_plugin.dll">
+      <PackagePath>plugins\packetizer\libpacketizer_h264_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\packetizer\libpacketizer_hevc_plugin.dll">
+      <PackagePath>plugins\packetizer\libpacketizer_hevc_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\packetizer\libpacketizer_mlp_plugin.dll">
+      <PackagePath>plugins\packetizer\libpacketizer_mlp_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\packetizer\libpacketizer_mpeg4audio_plugin.dll">
+      <PackagePath>plugins\packetizer\libpacketizer_mpeg4audio_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\packetizer\libpacketizer_mpeg4video_plugin.dll">
+      <PackagePath>plugins\packetizer\libpacketizer_mpeg4video_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\packetizer\libpacketizer_mpegaudio_plugin.dll">
+      <PackagePath>plugins\packetizer\libpacketizer_mpegaudio_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\packetizer\libpacketizer_mpegvideo_plugin.dll">
+      <PackagePath>plugins\packetizer\libpacketizer_mpegvideo_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\packetizer\libpacketizer_vc1_plugin.dll">
+      <PackagePath>plugins\packetizer\libpacketizer_vc1_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\services_discovery\libmediadirs_plugin.dll">
+      <PackagePath>plugins\services_discovery\libmediadirs_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\services_discovery\libmicrodns_plugin.dll">
+      <PackagePath>plugins\services_discovery\libmicrodns_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\services_discovery\libpodcast_plugin.dll">
+      <PackagePath>plugins\services_discovery\libpodcast_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\services_discovery\libsap_plugin.dll">
+      <PackagePath>plugins\services_discovery\libsap_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\services_discovery\libupnp_plugin.dll">
+      <PackagePath>plugins\services_discovery\libupnp_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\spu\libaudiobargraph_v_plugin.dll">
+      <PackagePath>plugins\spu\libaudiobargraph_v_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\spu\liblogo_plugin.dll">
+      <PackagePath>plugins\spu\liblogo_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\spu\libmarq_plugin.dll">
+      <PackagePath>plugins\spu\libmarq_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\spu\libmosaic_plugin.dll">
+      <PackagePath>plugins\spu\libmosaic_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\spu\libremoteosd_plugin.dll">
+      <PackagePath>plugins\spu\libremoteosd_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\spu\librss_plugin.dll">
+      <PackagePath>plugins\spu\librss_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\spu\libsubsdelay_plugin.dll">
+      <PackagePath>plugins\spu\libsubsdelay_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_extractor\libarchive_plugin.dll">
+      <PackagePath>plugins\stream_extractor\libarchive_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_filter\libadf_plugin.dll">
+      <PackagePath>plugins\stream_filter\libadf_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_filter\libcache_block_plugin.dll">
+      <PackagePath>plugins\stream_filter\libcache_block_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_filter\libcache_read_plugin.dll">
+      <PackagePath>plugins\stream_filter\libcache_read_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_filter\libhds_plugin.dll">
+      <PackagePath>plugins\stream_filter\libhds_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_filter\libinflate_plugin.dll">
+      <PackagePath>plugins\stream_filter\libinflate_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_filter\librecord_plugin.dll">
+      <PackagePath>plugins\stream_filter\librecord_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_filter\libskiptags_plugin.dll">
+      <PackagePath>plugins\stream_filter\libskiptags_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_autodel_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_autodel_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_bridge_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_bridge_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_chromecast_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_chromecast_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_cycle_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_cycle_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_delay_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_delay_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_description_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_description_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_display_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_display_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_dummy_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_dummy_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_duplicate_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_duplicate_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_es_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_es_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_gather_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_gather_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_mosaic_bridge_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_mosaic_bridge_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_record_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_record_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_rtp_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_rtp_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_setid_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_setid_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_smem_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_smem_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_standard_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_standard_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_stats_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_stats_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\stream_out\libstream_out_transcode_plugin.dll">
+      <PackagePath>plugins\stream_out\libstream_out_transcode_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\text_renderer\libfreetype_plugin.dll">
+      <PackagePath>plugins\text_renderer\libfreetype_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\text_renderer\libtdummy_plugin.dll">
+      <PackagePath>plugins\text_renderer\libtdummy_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libchain_plugin.dll">
+      <PackagePath>plugins\video_chroma\libchain_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libgrey_yuv_plugin.dll">
+      <PackagePath>plugins\video_chroma\libgrey_yuv_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libi420_10_p010_plugin.dll">
+      <PackagePath>plugins\video_chroma\libi420_10_p010_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libi420_nv12_plugin.dll">
+      <PackagePath>plugins\video_chroma\libi420_nv12_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libi420_rgb_mmx_plugin.dll">
+      <PackagePath>plugins\video_chroma\libi420_rgb_mmx_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libi420_rgb_plugin.dll">
+      <PackagePath>plugins\video_chroma\libi420_rgb_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libi420_rgb_sse2_plugin.dll">
+      <PackagePath>plugins\video_chroma\libi420_rgb_sse2_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libi420_yuy2_mmx_plugin.dll">
+      <PackagePath>plugins\video_chroma\libi420_yuy2_mmx_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libi420_yuy2_plugin.dll">
+      <PackagePath>plugins\video_chroma\libi420_yuy2_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libi420_yuy2_sse2_plugin.dll">
+      <PackagePath>plugins\video_chroma\libi420_yuy2_sse2_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libi422_i420_plugin.dll">
+      <PackagePath>plugins\video_chroma\libi422_i420_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libi422_yuy2_mmx_plugin.dll">
+      <PackagePath>plugins\video_chroma\libi422_yuy2_mmx_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libi422_yuy2_plugin.dll">
+      <PackagePath>plugins\video_chroma\libi422_yuy2_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libi422_yuy2_sse2_plugin.dll">
+      <PackagePath>plugins\video_chroma\libi422_yuy2_sse2_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\librv32_plugin.dll">
+      <PackagePath>plugins\video_chroma\librv32_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libswscale_plugin.dll">
+      <PackagePath>plugins\video_chroma\libswscale_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libyuvp_plugin.dll">
+      <PackagePath>plugins\video_chroma\libyuvp_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libyuy2_i420_plugin.dll">
+      <PackagePath>plugins\video_chroma\libyuy2_i420_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_chroma\libyuy2_i422_plugin.dll">
+      <PackagePath>plugins\video_chroma\libyuy2_i422_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libadjust_plugin.dll">
+      <PackagePath>plugins\video_filter\libadjust_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libalphamask_plugin.dll">
+      <PackagePath>plugins\video_filter\libalphamask_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libanaglyph_plugin.dll">
+      <PackagePath>plugins\video_filter\libanaglyph_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libantiflicker_plugin.dll">
+      <PackagePath>plugins\video_filter\libantiflicker_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libball_plugin.dll">
+      <PackagePath>plugins\video_filter\libball_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libblendbench_plugin.dll">
+      <PackagePath>plugins\video_filter\libblendbench_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libblend_plugin.dll">
+      <PackagePath>plugins\video_filter\libblend_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libbluescreen_plugin.dll">
+      <PackagePath>plugins\video_filter\libbluescreen_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libcanvas_plugin.dll">
+      <PackagePath>plugins\video_filter\libcanvas_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libcolorthres_plugin.dll">
+      <PackagePath>plugins\video_filter\libcolorthres_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libcroppadd_plugin.dll">
+      <PackagePath>plugins\video_filter\libcroppadd_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libdeinterlace_plugin.dll">
+      <PackagePath>plugins\video_filter\libdeinterlace_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libedgedetection_plugin.dll">
+      <PackagePath>plugins\video_filter\libedgedetection_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\liberase_plugin.dll">
+      <PackagePath>plugins\video_filter\liberase_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libextract_plugin.dll">
+      <PackagePath>plugins\video_filter\libextract_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libfps_plugin.dll">
+      <PackagePath>plugins\video_filter\libfps_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libfreeze_plugin.dll">
+      <PackagePath>plugins\video_filter\libfreeze_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libgaussianblur_plugin.dll">
+      <PackagePath>plugins\video_filter\libgaussianblur_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libgradfun_plugin.dll">
+      <PackagePath>plugins\video_filter\libgradfun_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libgradient_plugin.dll">
+      <PackagePath>plugins\video_filter\libgradient_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libgrain_plugin.dll">
+      <PackagePath>plugins\video_filter\libgrain_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libhqdn3d_plugin.dll">
+      <PackagePath>plugins\video_filter\libhqdn3d_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libinvert_plugin.dll">
+      <PackagePath>plugins\video_filter\libinvert_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libmagnify_plugin.dll">
+      <PackagePath>plugins\video_filter\libmagnify_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libmirror_plugin.dll">
+      <PackagePath>plugins\video_filter\libmirror_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libmotionblur_plugin.dll">
+      <PackagePath>plugins\video_filter\libmotionblur_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libmotiondetect_plugin.dll">
+      <PackagePath>plugins\video_filter\libmotiondetect_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\liboldmovie_plugin.dll">
+      <PackagePath>plugins\video_filter\liboldmovie_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libposterize_plugin.dll">
+      <PackagePath>plugins\video_filter\libposterize_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libpostproc_plugin.dll">
+      <PackagePath>plugins\video_filter\libpostproc_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libpsychedelic_plugin.dll">
+      <PackagePath>plugins\video_filter\libpsychedelic_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libpuzzle_plugin.dll">
+      <PackagePath>plugins\video_filter\libpuzzle_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libripple_plugin.dll">
+      <PackagePath>plugins\video_filter\libripple_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\librotate_plugin.dll">
+      <PackagePath>plugins\video_filter\librotate_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libscale_plugin.dll">
+      <PackagePath>plugins\video_filter\libscale_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libscene_plugin.dll">
+      <PackagePath>plugins\video_filter\libscene_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libsepia_plugin.dll">
+      <PackagePath>plugins\video_filter\libsepia_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libsharpen_plugin.dll">
+      <PackagePath>plugins\video_filter\libsharpen_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libtransform_plugin.dll">
+      <PackagePath>plugins\video_filter\libtransform_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libvhs_plugin.dll">
+      <PackagePath>plugins\video_filter\libvhs_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_filter\libwave_plugin.dll">
+      <PackagePath>plugins\video_filter\libwave_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_output\libdirect3d11_plugin.dll">
+      <PackagePath>plugins\video_output\libdirect3d11_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_output\libdrawable_plugin.dll">
+      <PackagePath>plugins\video_output\libdrawable_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_output\libflaschen_plugin.dll">
+      <PackagePath>plugins\video_output\libflaschen_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_output\libvdummy_plugin.dll">
+      <PackagePath>plugins\video_output\libvdummy_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_output\libvmem_plugin.dll">
+      <PackagePath>plugins\video_output\libvmem_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_output\libyuv_plugin.dll">
+      <PackagePath>plugins\video_output\libyuv_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_splitter\libclone_plugin.dll">
+      <PackagePath>plugins\video_splitter\libclone_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\video_splitter\libwall_plugin.dll">
+      <PackagePath>plugins\video_splitter\libwall_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\plugins\visualization\libvisual_plugin.dll">
+      <PackagePath>plugins\visualization\libvisual_plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\swresample-3.dll">
+      <PackagePath>swresample-3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\swresample.lib">
+      <PackagePath>swresample.lib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\swscale-5.dll">
+      <PackagePath>swscale-5.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\swscale.lib">
+      <PackagePath>swscale.lib</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\VLC.winmd">
+      <PackagePath>VLC.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\VLC\Themes\Generic.xbf">
+      <PackagePath>VLC\Themes\Generic.xbf</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\jhset\.nuget\packages\microsoft.ui.xaml\2.5.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.5.appx">
+      <Name>Microsoft.UI.Xaml.2.5</Name>
+      <Version>2.52012.2002.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.5, MinVersion = 2.52012.2002.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\jhset\.nuget\packages\microsoft.ui.xaml\2.5.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.5.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\jhset\.nuget\packages\microsoft.ui.xaml\2.5.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.5.appx">
+      <Name>Microsoft.UI.Xaml.2.5</Name>
+      <Version>2.52012.2002.0</Version>
+      <Architecture>Win32</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.5, MinVersion = 2.52012.2002.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\jhset\.nuget\packages\microsoft.ui.xaml\2.5.0\buildTransitive\..\tools\AppX\x86\Release\Microsoft.UI.Xaml.2.5.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\jhset\.nuget\packages\microsoft.ui.xaml\2.5.0\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.5.appx">
+      <Name>Microsoft.UI.Xaml.2.5</Name>
+      <Version>2.52012.2002.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.5, MinVersion = 2.52012.2002.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\jhset\.nuget\packages\microsoft.ui.xaml\2.5.0\buildTransitive\..\tools\AppX\x64\Release\Microsoft.UI.Xaml.2.5.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\jhset\.nuget\packages\microsoft.ui.xaml\2.5.0\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.5.appx">
+      <Name>Microsoft.UI.Xaml.2.5</Name>
+      <Version>2.52012.2002.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.5, MinVersion = 2.52012.2002.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\jhset\.nuget\packages\microsoft.ui.xaml\2.5.0\buildTransitive\..\tools\AppX\arm\Release\Microsoft.UI.Xaml.2.5.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\jhset\.nuget\packages\microsoft.ui.xaml\2.5.0\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.5.appx">
+      <Name>Microsoft.UI.Xaml.2.5</Name>
+      <Version>2.52012.2002.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.UI.Xaml.2.5, MinVersion = 2.52012.2002.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\jhset\.nuget\packages\microsoft.ui.xaml\2.5.0\buildTransitive\..\tools\AppX\arm64\Release\Microsoft.UI.Xaml.2.5.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\jhset\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-29512-01\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx">
+      <Name>Microsoft.NET.Native.Framework.2.2</Name>
+      <Version>2.2.29512.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.2, MinVersion = 2.2.29512.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\jhset\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-29512-01\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\jhset\.nuget\packages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.2.8-rel-29512-01\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx">
+      <Name>Microsoft.NET.Native.Framework.2.2</Name>
+      <Version>2.2.29512.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.2, MinVersion = 2.2.29512.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\jhset\.nuget\packages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.2.8-rel-29512-01\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\jhset\.nuget\packages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-29512-01\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx">
+      <Name>Microsoft.NET.Native.Framework.2.2</Name>
+      <Version>2.2.29512.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.2, MinVersion = 2.2.29512.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\jhset\.nuget\packages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-29512-01\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\jhset\.nuget\packages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.2.8-rel-29512-01\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx">
+      <Name>Microsoft.NET.Native.Framework.2.2</Name>
+      <Version>2.2.29512.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.2.2, MinVersion = 2.2.29512.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\jhset\.nuget\packages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.2.8-rel-29512-01\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\jhset\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.2.9-rel-29512-01\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.2.2.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.2</Name>
+      <Version>2.2.28604.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.2, MinVersion = 2.2.28604.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\jhset\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.2.9-rel-29512-01\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\jhset\.nuget\packages\runtime.win10-x64.microsoft.net.native.compiler\2.2.9-rel-29512-01\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.2.2.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.2</Name>
+      <Version>2.2.28604.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.2, MinVersion = 2.2.28604.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\jhset\.nuget\packages\runtime.win10-x64.microsoft.net.native.compiler\2.2.9-rel-29512-01\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\jhset\.nuget\packages\runtime.win10-arm64.microsoft.net.native.compiler\2.2.9-rel-29512-01\build\..\tools\Runtime\arm64\Microsoft.NET.Native.Runtime.2.2.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.2</Name>
+      <Version>2.2.28604.0</Version>
+      <Architecture>arm64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.2, MinVersion = 2.2.28604.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\jhset\.nuget\packages\runtime.win10-arm64.microsoft.net.native.compiler\2.2.9-rel-29512-01\build\..\tools\Runtime\arm64\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\jhset\.nuget\packages\runtime.win10-arm.microsoft.net.native.compiler\2.2.9-rel-29512-01\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.2.2.appx">
+      <Name>Microsoft.NET.Native.Runtime.2.2</Name>
+      <Version>2.2.28604.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.2.2, MinVersion = 2.2.28604.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\jhset\.nuget\packages\runtime.win10-arm.microsoft.net.native.compiler\2.2.9-rel-29512-01\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM64\Microsoft.VCLibs.ARM64.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.120\14.0\">
+      <Name>Microsoft.VCLibs.120.00.Universal</Name>
+      <Version>12.0.30501.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Universal, MinVersion = 12.0.30501.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.120\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.12.00.Universal.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.120\14.0\">
+      <Name>Microsoft.VCLibs.120.00.Universal</Name>
+      <Version>12.0.30501.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Universal, MinVersion = 12.0.30501.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.120\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.12.00.Universal.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.120\14.0\">
+      <Name>Microsoft.VCLibs.120.00.Universal</Name>
+      <Version>12.0.30501.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Universal, MinVersion = 12.0.30501.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs.120\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.12.00.Universal.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

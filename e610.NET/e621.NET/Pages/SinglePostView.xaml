@@ -6,7 +6,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
     xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:control="using:Microsoft.UI.Xaml.Controls"
+    xmlns:control="using:Microsoft.UI.Xaml.Controls" 
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls" 
+    xmlns:vlc="using:VLC"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.Resources>
@@ -21,88 +23,167 @@
                     <AcrylicBrush x:Key="MainBackground"
                           BackgroundSource="HostBackdrop"
                           TintColor="#001439"
-                          TintOpacity="0.2"
+                          TintOpacity="0.5"
                           FallbackColor="#001439"/>
                     <AcrylicBrush x:Key="ButtonBackground"
                           BackgroundSource="Backdrop"
                           TintColor="Black"
                           TintOpacity="0.9"
                           FallbackColor="Black"/>
+                    <AcrylicBrush x:Key="DescBackground"
+                          BackgroundSource="Backdrop"
+                          TintColor="#0B2C5F"
+                          TintOpacity="0.9"
+                          FallbackColor="#0B2C5F"/>
+                    <AcrylicBrush x:Key="CommentBackground"
+                          BackgroundSource="Backdrop"
+                          TintColor="#052049"
+                          TintOpacity="0.8"
+                          FallbackColor="#052049"/>
+                    <SolidColorBrush x:Key="SideLine"
+                                     Color="#009CB4"/>
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
         </ResourceDictionary>
     </Page.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="auto" MinWidth="180"/>
             <ColumnDefinition Width="90*"/>
         </Grid.ColumnDefinitions>
         <ScrollViewer Grid.Column="0">
             <StackPanel Orientation="Vertical" Background="{ThemeResource SideBar}">
                 <Button x:Name="PoolBar" Content="Pools" Margin="10,10,10,10" Visibility="Collapsed" HorizontalAlignment="Center" Width="100" 
-                        Tapped="PoolBar_Tapped"/>
-                <TextBlock Text="Search" FontSize="18" Margin="10,1,0,0"/>
-                <StackPanel Orientation="Horizontal" Margin="10,10,10,10">
-                    <TextBox Width="120" Height="Auto" x:Name="SearchBox"
-                     VerticalAlignment="Top" HorizontalAlignment="Left"
+                        Tapped="PoolBar_Tapped">
+                    <FlyoutBase.AttachedFlyout>
+                        <MenuFlyout x:Name="PoolsMenu" Placement="BottomEdgeAlignedLeft" ShowMode="TransientWithDismissOnPointerMoveAway" />
+                    </FlyoutBase.AttachedFlyout>
+                </Button>
+                <TextBlock Text="Search" FontSize="18" Margin="10,10,10,0"  HorizontalAlignment="Center"/>
+                <StackPanel Orientation="Vertical" Margin="10,10,10,10">
+                    <TextBox Width="auto" Height="Auto" x:Name="SearchBox"
+                     VerticalAlignment="Top" HorizontalAlignment="Stretch"
                      TextWrapping="Wrap" KeyDown="SearchBox_KeyDown"/>
-                    <Button x:Name="SearchButton" Tapped="SearchButton_Tapped">
+                    <Button x:Name="SearchButton" Tapped="SearchButton_Tapped" HorizontalAlignment="Stretch" Margin="0,5,0,0">
                         <SymbolIcon Symbol="Accept"/>
                     </Button>
                 </StackPanel>
                 <ProgressBar x:Name="LoadingBar" IsIndeterminate="False" Visibility="Collapsed"  Margin="0,0,0,0"
-                         Height="6" Foreground="White" Width="150"
-                         ShowPaused="False" ShowError="False"/>
-
-                <muxc:TreeView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="TagsView" 
-                               ItemsSource="{x:Bind DataSource}" VerticalAlignment="Stretch" ItemInvoked="TagsView_ItemInvoked">
-                    <muxc:TreeView.ItemTemplate>
-                        <DataTemplate x:DataType="local:TreeItem">
-                            <muxc:TreeViewItem ItemsSource="{x:Bind Children}" Margin="-20,0,0,0" RightTapped="TagsView_RightTapped"
-                                       Content="{x:Bind Name}" IsExpanded="True"/>
-                        </DataTemplate>
-                    </muxc:TreeView.ItemTemplate>
-                </muxc:TreeView>
+                         Height="6" Foreground="White" Width="150"/>
+                <StackPanel Orientation="Vertical">
+                    <HyperlinkButton x:Name="ArtistsTitle" Foreground="White" Content="Artists:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
+                    <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="ArtistsTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True"/>
+                    <HyperlinkButton x:Name="CopyrightsTitle" Foreground="White" Content="Copyrights:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
+                    <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="CopyrightsTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True"/>
+                    <HyperlinkButton x:Name="CharactersTitle" Foreground="White" Content="Characters:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
+                    <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="CharactersTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True"/>
+                    <HyperlinkButton x:Name="SpeciesTitle" Foreground="White" Content="Species:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
+                    <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="SpeciesTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True"/>
+                    <HyperlinkButton x:Name="GeneralTitle" Foreground="White" Content="General:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
+                    <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="GeneralTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True"/>
+                    <HyperlinkButton x:Name="MetaTitle" Foreground="White" Content="Meta:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
+                    <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="MetaTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True"/>
+                    <HyperlinkButton x:Name="LoreTitle" Foreground="White" Content="Lore:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
+                    <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="LoreTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True"/>
+                    <HyperlinkButton x:Name="InvalidTitle" Foreground="White" Content="Invalid:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
+                    <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="InvalidTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True"/>
+                </StackPanel>
             </StackPanel>
         </ScrollViewer>
         <Grid Grid.Column="1" Background="{ThemeResource MainBackground}">
-            <Image x:Name="bigpicture" Source="{x:Bind singlePost.file.url}" Width="auto" Height="auto" Canvas.ZIndex="1" Visibility="Collapsed" ImageOpened="bigpicture_ImageOpened"/>
-            <MediaPlayerElement Visibility="Collapsed" Canvas.ZIndex="10"
-                    AutoPlay="True" x:Name="bigvideo" PosterSource="{x:Bind singlePost.preview.url}"
-                    AreTransportControlsEnabled="True"/>
-            <control:ProgressRing Width="80" Height="80" IsActive="True" Foreground="White"/>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top" Canvas.ZIndex="20">
-                <Button Background="Black" Canvas.ZIndex="20" Margin="0,0,10,10" x:Name="VoteUpButton" Tapped="VoteUpButton_Tapped">
-                    <StackPanel Orientation="Horizontal">
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE70E;"/>
-                        <TextBlock x:Name="VoteUpCount"/>
+            <ScrollViewer>
+                <StackPanel Orientation="Vertical">
+                    <controls:ImageEx x:Name="bigpicture" Source="{x:Bind singlePost.file.url}" Width="{x:Bind singlePost.sample.width}" Height="{x:Bind singlePost.sample.height}" 
+                   Canvas.ZIndex="1" Visibility="Collapsed"
+                   RightTapped="bigpicture_RightTapped"/>
+                    <controls:ImageEx x:Name="smallpicture" Source="{x:Bind singlePost.preview.url}" Width="{x:Bind singlePost.preview.width}" Height="{x:Bind singlePost.preview.height}" 
+                   Canvas.ZIndex="1" Visibility="Collapsed"
+                   RightTapped="bigpicture_RightTapped"/>
+                    <MediaElement Visibility="Collapsed" Canvas.ZIndex="40"
+                    AutoPlay="False" x:Name="bigvideo" PosterSource="{x:Bind singlePost.preview.url}"
+                    AreTransportControlsEnabled="True" RightTapped="bigpicture_RightTapped"/>
+                    <StackPanel Orientation="Horizontal" Background="{ThemeResource DescBackground}" CornerRadius="10" Margin="10,10,15,10">
+                        <Rectangle Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
+                        <StackPanel Orientation="Vertical">
+                            <HyperlinkButton x:Name="DescHyperlink" FontSize="28" Margin="10" FontWeight="SemiBold" Foreground="White" Click="DescHyperlink_Click">
+                                <TextBlock Text="Description: "/>
+                            </HyperlinkButton>
+                            <TextBlock x:Name="DescText" Text="{x:Bind singlePost.description}" Margin="10" TextWrapping="WrapWholeWords" FontSize="18"/>
+                        </StackPanel>
                     </StackPanel>
-                </Button>
-                <Button Background="Black" Canvas.ZIndex="20" Margin="0,0,10,10" x:Name="VoteDownButton" Tapped="VoteDownButton_Tapped">
-                    <StackPanel Orientation="Horizontal">
-                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE70D;"/>
-                        <TextBlock x:Name="VoteDownCount"/>
-                    </StackPanel>
-                </Button>
-                <Button Background="Black" Canvas.ZIndex="20" Margin="0,0,10,10" x:Name="FavoiteButton" Tapped="FavoiteButton_Tapped">
-                    <StackPanel Orientation="Horizontal">
-                        <SymbolIcon Symbol="Add" Margin="0,0,10,0"/>
-                        <TextBlock Text="Favorite"/>
-                    </StackPanel>
-                </Button>
+                    <ListView x:Name="CommentsListView" IsItemClickEnabled="True" ItemsSource="{x:Bind CommentsSource}" SelectionChanged="CommentsListView_SelectionChanged">
+                        <ListView.ItemTemplate>
+                            <DataTemplate x:DataType="local:Comment">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <StackPanel Grid.Column="0" Orientation="Vertical">
+                                        <HyperlinkButton Content="{x:Bind creator_name}" FontSize="18" FontWeight="SemiBold" Foreground="White"/>
+                                        <!--<controls:ImageEx BorderBrush="{ThemeResource SystemControlBackgroundListMediumRevealBorderBrush}" Source="{x:Bind Avatar_Url}" Width="150" Height="150" Margin="0,0,0,10"/>-->
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="1">
+                                        <Grid Margin="10,0,0,-25" Background="{ThemeResource DescBackground}" CornerRadius="10" Visibility="{x:Bind quotevis}">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition Width="50*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <Rectangle Grid.Column="0" Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
+                                            <StackPanel Grid.Column="1" Orientation="Vertical">
+                                                <HyperlinkButton Content="{x:Bind quotedName}" Foreground="White" Margin="10,0,0,0" FontSize="16"/>
+                                                <TextBlock Text="{x:Bind quote}" Margin="0,0,10,10" TextWrapping="WrapWholeWords"/>
+                                            </StackPanel>
+                                        </Grid>
+                                        <TextBlock Grid.Column="1" Text="{x:Bind body}" Margin="10,10,10,10" TextWrapping="WrapWholeWords" />
+                                    </StackPanel>
+                                </Grid>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem">
+                                <Setter Property="Background" Value="{ThemeResource CommentBackground}"/>
+                                <Setter Property="Margin" Value="10"/>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+                    </ListView>
+                </StackPanel>
+            </ScrollViewer>
+            <control:ProgressRing x:Name="ImageLoadProgress" Width="80" Height="80" IsActive="True" Foreground="White"/>
+            <StackPanel Orientation="Vertical"  HorizontalAlignment="Right" VerticalAlignment="Top" Canvas.ZIndex="20">
+                <StackPanel Orientation="Horizontal">
+                    <Button Background="Black" Canvas.ZIndex="20" Margin="0,10,10,10" x:Name="VoteUpButton" Tapped="VoteUpButton_Tapped">
+                        <StackPanel Orientation="Horizontal">
+                            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE70E;"/>
+                            <TextBlock x:Name="VoteUpCount"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Background="Black" Canvas.ZIndex="20" Margin="0,10,10,10" x:Name="VoteDownButton" Tapped="VoteDownButton_Tapped">
+                        <StackPanel Orientation="Horizontal">
+                            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE70D;"/>
+                            <TextBlock x:Name="VoteDownCount"/>
+                        </StackPanel>
+                    </Button>
+                    <Button Background="Black" Canvas.ZIndex="20" Margin="0,10,10,10" x:Name="FavoiteButton" Tapped="FavoiteButton_Tapped">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Symbol="Add" Margin="0,0,10,0"/>
+                            <TextBlock Text="Favorite"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+                <control:ProgressBar Grid.Column="1" x:Name="DownloadProgress"  Visibility="Collapsed"
+                             IsIndeterminate="True" Width="192" Height="7" Foreground="White"
+                             HorizontalAlignment="Right" VerticalAlignment="Top" Canvas.ZIndex="30" Margin="10" Background="Black"/>
             </StackPanel>
         </Grid>
-        <control:TeachingTip x:Name="PoolsPopout"
+        
+        <control:TeachingTip x:Name="DownloadErrorPopup" Grid.Column="1"
                              PreferredPlacement="Bottom"
-                             Target="{x:Bind PoolBar}"
                              Title="Pools">
-            <ListView ItemsSource="{x:Bind ConnectedPools}" Margin="10,10,10,10">
-                <ListView.ItemTemplate>
-                    <DataTemplate x:DataType="local:Pool">
-                        <TextBlock Text="{x:Bind name}" FontSize="18" Margin="0,0,0,0" TextWrapping="WrapWholeWords"/>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <TextBlock Text="Error Downloading Image/Video" FontSize="18" TextWrapping="Wrap"/>
         </control:TeachingTip>
     </Grid>
 </Page>

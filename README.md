@@ -13,6 +13,7 @@ e610.NET is an e621 windows client built on UWP.
 	* Left click on a tag to add it to search, Right click to remove it
 	* Upvote and Downvote
 	* See pools the post is in
+	* Save Images
 * Account
 	* Login with Username and API Key
 	
@@ -25,7 +26,6 @@ e610.NET is an e621 windows client built on UWP.
 * Single Posts View
 	* Favorite Posts
 	* Open pools
-	* Save Images
 	* Comments
 * Account
 	* Blacklist Editing

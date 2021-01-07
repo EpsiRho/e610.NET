@@ -8,13 +8,12 @@
     xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
     <Grid>
         <muxc:NavigationView x:Name="MainNav" PaneDisplayMode="Top" IsBackEnabled="True" BackRequested="MainNav_BackRequested">
             <muxc:NavigationView.MenuItems>
                 <muxc:NavigationViewItem  Content="Posts" Tag="PostsView" Tapped="PostsViewTapped"/>
                 <muxc:NavigationViewItem  Content="Pools" Tag="PoolsView" Tapped="PoolsViewTapped"/>
-                <muxc:NavigationViewItem  Content="Account" Tag="AccountView" Tapped="AccountViewTapped" />
+                <muxc:NavigationViewItem  Content="Account" Tag="AccountView" Tapped="AccountViewTapped"/>
             </muxc:NavigationView.MenuItems>
             <Frame x:Name="MainContentFrame">
                 <Frame.ContentTransitions>

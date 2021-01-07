@@ -4,6 +4,9 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.bcl.build\1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.bcl.build\1.0.21\build\Microsoft.Bcl.Build.targets')" />
+    <Import Project="$(NuGetPackageRoot)libvlcx\3.1.0.1\build\uap10.0\libVLCX.targets" Condition="Exists('$(NuGetPackageRoot)libvlcx\3.1.0.1\build\uap10.0\libVLCX.targets')" />
+    <Import Project="$(NuGetPackageRoot)vlc.mediaelement\3.1.0.1\build\uap10.0\VLC.MediaElement.targets" Condition="Exists('$(NuGetPackageRoot)vlc.mediaelement\3.1.0.1\build\uap10.0\VLC.MediaElement.targets')" />
     <Import Project="$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets" Condition="Exists('$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.11\build\runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets')" />
     <Import Project="$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-29512-01\build\runtime.win10-x86.Microsoft.Net.Native.SharedLibrary.targets" Condition="Exists('$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-29512-01\build\runtime.win10-x86.Microsoft.Net.Native.SharedLibrary.targets')" />
     <Import Project="$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.native.compiler\2.2.9-rel-29512-01\build\runtime.win10-x86.Microsoft.Net.Native.Compiler.targets" Condition="Exists('$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.native.compiler\2.2.9-rel-29512-01\build\runtime.win10-x86.Microsoft.Net.Native.Compiler.targets')" />

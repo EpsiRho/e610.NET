@@ -31,7 +31,7 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto" MinWidth="180"/>
             <ColumnDefinition Width="100*"/>
         </Grid.ColumnDefinitions>
         
@@ -72,7 +72,7 @@
         </StackPanel>
         <!--Thumbnail type toggle-->
         <StackPanel Grid.Column="0" VerticalAlignment="Bottom" Margin="10,0,0,10">
-            <ToggleSwitch x:Name="thumbnailSource" IsOn="False" OffContent="Thumbnail" OnContent="Sample" Toggled="thumbnailSource_Toggled"/>
+            <ToggleSwitch x:Name="SafeModeToggle" IsOn="False" OffContent="Safe" OnContent="Explicit" Toggled="SafeMode_Toggled"/>
         </StackPanel>
 
         <!--Posts View-->
@@ -82,8 +82,8 @@
                   ItemClick="ImageGrid_ItemClick" IsItemClickEnabled="True">
                 <GridView.ItemTemplate>
                     <DataTemplate x:DataType="local:Post">
-                        <Grid Margin="10,0,0,10" Width="150">
-                            <Image Source="{Binding ThumbURL}" Width="{x:Bind preview.width}" Height="{x:Bind preview.height}" x:Phase="2"/>
+                        <Grid Margin="10,0,0,10" Width="150" Height="150">
+                            <uwpcontrols:ImageEx Source="{Binding preview.url}" Width="{x:Bind preview.width}" Height="{x:Bind preview.height}" x:Phase="2"/>
                             <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="{ThemeResource TextBackgound}">
                                 <TextBlock Text="{x:Bind file.ext}" Margin="0,-4,0,0" x:Phase="1"/>
                             </StackPanel>

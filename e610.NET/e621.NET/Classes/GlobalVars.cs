@@ -8,19 +8,16 @@ namespace e610.NET
 {
     public class GlobalVars
     {
-        // Next View Post
-        // Set - Post Clicked on in PostsView
-        // Get - Post to Load in the SinglePostView
-        public static Post nvPost;
-
         // Holds the Posts loaded from a search. Used to set PostView back without sending another api request
         public static PostsViewModel ViewModel { get; set; }
+        public static PostsViewModel PoolViewModel { get; set; }
 
         // Holds the text in the searchbox to pass between pages
         public static string searchText;
 
         // True if the PostsView needs to load new posts on load
         public static bool newSearch;
+        public static bool newPool;
 
         // The number of posts to load
         public static int postCount;
@@ -32,6 +29,6 @@ namespace e610.NET
         public static string Username;
         public static string APIKey;
 
-        public static int currentFrame;
+        public static bool safeMode;
     }
 }

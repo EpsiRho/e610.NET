@@ -51,7 +51,8 @@ namespace e610.NET
             GlobalVars.ViewModel = new PostsViewModel();
             GlobalVars.newSearch = false;
             GlobalVars.searchText = "";
-            GlobalVars.currentFrame = 0;
+            GlobalVars.pageCount = 1;
+            GlobalVars.safeMode = false;
         }
 
         // When Page needs to navigate back // 

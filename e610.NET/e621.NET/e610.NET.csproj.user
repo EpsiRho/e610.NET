@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DeviceId>30f105c9-681e-420b-a277-7c086ead8a4e</DeviceId>
+    <UseEmulator>true</UseEmulator>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Source>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\logo.png</Source>
+    <SmallTileSource>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\logo.png</SmallTileSource>
+    <MediumTileSource>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\logo.png</MediumTileSource>
+    <WideTileSource>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\logo.png</WideTileSource>
+    <LargeTileSource>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\logo.png</LargeTileSource>
+    <AppIconSource>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\logo.png</AppIconSource>
+    <SplashScreenSource>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\logo.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\logo.png</PackageLogoSource>
+    <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
+    <AppxShowAllApps>False</AppxShowAllApps>
+    <AppxBuildConfigurationSelection>x86|x64|arm</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>True</PackageOptionalProjectsInIdeBuilds>
+  </PropertyGroup>
+</Project>

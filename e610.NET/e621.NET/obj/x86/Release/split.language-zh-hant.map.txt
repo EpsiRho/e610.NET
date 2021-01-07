@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-zh-hant"
+"ResourceDimensions"		"language-zh-tw"
+
+[Files]
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Release\split.language-zh-hant.pri"			"resources.pri"

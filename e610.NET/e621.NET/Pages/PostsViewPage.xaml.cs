@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using e610.NET;
+using Newtonsoft.Json;
 using RestSharp;
 using System;
 using System.Collections.Generic;
@@ -29,36 +30,23 @@ namespace e610.NET
         // Pages Vars //
         public PostsViewModel ViewModel { get; set; }
         public int pageCount;
-        private class LoadPostsArgs
-        {
-            public string tags;
-            public int lastid;
-            public char BorA;
-
-            public LoadPostsArgs(string t, int l, char ba)
-            {
-                tags = t;
-                lastid = l;
-                BorA = ba;
-            }
-        }
 
         public PostsViewPage()
         {
             this.InitializeComponent();
             GC.Collect();
-            PageLoad();
         }
         private void PageLoad()
         {
             SearchBox.Text = GlobalVars.searchText;
             PostCountSlider.Value = GlobalVars.postCount;
+            SafeModeToggle.IsOn = GlobalVars.safeMode;
             pageCount = GlobalVars.pageCount;
             if (GlobalVars.newSearch == true)
             {
                 ViewModel = new PostsViewModel();
                 Thread LoadThread = new Thread(LoadPosts);
-                LoadThread.Start(new LoadPostsArgs(SearchBox.Text, -1, ' '));
+                LoadThread.Start(new LoadPostsArgs(SearchBox.Text, -1));
                 GlobalVars.newSearch = false;
             }
             else if(GlobalVars.ViewModel.Posts.Count() > 0)
@@ -80,6 +68,10 @@ namespace e610.NET
             this.UnloadObject(this);
             GC.Collect();
         }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            PageLoad();
+        }
 
         // Repopulate Posts with saved ViewModel in GlobalVars //
         public async void threadedRepopulate()
@@ -95,11 +87,18 @@ namespace e610.NET
 
             foreach (Post p in GlobalVars.ViewModel.Posts)
             {
-                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                try
                 {
-                    ViewModel.AddPost(p);
-                    LoadingBar.Value++;
-                });
+                    await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                    {
+                        ViewModel.AddPost(p);
+                        LoadingBar.Value++;
+                    });
+                }
+                catch (Exception)
+                {
+                    Thread.Sleep(1000);
+                }
             }
             await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
             {
@@ -133,7 +132,7 @@ namespace e610.NET
                 client.BaseUrl = new Uri("https://e621.net/posts.json?");
 
                 // Set the useragent for e621
-                client.UserAgent = "e610.NET/1.0(by EpsilonRho)";
+                client.UserAgent = "e610.NET/1.1(by EpsilonRho)";
 
                 // If user is logged in set login parameters into request
                 if(GlobalVars.Username != "" && GlobalVars.APIKey != "")
@@ -142,14 +141,22 @@ namespace e610.NET
                     request.AddQueryParameter("api_key", GlobalVars.APIKey);
                 }
 
+                if (!GlobalVars.safeMode)
+                {
+                    request.AddQueryParameter("tags", "rating:safe -rating:explicit " + args.tags);
+                }
+                else
+                {
+                    request.AddQueryParameter("tags", args.tags);
+                }
+
                 // Set parameters for tags and post limit
-                request.AddQueryParameter("tags", args.tags);
                 request.AddQueryParameter("limit", limit.ToString());
 
-                // If the lastid is not -1, use the last post id to move forward or back a page
-                if (args.lastid != -1)
+
+                if (args.page != -1)
                 {
-                    request.AddQueryParameter("page", args.BorA + args.lastid.ToString());
+                    request.AddQueryParameter("page", args.page.ToString());
                 }
 
                 // Send the request
@@ -174,16 +181,6 @@ namespace e610.NET
                     {
                         await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                         {
-                            // Choose which thumbnail based on UI toggle
-                            // main difference is Sample gifs are animated and pictures are slightly higher quality(i think)
-                            if (thumbnailSource.IsOn)
-                            {
-                                p.ThumbURL = p.sample.url;
-                            }
-                            else
-                            {
-                                p.ThumbURL = p.preview.url;
-                            }
                             ViewModel.AddPost(p);
                             LoadingBar.Value++;
                         });
@@ -220,8 +217,9 @@ namespace e610.NET
         {
             ViewModel.ClearPosts();
             Thread LoadThread = new Thread(LoadPosts);
-            LoadThread.Start(new LoadPostsArgs(SearchBox.Text, -1, 'b'));
-            pageCount = 0;
+            LoadThread.Start(new LoadPostsArgs(SearchBox.Text, -1));
+            pageCount = 1;
+            Bindings.Update();
             GlobalVars.postCount = (int)PostCountSlider.Value;
         }
         private void SearchBox_KeyDown(object sender, KeyRoutedEventArgs e)
@@ -230,15 +228,22 @@ namespace e610.NET
             {
                 ViewModel.ClearPosts();
                 Thread LoadThread = new Thread(LoadPosts);
-                LoadThread.Start(new LoadPostsArgs(SearchBox.Text, -1, 'b'));
-                pageCount = 0;
+                LoadThread.Start(new LoadPostsArgs(SearchBox.Text, -1));
+                pageCount = 1;
+                Bindings.Update();
                 GlobalVars.postCount = (int)PostCountSlider.Value;
             }
         }
-        private void thumbnailSource_Toggled(object sender, RoutedEventArgs e)
+        private void SafeMode_Toggled(object sender, RoutedEventArgs e)
         {
-            ViewModel.changeThumbnail(thumbnailSource.IsOn);
-            Bindings.Update();
+            if (SafeModeToggle.IsOn)
+            {
+                GlobalVars.safeMode = true;
+            }
+            else
+            {
+                GlobalVars.safeMode = false;
+            }
         }
         private void ImageGrid_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -247,14 +252,11 @@ namespace e610.NET
                 Post pick = (Post)e.ClickedItem;
                 if (pick.file.url != "https://ambisure.com/wp-content/uploads/2019/03/SHOCK1-1030x724.png")
                 {
-                    GlobalVars.ViewModel = ViewModel;
+                   GlobalVars.ViewModel = ViewModel;
                     GlobalVars.pageCount = pageCount;
                     GlobalVars.searchText = SearchBox.Text;
                     GlobalVars.postCount = (int)PostCountSlider.Value;
-                    GlobalVars.nvPost = null;
-                    GlobalVars.nvPost = pick;
-                    //GlobalVars.requestNavigate = true;
-                    this.Frame.Navigate(typeof(SinglePostView), null, new DrillInNavigationTransitionInfo());
+                    this.Frame.Navigate(typeof(SinglePostView), pick, new DrillInNavigationTransitionInfo());
                 }
             }
             catch (Exception)
@@ -267,22 +269,22 @@ namespace e610.NET
             if (ViewModel.Posts.Count > 0)
             {
                 Thread LoadThread = new Thread(LoadPosts);
-                Post p = ViewModel.Posts.Last();
+                //Post p = ViewModel.Posts.Last();
                 ViewModel.ClearPosts();
-                LoadThread.Start(new LoadPostsArgs(SearchBox.Text, p.id, 'b'));
                 pageCount++;
+                LoadThread.Start(new LoadPostsArgs(SearchBox.Text, pageCount));
                 Bindings.Update();
             }
         }
         private void BackPage_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            if (pageCount != 0)
+            if (pageCount != 1)
             {
                 Thread LoadThread = new Thread(LoadPosts);
-                Post p = ViewModel.Posts.First();
+                //Post p = ViewModel.Posts.First();
                 ViewModel.ClearPosts();
-                LoadThread.Start(new LoadPostsArgs(SearchBox.Text, p.id, 'a'));
                 pageCount--;
+                LoadThread.Start(new LoadPostsArgs(SearchBox.Text, pageCount));
                 Bindings.Update();
             }
         }
