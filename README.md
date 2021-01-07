@@ -2,41 +2,32 @@
 e610.NET is an e621 windows client built on UWP.
 
 ## Features
-* Posts View
-	* See thumbnails of posts
-	* Choose how many posts to load
-	* Search by tags
-	* Move forward and back pages
-* Single Post View
-	* Displays images, gifs, and webms
-	* Shows Tags in a Tree View
-	* Left click on a tag to add it to search, Right click to remove it
-	* Upvote and Downvote
-	* See pools the post is in
-* Account
-	* Login with Username and API Key
+* Search posts by tags
+* Starts with safe mode on, but toggle for explicit is in the bottom left
+* View Post tags, description, and comments
+* Displays images, gifs, and webms
+* Left click on a tag to add it to search, Right click to remove it
+* Upvote and Downvote(haven't found a good way of showing posts you've voted on)
+* See pools the post is in
+* View pool name, post count, and description
+* Download any post file
+* Mass download files in a pool
+* Login with Username and API Key
 	
-## Upcoming Features
-* Posts View
-	* Multiselect mode for mass saving
-	* Enable safe mode
-	* *Maybe:* Change size of images
-	* *Maybe:* Infinite scrolling
-* Single Posts View
-	* Favorite Posts
-	* Open pools
-	* Save Images
-	* Comments
-* Account
-	* Blacklist Editing
+## Upcoming Features (May or may not happen, but all features I'm current planning on trying to implement)
+* Favorite Posts
+* Account Settings
+* App settings
+* Blacklist Editing
 * Pool Search
-	* Search pools by name, Description, artist, etc
-	* See latest updated pools
-* Pool View
-	* Shows all posts in a pool
-	* Some way to move through posts
-	* Pool download
-* Misc
-	* Keyboard Shortcuts and movement
-	* *Maybe:* Change site endpoints between e621, gelbooru, etc
+* Pool navigation
+* Share posts / Open post in app
+* Tag Search
+* Tag tab completion in searchbar
+* Comment
+* Keyboard Shortcuts
+* Description / Comment Hyperlinking
+* artists search page
+* artists profile
+* Creation / deletion /moderation tools
 	
