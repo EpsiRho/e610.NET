@@ -1,0 +1,6 @@
+﻿[ResourceMetadata]
+"ResourceId"			"split.language-de"
+"ResourceDimensions"		"language-de-de"
+
+[Files]
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\ARM\Release\split.language-de.pri"			"resources.pri"

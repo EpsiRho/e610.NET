@@ -1,0 +1,12 @@
+﻿/ref:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\ARM\Release\ilc\intermediate\PreMergeILTransformed"
+/ref:"C:\Users\jhset\.nuget\packages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.2.8-rel-29512-01\tools\SharedLibrary\ret\AnalysisILToc"
+/ref:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\ARM\Release\ilc\intermediate\PreMergeILTransformed"
+/ref:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\ARM\Release\ilc\in\\"
+/ref:"C:\Users\jhset\.nuget\packages\runtime.win10-arm.microsoft.net.native.compiler\2.2.9-rel-29512-01\tools\ARM\ilc\lib\Private\\"
+/ref:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\ARM\Release\ilc\in"
+/ref:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\ARM\Release\ilc\in\WinMetadata"
+/ca:System.Private.CoreLib
+/cscpath:"C:\Users\jhset\.nuget\packages\microsoft.net.native.compiler\2.2.9-rel-29512-01\tools\csc"
+/out:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\ARM\Release\ilc\intermediate\SgGenerated\\"
+/int:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\ARM\Release\ilc\intermediate\e621.NET.Sg"
+"@C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\ARM\Release\ilc\intermediate\e621.NET.Sg\ComputedSerializationInput.txt"

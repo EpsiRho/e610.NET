@@ -1,0 +1,2 @@
+MainPackage=C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\e610.NET_1.1.0.0_x64.msix
+SymbolPackage=C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x64\Release\Symbols\e610.NET_1.1.0.0_x64.appxsym
