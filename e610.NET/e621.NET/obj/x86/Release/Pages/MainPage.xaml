@@ -9,13 +9,13 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
-        <muxc:NavigationView x:ConnectionId='2' x:Name="MainNav" PaneDisplayMode="Top" IsBackEnabled="True"                                      >
+        <muxc:NavigationView x:ConnectionId='2' x:Name="MainNav" PaneDisplayMode="Top" IsBackEnabled="True"                                                                        >
             <muxc:NavigationView.MenuItems>
-                <muxc:NavigationViewItem x:ConnectionId='3'  Content="Posts" Tag="PostsView"                         />
-                <muxc:NavigationViewItem x:ConnectionId='4'  Content="Pools" Tag="PoolsView"                         />
-                <muxc:NavigationViewItem x:ConnectionId='5'  Content="Account" Tag="AccountView"                           />
+                <muxc:NavigationViewItem x:ConnectionId='5'  Content="Posts" Tag="PostsView"                         />
+                <muxc:NavigationViewItem x:ConnectionId='6'  Content="Pools" Tag="PoolsView"                         />
+                <muxc:NavigationViewItem x:ConnectionId='7'  Content="Account" Tag="AccountView"                           />
             </muxc:NavigationView.MenuItems>
-            <Frame x:ConnectionId='6' x:Name="MainContentFrame">
+            <Frame x:ConnectionId='8' x:Name="MainContentFrame">
                 <Frame.ContentTransitions>
                     <TransitionCollection>
                         <NavigationThemeTransition/>
@@ -23,6 +23,23 @@
                 </Frame.ContentTransitions>
             </Frame>
         </muxc:NavigationView>
+        <ContentDialog x:ConnectionId='3'
+            x:Name="SettingsDialog"
+            Title="Settings"
+            PrimaryButtonText="Save"
+                                                                  
+            CloseButtonText="Cancel"
+            DefaultButton="Primary">
+            <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+                <ComboBox x:ConnectionId='4' x:Name="RatingSelection" Width="200" VerticalAlignment="Top" 
+                          HorizontalAlignment="Left" Header="Highest Rating allowed" Margin="10,10,0,0" 
+                                                                             >
+                    <x:String>rating:safe</x:String>
+                    <x:String>rating:questionable</x:String>
+                    <x:String>rating:explicit</x:String>
+                </ComboBox>
+            </StackPanel>
+        </ContentDialog>
     </Grid>
 </Page>
 

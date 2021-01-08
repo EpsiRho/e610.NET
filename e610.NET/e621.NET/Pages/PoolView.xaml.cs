@@ -82,7 +82,7 @@ namespace e610.NET.Pages
             client.BaseUrl = new Uri("https://e621.net/posts.json?");
 
             // Set the useragent for e621
-            client.UserAgent = "e610.NET/1.1(by EpsilonRho)";
+            client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
 
             // If user is logged in set login parameters into request
             if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
@@ -92,14 +92,7 @@ namespace e610.NET.Pages
             }
 
             // Set parameters for tags and post limit
-            if (!GlobalVars.safeMode)
-            {
-                request.AddQueryParameter("tags", "rating:safe -rating:explicit order:id pool:" + CurrentPool.id);
-            }
-            else
-            {
-                request.AddQueryParameter("tags", "order:id pool:" + CurrentPool.id);
-            }
+            request.AddQueryParameter("tags", GlobalVars.Rating + " order:id pool:" + CurrentPool.id);
             request.AddQueryParameter("tags", "order:id pool:" + CurrentPool.id);
             request.AddQueryParameter("limit", limit.ToString());
 
@@ -123,7 +116,6 @@ namespace e610.NET.Pages
             await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
             {
                 LoadingBar.IsIndeterminate = true;
-                LoadingBar.Visibility = Visibility.Visible;
                 limit = PostCountSlider.Value;
             });
 
@@ -132,7 +124,7 @@ namespace e610.NET.Pages
             client.BaseUrl = new Uri("https://e621.net/posts.json?");
 
             // Set the useragent for e621
-            client.UserAgent = "e610.NET/1.1(by EpsilonRho)";
+            client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
 
             // If user is logged in set login parameters into request
             if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
@@ -142,14 +134,7 @@ namespace e610.NET.Pages
             }
 
             // Set parameters for tags and post limit
-            if (!GlobalVars.safeMode)
-            {
-                request.AddQueryParameter("tags", "rating:safe -rating:explicit order:id pool: " + args.tags);
-            }
-            else
-            {
-                request.AddQueryParameter("tags", "order:id pool:" + args.tags);
-            }
+            request.AddQueryParameter("tags", GlobalVars.Rating + " order:id pool:" + args.tags);
             
             request.AddQueryParameter("limit", limit.ToString());
 
@@ -164,11 +149,8 @@ namespace e610.NET.Pages
 
             // Deserialize the response
             Root DeserializedJson = JsonConvert.DeserializeObject<Root>(response.Content);
-
-            // Set the progress bar to determinate to show % of posts loaded into the PostsView
             await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
             {
-                LoadingBar.IsIndeterminate = false;
                 LoadingBar.Maximum = DeserializedJson.posts.Count;
                 LoadingBar.Value = 0;
             });
@@ -292,6 +274,7 @@ namespace e610.NET.Pages
                     GlobalVars.pageCount = pageCount;
                     GlobalVars.searchText = SearchBox.Text;
                     GlobalVars.postCount = (int)PostCountSlider.Value;
+                    GlobalVars.PoolName = CurrentPool;
                     this.Frame.Navigate(typeof(SinglePostView), pick, new DrillInNavigationTransitionInfo());
                 }
             }
@@ -323,7 +306,9 @@ namespace e610.NET.Pages
             int downloadpage = 1;
             await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
             {
-                DownloadProgress.IsIndeterminate = true;
+                DownloadProgress.IsIndeterminate = false;
+                DownloadProgress.Value = 0;
+                DownloadProgress.Maximum = 10;
                 DownloadProgress.Visibility = Visibility.Visible;
                 NormalText.Visibility = Visibility.Collapsed;
             });
@@ -346,7 +331,11 @@ namespace e610.NET.Pages
             {
                 await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                 {
-                    DownloadErrorPopup.IsOpen = true;
+                    DownloadProgress.Visibility = Visibility.Collapsed;
+                    InfoPopup.Title = "Saving Error";
+                    InfoPopup.Message = "File Already Exists";
+                    InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Warning;
+                    InfoPopup.IsOpen = true;
                 });
                 return;
             }
@@ -379,11 +368,15 @@ namespace e610.NET.Pages
                           FilesText.Text = postCount.ToString() + "/" + CurrentPool.post_count.ToString();
                       });
                 }
-                catch
+                catch(Exception e)
                 {
                     await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                     {
-                        DownloadErrorPopup.IsOpen = true;
+                        DownloadProgress.Visibility = Visibility.Collapsed;
+                        InfoPopup.Title = "Saving Error";
+                        InfoPopup.Message = e.Message;
+                        InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Error;
+                        InfoPopup.IsOpen = true;
                     });
                 }
                 if(viewPosts == DownloadPostHolder.posts.Count)
@@ -398,6 +391,10 @@ namespace e610.NET.Pages
                 DownloadProgress.Visibility = Visibility.Collapsed;
                 NormalText.Visibility = Visibility.Visible;
                 FilesText.Text = "";
+                InfoPopup.Title = "Post Saved";
+                InfoPopup.Message = "File Saved to downlaods";
+                InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Success;
+                InfoPopup.IsOpen = true;
             });
         }
 

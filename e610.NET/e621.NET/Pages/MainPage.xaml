@@ -9,7 +9,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Grid>
-        <muxc:NavigationView x:Name="MainNav" PaneDisplayMode="Top" IsBackEnabled="True" BackRequested="MainNav_BackRequested">
+        <muxc:NavigationView x:Name="MainNav" PaneDisplayMode="Top" IsBackEnabled="True" BackRequested="MainNav_BackRequested" ItemInvoked="MainNav_ItemInvoked">
             <muxc:NavigationView.MenuItems>
                 <muxc:NavigationViewItem  Content="Posts" Tag="PostsView" Tapped="PostsViewTapped"/>
                 <muxc:NavigationViewItem  Content="Pools" Tag="PoolsView" Tapped="PoolsViewTapped"/>
@@ -23,5 +23,22 @@
                 </Frame.ContentTransitions>
             </Frame>
         </muxc:NavigationView>
+        <ContentDialog
+            x:Name="SettingsDialog"
+            Title="Settings"
+            PrimaryButtonText="Save"
+            PrimaryButtonClick="SettingsDialog_PrimaryButtonClick"
+            CloseButtonText="Cancel"
+            DefaultButton="Primary">
+            <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+                <ComboBox x:Name="RatingSelection" Width="200" VerticalAlignment="Top" 
+                          HorizontalAlignment="Left" Header="Highest Rating allowed" Margin="10,10,0,0" 
+                          SelectionChanged="RatingSelection_SelectionChanged">
+                    <x:String>rating:safe</x:String>
+                    <x:String>rating:questionable</x:String>
+                    <x:String>rating:explicit</x:String>
+                </ComboBox>
+            </StackPanel>
+        </ContentDialog>
     </Grid>
 </Page>

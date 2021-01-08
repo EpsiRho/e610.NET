@@ -30,5 +30,11 @@ namespace e610.NET
         public static string APIKey;
 
         public static bool safeMode;
+
+        public static Pool PoolName;
+
+        public static LoggedInUser LoggedInInfo;
+
+        public static string Rating;
     }
 }

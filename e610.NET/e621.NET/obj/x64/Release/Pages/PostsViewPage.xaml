@@ -71,7 +71,7 @@
             </StackPanel>
         </StackPanel>
         <!--Thumbnail type toggle-->
-        <StackPanel Grid.Column="0" VerticalAlignment="Bottom" Margin="10,0,0,10">
+        <StackPanel Grid.Column="0" VerticalAlignment="Bottom" Margin="10,0,0,10" Visibility="Collapsed">
             <ToggleSwitch x:ConnectionId='7' x:Name="SafeModeToggle" IsOn="False" OffContent="Safe" OnContent="Explicit"                           />
         </StackPanel>
 
@@ -90,8 +90,6 @@
                         </Grid>
                     </DataTemplate>
                 </GridView.ItemTemplate>
-                
-               
             </GridView>
         </Grid>
     </Grid>

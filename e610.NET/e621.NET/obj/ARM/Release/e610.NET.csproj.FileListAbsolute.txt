@@ -1869,3 +1869,4 @@ C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\ARM\Release\ilc\i
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\ARM\Release\ilc\intermediate\SgGenerated\System.Xml.XmlSerializer.Generated.dll
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\ARM\Release\ilc\intermediate\SgGenerated\System.Xml.XmlSerializer.Generated.pdb
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\ARM\Release\ilc\intermediate\System.Private.e621.NET.Generated.dll
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\ARM\Release\e610.NET.csprojAssemblyReference.cache

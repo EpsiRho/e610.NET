@@ -36,8 +36,10 @@ namespace e610.NET
     {
         // Pages Variables //
         private Post singlePost; // Holds the post shown on this page
+        private Pool poolToSelect;
         private ObservableCollection<Comment> CommentsSource = new ObservableCollection<Comment>(); // Tags tree binding source
         private ObservableCollection<Pool> ConnectedPools = new ObservableCollection<Pool>(); // Pools list binding source
+        private ObservableCollection<Pool> MovementSource = new ObservableCollection<Pool>(); // Movement list binding source
 
         // Page Load Functions //
         public SinglePostView()
@@ -54,13 +56,22 @@ namespace e610.NET
             // Update the vote up / down with the post score
             VoteUpCount.Text = singlePost.score.up.ToString();
             VoteDownCount.Text = singlePost.score.down.ToString();
+            Pool tagname = new Pool();
+            tagname.name = "Tags: " + SearchBox.Text;
+            MovementSource.Add(tagname);
+            if(GlobalVars.PoolName == null)
+            {
+                MovementSelection.SelectedIndex = 0;
+            }
+            else
+            {
+                poolToSelect = GlobalVars.PoolName;
+                GlobalVars.PoolName = null;
+            }
 
             // If there are any pools with this post in
             if (singlePost.pools.Count > 0)
             {
-                // Make the button visible
-                PoolBar.Visibility = Visibility.Visible;
-
                 // Added the pools to the listview
                 Thread poolThread = new Thread(new ThreadStart(poolPopulate));
                 poolThread.Start();
@@ -78,16 +89,17 @@ namespace e610.NET
             {
                 bigvideo.Source = new Uri(singlePost.file.url);
                 bigvideo.Visibility = Visibility.Visible;
+                ImageLoadProgress.Visibility = Visibility.Collapsed;
             }
             else if(singlePost.file.ext == "swf")
             {
                 smallpicture.Visibility = Visibility.Visible;
+                ImageLoadProgress.Visibility = Visibility.Collapsed;
             }
             else
             {
                 bigpicture.Visibility = Visibility.Visible;
             }
-            ImageLoadProgress.Visibility = Visibility.Collapsed;
             Thread TagsThread = new Thread(new ThreadStart(PopulateTreeView));
             TagsThread.Start();
             TagsThread = null;
@@ -125,6 +137,14 @@ namespace e610.NET
                             this.Frame.Navigate(typeof(PoolView), newpool, new DrillInNavigationTransitionInfo());
                         };
                         PoolsMenu.Items.Add(newMenuItem);
+                        MovementSource.Add(newpool);
+                        if(MovementSelection.SelectedIndex != 0)
+                        {
+                            if(poolToSelect.name == newpool.name)
+                            {
+                                MovementSelection.SelectedIndex =MovementSelection.Items.Count() - 1;
+                            }
+                        }
                     });
                 }
             }
@@ -157,7 +177,14 @@ namespace e610.NET
                         c.quotedName = c.quotedName.Replace(":", "");
                         c.quotedName += "said:";
                         temp = temp[temp.Count() - 1].Split(" ");
-                        c.quotedID = Int32.Parse(temp[0]);
+                        try
+                        {
+                            c.quotedID = Int32.Parse(temp[0]);
+                        }
+                        catch (Exception)
+                        {
+
+                        }
                     }
                     else
                     {
@@ -183,7 +210,7 @@ namespace e610.NET
             {
                 var client = new RestClient();
                 client.BaseUrl = new Uri("https://e621.net/pools.json?");
-                client.UserAgent = "e610.NET/1.1(by EpsilonRho)";
+                client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
                 var request = new RestRequest(RestSharp.Method.GET);
                 if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
                 {
@@ -356,6 +383,22 @@ namespace e610.NET
                 }
             }
         }
+        private async void ClearTagsAndComments()
+        {
+            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+            {
+                ArtistsTags.Items.Clear();
+                CopyrightsTags.Items.Clear();
+                CharactersTags.Items.Clear();
+                SpeciesTags.Items.Clear();
+                GeneralTags.Items.Clear();
+                MetaTags.Items.Clear();
+                LoreTags.Items.Clear();
+                InvalidTags.Items.Clear();
+                CommentsSource.Clear();
+                PoolsMenu.Items.Clear();
+            });
+        }
 
         // Button Functions //
         private void SearchButton_Tapped(object sender, TappedRoutedEventArgs e)
@@ -381,7 +424,7 @@ namespace e610.NET
         {
             var client = new RestClient();
             client.BaseUrl = new Uri("https://e621.net/posts/"+ singlePost.id + "/votes.json");
-            client.UserAgent = "e610.NET/0.1(by EpsilonRho)";
+            client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
             var request = new RestRequest(RestSharp.Method.POST);
             if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
             {
@@ -395,21 +438,27 @@ namespace e610.NET
             {
                 singlePost.score.up++;
                 VoteUpCount.Text = singlePost.score.up.ToString();
-                VoteUpButton.Background = new SolidColorBrush(Color.FromArgb(255, 0, 255, 0));
+                InfoPopup.Title = "Upvoted";
+                InfoPopup.Message = "Post Updated";
+                InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational;
+                InfoPopup.IsOpen = true;
             }
             else
             {
-                singlePost.score.up++;
+                singlePost.score.up--;
                 VoteUpCount.Text = singlePost.score.up.ToString();
-                VoteUpButton.Background = new SolidColorBrush(Color.FromArgb(255, 255, 255, 255));
+                InfoPopup.Title = "Un-Upvoted";
+                InfoPopup.Message = "Post Updated";
+                InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational;
+                InfoPopup.IsOpen = true;
             }
         }
         private void VoteDownButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
             var client = new RestClient();
-            client.BaseUrl = new Uri("https://e621.net/posts/" + singlePost.id + "/votes.json?");
-            client.UserAgent = "e610.NET/0.1(by EpsilonRho)";
-            var request = new RestRequest(RestSharp.Method.GET);
+            client.BaseUrl = new Uri("https://e621.net/posts/" + singlePost.id + "/votes.json");
+            client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
+            var request = new RestRequest(RestSharp.Method.POST);
             if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
             {
                 request.AddQueryParameter("login", GlobalVars.Username);
@@ -418,24 +467,58 @@ namespace e610.NET
             request.AddQueryParameter("score", "-1");
             var response = client.Execute(request);
             VoteResponse DeserializedJson = JsonConvert.DeserializeObject<VoteResponse>(response.Content);
-            if (DeserializedJson.our_score == 1)
+            if (DeserializedJson.our_score == -1)
             {
-                singlePost.score.down++;
+                singlePost.score.down--;
                 VoteDownCount.Text = singlePost.score.down.ToString();
-                VoteDownButton.Background = new SolidColorBrush(Color.FromArgb(255, 255, 0, 0));
+                InfoPopup.Title = "Downvoted";
+                InfoPopup.Message = "Post Updated";
+                InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational;
+                InfoPopup.IsOpen = true;
             }
             else
             {
                 singlePost.score.down++;
                 VoteDownCount.Text = singlePost.score.down.ToString();
-                VoteDownButton.Background = new SolidColorBrush(Color.FromArgb(255, 255, 255, 255));
+                InfoPopup.Title = "Un-Downvoted";
+                InfoPopup.Message = "Post Updated";
+                InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational;
+                InfoPopup.IsOpen = true;
             }
         }
         private void FavoiteButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            var client = new RestClient();
+            client.BaseUrl = new Uri("https://e621.net/favorites.json");
+            client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
+            var request = new RestRequest(RestSharp.Method.POST);
+            if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
+            {
+                request.AddQueryParameter("login", GlobalVars.Username);
+                request.AddQueryParameter("api_key", GlobalVars.APIKey);
+            }
+            request.AddQueryParameter("post_ids", singlePost.id.ToString());
+            var response = client.Execute(request);
+            VoteResponse DeserializedJson = JsonConvert.DeserializeObject<VoteResponse>(response.Content);
+            if (DeserializedJson.our_score == -1)
+            {
+                singlePost.score.down--;
+                VoteDownCount.Text = singlePost.score.down.ToString();
+                InfoPopup.Title = "Favorited";
+                InfoPopup.Message = "Post Updated";
+                InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational;
+                InfoPopup.IsOpen = true;
+            }
+            else
+            {
+                singlePost.score.down++;
+                VoteDownCount.Text = singlePost.score.down.ToString();
+                InfoPopup.Title = "Un-Favorited";
+                InfoPopup.Message = "Post Updated";
+                InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational;
+                InfoPopup.IsOpen = true;
+            }
         }
-
 
         private void bigpicture_RightTapped(object sender, RightTappedRoutedEventArgs e)
         {
@@ -471,8 +554,13 @@ namespace e610.NET
                 {
                     await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                     {
-                        DownloadErrorPopup.IsOpen = true;
+                        DownloadProgress.Visibility = Visibility.Collapsed;
+                        InfoPopup.Title = "Saving Error";
+                        InfoPopup.Message = "File Already Exists";
+                        InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Warning;
+                        InfoPopup.IsOpen = true;
                     });
+                    return;
                 }
                 using (Stream stream = await file.OpenStreamForWriteAsync())
                 {
@@ -481,13 +569,21 @@ namespace e610.NET
                 await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                 {
                     DownloadProgress.Visibility = Visibility.Collapsed;
+                    InfoPopup.Title = "Post Saved";
+                    InfoPopup.Message = "File Saved to downlaods";
+                    InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Success;
+                    InfoPopup.IsOpen = true;
                 });
             }
-            catch
+            catch(Exception e)
             {
                 await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                 {
-                    DownloadErrorPopup.IsOpen = true;
+                    DownloadProgress.Visibility = Visibility.Collapsed;
+                    InfoPopup.Title = "Saving Error";
+                    InfoPopup.Message = e.Message;
+                    InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Error;
+                    InfoPopup.IsOpen = true;
                 });
             }
         }
@@ -670,6 +766,210 @@ namespace e610.NET
             {
                 listView.SelectedIndex = -1;
             }
+        }
+
+        private void ImageSize_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
+
+        private void BackPage_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            try
+            {
+                Thread LoadThread = new Thread(LoadPost);
+                Pool selected = (Pool)MovementSelection.SelectedItem;
+                if (SearchBox.Text.Contains("order:id"))
+                {
+                    LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'b'));
+                }
+                else if (!selected.name.Contains("Tags:"))
+                {
+                    LoadThread.Start(new LoadPostsArgs("pool:" + selected.id, singlePost.id, 'b'));
+                }
+                else
+                {
+                    LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'a'));
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void ForwardPage_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            try
+            {
+                Thread LoadThread = new Thread(LoadPost);
+                Pool selected = (Pool)MovementSelection.SelectedItem;
+                if (SearchBox.Text.Contains("order:id"))
+                {
+                    LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'a'));
+                }
+                else if (!selected.name.Contains("Tags:"))
+                {
+                    LoadThread.Start(new LoadPostsArgs("pool:" + selected.id, singlePost.id, 'a'));
+                }
+                else
+                {
+                    LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'b'));
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private async void LoadPost(object t)
+        {
+            // Function Vars
+            var client = new RestClient(); // Client to handle Requests
+            LoadPostsArgs args = (LoadPostsArgs)t; // Convert Object to LoadPostArgs class
+            var request = new RestRequest(RestSharp.Method.GET); // REST request
+
+            // Show Progress Bar + Get post limit from slider
+            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+            {
+                LoadingBar.IsIndeterminate = true;
+                LoadingBar.Visibility = Visibility.Visible;
+                ImageLoadProgress.Visibility = Visibility.Visible;
+            });
+
+            // Set Endpoint
+            // TODO: Switching between e621 - gelbooru - r34 - etc
+            client.BaseUrl = new Uri("https://e621.net/posts.json?");
+
+            // Set the useragent for e621
+            client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
+
+            // If user is logged in set login parameters into request
+            if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
+            {
+                request.AddQueryParameter("login", GlobalVars.Username);
+                request.AddQueryParameter("api_key", GlobalVars.APIKey);
+            }
+
+            request.AddQueryParameter("tags", GlobalVars.Rating + " " + args.tags);
+
+            request.AddQueryParameter("limit", "1");
+
+            // If the lastid is not -1, use the last post id to move forward or back a page
+            if (args.page != -1)
+            {
+                request.AddQueryParameter("page", args.paginationChar + args.page.ToString());
+            }
+
+            // Send the request
+            var response = client.Execute(request);
+
+            // Deserialize the response
+            Root DeserializedJson = JsonConvert.DeserializeObject<Root>(response.Content);
+
+            if(DeserializedJson.posts.Count > 0)
+            {
+                if(DeserializedJson.posts[0].file.url == null)
+                {
+                    args.page = DeserializedJson.posts[0].id;
+                    LoadPost(args);
+                    return;
+                }
+                singlePost = DeserializedJson.posts[0];
+            }
+
+            // Loading done, hide the progress bar
+            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => // Call Shit needed from UI Thread
+            {
+                LoadingBar.Visibility = Visibility.Collapsed;
+                Bindings.Update();
+            });
+
+            Pool selected = null;
+            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => // Call Shit needed from UI Thread
+            {
+                selected = (Pool)MovementSelection.SelectedItem;
+            });
+            if (selected.name.Contains("Tags:"))
+            {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    MovementSource.Clear();
+                    Pool tagname = new Pool();
+                    tagname.name = "Tags: " + SearchBox.Text;
+                    MovementSource.Add(tagname);
+                    MovementSelection.SelectedIndex = 0;
+                });
+            }
+            else
+            {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    poolToSelect = selected;
+                    MovementSource.Clear();
+                    Pool tagname = new Pool();
+                    tagname.name = "Tags: " + SearchBox.Text;
+                    MovementSource.Add(tagname);
+                });
+            }
+            ClearTagsAndComments();
+            
+            if (singlePost.pools.Count > 0)
+            {
+                // Added the pools to the listview
+                Thread poolThread = new Thread(new ThreadStart(poolPopulate));
+                poolThread.Start();
+                poolThread = null;
+            }
+            if (singlePost.comment_count > 0)
+            {
+                Thread commentsThread = new Thread(new ThreadStart(CommentsPopulate));
+                commentsThread.Start();
+                commentsThread = null;
+            }
+            if (singlePost.file.ext == "webm")
+            {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    bigvideo.Source = new Uri(singlePost.file.url);
+                    bigvideo.Visibility = Visibility.Visible;
+                    ImageLoadProgress.Visibility = Visibility.Collapsed;
+                    bigpicture.Visibility = Visibility.Collapsed;
+                    smallpicture.Visibility = Visibility.Collapsed;
+                });
+            }
+            else if (singlePost.file.ext == "swf")
+            {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    smallpicture.Visibility = Visibility.Visible;
+                    ImageLoadProgress.Visibility = Visibility.Collapsed;
+                    bigpicture.Visibility = Visibility.Collapsed;
+                    bigvideo.Visibility = Visibility.Collapsed;
+                });
+            }
+            else
+            {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    bigpicture.Visibility = Visibility.Visible;
+                    smallpicture.Visibility = Visibility.Collapsed;
+                    bigvideo.Visibility = Visibility.Collapsed;
+                });
+            }
+            Thread TagsThread = new Thread(new ThreadStart(PopulateTreeView));
+            TagsThread.Start();
+            TagsThread = null;
+            GC.Collect();
+        }
+
+        private async void bigpicture_ImageExOpened_1(object sender, Microsoft.Toolkit.Uwp.UI.Controls.ImageExOpenedEventArgs e)
+        {
+            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+            {
+                ImageLoadProgress.Visibility = Visibility.Collapsed;
+            });
         }
     }
 }

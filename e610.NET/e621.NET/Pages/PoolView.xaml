@@ -2,10 +2,9 @@
     x:Class="e610.NET.Pages.PoolView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:e610.NET.Pages"
+    xmlns:local="using:e610.NET"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:uwpcontrols="using:Microsoft.Toolkit.Uwp.UI.Controls" 
-    xmlns:local1="using:e610.NET"
     xmlns:control="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -48,7 +47,7 @@
                               HorizontalAlignment="Stretch" Margin="0,0,70,0"
                               ItemClick="ImageGrid_ItemClick" IsItemClickEnabled="True">
                         <GridView.ItemTemplate>
-                            <DataTemplate x:DataType="local1:Post">
+                            <DataTemplate x:DataType="local:Post">
                                 <Grid Margin="10,0,0,10" Width="150">
                                     <uwpcontrols:ImageEx Source="{Binding preview.url}" Width="{x:Bind preview.width}" Height="{x:Bind preview.height}" x:Phase="2"/>
                                     <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="{ThemeResource TextBackgound}">
@@ -113,12 +112,10 @@
             </Button>
         </StackPanel>
 
-        
-        <control:TeachingTip x:Name="DownloadErrorPopup"
-                             PreferredPlacement="Bottom"
-                             Title="Pools"
-                             Grid.Column="1" Grid.Row="1">
-            <TextBlock Text="Error Downloading Image/Video" FontSize="18" TextWrapping="Wrap"/>
-        </control:TeachingTip>
+
+        <control:InfoBar IsOpen="False" Grid.Column="1" HorizontalAlignment="Center"
+                      Severity="Informational" VerticalAlignment="Bottom"
+                      Title="" x:Name="InfoPopup"
+                      Message="" Margin="10"/>
     </Grid>
 </Page>

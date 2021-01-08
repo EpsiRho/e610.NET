@@ -132,7 +132,7 @@ namespace e610.NET
                 client.BaseUrl = new Uri("https://e621.net/posts.json?");
 
                 // Set the useragent for e621
-                client.UserAgent = "e610.NET/1.1(by EpsilonRho)";
+                client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
 
                 // If user is logged in set login parameters into request
                 if(GlobalVars.Username != "" && GlobalVars.APIKey != "")
@@ -141,14 +141,7 @@ namespace e610.NET
                     request.AddQueryParameter("api_key", GlobalVars.APIKey);
                 }
 
-                if (!GlobalVars.safeMode)
-                {
-                    request.AddQueryParameter("tags", "rating:safe -rating:explicit " + args.tags);
-                }
-                else
-                {
-                    request.AddQueryParameter("tags", args.tags);
-                }
+                request.AddQueryParameter("tags", GlobalVars.Rating + " " + args.tags);
 
                 // Set parameters for tags and post limit
                 request.AddQueryParameter("limit", limit.ToString());
@@ -252,11 +245,11 @@ namespace e610.NET
                 Post pick = (Post)e.ClickedItem;
                 if (pick.file.url != "https://ambisure.com/wp-content/uploads/2019/03/SHOCK1-1030x724.png")
                 {
-                   GlobalVars.ViewModel = ViewModel;
-                    GlobalVars.pageCount = pageCount;
-                    GlobalVars.searchText = SearchBox.Text;
-                    GlobalVars.postCount = (int)PostCountSlider.Value;
-                    this.Frame.Navigate(typeof(SinglePostView), pick, new DrillInNavigationTransitionInfo());
+                     GlobalVars.ViewModel = ViewModel;
+                     GlobalVars.pageCount = pageCount;
+                     GlobalVars.searchText = SearchBox.Text;
+                     GlobalVars.postCount = (int)PostCountSlider.Value;
+                     this.Frame.Navigate(typeof(SinglePostView), pick, new DrillInNavigationTransitionInfo());
                 }
             }
             catch (Exception)

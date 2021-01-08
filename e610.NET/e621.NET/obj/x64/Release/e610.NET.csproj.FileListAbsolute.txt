@@ -1851,7 +1851,6 @@ C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\A
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-125.png
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-150.png
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\Assets\Wide310x150Logo.scale-400.png
-C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x64\Release\e610.NET.csprojAssemblyReference.cache
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x64\Release\ilc\in\Assets\LargeTile.scale-100.png
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x64\Release\ilc\in\Assets\LargeTile.scale-125.png
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x64\Release\ilc\in\Assets\LargeTile.scale-150.png
@@ -1897,3 +1896,4 @@ C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x64\Release\ilc\i
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x64\Release\ilc\in\Assets\Wide310x150Logo.scale-125.png
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x64\Release\ilc\in\Assets\Wide310x150Logo.scale-150.png
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x64\Release\ilc\in\Assets\Wide310x150Logo.scale-400.png
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x64\Release\e610.NET.csprojAssemblyReference.cache

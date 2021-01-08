@@ -898,7 +898,6 @@ C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Release\Syste
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Release\VLC.winmd
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Release\Microsoft.Graphics.Canvas.dll
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Release\Microsoft.Graphics.Canvas.winmd
-C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Release\e610.NET.csprojAssemblyReference.cache
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Release\App.g.i.cs
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Release\App.g.cs
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Release\Pages\AccountsPage.g.i.cs

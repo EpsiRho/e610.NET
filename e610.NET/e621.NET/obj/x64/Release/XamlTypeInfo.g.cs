@@ -223,121 +223,117 @@ namespace e621.NET.e610_NET_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[56];
+            _typeNameTable = new string[54];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Windows.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
-            _typeNameTable[3] = "e610.NET.AccountsPage";
-            _typeNameTable[4] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[5] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[6] = "e610.NET.MainPage";
-            _typeNameTable[7] = "Microsoft.UI.Xaml.Controls.TeachingTip";
-            _typeNameTable[8] = "Windows.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[9] = "Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode";
-            _typeNameTable[10] = "System.Enum";
-            _typeNameTable[11] = "System.ValueType";
-            _typeNameTable[12] = "String";
-            _typeNameTable[13] = "Windows.UI.Xaml.FrameworkElement";
-            _typeNameTable[14] = "Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility";
-            _typeNameTable[15] = "Boolean";
-            _typeNameTable[16] = "Windows.UI.Xaml.Thickness";
-            _typeNameTable[17] = "Microsoft.UI.Xaml.Controls.IconSource";
-            _typeNameTable[18] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[19] = "Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode";
-            _typeNameTable[20] = "Windows.UI.Xaml.UIElement";
-            _typeNameTable[21] = "Windows.UI.Xaml.Style";
-            _typeNameTable[22] = "System.Windows.Input.ICommand";
-            _typeNameTable[23] = "Microsoft.UI.Xaml.Controls.TeachingTipTemplateSettings";
-            _typeNameTable[24] = "Microsoft.UI.Xaml.Controls.ProgressBar";
-            _typeNameTable[25] = "Windows.UI.Xaml.Controls.Primitives.RangeBase";
-            _typeNameTable[26] = "Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings";
-            _typeNameTable[27] = "Microsoft.Toolkit.Uwp.UI.Controls.ImageEx";
-            _typeNameTable[28] = "Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase";
-            _typeNameTable[29] = "Windows.UI.Xaml.Controls.Control";
-            _typeNameTable[30] = "Windows.UI.Xaml.CornerRadius";
-            _typeNameTable[31] = "Int32";
-            _typeNameTable[32] = "Windows.UI.Xaml.Media.Imaging.DecodePixelType";
-            _typeNameTable[33] = "Windows.UI.Xaml.Media.Stretch";
-            _typeNameTable[34] = "Microsoft.Toolkit.Uwp.UI.Controls.ImageExCachingStrategy";
-            _typeNameTable[35] = "Windows.UI.Xaml.Media.ImageSource";
-            _typeNameTable[36] = "e610.NET.Pages.PoolView";
-            _typeNameTable[37] = "e610.NET.PostsViewModel";
-            _typeNameTable[38] = "e610.NET.PostsViewPage";
-            _typeNameTable[39] = "Microsoft.UI.Xaml.Controls.ProgressRing";
-            _typeNameTable[40] = "Double";
-            _typeNameTable[41] = "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings";
-            _typeNameTable[42] = "e610.NET.SinglePostView";
-            _typeNameTable[43] = "FFmpegInterop.CharacterEncoding";
-            _typeNameTable[44] = "Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid";
-            _typeNameTable[45] = "Windows.UI.Xaml.Controls.Grid";
-            _typeNameTable[46] = "Windows.UI.Xaml.Controls.Panel";
-            _typeNameTable[47] = "Windows.UI.Xaml.Controls.Orientation";
-            _typeNameTable[48] = "System.Nullable`1<Boolean>";
-            _typeNameTable[49] = "Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool";
-            _typeNameTable[50] = "Windows.UI.Xaml.Markup.MarkupExtension";
-            _typeNameTable[51] = "Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice";
-            _typeNameTable[52] = "Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter";
-            _typeNameTable[53] = "Microsoft.Toolkit.Uwp.UI.Converters.DoubleToVisibilityConverter";
-            _typeNameTable[54] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[55] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[3] = "Microsoft.UI.Xaml.Controls.ProgressBar";
+            _typeNameTable[4] = "Windows.UI.Xaml.Controls.Primitives.RangeBase";
+            _typeNameTable[5] = "Boolean";
+            _typeNameTable[6] = "Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings";
+            _typeNameTable[7] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[8] = "Microsoft.Toolkit.Uwp.UI.Controls.ImageEx";
+            _typeNameTable[9] = "Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase";
+            _typeNameTable[10] = "Windows.UI.Xaml.Controls.Control";
+            _typeNameTable[11] = "Windows.UI.Xaml.Thickness";
+            _typeNameTable[12] = "Windows.UI.Xaml.CornerRadius";
+            _typeNameTable[13] = "Int32";
+            _typeNameTable[14] = "Windows.UI.Xaml.Media.Imaging.DecodePixelType";
+            _typeNameTable[15] = "Windows.UI.Xaml.Media.Stretch";
+            _typeNameTable[16] = "Microsoft.Toolkit.Uwp.UI.Controls.ImageExCachingStrategy";
+            _typeNameTable[17] = "System.Enum";
+            _typeNameTable[18] = "System.ValueType";
+            _typeNameTable[19] = "Windows.UI.Xaml.Media.ImageSource";
+            _typeNameTable[20] = "e610.NET.AccountsPage";
+            _typeNameTable[21] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[22] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[23] = "e610.NET.PostsViewModel";
+            _typeNameTable[24] = "e610.NET.MainPage";
+            _typeNameTable[25] = "Microsoft.UI.Xaml.Controls.InfoBar";
+            _typeNameTable[26] = "Microsoft.UI.Xaml.Controls.InfoBarSeverity";
+            _typeNameTable[27] = "String";
+            _typeNameTable[28] = "Microsoft.UI.Xaml.Controls.IconSource";
+            _typeNameTable[29] = "Windows.UI.Xaml.DataTemplate";
+            _typeNameTable[30] = "Windows.UI.Xaml.Style";
+            _typeNameTable[31] = "System.Windows.Input.ICommand";
+            _typeNameTable[32] = "Windows.UI.Xaml.Controls.Primitives.ButtonBase";
+            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings";
+            _typeNameTable[34] = "e610.NET.Pages.PoolView";
+            _typeNameTable[35] = "e610.NET.PostsViewPage";
+            _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.ProgressRing";
+            _typeNameTable[37] = "Double";
+            _typeNameTable[38] = "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings";
+            _typeNameTable[39] = "e610.NET.SinglePostView";
+            _typeNameTable[40] = "FFmpegInterop.CharacterEncoding";
+            _typeNameTable[41] = "Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid";
+            _typeNameTable[42] = "Windows.UI.Xaml.Controls.Grid";
+            _typeNameTable[43] = "Windows.UI.Xaml.Controls.Panel";
+            _typeNameTable[44] = "Windows.UI.Xaml.Controls.Orientation";
+            _typeNameTable[45] = "System.Nullable`1<Boolean>";
+            _typeNameTable[46] = "Windows.UI.Xaml.FrameworkElement";
+            _typeNameTable[47] = "Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool";
+            _typeNameTable[48] = "Windows.UI.Xaml.Markup.MarkupExtension";
+            _typeNameTable[49] = "Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice";
+            _typeNameTable[50] = "Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter";
+            _typeNameTable[51] = "Microsoft.Toolkit.Uwp.UI.Converters.DoubleToVisibilityConverter";
+            _typeNameTable[52] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[53] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
 
-            _typeTable = new global::System.Type[56];
+            _typeTable = new global::System.Type[54];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
-            _typeTable[3] = typeof(global::e610.NET.AccountsPage);
-            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[5] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[6] = typeof(global::e610.NET.MainPage);
-            _typeTable[7] = typeof(global::Microsoft.UI.Xaml.Controls.TeachingTip);
-            _typeTable[8] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
-            _typeTable[9] = typeof(global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode);
-            _typeTable[10] = typeof(global::System.Enum);
-            _typeTable[11] = typeof(global::System.ValueType);
-            _typeTable[12] = typeof(global::System.String);
-            _typeTable[13] = typeof(global::Windows.UI.Xaml.FrameworkElement);
-            _typeTable[14] = typeof(global::Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility);
-            _typeTable[15] = typeof(global::System.Boolean);
-            _typeTable[16] = typeof(global::Windows.UI.Xaml.Thickness);
-            _typeTable[17] = typeof(global::Microsoft.UI.Xaml.Controls.IconSource);
-            _typeTable[18] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[19] = typeof(global::Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode);
-            _typeTable[20] = typeof(global::Windows.UI.Xaml.UIElement);
-            _typeTable[21] = typeof(global::Windows.UI.Xaml.Style);
-            _typeTable[22] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[23] = typeof(global::Microsoft.UI.Xaml.Controls.TeachingTipTemplateSettings);
-            _typeTable[24] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar);
-            _typeTable[25] = typeof(global::Windows.UI.Xaml.Controls.Primitives.RangeBase);
-            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings);
-            _typeTable[27] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.ImageEx);
-            _typeTable[28] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase);
-            _typeTable[29] = typeof(global::Windows.UI.Xaml.Controls.Control);
-            _typeTable[30] = typeof(global::Windows.UI.Xaml.CornerRadius);
-            _typeTable[31] = typeof(global::System.Int32);
-            _typeTable[32] = typeof(global::Windows.UI.Xaml.Media.Imaging.DecodePixelType);
-            _typeTable[33] = typeof(global::Windows.UI.Xaml.Media.Stretch);
-            _typeTable[34] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExCachingStrategy);
-            _typeTable[35] = typeof(global::Windows.UI.Xaml.Media.ImageSource);
-            _typeTable[36] = typeof(global::e610.NET.Pages.PoolView);
-            _typeTable[37] = typeof(global::e610.NET.PostsViewModel);
-            _typeTable[38] = typeof(global::e610.NET.PostsViewPage);
-            _typeTable[39] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRing);
-            _typeTable[40] = typeof(global::System.Double);
-            _typeTable[41] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings);
-            _typeTable[42] = typeof(global::e610.NET.SinglePostView);
-            _typeTable[43] = typeof(global::FFmpegInterop.CharacterEncoding);
-            _typeTable[44] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid);
-            _typeTable[45] = typeof(global::Windows.UI.Xaml.Controls.Grid);
-            _typeTable[46] = typeof(global::Windows.UI.Xaml.Controls.Panel);
-            _typeTable[47] = typeof(global::Windows.UI.Xaml.Controls.Orientation);
-            _typeTable[48] = typeof(global::System.Nullable<global::System.Boolean>);
-            _typeTable[49] = typeof(global::Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool);
-            _typeTable[50] = typeof(global::Windows.UI.Xaml.Markup.MarkupExtension);
-            _typeTable[51] = typeof(global::Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice);
-            _typeTable[52] = typeof(global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter);
-            _typeTable[53] = typeof(global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToVisibilityConverter);
-            _typeTable[54] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[55] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[3] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBar);
+            _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.Primitives.RangeBase);
+            _typeTable[5] = typeof(global::System.Boolean);
+            _typeTable[6] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings);
+            _typeTable[7] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[8] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.ImageEx);
+            _typeTable[9] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.Control);
+            _typeTable[11] = typeof(global::Windows.UI.Xaml.Thickness);
+            _typeTable[12] = typeof(global::Windows.UI.Xaml.CornerRadius);
+            _typeTable[13] = typeof(global::System.Int32);
+            _typeTable[14] = typeof(global::Windows.UI.Xaml.Media.Imaging.DecodePixelType);
+            _typeTable[15] = typeof(global::Windows.UI.Xaml.Media.Stretch);
+            _typeTable[16] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExCachingStrategy);
+            _typeTable[17] = typeof(global::System.Enum);
+            _typeTable[18] = typeof(global::System.ValueType);
+            _typeTable[19] = typeof(global::Windows.UI.Xaml.Media.ImageSource);
+            _typeTable[20] = typeof(global::e610.NET.AccountsPage);
+            _typeTable[21] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[22] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[23] = typeof(global::e610.NET.PostsViewModel);
+            _typeTable[24] = typeof(global::e610.NET.MainPage);
+            _typeTable[25] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBar);
+            _typeTable[26] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBarSeverity);
+            _typeTable[27] = typeof(global::System.String);
+            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.Controls.IconSource);
+            _typeTable[29] = typeof(global::Windows.UI.Xaml.DataTemplate);
+            _typeTable[30] = typeof(global::Windows.UI.Xaml.Style);
+            _typeTable[31] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[32] = typeof(global::Windows.UI.Xaml.Controls.Primitives.ButtonBase);
+            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings);
+            _typeTable[34] = typeof(global::e610.NET.Pages.PoolView);
+            _typeTable[35] = typeof(global::e610.NET.PostsViewPage);
+            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRing);
+            _typeTable[37] = typeof(global::System.Double);
+            _typeTable[38] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings);
+            _typeTable[39] = typeof(global::e610.NET.SinglePostView);
+            _typeTable[40] = typeof(global::FFmpegInterop.CharacterEncoding);
+            _typeTable[41] = typeof(global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid);
+            _typeTable[42] = typeof(global::Windows.UI.Xaml.Controls.Grid);
+            _typeTable[43] = typeof(global::Windows.UI.Xaml.Controls.Panel);
+            _typeTable[44] = typeof(global::Windows.UI.Xaml.Controls.Orientation);
+            _typeTable[45] = typeof(global::System.Nullable<global::System.Boolean>);
+            _typeTable[46] = typeof(global::Windows.UI.Xaml.FrameworkElement);
+            _typeTable[47] = typeof(global::Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool);
+            _typeTable[48] = typeof(global::Windows.UI.Xaml.Markup.MarkupExtension);
+            _typeTable[49] = typeof(global::Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice);
+            _typeTable[50] = typeof(global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter);
+            _typeTable[51] = typeof(global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToVisibilityConverter);
+            _typeTable[52] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[53] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -373,23 +369,23 @@ namespace e621.NET.e610_NET_XamlTypeInfo
         }
 
         private object Activate_0_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
-        private object Activate_3_AccountsPage() { return new global::e610.NET.AccountsPage(); }
-        private object Activate_6_MainPage() { return new global::e610.NET.MainPage(); }
-        private object Activate_7_TeachingTip() { return new global::Microsoft.UI.Xaml.Controls.TeachingTip(); }
-        private object Activate_23_TeachingTipTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.TeachingTipTemplateSettings(); }
-        private object Activate_24_ProgressBar() { return new global::Microsoft.UI.Xaml.Controls.ProgressBar(); }
-        private object Activate_27_ImageEx() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.ImageEx(); }
-        private object Activate_36_PoolView() { return new global::e610.NET.Pages.PoolView(); }
-        private object Activate_37_PostsViewModel() { return new global::e610.NET.PostsViewModel(); }
-        private object Activate_38_PostsViewPage() { return new global::e610.NET.PostsViewPage(); }
-        private object Activate_39_ProgressRing() { return new global::Microsoft.UI.Xaml.Controls.ProgressRing(); }
-        private object Activate_42_SinglePostView() { return new global::e610.NET.SinglePostView(); }
-        private object Activate_44_UniformGrid() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid(); }
-        private object Activate_49_NullableBool() { return new global::Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool(); }
-        private object Activate_51_OnDevice() { return new global::Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice(); }
-        private object Activate_52_DoubleToObjectConverter() { return new global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter(); }
-        private object Activate_53_DoubleToVisibilityConverter() { return new global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToVisibilityConverter(); }
-        private object Activate_54_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_3_ProgressBar() { return new global::Microsoft.UI.Xaml.Controls.ProgressBar(); }
+        private object Activate_8_ImageEx() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.ImageEx(); }
+        private object Activate_20_AccountsPage() { return new global::e610.NET.AccountsPage(); }
+        private object Activate_23_PostsViewModel() { return new global::e610.NET.PostsViewModel(); }
+        private object Activate_24_MainPage() { return new global::e610.NET.MainPage(); }
+        private object Activate_25_InfoBar() { return new global::Microsoft.UI.Xaml.Controls.InfoBar(); }
+        private object Activate_33_InfoBarTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings(); }
+        private object Activate_34_PoolView() { return new global::e610.NET.Pages.PoolView(); }
+        private object Activate_35_PostsViewPage() { return new global::e610.NET.PostsViewPage(); }
+        private object Activate_36_ProgressRing() { return new global::Microsoft.UI.Xaml.Controls.ProgressRing(); }
+        private object Activate_39_SinglePostView() { return new global::e610.NET.SinglePostView(); }
+        private object Activate_41_UniformGrid() { return new global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid(); }
+        private object Activate_47_NullableBool() { return new global::Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool(); }
+        private object Activate_49_OnDevice() { return new global::Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice(); }
+        private object Activate_50_DoubleToObjectConverter() { return new global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter(); }
+        private object Activate_51_DoubleToVisibilityConverter() { return new global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToVisibilityConverter(); }
+        private object Activate_52_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -397,7 +393,7 @@ namespace e621.NET.e610_NET_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_55_IList(object instance, object item)
+        private void VectorAdd_53_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -429,153 +425,9 @@ namespace e621.NET.e610_NET_XamlTypeInfo
                 xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  e610.NET.AccountsPage
-                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_AccountsPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 4:   //  Windows.UI.Xaml.Controls.Page
-                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 5:   //  Windows.UI.Xaml.Controls.UserControl
-                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 6:   //  e610.NET.MainPage
-                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_MainPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 7:   //  Microsoft.UI.Xaml.Controls.TeachingTip
-                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_7_TeachingTip;
-                userType.AddMemberName("PreferredPlacement");
-                userType.AddMemberName("Title");
-                userType.AddMemberName("Target");
-                userType.AddMemberName("TailVisibility");
-                userType.AddMemberName("Subtitle");
-                userType.AddMemberName("ShouldConstrainToRootBounds");
-                userType.AddMemberName("PlacementMargin");
-                userType.AddMemberName("IsOpen");
-                userType.AddMemberName("IsLightDismissEnabled");
-                userType.AddMemberName("IconSource");
-                userType.AddMemberName("HeroContentPlacement");
-                userType.AddMemberName("HeroContent");
-                userType.AddMemberName("CloseButtonStyle");
-                userType.AddMemberName("CloseButtonContent");
-                userType.AddMemberName("CloseButtonCommandParameter");
-                userType.AddMemberName("CloseButtonCommand");
-                userType.AddMemberName("ActionButtonStyle");
-                userType.AddMemberName("ActionButtonContent");
-                userType.AddMemberName("ActionButtonCommandParameter");
-                userType.AddMemberName("ActionButtonCommand");
-                userType.AddMemberName("TemplateSettings");
-                xamlType = userType;
-                break;
-
-            case 8:   //  Windows.UI.Xaml.Controls.ContentControl
-                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 9:   //  Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode
-                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode.Auto);
-                userType.AddEnumValue("Top", global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode.Top);
-                userType.AddEnumValue("Bottom", global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode.Bottom);
-                userType.AddEnumValue("Left", global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode.Left);
-                userType.AddEnumValue("Right", global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode.Right);
-                userType.AddEnumValue("TopRight", global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode.TopRight);
-                userType.AddEnumValue("TopLeft", global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode.TopLeft);
-                userType.AddEnumValue("BottomRight", global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode.BottomRight);
-                userType.AddEnumValue("BottomLeft", global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode.BottomLeft);
-                userType.AddEnumValue("LeftTop", global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode.LeftTop);
-                userType.AddEnumValue("LeftBottom", global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode.LeftBottom);
-                userType.AddEnumValue("RightTop", global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode.RightTop);
-                userType.AddEnumValue("RightBottom", global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode.RightBottom);
-                userType.AddEnumValue("Center", global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode.Center);
-                xamlType = userType;
-                break;
-
-            case 10:   //  System.Enum
-                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                xamlType = userType;
-                break;
-
-            case 11:   //  System.ValueType
-                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                xamlType = userType;
-                break;
-
-            case 12:   //  String
-                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 13:   //  Windows.UI.Xaml.FrameworkElement
-                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 14:   //  Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility
-                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility.Auto);
-                userType.AddEnumValue("Visible", global::Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility.Visible);
-                userType.AddEnumValue("Collapsed", global::Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility.Collapsed);
-                xamlType = userType;
-                break;
-
-            case 15:   //  Boolean
-                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 16:   //  Windows.UI.Xaml.Thickness
-                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 17:   //  Microsoft.UI.Xaml.Controls.IconSource
-                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 18:   //  Windows.UI.Xaml.DependencyObject
-                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 19:   //  Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode
-                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
-                userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode.Auto);
-                userType.AddEnumValue("Top", global::Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode.Top);
-                userType.AddEnumValue("Bottom", global::Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode.Bottom);
-                xamlType = userType;
-                break;
-
-            case 20:   //  Windows.UI.Xaml.UIElement
-                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 21:   //  Windows.UI.Xaml.Style
-                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 22:   //  System.Windows.Input.ICommand
-                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 23:   //  Microsoft.UI.Xaml.Controls.TeachingTipTemplateSettings
-                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 24:   //  Microsoft.UI.Xaml.Controls.ProgressBar
+            case 3:   //  Microsoft.UI.Xaml.Controls.ProgressBar
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Primitives.RangeBase"));
-                userType.Activator = Activate_24_ProgressBar;
+                userType.Activator = Activate_3_ProgressBar;
                 userType.AddMemberName("IsIndeterminate");
                 userType.AddMemberName("ShowPaused");
                 userType.AddMemberName("ShowError");
@@ -583,24 +435,32 @@ namespace e621.NET.e610_NET_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 25:   //  Windows.UI.Xaml.Controls.Primitives.RangeBase
+            case 4:   //  Windows.UI.Xaml.Controls.Primitives.RangeBase
                 xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 26:   //  Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings
+            case 5:   //  Boolean
+                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 27:   //  Microsoft.Toolkit.Uwp.UI.Controls.ImageEx
+            case 7:   //  Windows.UI.Xaml.DependencyObject
+                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 8:   //  Microsoft.Toolkit.Uwp.UI.Controls.ImageEx
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase"));
-                userType.Activator = Activate_27_ImageEx;
+                userType.Activator = Activate_8_ImageEx;
                 userType.AddMemberName("NineGrid");
                 xamlType = userType;
                 break;
 
-            case 28:   //  Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase
+            case 9:   //  Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
                 userType.AddMemberName("Source");
                 userType.AddMemberName("IsInitialized");
@@ -617,63 +477,164 @@ namespace e621.NET.e610_NET_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 29:   //  Windows.UI.Xaml.Controls.Control
+            case 10:   //  Windows.UI.Xaml.Controls.Control
                 xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 30:   //  Windows.UI.Xaml.CornerRadius
+            case 11:   //  Windows.UI.Xaml.Thickness
                 xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 31:   //  Int32
+            case 12:   //  Windows.UI.Xaml.CornerRadius
                 xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 32:   //  Windows.UI.Xaml.Media.Imaging.DecodePixelType
+            case 13:   //  Int32
                 xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 33:   //  Windows.UI.Xaml.Media.Stretch
+            case 14:   //  Windows.UI.Xaml.Media.Imaging.DecodePixelType
                 xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 34:   //  Microsoft.Toolkit.Uwp.UI.Controls.ImageExCachingStrategy
+            case 15:   //  Windows.UI.Xaml.Media.Stretch
+                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 16:   //  Microsoft.Toolkit.Uwp.UI.Controls.ImageExCachingStrategy
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Custom", global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExCachingStrategy.Custom);
                 userType.AddEnumValue("Internal", global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExCachingStrategy.Internal);
                 xamlType = userType;
                 break;
 
-            case 35:   //  Windows.UI.Xaml.Media.ImageSource
+            case 17:   //  System.Enum
+                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                xamlType = userType;
+                break;
+
+            case 18:   //  System.ValueType
+                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 19:   //  Windows.UI.Xaml.Media.ImageSource
                 xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 36:   //  e610.NET.Pages.PoolView
+            case 20:   //  e610.NET.AccountsPage
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_36_PoolView;
+                userType.Activator = Activate_20_AccountsPage;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 37:   //  e610.NET.PostsViewModel
+            case 21:   //  Windows.UI.Xaml.Controls.Page
+                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 22:   //  Windows.UI.Xaml.Controls.UserControl
+                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 23:   //  e610.NET.PostsViewModel
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 38:   //  e610.NET.PostsViewPage
+            case 24:   //  e610.NET.MainPage
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_38_PostsViewPage;
+                userType.Activator = Activate_24_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 25:   //  Microsoft.UI.Xaml.Controls.InfoBar
+                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_25_InfoBar;
+                userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.InfoBar.Content");
+                userType.AddMemberName("Content");
+                userType.AddMemberName("IsOpen");
+                userType.AddMemberName("Severity");
+                userType.AddMemberName("Title");
+                userType.AddMemberName("Message");
+                userType.AddMemberName("IsIconVisible");
+                userType.AddMemberName("IsClosable");
+                userType.AddMemberName("IconSource");
+                userType.AddMemberName("ContentTemplate");
+                userType.AddMemberName("CloseButtonStyle");
+                userType.AddMemberName("CloseButtonCommandParameter");
+                userType.AddMemberName("CloseButtonCommand");
+                userType.AddMemberName("ActionButton");
+                userType.AddMemberName("TemplateSettings");
+                xamlType = userType;
+                break;
+
+            case 26:   //  Microsoft.UI.Xaml.Controls.InfoBarSeverity
+                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Informational", global::Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational);
+                userType.AddEnumValue("Success", global::Microsoft.UI.Xaml.Controls.InfoBarSeverity.Success);
+                userType.AddEnumValue("Warning", global::Microsoft.UI.Xaml.Controls.InfoBarSeverity.Warning);
+                userType.AddEnumValue("Error", global::Microsoft.UI.Xaml.Controls.InfoBarSeverity.Error);
+                xamlType = userType;
+                break;
+
+            case 27:   //  String
+                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 28:   //  Microsoft.UI.Xaml.Controls.IconSource
+                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 29:   //  Windows.UI.Xaml.DataTemplate
+                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 30:   //  Windows.UI.Xaml.Style
+                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 31:   //  System.Windows.Input.ICommand
+                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 32:   //  Windows.UI.Xaml.Controls.Primitives.ButtonBase
+                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 33:   //  Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings
+                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 34:   //  e610.NET.Pages.PoolView
+                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_34_PoolView;
                 userType.AddMemberName("ViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 39:   //  Microsoft.UI.Xaml.Controls.ProgressRing
+            case 35:   //  e610.NET.PostsViewPage
+                userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_35_PostsViewPage;
+                userType.AddMemberName("ViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 36:   //  Microsoft.UI.Xaml.Controls.ProgressRing
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_39_ProgressRing;
+                userType.Activator = Activate_36_ProgressRing;
                 userType.AddMemberName("IsActive");
                 userType.AddMemberName("Value");
                 userType.AddMemberName("Minimum");
@@ -683,24 +644,24 @@ namespace e621.NET.e610_NET_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 40:   //  Double
+            case 37:   //  Double
                 xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 41:   //  Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings
+            case 38:   //  Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 42:   //  e610.NET.SinglePostView
+            case 39:   //  e610.NET.SinglePostView
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_42_SinglePostView;
+                userType.Activator = Activate_39_SinglePostView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 43:   //  FFmpegInterop.CharacterEncoding
+            case 40:   //  FFmpegInterop.CharacterEncoding
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("WindowsCodePage");
                 userType.AddMemberName("Description");
@@ -709,9 +670,9 @@ namespace e621.NET.e610_NET_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 44:   //  Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid
+            case 41:   //  Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Grid"));
-                userType.Activator = Activate_44_UniformGrid;
+                userType.Activator = Activate_41_UniformGrid;
                 userType.AddMemberName("Columns");
                 userType.AddMemberName("FirstColumn");
                 userType.AddMemberName("Orientation");
@@ -721,19 +682,19 @@ namespace e621.NET.e610_NET_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 45:   //  Windows.UI.Xaml.Controls.Grid
+            case 42:   //  Windows.UI.Xaml.Controls.Grid
                 xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 46:   //  Windows.UI.Xaml.Controls.Panel
+            case 43:   //  Windows.UI.Xaml.Controls.Panel
                 xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 47:   //  Windows.UI.Xaml.Controls.Orientation
+            case 44:   //  Windows.UI.Xaml.Controls.Orientation
                 xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 48:   //  System.Nullable`1<Boolean>
+            case 45:   //  System.Nullable`1<Boolean>
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetBoxedType(GetXamlTypeByName("Boolean"));
                 userType.BoxInstance = userType.BoxType<global::System.Boolean>;
@@ -741,9 +702,13 @@ namespace e621.NET.e610_NET_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 49:   //  Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool
+            case 46:   //  Windows.UI.Xaml.FrameworkElement
+                xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 47:   //  Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Markup.MarkupExtension"));
-                userType.Activator = Activate_49_NullableBool;
+                userType.Activator = Activate_47_NullableBool;
                 userType.AddMemberName("Value");
                 userType.AddMemberName("IsNull");
                 userType.SetIsBindable();
@@ -751,13 +716,13 @@ namespace e621.NET.e610_NET_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 50:   //  Windows.UI.Xaml.Markup.MarkupExtension
+            case 48:   //  Windows.UI.Xaml.Markup.MarkupExtension
                 xamlType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 51:   //  Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice
+            case 49:   //  Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Markup.MarkupExtension"));
-                userType.Activator = Activate_51_OnDevice;
+                userType.Activator = Activate_49_OnDevice;
                 userType.AddMemberName("Default");
                 userType.AddMemberName("Desktop");
                 userType.AddMemberName("Holographic");
@@ -769,9 +734,9 @@ namespace e621.NET.e610_NET_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 52:   //  Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter
+            case 50:   //  Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_52_DoubleToObjectConverter;
+                userType.Activator = Activate_50_DoubleToObjectConverter;
                 userType.AddMemberName("TrueValue");
                 userType.AddMemberName("FalseValue");
                 userType.AddMemberName("NullValue");
@@ -781,16 +746,16 @@ namespace e621.NET.e610_NET_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 53:   //  Microsoft.Toolkit.Uwp.UI.Converters.DoubleToVisibilityConverter
+            case 51:   //  Microsoft.Toolkit.Uwp.UI.Converters.DoubleToVisibilityConverter
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter"));
-                userType.Activator = Activate_53_DoubleToVisibilityConverter;
+                userType.Activator = Activate_51_DoubleToVisibilityConverter;
                 userType.SetIsBindable();
                 xamlType = userType;
                 break;
 
-            case 54:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 52:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_54_TreeViewNode;
+                userType.Activator = Activate_52_TreeViewNode;
                 userType.AddMemberName("IsExpanded");
                 userType.AddMemberName("HasUnrealizedChildren");
                 userType.AddMemberName("Content");
@@ -802,9 +767,9 @@ namespace e621.NET.e610_NET_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 55:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 53:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_55_IList;
+                userType.CollectionAdd = VectorAdd_53_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
@@ -871,685 +836,625 @@ namespace e621.NET.e610_NET_XamlTypeInfo
             return foundXamlType;
         }
 
-        private object get_0_TeachingTip_PreferredPlacement(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.PreferredPlacement;
-        }
-        private void set_0_TeachingTip_PreferredPlacement(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.PreferredPlacement = (global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode)Value;
-        }
-        private object get_1_TeachingTip_Title(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.Title;
-        }
-        private void set_1_TeachingTip_Title(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.Title = (global::System.String)Value;
-        }
-        private object get_2_TeachingTip_Target(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.Target;
-        }
-        private void set_2_TeachingTip_Target(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.Target = (global::Windows.UI.Xaml.FrameworkElement)Value;
-        }
-        private object get_3_TeachingTip_TailVisibility(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.TailVisibility;
-        }
-        private void set_3_TeachingTip_TailVisibility(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.TailVisibility = (global::Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility)Value;
-        }
-        private object get_4_TeachingTip_Subtitle(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.Subtitle;
-        }
-        private void set_4_TeachingTip_Subtitle(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.Subtitle = (global::System.String)Value;
-        }
-        private object get_5_TeachingTip_ShouldConstrainToRootBounds(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.ShouldConstrainToRootBounds;
-        }
-        private void set_5_TeachingTip_ShouldConstrainToRootBounds(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.ShouldConstrainToRootBounds = (global::System.Boolean)Value;
-        }
-        private object get_6_TeachingTip_PlacementMargin(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.PlacementMargin;
-        }
-        private void set_6_TeachingTip_PlacementMargin(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.PlacementMargin = (global::Windows.UI.Xaml.Thickness)Value;
-        }
-        private object get_7_TeachingTip_IsOpen(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.IsOpen;
-        }
-        private void set_7_TeachingTip_IsOpen(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.IsOpen = (global::System.Boolean)Value;
-        }
-        private object get_8_TeachingTip_IsLightDismissEnabled(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.IsLightDismissEnabled;
-        }
-        private void set_8_TeachingTip_IsLightDismissEnabled(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.IsLightDismissEnabled = (global::System.Boolean)Value;
-        }
-        private object get_9_TeachingTip_IconSource(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.IconSource;
-        }
-        private void set_9_TeachingTip_IconSource(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.IconSource = (global::Microsoft.UI.Xaml.Controls.IconSource)Value;
-        }
-        private object get_10_TeachingTip_HeroContentPlacement(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.HeroContentPlacement;
-        }
-        private void set_10_TeachingTip_HeroContentPlacement(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.HeroContentPlacement = (global::Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode)Value;
-        }
-        private object get_11_TeachingTip_HeroContent(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.HeroContent;
-        }
-        private void set_11_TeachingTip_HeroContent(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.HeroContent = (global::Windows.UI.Xaml.UIElement)Value;
-        }
-        private object get_12_TeachingTip_CloseButtonStyle(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.CloseButtonStyle;
-        }
-        private void set_12_TeachingTip_CloseButtonStyle(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.CloseButtonStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_13_TeachingTip_CloseButtonContent(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.CloseButtonContent;
-        }
-        private void set_13_TeachingTip_CloseButtonContent(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.CloseButtonContent = (global::System.Object)Value;
-        }
-        private object get_14_TeachingTip_CloseButtonCommandParameter(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.CloseButtonCommandParameter;
-        }
-        private void set_14_TeachingTip_CloseButtonCommandParameter(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.CloseButtonCommandParameter = (global::System.Object)Value;
-        }
-        private object get_15_TeachingTip_CloseButtonCommand(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.CloseButtonCommand;
-        }
-        private void set_15_TeachingTip_CloseButtonCommand(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.CloseButtonCommand = (global::System.Windows.Input.ICommand)Value;
-        }
-        private object get_16_TeachingTip_ActionButtonStyle(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.ActionButtonStyle;
-        }
-        private void set_16_TeachingTip_ActionButtonStyle(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.ActionButtonStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_17_TeachingTip_ActionButtonContent(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.ActionButtonContent;
-        }
-        private void set_17_TeachingTip_ActionButtonContent(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.ActionButtonContent = (global::System.Object)Value;
-        }
-        private object get_18_TeachingTip_ActionButtonCommandParameter(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.ActionButtonCommandParameter;
-        }
-        private void set_18_TeachingTip_ActionButtonCommandParameter(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.ActionButtonCommandParameter = (global::System.Object)Value;
-        }
-        private object get_19_TeachingTip_ActionButtonCommand(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.ActionButtonCommand;
-        }
-        private void set_19_TeachingTip_ActionButtonCommand(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            that.ActionButtonCommand = (global::System.Windows.Input.ICommand)Value;
-        }
-        private object get_20_TeachingTip_TemplateSettings(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.TeachingTip)instance;
-            return that.TemplateSettings;
-        }
-        private object get_21_ProgressBar_IsIndeterminate(object instance)
+        private object get_0_ProgressBar_IsIndeterminate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
             return that.IsIndeterminate;
         }
-        private void set_21_ProgressBar_IsIndeterminate(object instance, object Value)
+        private void set_0_ProgressBar_IsIndeterminate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
             that.IsIndeterminate = (global::System.Boolean)Value;
         }
-        private object get_22_ProgressBar_ShowPaused(object instance)
+        private object get_1_ProgressBar_ShowPaused(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
             return that.ShowPaused;
         }
-        private void set_22_ProgressBar_ShowPaused(object instance, object Value)
+        private void set_1_ProgressBar_ShowPaused(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
             that.ShowPaused = (global::System.Boolean)Value;
         }
-        private object get_23_ProgressBar_ShowError(object instance)
+        private object get_2_ProgressBar_ShowError(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
             return that.ShowError;
         }
-        private void set_23_ProgressBar_ShowError(object instance, object Value)
+        private void set_2_ProgressBar_ShowError(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
             that.ShowError = (global::System.Boolean)Value;
         }
-        private object get_24_ProgressBar_TemplateSettings(object instance)
+        private object get_3_ProgressBar_TemplateSettings(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressBar)instance;
             return that.TemplateSettings;
         }
-        private object get_25_ImageExBase_Source(object instance)
+        private object get_4_ImageExBase_Source(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             return that.Source;
         }
-        private void set_25_ImageExBase_Source(object instance, object Value)
+        private void set_4_ImageExBase_Source(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             that.Source = (global::System.Object)Value;
         }
-        private object get_26_ImageEx_NineGrid(object instance)
+        private object get_5_ImageEx_NineGrid(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageEx)instance;
             return that.NineGrid;
         }
-        private void set_26_ImageEx_NineGrid(object instance, object Value)
+        private void set_5_ImageEx_NineGrid(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageEx)instance;
             that.NineGrid = (global::Windows.UI.Xaml.Thickness)Value;
         }
-        private object get_27_ImageExBase_IsInitialized(object instance)
+        private object get_6_ImageExBase_IsInitialized(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             return that.IsInitialized;
         }
-        private object get_28_ImageExBase_CornerRadius(object instance)
+        private object get_7_ImageExBase_CornerRadius(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             return that.CornerRadius;
         }
-        private void set_28_ImageExBase_CornerRadius(object instance, object Value)
+        private void set_7_ImageExBase_CornerRadius(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             that.CornerRadius = (global::Windows.UI.Xaml.CornerRadius)Value;
         }
-        private object get_29_ImageExBase_DecodePixelHeight(object instance)
+        private object get_8_ImageExBase_DecodePixelHeight(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             return that.DecodePixelHeight;
         }
-        private void set_29_ImageExBase_DecodePixelHeight(object instance, object Value)
+        private void set_8_ImageExBase_DecodePixelHeight(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             that.DecodePixelHeight = (global::System.Int32)Value;
         }
-        private object get_30_ImageExBase_DecodePixelType(object instance)
+        private object get_9_ImageExBase_DecodePixelType(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             return that.DecodePixelType;
         }
-        private void set_30_ImageExBase_DecodePixelType(object instance, object Value)
+        private void set_9_ImageExBase_DecodePixelType(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             that.DecodePixelType = (global::Windows.UI.Xaml.Media.Imaging.DecodePixelType)Value;
         }
-        private object get_31_ImageExBase_DecodePixelWidth(object instance)
+        private object get_10_ImageExBase_DecodePixelWidth(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             return that.DecodePixelWidth;
         }
-        private void set_31_ImageExBase_DecodePixelWidth(object instance, object Value)
+        private void set_10_ImageExBase_DecodePixelWidth(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             that.DecodePixelWidth = (global::System.Int32)Value;
         }
-        private object get_32_ImageExBase_Stretch(object instance)
+        private object get_11_ImageExBase_Stretch(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             return that.Stretch;
         }
-        private void set_32_ImageExBase_Stretch(object instance, object Value)
+        private void set_11_ImageExBase_Stretch(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             that.Stretch = (global::Windows.UI.Xaml.Media.Stretch)Value;
         }
-        private object get_33_ImageExBase_IsCacheEnabled(object instance)
+        private object get_12_ImageExBase_IsCacheEnabled(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             return that.IsCacheEnabled;
         }
-        private void set_33_ImageExBase_IsCacheEnabled(object instance, object Value)
+        private void set_12_ImageExBase_IsCacheEnabled(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             that.IsCacheEnabled = (global::System.Boolean)Value;
         }
-        private object get_34_ImageExBase_CachingStrategy(object instance)
+        private object get_13_ImageExBase_CachingStrategy(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             return that.CachingStrategy;
         }
-        private void set_34_ImageExBase_CachingStrategy(object instance, object Value)
+        private void set_13_ImageExBase_CachingStrategy(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             that.CachingStrategy = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExCachingStrategy)Value;
         }
-        private object get_35_ImageExBase_EnableLazyLoading(object instance)
+        private object get_14_ImageExBase_EnableLazyLoading(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             return that.EnableLazyLoading;
         }
-        private void set_35_ImageExBase_EnableLazyLoading(object instance, object Value)
+        private void set_14_ImageExBase_EnableLazyLoading(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             that.EnableLazyLoading = (global::System.Boolean)Value;
         }
-        private object get_36_ImageExBase_PlaceholderSource(object instance)
+        private object get_15_ImageExBase_PlaceholderSource(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             return that.PlaceholderSource;
         }
-        private void set_36_ImageExBase_PlaceholderSource(object instance, object Value)
+        private void set_15_ImageExBase_PlaceholderSource(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             that.PlaceholderSource = (global::Windows.UI.Xaml.Media.ImageSource)Value;
         }
-        private object get_37_ImageExBase_PlaceholderStretch(object instance)
+        private object get_16_ImageExBase_PlaceholderStretch(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             return that.PlaceholderStretch;
         }
-        private void set_37_ImageExBase_PlaceholderStretch(object instance, object Value)
+        private void set_16_ImageExBase_PlaceholderStretch(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase)instance;
             that.PlaceholderStretch = (global::Windows.UI.Xaml.Media.Stretch)Value;
         }
-        private object get_38_PoolView_ViewModel(object instance)
+        private object get_17_AccountsPage_ViewModel(object instance)
+        {
+            var that = (global::e610.NET.AccountsPage)instance;
+            return that.ViewModel;
+        }
+        private void set_17_AccountsPage_ViewModel(object instance, object Value)
+        {
+            var that = (global::e610.NET.AccountsPage)instance;
+            that.ViewModel = (global::e610.NET.PostsViewModel)Value;
+        }
+        private object get_18_InfoBar_Content(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.Content;
+        }
+        private void set_18_InfoBar_Content(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.Content = (global::System.Object)Value;
+        }
+        private object get_19_InfoBar_IsOpen(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.IsOpen;
+        }
+        private void set_19_InfoBar_IsOpen(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.IsOpen = (global::System.Boolean)Value;
+        }
+        private object get_20_InfoBar_Severity(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.Severity;
+        }
+        private void set_20_InfoBar_Severity(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.Severity = (global::Microsoft.UI.Xaml.Controls.InfoBarSeverity)Value;
+        }
+        private object get_21_InfoBar_Title(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.Title;
+        }
+        private void set_21_InfoBar_Title(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.Title = (global::System.String)Value;
+        }
+        private object get_22_InfoBar_Message(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.Message;
+        }
+        private void set_22_InfoBar_Message(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.Message = (global::System.String)Value;
+        }
+        private object get_23_InfoBar_IsIconVisible(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.IsIconVisible;
+        }
+        private void set_23_InfoBar_IsIconVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.IsIconVisible = (global::System.Boolean)Value;
+        }
+        private object get_24_InfoBar_IsClosable(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.IsClosable;
+        }
+        private void set_24_InfoBar_IsClosable(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.IsClosable = (global::System.Boolean)Value;
+        }
+        private object get_25_InfoBar_IconSource(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.IconSource;
+        }
+        private void set_25_InfoBar_IconSource(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.IconSource = (global::Microsoft.UI.Xaml.Controls.IconSource)Value;
+        }
+        private object get_26_InfoBar_ContentTemplate(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.ContentTemplate;
+        }
+        private void set_26_InfoBar_ContentTemplate(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.ContentTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_27_InfoBar_CloseButtonStyle(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.CloseButtonStyle;
+        }
+        private void set_27_InfoBar_CloseButtonStyle(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.CloseButtonStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_28_InfoBar_CloseButtonCommandParameter(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.CloseButtonCommandParameter;
+        }
+        private void set_28_InfoBar_CloseButtonCommandParameter(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.CloseButtonCommandParameter = (global::System.Object)Value;
+        }
+        private object get_29_InfoBar_CloseButtonCommand(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.CloseButtonCommand;
+        }
+        private void set_29_InfoBar_CloseButtonCommand(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.CloseButtonCommand = (global::System.Windows.Input.ICommand)Value;
+        }
+        private object get_30_InfoBar_ActionButton(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.ActionButton;
+        }
+        private void set_30_InfoBar_ActionButton(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.ActionButton = (global::Windows.UI.Xaml.Controls.Primitives.ButtonBase)Value;
+        }
+        private object get_31_InfoBar_TemplateSettings(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.TemplateSettings;
+        }
+        private object get_32_PoolView_ViewModel(object instance)
         {
             var that = (global::e610.NET.Pages.PoolView)instance;
             return that.ViewModel;
         }
-        private void set_38_PoolView_ViewModel(object instance, object Value)
+        private void set_32_PoolView_ViewModel(object instance, object Value)
         {
             var that = (global::e610.NET.Pages.PoolView)instance;
             that.ViewModel = (global::e610.NET.PostsViewModel)Value;
         }
-        private object get_39_PostsViewPage_ViewModel(object instance)
+        private object get_33_PostsViewPage_ViewModel(object instance)
         {
             var that = (global::e610.NET.PostsViewPage)instance;
             return that.ViewModel;
         }
-        private void set_39_PostsViewPage_ViewModel(object instance, object Value)
+        private void set_33_PostsViewPage_ViewModel(object instance, object Value)
         {
             var that = (global::e610.NET.PostsViewPage)instance;
             that.ViewModel = (global::e610.NET.PostsViewModel)Value;
         }
-        private object get_40_ProgressRing_IsActive(object instance)
+        private object get_34_ProgressRing_IsActive(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             return that.IsActive;
         }
-        private void set_40_ProgressRing_IsActive(object instance, object Value)
+        private void set_34_ProgressRing_IsActive(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             that.IsActive = (global::System.Boolean)Value;
         }
-        private object get_41_ProgressRing_Value(object instance)
+        private object get_35_ProgressRing_Value(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             return that.Value;
         }
-        private void set_41_ProgressRing_Value(object instance, object Value)
+        private void set_35_ProgressRing_Value(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             that.Value = (global::System.Double)Value;
         }
-        private object get_42_ProgressRing_Minimum(object instance)
+        private object get_36_ProgressRing_Minimum(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             return that.Minimum;
         }
-        private void set_42_ProgressRing_Minimum(object instance, object Value)
+        private void set_36_ProgressRing_Minimum(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             that.Minimum = (global::System.Double)Value;
         }
-        private object get_43_ProgressRing_Maximum(object instance)
+        private object get_37_ProgressRing_Maximum(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             return that.Maximum;
         }
-        private void set_43_ProgressRing_Maximum(object instance, object Value)
+        private void set_37_ProgressRing_Maximum(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             that.Maximum = (global::System.Double)Value;
         }
-        private object get_44_ProgressRing_IsIndeterminate(object instance)
+        private object get_38_ProgressRing_IsIndeterminate(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             return that.IsIndeterminate;
         }
-        private void set_44_ProgressRing_IsIndeterminate(object instance, object Value)
+        private void set_38_ProgressRing_IsIndeterminate(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             that.IsIndeterminate = (global::System.Boolean)Value;
         }
-        private object get_45_ProgressRing_TemplateSettings(object instance)
+        private object get_39_ProgressRing_TemplateSettings(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
             return that.TemplateSettings;
         }
-        private object get_46_CharacterEncoding_WindowsCodePage(object instance)
+        private object get_40_CharacterEncoding_WindowsCodePage(object instance)
         {
             var that = (global::FFmpegInterop.CharacterEncoding)instance;
             return that.WindowsCodePage;
         }
-        private object get_47_CharacterEncoding_Description(object instance)
+        private object get_41_CharacterEncoding_Description(object instance)
         {
             var that = (global::FFmpegInterop.CharacterEncoding)instance;
             return that.Description;
         }
-        private object get_48_CharacterEncoding_Name(object instance)
+        private object get_42_CharacterEncoding_Name(object instance)
         {
             var that = (global::FFmpegInterop.CharacterEncoding)instance;
             return that.Name;
         }
-        private object get_49_UniformGrid_Columns(object instance)
+        private object get_43_UniformGrid_Columns(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid)instance;
             return that.Columns;
         }
-        private void set_49_UniformGrid_Columns(object instance, object Value)
+        private void set_43_UniformGrid_Columns(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid)instance;
             that.Columns = (global::System.Int32)Value;
         }
-        private object get_50_UniformGrid_FirstColumn(object instance)
+        private object get_44_UniformGrid_FirstColumn(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid)instance;
             return that.FirstColumn;
         }
-        private void set_50_UniformGrid_FirstColumn(object instance, object Value)
+        private void set_44_UniformGrid_FirstColumn(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid)instance;
             that.FirstColumn = (global::System.Int32)Value;
         }
-        private object get_51_UniformGrid_Orientation(object instance)
+        private object get_45_UniformGrid_Orientation(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid)instance;
             return that.Orientation;
         }
-        private void set_51_UniformGrid_Orientation(object instance, object Value)
+        private void set_45_UniformGrid_Orientation(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid)instance;
             that.Orientation = (global::Windows.UI.Xaml.Controls.Orientation)Value;
         }
-        private object get_52_UniformGrid_Rows(object instance)
+        private object get_46_UniformGrid_Rows(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid)instance;
             return that.Rows;
         }
-        private void set_52_UniformGrid_Rows(object instance, object Value)
+        private void set_46_UniformGrid_Rows(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid)instance;
             that.Rows = (global::System.Int32)Value;
         }
-        private object get_53_UniformGrid_AutoLayout(object instance)
+        private object get_47_UniformGrid_AutoLayout(object instance)
         {
             return global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.GetAutoLayout((global::Windows.UI.Xaml.FrameworkElement)instance);
         }
-        private void set_53_UniformGrid_AutoLayout(object instance, object Value)
+        private void set_47_UniformGrid_AutoLayout(object instance, object Value)
         {
             global::Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.SetAutoLayout((global::Windows.UI.Xaml.FrameworkElement)instance, (global::System.Nullable<global::System.Boolean>)Value);
         }
-        private object get_54_NullableBool_Value(object instance)
+        private object get_48_NullableBool_Value(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool)instance;
             return that.Value;
         }
-        private void set_54_NullableBool_Value(object instance, object Value)
+        private void set_48_NullableBool_Value(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool)instance;
             that.Value = (global::System.Boolean)Value;
         }
-        private object get_55_NullableBool_IsNull(object instance)
+        private object get_49_NullableBool_IsNull(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool)instance;
             return that.IsNull;
         }
-        private void set_55_NullableBool_IsNull(object instance, object Value)
+        private void set_49_NullableBool_IsNull(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool)instance;
             that.IsNull = (global::System.Boolean)Value;
         }
-        private object get_56_OnDevice_Default(object instance)
+        private object get_50_OnDevice_Default(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice)instance;
             return that.Default;
         }
-        private void set_56_OnDevice_Default(object instance, object Value)
+        private void set_50_OnDevice_Default(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice)instance;
             that.Default = (global::System.Object)Value;
         }
-        private object get_57_OnDevice_Desktop(object instance)
+        private object get_51_OnDevice_Desktop(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice)instance;
             return that.Desktop;
         }
-        private void set_57_OnDevice_Desktop(object instance, object Value)
+        private void set_51_OnDevice_Desktop(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice)instance;
             that.Desktop = (global::System.Object)Value;
         }
-        private object get_58_OnDevice_Holographic(object instance)
+        private object get_52_OnDevice_Holographic(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice)instance;
             return that.Holographic;
         }
-        private void set_58_OnDevice_Holographic(object instance, object Value)
+        private void set_52_OnDevice_Holographic(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice)instance;
             that.Holographic = (global::System.Object)Value;
         }
-        private object get_59_OnDevice_IoT(object instance)
+        private object get_53_OnDevice_IoT(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice)instance;
             return that.IoT;
         }
-        private void set_59_OnDevice_IoT(object instance, object Value)
+        private void set_53_OnDevice_IoT(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice)instance;
             that.IoT = (global::System.Object)Value;
         }
-        private object get_60_OnDevice_Team(object instance)
+        private object get_54_OnDevice_Team(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice)instance;
             return that.Team;
         }
-        private void set_60_OnDevice_Team(object instance, object Value)
+        private void set_54_OnDevice_Team(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice)instance;
             that.Team = (global::System.Object)Value;
         }
-        private object get_61_OnDevice_Xbox(object instance)
+        private object get_55_OnDevice_Xbox(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice)instance;
             return that.Xbox;
         }
-        private void set_61_OnDevice_Xbox(object instance, object Value)
+        private void set_55_OnDevice_Xbox(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice)instance;
             that.Xbox = (global::System.Object)Value;
         }
-        private object get_62_DoubleToObjectConverter_TrueValue(object instance)
+        private object get_56_DoubleToObjectConverter_TrueValue(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter)instance;
             return that.TrueValue;
         }
-        private void set_62_DoubleToObjectConverter_TrueValue(object instance, object Value)
+        private void set_56_DoubleToObjectConverter_TrueValue(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter)instance;
             that.TrueValue = (global::System.Object)Value;
         }
-        private object get_63_DoubleToObjectConverter_FalseValue(object instance)
+        private object get_57_DoubleToObjectConverter_FalseValue(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter)instance;
             return that.FalseValue;
         }
-        private void set_63_DoubleToObjectConverter_FalseValue(object instance, object Value)
+        private void set_57_DoubleToObjectConverter_FalseValue(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter)instance;
             that.FalseValue = (global::System.Object)Value;
         }
-        private object get_64_DoubleToObjectConverter_NullValue(object instance)
+        private object get_58_DoubleToObjectConverter_NullValue(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter)instance;
             return that.NullValue;
         }
-        private void set_64_DoubleToObjectConverter_NullValue(object instance, object Value)
+        private void set_58_DoubleToObjectConverter_NullValue(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter)instance;
             that.NullValue = (global::System.Object)Value;
         }
-        private object get_65_DoubleToObjectConverter_GreaterThan(object instance)
+        private object get_59_DoubleToObjectConverter_GreaterThan(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter)instance;
             return that.GreaterThan;
         }
-        private void set_65_DoubleToObjectConverter_GreaterThan(object instance, object Value)
+        private void set_59_DoubleToObjectConverter_GreaterThan(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter)instance;
             that.GreaterThan = (global::System.Double)Value;
         }
-        private object get_66_DoubleToObjectConverter_LessThan(object instance)
+        private object get_60_DoubleToObjectConverter_LessThan(object instance)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter)instance;
             return that.LessThan;
         }
-        private void set_66_DoubleToObjectConverter_LessThan(object instance, object Value)
+        private void set_60_DoubleToObjectConverter_LessThan(object instance, object Value)
         {
             var that = (global::Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter)instance;
             that.LessThan = (global::System.Double)Value;
         }
-        private object get_67_TreeViewNode_IsExpanded(object instance)
+        private object get_61_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_67_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_61_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_68_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_62_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_68_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_62_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_69_TreeViewNode_Content(object instance)
+        private object get_63_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_69_TreeViewNode_Content(object instance, object Value)
+        private void set_63_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_70_TreeViewNode_Children(object instance)
+        private object get_64_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_71_TreeViewNode_Depth(object instance)
+        private object get_65_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_72_TreeViewNode_HasChildren(object instance)
+        private object get_66_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_73_TreeViewNode_Parent(object instance)
+        private object get_67_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -1562,368 +1467,325 @@ namespace e621.NET.e610_NET_XamlTypeInfo
 
             switch (longMemberName)
             {
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.PreferredPlacement":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "PreferredPlacement", "Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_0_TeachingTip_PreferredPlacement;
-                xamlMember.Setter = set_0_TeachingTip_PreferredPlacement;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.Title":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Title", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_1_TeachingTip_Title;
-                xamlMember.Setter = set_1_TeachingTip_Title;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.Target":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Target", "Windows.UI.Xaml.FrameworkElement");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_2_TeachingTip_Target;
-                xamlMember.Setter = set_2_TeachingTip_Target;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.TailVisibility":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "TailVisibility", "Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_3_TeachingTip_TailVisibility;
-                xamlMember.Setter = set_3_TeachingTip_TailVisibility;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.Subtitle":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Subtitle", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_4_TeachingTip_Subtitle;
-                xamlMember.Setter = set_4_TeachingTip_Subtitle;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.ShouldConstrainToRootBounds":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "ShouldConstrainToRootBounds", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_5_TeachingTip_ShouldConstrainToRootBounds;
-                xamlMember.Setter = set_5_TeachingTip_ShouldConstrainToRootBounds;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.PlacementMargin":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "PlacementMargin", "Windows.UI.Xaml.Thickness");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_TeachingTip_PlacementMargin;
-                xamlMember.Setter = set_6_TeachingTip_PlacementMargin;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.IsOpen":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "IsOpen", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_7_TeachingTip_IsOpen;
-                xamlMember.Setter = set_7_TeachingTip_IsOpen;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.IsLightDismissEnabled":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "IsLightDismissEnabled", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_8_TeachingTip_IsLightDismissEnabled;
-                xamlMember.Setter = set_8_TeachingTip_IsLightDismissEnabled;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.IconSource":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "IconSource", "Microsoft.UI.Xaml.Controls.IconSource");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_TeachingTip_IconSource;
-                xamlMember.Setter = set_9_TeachingTip_IconSource;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.HeroContentPlacement":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "HeroContentPlacement", "Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_TeachingTip_HeroContentPlacement;
-                xamlMember.Setter = set_10_TeachingTip_HeroContentPlacement;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.HeroContent":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "HeroContent", "Windows.UI.Xaml.UIElement");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_11_TeachingTip_HeroContent;
-                xamlMember.Setter = set_11_TeachingTip_HeroContent;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.CloseButtonStyle":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "CloseButtonStyle", "Windows.UI.Xaml.Style");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_12_TeachingTip_CloseButtonStyle;
-                xamlMember.Setter = set_12_TeachingTip_CloseButtonStyle;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.CloseButtonContent":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "CloseButtonContent", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_13_TeachingTip_CloseButtonContent;
-                xamlMember.Setter = set_13_TeachingTip_CloseButtonContent;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.CloseButtonCommandParameter":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "CloseButtonCommandParameter", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_14_TeachingTip_CloseButtonCommandParameter;
-                xamlMember.Setter = set_14_TeachingTip_CloseButtonCommandParameter;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.CloseButtonCommand":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "CloseButtonCommand", "System.Windows.Input.ICommand");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_TeachingTip_CloseButtonCommand;
-                xamlMember.Setter = set_15_TeachingTip_CloseButtonCommand;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.ActionButtonStyle":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "ActionButtonStyle", "Windows.UI.Xaml.Style");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_16_TeachingTip_ActionButtonStyle;
-                xamlMember.Setter = set_16_TeachingTip_ActionButtonStyle;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.ActionButtonContent":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "ActionButtonContent", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_17_TeachingTip_ActionButtonContent;
-                xamlMember.Setter = set_17_TeachingTip_ActionButtonContent;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.ActionButtonCommandParameter":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "ActionButtonCommandParameter", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_18_TeachingTip_ActionButtonCommandParameter;
-                xamlMember.Setter = set_18_TeachingTip_ActionButtonCommandParameter;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.ActionButtonCommand":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "ActionButtonCommand", "System.Windows.Input.ICommand");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_19_TeachingTip_ActionButtonCommand;
-                xamlMember.Setter = set_19_TeachingTip_ActionButtonCommand;
-                break;
-            case "Microsoft.UI.Xaml.Controls.TeachingTip.TemplateSettings":
-                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TeachingTip");
-                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.TeachingTipTemplateSettings");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_20_TeachingTip_TemplateSettings;
-                xamlMember.SetIsReadOnly();
-                break;
             case "Microsoft.UI.Xaml.Controls.ProgressBar.IsIndeterminate":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressBar");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "IsIndeterminate", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_ProgressBar_IsIndeterminate;
-                xamlMember.Setter = set_21_ProgressBar_IsIndeterminate;
+                xamlMember.Getter = get_0_ProgressBar_IsIndeterminate;
+                xamlMember.Setter = set_0_ProgressBar_IsIndeterminate;
                 break;
             case "Microsoft.UI.Xaml.Controls.ProgressBar.ShowPaused":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressBar");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "ShowPaused", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_22_ProgressBar_ShowPaused;
-                xamlMember.Setter = set_22_ProgressBar_ShowPaused;
+                xamlMember.Getter = get_1_ProgressBar_ShowPaused;
+                xamlMember.Setter = set_1_ProgressBar_ShowPaused;
                 break;
             case "Microsoft.UI.Xaml.Controls.ProgressBar.ShowError":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressBar");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "ShowError", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_23_ProgressBar_ShowError;
-                xamlMember.Setter = set_23_ProgressBar_ShowError;
+                xamlMember.Getter = get_2_ProgressBar_ShowError;
+                xamlMember.Setter = set_2_ProgressBar_ShowError;
                 break;
             case "Microsoft.UI.Xaml.Controls.ProgressBar.TemplateSettings":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressBar");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.ProgressBarTemplateSettings");
-                xamlMember.Getter = get_24_ProgressBar_TemplateSettings;
+                xamlMember.Getter = get_3_ProgressBar_TemplateSettings;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.Source":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Source", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_25_ImageExBase_Source;
-                xamlMember.Setter = set_25_ImageExBase_Source;
+                xamlMember.Getter = get_4_ImageExBase_Source;
+                xamlMember.Setter = set_4_ImageExBase_Source;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.ImageEx.NineGrid":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.ImageEx");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "NineGrid", "Windows.UI.Xaml.Thickness");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_26_ImageEx_NineGrid;
-                xamlMember.Setter = set_26_ImageEx_NineGrid;
+                xamlMember.Getter = get_5_ImageEx_NineGrid;
+                xamlMember.Setter = set_5_ImageEx_NineGrid;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.IsInitialized":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "IsInitialized", "Boolean");
-                xamlMember.Getter = get_27_ImageExBase_IsInitialized;
+                xamlMember.Getter = get_6_ImageExBase_IsInitialized;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.CornerRadius":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "CornerRadius", "Windows.UI.Xaml.CornerRadius");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_28_ImageExBase_CornerRadius;
-                xamlMember.Setter = set_28_ImageExBase_CornerRadius;
+                xamlMember.Getter = get_7_ImageExBase_CornerRadius;
+                xamlMember.Setter = set_7_ImageExBase_CornerRadius;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.DecodePixelHeight":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "DecodePixelHeight", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_ImageExBase_DecodePixelHeight;
-                xamlMember.Setter = set_29_ImageExBase_DecodePixelHeight;
+                xamlMember.Getter = get_8_ImageExBase_DecodePixelHeight;
+                xamlMember.Setter = set_8_ImageExBase_DecodePixelHeight;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.DecodePixelType":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "DecodePixelType", "Windows.UI.Xaml.Media.Imaging.DecodePixelType");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_30_ImageExBase_DecodePixelType;
-                xamlMember.Setter = set_30_ImageExBase_DecodePixelType;
+                xamlMember.Getter = get_9_ImageExBase_DecodePixelType;
+                xamlMember.Setter = set_9_ImageExBase_DecodePixelType;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.DecodePixelWidth":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "DecodePixelWidth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_31_ImageExBase_DecodePixelWidth;
-                xamlMember.Setter = set_31_ImageExBase_DecodePixelWidth;
+                xamlMember.Getter = get_10_ImageExBase_DecodePixelWidth;
+                xamlMember.Setter = set_10_ImageExBase_DecodePixelWidth;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.Stretch":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Stretch", "Windows.UI.Xaml.Media.Stretch");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_32_ImageExBase_Stretch;
-                xamlMember.Setter = set_32_ImageExBase_Stretch;
+                xamlMember.Getter = get_11_ImageExBase_Stretch;
+                xamlMember.Setter = set_11_ImageExBase_Stretch;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.IsCacheEnabled":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "IsCacheEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_33_ImageExBase_IsCacheEnabled;
-                xamlMember.Setter = set_33_ImageExBase_IsCacheEnabled;
+                xamlMember.Getter = get_12_ImageExBase_IsCacheEnabled;
+                xamlMember.Setter = set_12_ImageExBase_IsCacheEnabled;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.CachingStrategy":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "CachingStrategy", "Microsoft.Toolkit.Uwp.UI.Controls.ImageExCachingStrategy");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_34_ImageExBase_CachingStrategy;
-                xamlMember.Setter = set_34_ImageExBase_CachingStrategy;
+                xamlMember.Getter = get_13_ImageExBase_CachingStrategy;
+                xamlMember.Setter = set_13_ImageExBase_CachingStrategy;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.EnableLazyLoading":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "EnableLazyLoading", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_35_ImageExBase_EnableLazyLoading;
-                xamlMember.Setter = set_35_ImageExBase_EnableLazyLoading;
+                xamlMember.Getter = get_14_ImageExBase_EnableLazyLoading;
+                xamlMember.Setter = set_14_ImageExBase_EnableLazyLoading;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.PlaceholderSource":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "PlaceholderSource", "Windows.UI.Xaml.Media.ImageSource");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_36_ImageExBase_PlaceholderSource;
-                xamlMember.Setter = set_36_ImageExBase_PlaceholderSource;
+                xamlMember.Getter = get_15_ImageExBase_PlaceholderSource;
+                xamlMember.Setter = set_15_ImageExBase_PlaceholderSource;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.PlaceholderStretch":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "PlaceholderStretch", "Windows.UI.Xaml.Media.Stretch");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_37_ImageExBase_PlaceholderStretch;
-                xamlMember.Setter = set_37_ImageExBase_PlaceholderStretch;
+                xamlMember.Getter = get_16_ImageExBase_PlaceholderStretch;
+                xamlMember.Setter = set_16_ImageExBase_PlaceholderStretch;
+                break;
+            case "e610.NET.AccountsPage.ViewModel":
+                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("e610.NET.AccountsPage");
+                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "ViewModel", "e610.NET.PostsViewModel");
+                xamlMember.Getter = get_17_AccountsPage_ViewModel;
+                xamlMember.Setter = set_17_AccountsPage_ViewModel;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.Content":
+                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Content", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_18_InfoBar_Content;
+                xamlMember.Setter = set_18_InfoBar_Content;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.IsOpen":
+                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "IsOpen", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_19_InfoBar_IsOpen;
+                xamlMember.Setter = set_19_InfoBar_IsOpen;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.Severity":
+                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Severity", "Microsoft.UI.Xaml.Controls.InfoBarSeverity");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_20_InfoBar_Severity;
+                xamlMember.Setter = set_20_InfoBar_Severity;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.Title":
+                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Title", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_21_InfoBar_Title;
+                xamlMember.Setter = set_21_InfoBar_Title;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.Message":
+                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Message", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_22_InfoBar_Message;
+                xamlMember.Setter = set_22_InfoBar_Message;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.IsIconVisible":
+                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "IsIconVisible", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_23_InfoBar_IsIconVisible;
+                xamlMember.Setter = set_23_InfoBar_IsIconVisible;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.IsClosable":
+                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "IsClosable", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_24_InfoBar_IsClosable;
+                xamlMember.Setter = set_24_InfoBar_IsClosable;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.IconSource":
+                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "IconSource", "Microsoft.UI.Xaml.Controls.IconSource");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_25_InfoBar_IconSource;
+                xamlMember.Setter = set_25_InfoBar_IconSource;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.ContentTemplate":
+                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "ContentTemplate", "Windows.UI.Xaml.DataTemplate");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_26_InfoBar_ContentTemplate;
+                xamlMember.Setter = set_26_InfoBar_ContentTemplate;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.CloseButtonStyle":
+                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "CloseButtonStyle", "Windows.UI.Xaml.Style");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_27_InfoBar_CloseButtonStyle;
+                xamlMember.Setter = set_27_InfoBar_CloseButtonStyle;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.CloseButtonCommandParameter":
+                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "CloseButtonCommandParameter", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_28_InfoBar_CloseButtonCommandParameter;
+                xamlMember.Setter = set_28_InfoBar_CloseButtonCommandParameter;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.CloseButtonCommand":
+                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "CloseButtonCommand", "System.Windows.Input.ICommand");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_29_InfoBar_CloseButtonCommand;
+                xamlMember.Setter = set_29_InfoBar_CloseButtonCommand;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.ActionButton":
+                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "ActionButton", "Windows.UI.Xaml.Controls.Primitives.ButtonBase");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_30_InfoBar_ActionButton;
+                xamlMember.Setter = set_30_InfoBar_ActionButton;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.TemplateSettings":
+                userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_31_InfoBar_TemplateSettings;
+                xamlMember.SetIsReadOnly();
                 break;
             case "e610.NET.Pages.PoolView.ViewModel":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("e610.NET.Pages.PoolView");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "ViewModel", "e610.NET.PostsViewModel");
-                xamlMember.Getter = get_38_PoolView_ViewModel;
-                xamlMember.Setter = set_38_PoolView_ViewModel;
+                xamlMember.Getter = get_32_PoolView_ViewModel;
+                xamlMember.Setter = set_32_PoolView_ViewModel;
                 break;
             case "e610.NET.PostsViewPage.ViewModel":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("e610.NET.PostsViewPage");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "ViewModel", "e610.NET.PostsViewModel");
-                xamlMember.Getter = get_39_PostsViewPage_ViewModel;
-                xamlMember.Setter = set_39_PostsViewPage_ViewModel;
+                xamlMember.Getter = get_33_PostsViewPage_ViewModel;
+                xamlMember.Setter = set_33_PostsViewPage_ViewModel;
                 break;
             case "Microsoft.UI.Xaml.Controls.ProgressRing.IsActive":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "IsActive", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_40_ProgressRing_IsActive;
-                xamlMember.Setter = set_40_ProgressRing_IsActive;
+                xamlMember.Getter = get_34_ProgressRing_IsActive;
+                xamlMember.Setter = set_34_ProgressRing_IsActive;
                 break;
             case "Microsoft.UI.Xaml.Controls.ProgressRing.Value":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Value", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_41_ProgressRing_Value;
-                xamlMember.Setter = set_41_ProgressRing_Value;
+                xamlMember.Getter = get_35_ProgressRing_Value;
+                xamlMember.Setter = set_35_ProgressRing_Value;
                 break;
             case "Microsoft.UI.Xaml.Controls.ProgressRing.Minimum":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Minimum", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_42_ProgressRing_Minimum;
-                xamlMember.Setter = set_42_ProgressRing_Minimum;
+                xamlMember.Getter = get_36_ProgressRing_Minimum;
+                xamlMember.Setter = set_36_ProgressRing_Minimum;
                 break;
             case "Microsoft.UI.Xaml.Controls.ProgressRing.Maximum":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Maximum", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_43_ProgressRing_Maximum;
-                xamlMember.Setter = set_43_ProgressRing_Maximum;
+                xamlMember.Getter = get_37_ProgressRing_Maximum;
+                xamlMember.Setter = set_37_ProgressRing_Maximum;
                 break;
             case "Microsoft.UI.Xaml.Controls.ProgressRing.IsIndeterminate":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "IsIndeterminate", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_44_ProgressRing_IsIndeterminate;
-                xamlMember.Setter = set_44_ProgressRing_IsIndeterminate;
+                xamlMember.Getter = get_38_ProgressRing_IsIndeterminate;
+                xamlMember.Setter = set_38_ProgressRing_IsIndeterminate;
                 break;
             case "Microsoft.UI.Xaml.Controls.ProgressRing.TemplateSettings":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings");
-                xamlMember.Getter = get_45_ProgressRing_TemplateSettings;
+                xamlMember.Getter = get_39_ProgressRing_TemplateSettings;
                 xamlMember.SetIsReadOnly();
                 break;
             case "FFmpegInterop.CharacterEncoding.WindowsCodePage":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FFmpegInterop.CharacterEncoding");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "WindowsCodePage", "Int32");
-                xamlMember.Getter = get_46_CharacterEncoding_WindowsCodePage;
+                xamlMember.Getter = get_40_CharacterEncoding_WindowsCodePage;
                 xamlMember.SetIsReadOnly();
                 break;
             case "FFmpegInterop.CharacterEncoding.Description":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FFmpegInterop.CharacterEncoding");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Description", "String");
-                xamlMember.Getter = get_47_CharacterEncoding_Description;
+                xamlMember.Getter = get_41_CharacterEncoding_Description;
                 xamlMember.SetIsReadOnly();
                 break;
             case "FFmpegInterop.CharacterEncoding.Name":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("FFmpegInterop.CharacterEncoding");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Name", "String");
-                xamlMember.Getter = get_48_CharacterEncoding_Name;
+                xamlMember.Getter = get_42_CharacterEncoding_Name;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.Columns":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Columns", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_49_UniformGrid_Columns;
-                xamlMember.Setter = set_49_UniformGrid_Columns;
+                xamlMember.Getter = get_43_UniformGrid_Columns;
+                xamlMember.Setter = set_43_UniformGrid_Columns;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.FirstColumn":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "FirstColumn", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_50_UniformGrid_FirstColumn;
-                xamlMember.Setter = set_50_UniformGrid_FirstColumn;
+                xamlMember.Getter = get_44_UniformGrid_FirstColumn;
+                xamlMember.Setter = set_44_UniformGrid_FirstColumn;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.Orientation":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Orientation", "Windows.UI.Xaml.Controls.Orientation");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_51_UniformGrid_Orientation;
-                xamlMember.Setter = set_51_UniformGrid_Orientation;
+                xamlMember.Getter = get_45_UniformGrid_Orientation;
+                xamlMember.Setter = set_45_UniformGrid_Orientation;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.Rows":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Rows", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_52_UniformGrid_Rows;
-                xamlMember.Setter = set_52_UniformGrid_Rows;
+                xamlMember.Getter = get_46_UniformGrid_Rows;
+                xamlMember.Setter = set_46_UniformGrid_Rows;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.AutoLayout":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid");
@@ -1931,136 +1793,136 @@ namespace e621.NET.e610_NET_XamlTypeInfo
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.FrameworkElement");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_53_UniformGrid_AutoLayout;
-                xamlMember.Setter = set_53_UniformGrid_AutoLayout;
+                xamlMember.Getter = get_47_UniformGrid_AutoLayout;
+                xamlMember.Setter = set_47_UniformGrid_AutoLayout;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool.Value":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Value", "Boolean");
-                xamlMember.Getter = get_54_NullableBool_Value;
-                xamlMember.Setter = set_54_NullableBool_Value;
+                xamlMember.Getter = get_48_NullableBool_Value;
+                xamlMember.Setter = set_48_NullableBool_Value;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool.IsNull":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "IsNull", "Boolean");
-                xamlMember.Getter = get_55_NullableBool_IsNull;
-                xamlMember.Setter = set_55_NullableBool_IsNull;
+                xamlMember.Getter = get_49_NullableBool_IsNull;
+                xamlMember.Setter = set_49_NullableBool_IsNull;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice.Default":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Default", "Object");
-                xamlMember.Getter = get_56_OnDevice_Default;
-                xamlMember.Setter = set_56_OnDevice_Default;
+                xamlMember.Getter = get_50_OnDevice_Default;
+                xamlMember.Setter = set_50_OnDevice_Default;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice.Desktop":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Desktop", "Object");
-                xamlMember.Getter = get_57_OnDevice_Desktop;
-                xamlMember.Setter = set_57_OnDevice_Desktop;
+                xamlMember.Getter = get_51_OnDevice_Desktop;
+                xamlMember.Setter = set_51_OnDevice_Desktop;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice.Holographic":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Holographic", "Object");
-                xamlMember.Getter = get_58_OnDevice_Holographic;
-                xamlMember.Setter = set_58_OnDevice_Holographic;
+                xamlMember.Getter = get_52_OnDevice_Holographic;
+                xamlMember.Setter = set_52_OnDevice_Holographic;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice.IoT":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "IoT", "Object");
-                xamlMember.Getter = get_59_OnDevice_IoT;
-                xamlMember.Setter = set_59_OnDevice_IoT;
+                xamlMember.Getter = get_53_OnDevice_IoT;
+                xamlMember.Setter = set_53_OnDevice_IoT;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice.Team":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Team", "Object");
-                xamlMember.Getter = get_60_OnDevice_Team;
-                xamlMember.Setter = set_60_OnDevice_Team;
+                xamlMember.Getter = get_54_OnDevice_Team;
+                xamlMember.Setter = set_54_OnDevice_Team;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice.Xbox":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Xbox", "Object");
-                xamlMember.Getter = get_61_OnDevice_Xbox;
-                xamlMember.Setter = set_61_OnDevice_Xbox;
+                xamlMember.Getter = get_55_OnDevice_Xbox;
+                xamlMember.Setter = set_55_OnDevice_Xbox;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter.TrueValue":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "TrueValue", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_62_DoubleToObjectConverter_TrueValue;
-                xamlMember.Setter = set_62_DoubleToObjectConverter_TrueValue;
+                xamlMember.Getter = get_56_DoubleToObjectConverter_TrueValue;
+                xamlMember.Setter = set_56_DoubleToObjectConverter_TrueValue;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter.FalseValue":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "FalseValue", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_63_DoubleToObjectConverter_FalseValue;
-                xamlMember.Setter = set_63_DoubleToObjectConverter_FalseValue;
+                xamlMember.Getter = get_57_DoubleToObjectConverter_FalseValue;
+                xamlMember.Setter = set_57_DoubleToObjectConverter_FalseValue;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter.NullValue":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "NullValue", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_64_DoubleToObjectConverter_NullValue;
-                xamlMember.Setter = set_64_DoubleToObjectConverter_NullValue;
+                xamlMember.Getter = get_58_DoubleToObjectConverter_NullValue;
+                xamlMember.Setter = set_58_DoubleToObjectConverter_NullValue;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter.GreaterThan":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "GreaterThan", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_65_DoubleToObjectConverter_GreaterThan;
-                xamlMember.Setter = set_65_DoubleToObjectConverter_GreaterThan;
+                xamlMember.Getter = get_59_DoubleToObjectConverter_GreaterThan;
+                xamlMember.Setter = set_59_DoubleToObjectConverter_GreaterThan;
                 break;
             case "Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter.LessThan":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Toolkit.Uwp.UI.Converters.DoubleToObjectConverter");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "LessThan", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_66_DoubleToObjectConverter_LessThan;
-                xamlMember.Setter = set_66_DoubleToObjectConverter_LessThan;
+                xamlMember.Getter = get_60_DoubleToObjectConverter_LessThan;
+                xamlMember.Setter = set_60_DoubleToObjectConverter_LessThan;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_67_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_67_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_61_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_61_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_68_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_68_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_62_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_62_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_69_TreeViewNode_Content;
-                xamlMember.Setter = set_69_TreeViewNode_Content;
+                xamlMember.Getter = get_63_TreeViewNode_Content;
+                xamlMember.Setter = set_63_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_70_TreeViewNode_Children;
+                xamlMember.Getter = get_64_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_71_TreeViewNode_Depth;
+                xamlMember.Getter = get_65_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_72_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_66_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::e621.NET.e610_NET_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::e621.NET.e610_NET_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_73_TreeViewNode_Parent;
+                xamlMember.Getter = get_67_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }

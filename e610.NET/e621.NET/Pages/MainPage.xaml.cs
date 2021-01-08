@@ -38,11 +38,24 @@ namespace e610.NET
             if (GlobalVars.Username == null)
             {
                 GlobalVars.Username = "";
+                localSettings.Values["username"] = "";
             }
             GlobalVars.APIKey = (string)localSettings.Values["apikey"];
             if (GlobalVars.APIKey == null)
             {
                 GlobalVars.APIKey = "";
+                localSettings.Values["apikey"] = "";
+            }
+            GlobalVars.Rating = (string)localSettings.Values["rating"];
+            if (GlobalVars.Rating == null)
+            {
+                GlobalVars.Rating = "rating:safe";
+                localSettings.Values["rating"] = "rating:safe";
+                RatingSelection.SelectedItem = "rating:safe";
+            }
+            else
+            {
+                RatingSelection.SelectedItem = GlobalVars.Rating;
             }
         }
         private void InitializeGlobalVars()
@@ -93,6 +106,39 @@ namespace e610.NET
         private void AccountViewTapped(object sender, TappedRoutedEventArgs e)
         {
             MainContentFrame.Navigate(typeof(AccountsPage), null, new DrillInNavigationTransitionInfo());
+        }
+
+        private void MainNav_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
+        {
+            if (args.IsSettingsInvoked)
+            {
+                SettingsDialog.ShowAsync();
+            }
+        }
+
+        private void SettingsDialog_PrimaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
+        {
+            Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            switch ((string)RatingSelection.SelectedItem)
+            {
+                case "rating:safe":
+                    GlobalVars.Rating = "rating:safe";
+                    localSettings.Values["rating"] = "rating:safe";
+                    break;
+                case "rating:questionable":
+                    GlobalVars.Rating = "rating:questionable rating:safe";
+                    localSettings.Values["rating"] = "rating:questionable";
+                    break;
+                case "rating:explicit":
+                    GlobalVars.Rating = "";
+                    localSettings.Values["rating"] = "";
+                    break;
+            }
+        }
+
+        private void RatingSelection_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

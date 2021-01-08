@@ -10,11 +10,13 @@ namespace e610.NET
     {
         public string tags;
         public int page;
+        public char paginationChar;
 
-        public LoadPostsArgs(string t, int l)
+        public LoadPostsArgs(string t, int l, char pc = 'b')
         {
             tags = t;
             page = l;
+            paginationChar = pc;
         }
     }
 }

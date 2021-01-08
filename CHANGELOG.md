@@ -7,3 +7,16 @@ Version 1.1
 - Better tag adding, Left click on tag to add it, Right click on tag to add with (-)
 - Better page loading
 - Better Images loading
+Version 1.2
+- Post Favoriting added
+- Fixed Downvoting
+- Added info popup
+- Added Accounts page
+- Added Settings Popup
+- Moved Saftey toggle into Settings
+- Added Movement buttons on SinglePostView
+- Added Movement selector(choose to mvoe between search or pool)
+- Reformated Single Post Buttons
+- Fixed Saftey
+- Moved connected pools list in single post view
+- Added Image Resizing button(not functional yet)

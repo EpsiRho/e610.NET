@@ -24,6 +24,6 @@
 /Lib:"C:\Users\jhset\.nuget\packages\runtime.win10-x64.microsoft.net.native.compiler\2.2.9-rel-29512-01\tools\x64\ilc\lib\Private"
 /WinMD:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x64\Release\ilc\in\WinMetadata\Microsoft.UI.Xaml.winmd"
 /WinMD:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x64\Release\ilc\in\WinMetadata\Windows.winmd"
-/VSTelemetrySessionSettings:"{\"IsOptedIn\":true,\"HostName\":\"Dev14\",\"AppInsightsInstrumentationKey\":\"f144292e-e3b2-4011-ac90-20e5c03fbce5\",\"AsimovInstrumentationKey\":\"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70\",\"AppId\":1001,\"UserId\":\"357d0ed9-3eab-4d5e-acd9-410fca17658b\",\"Id\":\"92a0be19-6178-437c-a19e-f6a37c1c1f54\",\"ProcessStartTime\":637456321493837721}"
+/VSTelemetrySessionSettings:"{\"IsOptedIn\":true,\"HostName\":\"Dev14\",\"AppInsightsInstrumentationKey\":\"f144292e-e3b2-4011-ac90-20e5c03fbce5\",\"AsimovInstrumentationKey\":\"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70\",\"AppId\":1001,\"UserId\":\"357d0ed9-3eab-4d5e-acd9-410fca17658b\",\"Id\":\"d53c6adf-2d18-4008-adeb-a7b352ed0ea8\",\"ProcessStartTime\":637457354519008756}"
 /RdXmlPath:"C:\Users\jhset\.nuget\packages\microsoft.net.native.compiler\2.2.9-rel-29512-01\tools\LibraryXML"
 /RunOnlyPreDR

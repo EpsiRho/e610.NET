@@ -19,24 +19,24 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>B6F71247239F8D7BDBA343106D9B0521271FE93327CDCF1F565C7B10EA9A21FB</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>e610.NET_1.0.0.0_x64__ac0w67xneh28g</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>961F859D0A40CC93A839D4B910C550DC1A1DF0F81F993DDB5914BB50C93CEE50</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>e610.NET_1.1.0.0_x64__ac0w67xneh28g</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e610.NET_ac0w67xneh28g!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e610.NET</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=John Setta, O=John Setta, STREET=2098 Oak Dairy Ln SW, L=Huntsville, S=Alabama, PostalCode=35803, C=US</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredVersion>1.1.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:48.235</Modified>
+      <Modified>2021-01-08T21:30:40.788</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Debug\e621.NET.exe">
       <PackagePath>entrypoint\e621.NET.exe</PackagePath>
-      <Modified>2021-01-07T16:13:37.406</Modified>
+      <Modified>2021-01-08T21:30:38.832</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -1734,31 +1734,31 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Debug\e621.NET.xr.xml">
       <PackagePath>e621.NET.xr.xml</PackagePath>
-      <Modified>2021-01-07T16:13:37.243</Modified>
+      <Modified>2021-01-08T21:20:34.712</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-01-07T16:14:46.214</Modified>
+      <Modified>2021-01-08T21:30:38.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Debug\Pages\AccountsPage.xbf">
       <PackagePath>Pages\AccountsPage.xbf</PackagePath>
-      <Modified>2021-01-07T16:14:46.214</Modified>
+      <Modified>2021-01-08T21:30:38.681</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Debug\Pages\MainPage.xbf">
       <PackagePath>Pages\MainPage.xbf</PackagePath>
-      <Modified>2021-01-07T16:14:46.214</Modified>
+      <Modified>2021-01-08T21:30:38.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Debug\Pages\PoolView.xbf">
       <PackagePath>Pages\PoolView.xbf</PackagePath>
-      <Modified>2021-01-07T16:14:46.205</Modified>
+      <Modified>2021-01-08T21:30:38.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Debug\Pages\PostsViewPage.xbf">
       <PackagePath>Pages\PostsViewPage.xbf</PackagePath>
-      <Modified>2021-01-07T16:14:46.214</Modified>
+      <Modified>2021-01-08T21:30:38.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Debug\Pages\SinglePostView.xbf">
       <PackagePath>Pages\SinglePostView.xbf</PackagePath>
-      <Modified>2021-01-07T16:14:46.214</Modified>
+      <Modified>2021-01-08T21:30:38.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -1774,11 +1774,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-01-07T16:14:47.177</Modified>
+      <Modified>2021-01-07T16:33:18.883</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Debug\Core\e621.NET.exe">
       <PackagePath>e621.NET.exe</PackagePath>
-      <Modified>2021-01-07T16:14:48.230</Modified>
+      <Modified>2021-01-08T21:30:40.784</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
