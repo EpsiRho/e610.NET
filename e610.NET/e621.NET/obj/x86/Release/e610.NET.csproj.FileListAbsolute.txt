@@ -1884,3 +1884,4 @@ C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Release\ilc\i
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Release\ilc\in\Assets\Wide310x150Logo.scale-125.png
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Release\ilc\in\Assets\Wide310x150Logo.scale-150.png
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Release\ilc\in\Assets\Wide310x150Logo.scale-400.png
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Release\e610.NET.csprojAssemblyReference.cache

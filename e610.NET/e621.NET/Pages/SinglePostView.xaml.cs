@@ -37,6 +37,7 @@ namespace e610.NET
         // Pages Variables //
         private Post singlePost; // Holds the post shown on this page
         private Pool poolToSelect;
+        public bool canGetTags;
         private ObservableCollection<Comment> CommentsSource = new ObservableCollection<Comment>(); // Tags tree binding source
         private ObservableCollection<Pool> ConnectedPools = new ObservableCollection<Pool>(); // Pools list binding source
         private ObservableCollection<Pool> MovementSource = new ObservableCollection<Pool>(); // Movement list binding source
@@ -51,7 +52,48 @@ namespace e610.NET
         private void PageLoad()
         {
             // Update the searchbox with the searchbox from the PostsView
-            SearchBox.Text = GlobalVars.searchText; 
+            SearchBox.Text = GlobalVars.searchText;
+            canGetTags = true;
+
+            if (GlobalVars.Binding == "Sample Height")
+            {
+                Binding heightBinding = new Binding();
+                heightBinding.Source = singlePost.sample.height;
+                heightBinding.Mode = BindingMode.OneWay;
+                bigpicture.SetBinding(HeightProperty, heightBinding);
+                Binding widthBinding = new Binding();
+                widthBinding.Source = singlePost.sample.width;
+                widthBinding.Mode = BindingMode.OneWay;
+                bigpicture.SetBinding(WidthProperty, widthBinding);
+                ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
+                GlobalVars.Binding = "Sample Height";
+            }
+            else if (GlobalVars.Binding == "Page Height")
+            {
+                Binding heightBinding = new Binding();
+                heightBinding.Source = page.ActualHeight - 55;
+                heightBinding.Mode = BindingMode.OneWay;
+                bigpicture.SetBinding(HeightProperty, heightBinding);
+                Binding widthBinding = new Binding();
+                widthBinding.Source = singlePost.sample.width;
+                widthBinding.Mode = BindingMode.OneWay;
+                bigpicture.SetBinding(WidthProperty, widthBinding);
+                ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
+                GlobalVars.Binding = "Page Height";
+            }
+            else
+            {
+                Binding heightBinding = new Binding();
+                heightBinding.Source = singlePost.file.height;
+                heightBinding.Mode = BindingMode.OneWay;
+                bigpicture.SetBinding(HeightProperty, heightBinding);
+                Binding widthBinding = new Binding();
+                widthBinding.Source = singlePost.file.width;
+                widthBinding.Mode = BindingMode.OneWay;
+                bigpicture.SetBinding(WidthProperty, widthBinding);
+                ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
+                GlobalVars.Binding = "Full Height";
+            }
 
             // Update the vote up / down with the post score
             VoteUpCount.Text = singlePost.score.up.ToString();
@@ -152,56 +194,66 @@ namespace e610.NET
         private async void CommentsPopulate()
         {
             Thread.Sleep(10);
-            List<Comment> Comments = GetComments();
-            for(int i = 0; i < Comments.Count(); i++)
+            if (GlobalVars.ShowComments)
             {
-                Comment c = Comments[i];
-                if (c.body.Contains("[quote]"))
+                List<Comment> Comments = GetComments();
+                for (int i = 0; i < Comments.Count(); i++)
                 {
-                    c.quotevis = Visibility.Visible;
-                    c.quote = c.body.Substring(c.body.IndexOf("["), c.body.IndexOf("[/") - (c.body.IndexOf("[")));
-                    c.body = c.body.Replace(c.quote, "");
-                    c.body = c.body.Replace("[/quote]", "");
-                    if (c.quote.Contains("[quote]\""))
+                    try
                     {
-                        c.quotedName = c.quote.Substring(c.quote.IndexOf("\""), c.quote.IndexOf("\n") - c.quote.IndexOf("\""));
-                        c.quote = c.quote.Replace("[quote]", "");
-                        c.quote = c.quote.Replace(c.quotedName, "");
-                        string[] temp = c.quotedName.Split("/");
-                        for(int k = 1; k < temp.Length; k++)
+                        Comment c = Comments[i];
+                        if (c.body.Contains("[quote]"))
                         {
-                            c.quotedName = c.quotedName.Replace(temp[k], "");
-                        }
-                        c.quotedName = c.quotedName.Replace("/", "");
-                        c.quotedName = c.quotedName.Replace("\"", "");
-                        c.quotedName = c.quotedName.Replace(":", "");
-                        c.quotedName += "said:";
-                        temp = temp[temp.Count() - 1].Split(" ");
-                        try
-                        {
-                            c.quotedID = Int32.Parse(temp[0]);
-                        }
-                        catch (Exception)
-                        {
+                            c.quotevis = Visibility.Visible;
+                            c.quote = c.body.Substring(c.body.IndexOf("["), c.body.IndexOf("[/") - (c.body.IndexOf("[")));
+                            c.body = c.body.Replace(c.quote, "");
+                            c.body = c.body.Replace("[/quote]", "");
+                            if (c.quote.Contains("[quote]\""))
+                            {
+                                c.quotedName = c.quote.Substring(c.quote.IndexOf("\""), c.quote.IndexOf("\n") - c.quote.IndexOf("\""));
+                                c.quote = c.quote.Replace("[quote]", "");
+                                c.quote = c.quote.Replace(c.quotedName, "");
+                                string[] temp = c.quotedName.Split("/");
+                                for (int k = 1; k < temp.Length; k++)
+                                {
+                                    c.quotedName = c.quotedName.Replace(temp[k], "");
+                                }
+                                c.quotedName = c.quotedName.Replace("/", "");
+                                c.quotedName = c.quotedName.Replace("\"", "");
+                                c.quotedName = c.quotedName.Replace(":", "");
+                                c.quotedName += "said:";
+                                temp = temp[temp.Count() - 1].Split(" ");
+                                try
+                                {
+                                    c.quotedID = Int32.Parse(temp[0]);
+                                }
+                                catch (Exception)
+                                {
 
+                                }
+                            }
+                            else
+                            {
+                                c.quote = c.quote.Replace("[quote]", "");
+                                c.quotedID = 0;
+                                c.quotedName = "Quote:";
+                            }
                         }
+                        else
+                        {
+                            c.quotevis = Visibility.Collapsed;
+                        }
+                        c.Avatar_Url = "";
+                        await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                        {
+                            CommentsSource.Add(c);
+                        });
                     }
-                    else
+                    catch (Exception)
                     {
-                        c.quote = c.quote.Replace("[quote]", "");
-                        c.quotedID = 0;
-                        c.quotedName = "Quote:";
+
                     }
                 }
-                else
-                {
-                    c.quotevis = Visibility.Collapsed;
-                }
-                c.Avatar_Url = "";
-                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
-                {
-                    CommentsSource.Add(c);
-                });
             }
         }
         private Pool getPoolInfo(int poolID)
@@ -210,7 +262,7 @@ namespace e610.NET
             {
                 var client = new RestClient();
                 client.BaseUrl = new Uri("https://e621.net/pools.json?");
-                client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
+                client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
                 var request = new RestRequest(RestSharp.Method.GET);
                 if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
                 {
@@ -411,6 +463,7 @@ namespace e610.NET
         {
             if (e.Key == Windows.System.VirtualKey.Enter)
             {
+                SearchTagAutoComplete.Items.Clear();
                 GlobalVars.newSearch = true;
                 GlobalVars.searchText = SearchBox.Text;
                 this.Frame.Navigate(typeof(PostsViewPage), null, new DrillInNavigationTransitionInfo());
@@ -424,7 +477,7 @@ namespace e610.NET
         {
             var client = new RestClient();
             client.BaseUrl = new Uri("https://e621.net/posts/"+ singlePost.id + "/votes.json");
-            client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
+            client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
             var request = new RestRequest(RestSharp.Method.POST);
             if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
             {
@@ -452,12 +505,14 @@ namespace e610.NET
                 InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational;
                 InfoPopup.IsOpen = true;
             }
+            Thread ClosePopup = new Thread(CloseInfoPopup);
+            ClosePopup.Start();
         }
         private void VoteDownButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
             var client = new RestClient();
             client.BaseUrl = new Uri("https://e621.net/posts/" + singlePost.id + "/votes.json");
-            client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
+            client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
             var request = new RestRequest(RestSharp.Method.POST);
             if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
             {
@@ -485,25 +540,24 @@ namespace e610.NET
                 InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational;
                 InfoPopup.IsOpen = true;
             }
+            Thread ClosePopup = new Thread(CloseInfoPopup);
+            ClosePopup.Start();
         }
         private void FavoiteButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
             var client = new RestClient();
             client.BaseUrl = new Uri("https://e621.net/favorites.json");
-            client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
+            client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
             var request = new RestRequest(RestSharp.Method.POST);
             if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
             {
                 request.AddQueryParameter("login", GlobalVars.Username);
                 request.AddQueryParameter("api_key", GlobalVars.APIKey);
             }
-            request.AddQueryParameter("post_ids", singlePost.id.ToString());
+            request.AddQueryParameter("post_id", singlePost.id.ToString());
             var response = client.Execute(request);
-            VoteResponse DeserializedJson = JsonConvert.DeserializeObject<VoteResponse>(response.Content);
-            if (DeserializedJson.our_score == -1)
+            if (!response.Content.Contains("You have already favorited this post"))
             {
-                singlePost.score.down--;
-                VoteDownCount.Text = singlePost.score.down.ToString();
                 InfoPopup.Title = "Favorited";
                 InfoPopup.Message = "Post Updated";
                 InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational;
@@ -511,13 +565,22 @@ namespace e610.NET
             }
             else
             {
-                singlePost.score.down++;
-                VoteDownCount.Text = singlePost.score.down.ToString();
+                client.BaseUrl = new Uri("https://e621.net/favorites/" + singlePost.id.ToString() + ".json");
+                client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
+                request = new RestRequest(RestSharp.Method.DELETE);
+                if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
+                {
+                    request.AddQueryParameter("login", GlobalVars.Username);
+                    request.AddQueryParameter("api_key", GlobalVars.APIKey);
+                }
+                response = client.Execute(request);
                 InfoPopup.Title = "Un-Favorited";
                 InfoPopup.Message = "Post Updated";
                 InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational;
                 InfoPopup.IsOpen = true;
             }
+            Thread ClosePopup = new Thread(CloseInfoPopup);
+            ClosePopup.Start();
         }
 
         private void bigpicture_RightTapped(object sender, RightTappedRoutedEventArgs e)
@@ -560,6 +623,8 @@ namespace e610.NET
                         InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Warning;
                         InfoPopup.IsOpen = true;
                     });
+                    Thread closePopup = new Thread(CloseInfoPopup);
+                    closePopup.Start();
                     return;
                 }
                 using (Stream stream = await file.OpenStreamForWriteAsync())
@@ -574,6 +639,8 @@ namespace e610.NET
                     InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Success;
                     InfoPopup.IsOpen = true;
                 });
+                Thread ClosePopup = new Thread(CloseInfoPopup);
+                ClosePopup.Start();
             }
             catch(Exception e)
             {
@@ -585,6 +652,8 @@ namespace e610.NET
                     InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Error;
                     InfoPopup.IsOpen = true;
                 });
+                Thread ClosePopup = new Thread(CloseInfoPopup);
+                ClosePopup.Start();
             }
         }
 
@@ -770,7 +839,16 @@ namespace e610.NET
 
         private void ImageSize_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            FlyoutBase.ShowAttachedFlyout(ImageSize);
+        }
 
+        private async void CloseInfoPopup()
+        {
+            Thread.Sleep(3000);
+            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+            {
+                InfoPopup.IsOpen = false;
+            });
         }
 
         private void BackPage_Tapped(object sender, TappedRoutedEventArgs e)
@@ -843,7 +921,7 @@ namespace e610.NET
             client.BaseUrl = new Uri("https://e621.net/posts.json?");
 
             // Set the useragent for e621
-            client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
+            client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
 
             // If user is logged in set login parameters into request
             if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
@@ -877,6 +955,15 @@ namespace e610.NET
                     return;
                 }
                 singlePost = DeserializedJson.posts[0];
+            }
+            else
+            {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => // Call Shit needed from UI Thread
+                {
+                    LoadingBar.Visibility = Visibility.Collapsed;
+                    ImageLoadProgress.Visibility = Visibility.Collapsed;
+                });
+                return;
             }
 
             // Loading done, hide the progress bar
@@ -970,6 +1057,171 @@ namespace e610.NET
             {
                 ImageLoadProgress.Visibility = Visibility.Collapsed;
             });
+        }
+
+        private void ImageMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            MenuFlyoutItem clickItem = (MenuFlyoutItem)e.OriginalSource;
+            if (clickItem.Text == "Sample Height")
+            {
+                Binding heightBinding = new Binding();
+                heightBinding.Source = singlePost.sample.height;
+                heightBinding.Mode = BindingMode.OneWay;
+                bigpicture.SetBinding(HeightProperty, heightBinding);
+                Binding widthBinding = new Binding();
+                widthBinding.Source = singlePost.sample.width;
+                widthBinding.Mode = BindingMode.OneWay;
+                bigpicture.SetBinding(WidthProperty, widthBinding);
+                ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
+                GlobalVars.Binding = "Sample Height";
+            }
+            else if(clickItem.Text == "Page Height")
+            {
+                Binding heightBinding = new Binding();
+                heightBinding.Source = page.ActualHeight - 55;
+                heightBinding.Mode = BindingMode.OneWay;
+                bigpicture.SetBinding(HeightProperty, heightBinding);
+                Binding widthBinding = new Binding();
+                widthBinding.Source = singlePost.sample.width;
+                widthBinding.Mode = BindingMode.OneWay;
+                bigpicture.SetBinding(WidthProperty, widthBinding);
+                ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
+                GlobalVars.Binding = "Page Height";
+            }
+            else
+            {
+                Binding heightBinding = new Binding();
+                heightBinding.Source = singlePost.file.height;
+                heightBinding.Mode = BindingMode.OneWay;
+                bigpicture.SetBinding(HeightProperty, heightBinding);
+                Binding widthBinding = new Binding();
+                widthBinding.Source = singlePost.file.width;
+                widthBinding.Mode = BindingMode.OneWay;
+                bigpicture.SetBinding(WidthProperty, widthBinding);
+                ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
+                GlobalVars.Binding = "Full Height";
+            }
+        }
+
+        private async void getTags(object t)
+        {
+            // Function Vars
+            var client = new RestClient(); // Client to handle Requests
+            string args = (string)t; // Convert Object to LoadPostArgs class
+            var request = new RestRequest(RestSharp.Method.GET); // REST request
+
+            if (args[0] == '-')
+            {
+                args.Remove(0, 1);
+            }
+
+            // Set Endpoint
+            // TODO: Switching between e621 - gelbooru - r34 - etc
+            client.BaseUrl = new Uri("https://e621.net//tags.json?");
+
+            // Set the useragent for e621
+            client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
+            request.AddQueryParameter("search[name_matches]", args + "*");
+            request.AddQueryParameter("search[order]", "count");
+            //request.AddQueryParameter("search[hide_empty]", "true");
+
+            // Set parameters for tags and post limit
+            request.AddQueryParameter("limit", "8");
+
+            // Send the request
+            var response = client.Execute(request);
+            // Deserialize the response
+            TagsHolder DeserializedJson = null;
+            try
+            {
+                DeserializedJson = JsonConvert.DeserializeObject<TagsHolder>("{tags:" + response.Content + "}");
+            }
+            catch (Exception)
+            {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    SearchTagAutoComplete.Items.Clear();
+                });
+                canGetTags = true;
+                return;
+            }
+            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+            {
+                SearchTagAutoComplete.Items.Clear();
+            });
+
+            foreach (Tag tag in DeserializedJson.tags)
+            {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    SearchTagAutoComplete.Items.Add(tag.name);
+                });
+            }
+
+            canGetTags = true;
+        }
+
+        private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string[] tags = SearchBox.Text.Split(" ");
+            int index = 0;
+            int count = 0;
+            int pos = SearchBox.SelectionStart;
+            for (int i = 0; i < tags.Count(); i++)
+            {
+                count += tags[i].Count();
+                if (pos == count)
+                {
+                    index = i;
+                    break;
+                }
+                count++;
+            }
+            if (tags[index].Count() >= 3)
+            {
+                if (canGetTags)
+                {
+                    Thread TagsThread = new Thread(getTags);
+                    TagsThread.Start(tags[index]);
+                    canGetTags = false;
+                }
+            }
+            else
+            {
+                SearchTagAutoComplete.Items.Clear();
+            }
+        }
+
+        private void SearchTagAutoComplete_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            canGetTags = false;
+            string clickedTag = (string)e.ClickedItem;
+            string[] tags = SearchBox.Text.Split(" ");
+            int pos = SearchBox.SelectionStart;
+            SearchBox.Text = "";
+            int count = 0;
+            for (int i = 0; i < tags.Count(); i++)
+            {
+                count += tags[i].Count();
+                if (pos == count)
+                {
+                    pos = (pos - tags[i].Count()) + clickedTag.Count() + 1;
+                    if (tags[i][0] == '-')
+                    {
+                        tags[i] = "-" + clickedTag;
+                    }
+                    else
+                    {
+                        tags[i] = clickedTag;
+                    }
+                    SearchBox.Focus(FocusState.Programmatic);
+                }
+                SearchBox.Text += tags[i] + " ";
+                count++;
+            }
+            SearchTagAutoComplete.Items.Clear();
+            SearchBox.SelectionStart = pos;
+            canGetTags = true;
         }
     }
 }

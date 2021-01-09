@@ -38,6 +38,7 @@
                     <x:String>rating:questionable</x:String>
                     <x:String>rating:explicit</x:String>
                 </ComboBox>
+                <ToggleSwitch x:Name="CommentSwitch" Header="Show Comments"/>
             </StackPanel>
         </ContentDialog>
     </Grid>

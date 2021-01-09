@@ -73,7 +73,7 @@ namespace e610.NET
                 UsernameTitle.Text = GlobalVars.Username;
             });
             client.BaseUrl = new Uri("https://e621.net/users.json?");
-            client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
+            client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
             request.AddQueryParameter("search[name_matches]", GlobalVars.Username);
 
             var response = client.Execute(request);
@@ -98,7 +98,7 @@ namespace e610.NET
             var client = new RestClient(); // Client to handle Requests
             var request = new RestRequest(RestSharp.Method.GET); // REST request
             client.BaseUrl = new Uri("https://e621.net/deleted_posts");
-            client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
+            client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
             if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
             {
                 request.AddQueryParameter("login", GlobalVars.Username);
@@ -130,7 +130,7 @@ namespace e610.NET
             client.BaseUrl = new Uri("https://e621.net/posts.json?");
 
             // Set the useragent for e621
-            client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
+            client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
 
             // If user is logged in set login parameters into request
             if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
@@ -191,7 +191,7 @@ namespace e610.NET
             var client = new RestClient(); // Client to handle Requests
             var request = new RestRequest(RestSharp.Method.GET); // REST request
             client.BaseUrl = new Uri("https://e621.net/posts.json?");
-            client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
+            client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
             request.AddQueryParameter("login", UsernameBox.Text);
             request.AddQueryParameter("api_key", APIKeyBox.Text);
             request.AddQueryParameter("limit", "1");

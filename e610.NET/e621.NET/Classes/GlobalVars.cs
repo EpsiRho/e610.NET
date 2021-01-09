@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Data;
 
 namespace e610.NET
 {
@@ -29,12 +30,14 @@ namespace e610.NET
         public static string Username;
         public static string APIKey;
 
-        public static bool safeMode;
-
         public static Pool PoolName;
 
         public static LoggedInUser LoggedInInfo;
 
         public static string Rating;
+
+        public static bool ShowComments;
+
+        public static string Binding;
     }
 }

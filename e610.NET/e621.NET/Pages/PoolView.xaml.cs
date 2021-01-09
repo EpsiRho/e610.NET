@@ -82,7 +82,7 @@ namespace e610.NET.Pages
             client.BaseUrl = new Uri("https://e621.net/posts.json?");
 
             // Set the useragent for e621
-            client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
+            client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
 
             // If user is logged in set login parameters into request
             if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
@@ -124,7 +124,7 @@ namespace e610.NET.Pages
             client.BaseUrl = new Uri("https://e621.net/posts.json?");
 
             // Set the useragent for e621
-            client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
+            client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
 
             // If user is logged in set login parameters into request
             if (GlobalVars.Username != "" && GlobalVars.APIKey != "")

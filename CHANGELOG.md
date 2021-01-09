@@ -20,3 +20,9 @@ Version 1.2
 - Fixed Saftey
 - Moved connected pools list in single post view
 - Added Image Resizing button(not functional yet)
+Version 1.3
+- Tag autocomplete
+- Fixed posts trying to laod when no more posts are availible
+- Fixed favoriting
+- Added Image resizing 
+- Added setting to disable comments

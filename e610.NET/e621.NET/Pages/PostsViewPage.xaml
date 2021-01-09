@@ -42,7 +42,8 @@
             <StackPanel Orientation="Vertical" Margin="10,10,10,10">
                 <TextBox Width="auto" Height="Auto" x:Name="SearchBox"
                      VerticalAlignment="Top" HorizontalAlignment="Stretch"
-                     TextWrapping="Wrap" KeyDown="SearchBox_KeyDown"/>
+                     TextWrapping="Wrap" KeyDown="SearchBox_KeyDown" TextChanged="SearchBox_TextChanged"/>
+                <ListView x:Name="SearchTagAutoComplete" Visibility="Visible" IsItemClickEnabled="True" ItemClick="SearchTagAutoComplete_ItemClick"/>
                 <Button x:Name="SearchButton" Tapped="SearchButton_Tapped" HorizontalAlignment="Stretch" Margin="0,5,0,0">
                     <SymbolIcon Symbol="Accept"/>
                 </Button>
@@ -52,11 +53,10 @@
             <control:ProgressBar x:Name="LoadingBar" IsIndeterminate="True" Visibility="Collapsed"  Margin="0,0,0,0"
                          Height="3" Foreground="White" Width="150"
                          ShowPaused="False" ShowError="False"/>
-            
+
             <!--Post Count Control-->
             <TextBlock Text="Post Count" FontSize="18" Margin="10,0,10,0" HorizontalAlignment="Center"/>
-            <Slider x:Name="PostCountSlider" Margin="10,0,10,0" Maximum="300" Minimum="25" StepFrequency="5" 
-                    ValueChanged="Slider_ValueChanged"/>
+            <Slider x:Name="PostCountSlider" Margin="10,0,10,0" Maximum="300" Minimum="25" StepFrequency="5"/>
 
             <!--Page controls and number-->
             <TextBlock Text="Page" FontSize="18" Margin="10,0,10,5" HorizontalAlignment="Center"/>
@@ -69,10 +69,6 @@
                     <SymbolIcon Symbol="Forward"/>
                 </Button>
             </StackPanel>
-        </StackPanel>
-        <!--Thumbnail type toggle-->
-        <StackPanel Grid.Column="0" VerticalAlignment="Bottom" Margin="10,0,0,10" Visibility="Collapsed">
-            <ToggleSwitch x:Name="SafeModeToggle" IsOn="False" OffContent="Safe" OnContent="Explicit" Toggled="SafeMode_Toggled"/>
         </StackPanel>
 
         <!--Posts View-->

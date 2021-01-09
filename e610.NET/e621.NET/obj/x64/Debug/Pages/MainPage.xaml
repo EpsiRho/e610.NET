@@ -11,11 +11,11 @@
     <Grid>
         <muxc:NavigationView x:ConnectionId='2' x:Name="MainNav" PaneDisplayMode="Top" IsBackEnabled="True"                                                                        >
             <muxc:NavigationView.MenuItems>
-                <muxc:NavigationViewItem x:ConnectionId='5'  Content="Posts" Tag="PostsView"                         />
-                <muxc:NavigationViewItem x:ConnectionId='6'  Content="Pools" Tag="PoolsView"                         />
-                <muxc:NavigationViewItem x:ConnectionId='7'  Content="Account" Tag="AccountView"                           />
+                <muxc:NavigationViewItem x:ConnectionId='6'  Content="Posts" Tag="PostsView"                         />
+                <muxc:NavigationViewItem x:ConnectionId='7'  Content="Pools" Tag="PoolsView"                         />
+                <muxc:NavigationViewItem x:ConnectionId='8'  Content="Account" Tag="AccountView"                           />
             </muxc:NavigationView.MenuItems>
-            <Frame x:ConnectionId='8' x:Name="MainContentFrame">
+            <Frame x:ConnectionId='9' x:Name="MainContentFrame">
                 <Frame.ContentTransitions>
                     <TransitionCollection>
                         <NavigationThemeTransition/>
@@ -38,6 +38,7 @@
                     <x:String>rating:questionable</x:String>
                     <x:String>rating:explicit</x:String>
                 </ComboBox>
+                <ToggleSwitch x:ConnectionId='5' x:Name="CommentSwitch" Header="Show Comments"/>
             </StackPanel>
         </ContentDialog>
     </Grid>

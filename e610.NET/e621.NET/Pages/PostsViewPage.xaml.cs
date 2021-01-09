@@ -30,6 +30,7 @@ namespace e610.NET
         // Pages Vars //
         public PostsViewModel ViewModel { get; set; }
         public int pageCount;
+        public bool canGetTags;
 
         public PostsViewPage()
         {
@@ -40,8 +41,8 @@ namespace e610.NET
         {
             SearchBox.Text = GlobalVars.searchText;
             PostCountSlider.Value = GlobalVars.postCount;
-            SafeModeToggle.IsOn = GlobalVars.safeMode;
             pageCount = GlobalVars.pageCount;
+            canGetTags = true;
             if (GlobalVars.newSearch == true)
             {
                 ViewModel = new PostsViewModel();
@@ -132,7 +133,7 @@ namespace e610.NET
                 client.BaseUrl = new Uri("https://e621.net/posts.json?");
 
                 // Set the useragent for e621
-                client.UserAgent = "e610.NET/1.2(by EpsilonRho)";
+                client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
 
                 // If user is logged in set login parameters into request
                 if(GlobalVars.Username != "" && GlobalVars.APIKey != "")
@@ -205,6 +206,64 @@ namespace e610.NET
             }
         }
 
+        private async void getTags(object t)
+        {
+            // Function Vars
+            var client = new RestClient(); // Client to handle Requests
+            string args = (string)t; // Convert Object to LoadPostArgs class
+            var request = new RestRequest(RestSharp.Method.GET); // REST request
+
+            if(args[0] == '-')
+            {
+                args.Remove(0, 1);
+            }
+
+            // Set Endpoint
+            // TODO: Switching between e621 - gelbooru - r34 - etc
+            client.BaseUrl = new Uri("https://e621.net//tags.json?");
+
+            // Set the useragent for e621
+            client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
+            request.AddQueryParameter("search[name_matches]", args + "*");
+            request.AddQueryParameter("search[order]", "count");
+            //request.AddQueryParameter("search[hide_empty]", "true");
+
+            // Set parameters for tags and post limit
+            request.AddQueryParameter("limit", "8");
+
+            // Send the request
+            var response = client.Execute(request);
+            // Deserialize the response
+            TagsHolder DeserializedJson = null;
+            try
+            {
+                DeserializedJson = JsonConvert.DeserializeObject<TagsHolder>("{tags:" + response.Content + "}");
+            }
+            catch (Exception)
+            {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    SearchTagAutoComplete.Items.Clear();
+                });
+                canGetTags = true;
+                return;
+            }
+            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+            {
+                SearchTagAutoComplete.Items.Clear();
+            });
+
+            foreach (Tag tag in DeserializedJson.tags)
+            {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    SearchTagAutoComplete.Items.Add(tag.name);
+                });
+            }
+
+            canGetTags = true;
+        }
+
         // Button Functions //
         private void SearchButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -219,23 +278,13 @@ namespace e610.NET
         {
             if (e.Key == Windows.System.VirtualKey.Enter)
             {
+                SearchTagAutoComplete.Items.Clear();
                 ViewModel.ClearPosts();
                 Thread LoadThread = new Thread(LoadPosts);
                 LoadThread.Start(new LoadPostsArgs(SearchBox.Text, -1));
                 pageCount = 1;
                 Bindings.Update();
                 GlobalVars.postCount = (int)PostCountSlider.Value;
-            }
-        }
-        private void SafeMode_Toggled(object sender, RoutedEventArgs e)
-        {
-            if (SafeModeToggle.IsOn)
-            {
-                GlobalVars.safeMode = true;
-            }
-            else
-            {
-                GlobalVars.safeMode = false;
             }
         }
         private void ImageGrid_ItemClick(object sender, ItemClickEventArgs e)
@@ -281,10 +330,68 @@ namespace e610.NET
                 Bindings.Update();
             }
         }
-        private void Slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
-        {
 
+        private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string[] tags = SearchBox.Text.Split(" ");
+            int index = 0;
+            int count = 0;
+            int pos = SearchBox.SelectionStart;
+            for (int i = 0; i < tags.Count(); i++)
+            {
+                count += tags[i].Count();
+                if (pos == count)
+                {
+                    index = i;
+                    break;
+                }
+                count++;
+            }
+            if (tags[index].Count() >= 3)
+            {
+                if (canGetTags)
+                {
+                    Thread TagsThread = new Thread(getTags);
+                    TagsThread.Start(tags[index]);
+                    canGetTags = false;
+                }
+            }
+            else
+            {
+                SearchTagAutoComplete.Items.Clear();
+            }
         }
 
+        private void SearchTagAutoComplete_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            canGetTags = false;
+            string clickedTag = (string)e.ClickedItem;
+            string[] tags = SearchBox.Text.Split(" ");
+            int pos = SearchBox.SelectionStart;
+            SearchBox.Text = "";
+            int count = 0;
+            for (int i = 0; i < tags.Count(); i++)
+            {
+                count += tags[i].Count();
+                if(pos == count)
+                {
+                    pos = (pos - tags[i].Count()) + clickedTag.Count() + 1;
+                    if (tags[i][0] == '-')
+                    {
+                        tags[i] = "-" + clickedTag;
+                    }
+                    else
+                    {
+                        tags[i] = clickedTag;
+                    }
+                    SearchBox.Focus(FocusState.Programmatic);
+                }
+                SearchBox.Text += tags[i] + " ";
+                count++;
+            }
+            SearchTagAutoComplete.Items.Clear();
+            SearchBox.SelectionStart = pos;
+            canGetTags = true;
+        }
     }
 }

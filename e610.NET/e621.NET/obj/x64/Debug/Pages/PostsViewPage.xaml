@@ -40,39 +40,35 @@
             <!--Search Title, Bar, and Button-->
             <TextBlock Text="Search" FontSize="18" Margin="10,10,10,0"  HorizontalAlignment="Center"/>
             <StackPanel Orientation="Vertical" Margin="10,10,10,10">
-                <TextBox x:ConnectionId='13' Width="auto" Height="Auto" x:Name="SearchBox"
+                <TextBox x:ConnectionId='12' Width="auto" Height="Auto" x:Name="SearchBox"
                      VerticalAlignment="Top" HorizontalAlignment="Stretch"
-                     TextWrapping="Wrap"                            />
+                     TextWrapping="Wrap"                                                                />
+                <ListView x:ConnectionId='13' x:Name="SearchTagAutoComplete" Visibility="Visible" IsItemClickEnabled="True"                                            />
                 <Button x:ConnectionId='14' x:Name="SearchButton"                              HorizontalAlignment="Stretch" Margin="0,5,0,0">
                     <SymbolIcon Symbol="Accept"/>
                 </Button>
             </StackPanel>
 
             <!--Progressbar, Hidden under Search Button-->
-            <control:ProgressBar x:ConnectionId='8' x:Name="LoadingBar" IsIndeterminate="True" Visibility="Collapsed"  Margin="0,0,0,0"
+            <control:ProgressBar x:ConnectionId='7' x:Name="LoadingBar" IsIndeterminate="True" Visibility="Collapsed"  Margin="0,0,0,0"
                          Height="3" Foreground="White" Width="150"
                          ShowPaused="False" ShowError="False"/>
-            
+
             <!--Post Count Control-->
             <TextBlock Text="Post Count" FontSize="18" Margin="10,0,10,0" HorizontalAlignment="Center"/>
-            <Slider x:ConnectionId='9' x:Name="PostCountSlider" Margin="10,0,10,0" Maximum="300" Minimum="25" StepFrequency="5" 
-                                                      />
+            <Slider x:ConnectionId='8' x:Name="PostCountSlider" Margin="10,0,10,0" Maximum="300" Minimum="25" StepFrequency="5"/>
 
             <!--Page controls and number-->
             <TextBlock Text="Page" FontSize="18" Margin="10,0,10,5" HorizontalAlignment="Center"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:ConnectionId='10' x:Name="BackPage" Margin="0,0,5,0"                         >
+                <Button x:ConnectionId='9' x:Name="BackPage" Margin="0,0,5,0"                         >
                     <SymbolIcon Symbol="Back"/>
                 </Button>
-                <TextBlock x:ConnectionId='11'                           FontSize="20" Margin="0,0,0,0"/>
-                <Button x:ConnectionId='12' x:Name="ForwardPage"                             Margin="5,0,0,0">
+                <TextBlock x:ConnectionId='10'                           FontSize="20" Margin="0,0,0,0"/>
+                <Button x:ConnectionId='11' x:Name="ForwardPage"                             Margin="5,0,0,0">
                     <SymbolIcon Symbol="Forward"/>
                 </Button>
             </StackPanel>
-        </StackPanel>
-        <!--Thumbnail type toggle-->
-        <StackPanel Grid.Column="0" VerticalAlignment="Bottom" Margin="10,0,0,10">
-            <ToggleSwitch x:ConnectionId='7' x:Name="SafeModeToggle" IsOn="False" OffContent="Safe" OnContent="Explicit"                           />
         </StackPanel>
 
         <!--Posts View-->
@@ -90,8 +86,6 @@
                         </Grid>
                     </DataTemplate>
                 </GridView.ItemTemplate>
-                
-               
             </GridView>
         </Grid>
     </Grid>

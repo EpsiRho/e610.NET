@@ -55,7 +55,25 @@ namespace e610.NET
             }
             else
             {
-                RatingSelection.SelectedItem = GlobalVars.Rating;
+                if (GlobalVars.Rating == "")
+                {
+                    RatingSelection.SelectedItem = "rating:explicit";
+                }
+                else
+                {
+                    RatingSelection.SelectedItem = GlobalVars.Rating;
+                }
+            }
+            try
+            {
+                GlobalVars.ShowComments = (bool)localSettings.Values["comments"];
+                CommentSwitch.IsOn = GlobalVars.ShowComments;
+            }
+            catch (Exception) 
+            { 
+                GlobalVars.ShowComments = true;
+                localSettings.Values["comments"] = true;
+                CommentSwitch.IsOn = true;
             }
         }
         private void InitializeGlobalVars()
@@ -65,7 +83,7 @@ namespace e610.NET
             GlobalVars.newSearch = false;
             GlobalVars.searchText = "";
             GlobalVars.pageCount = 1;
-            GlobalVars.safeMode = false;
+            GlobalVars.Binding = "Sample Height";
         }
 
         // When Page needs to navigate back // 
@@ -134,6 +152,9 @@ namespace e610.NET
                     localSettings.Values["rating"] = "";
                     break;
             }
+            GlobalVars.ShowComments = CommentSwitch.IsOn;
+            localSettings.Values["comments"] = GlobalVars.ShowComments;
+
         }
 
         private void RatingSelection_SelectionChanged(object sender, SelectionChangedEventArgs e)

@@ -22,10 +22,10 @@
     <PackageCertificateKeyFile />
     <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
-    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
     <AppxBundle>Always</AppxBundle>
-    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+    <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
@@ -126,8 +126,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Classes\LoadPostsArgs.cs" />
+    <Compile Include="Classes\Tags.cs" />
     <Compile Include="Classes\User.cs" />
-    <Compile Include="Comments.cs" />
+    <Compile Include="Classes\Comments.cs" />
     <Compile Include="Pages\AccountsPage.xaml.cs">
       <DependentUpon>AccountsPage.xaml</DependentUpon>
     </Compile>

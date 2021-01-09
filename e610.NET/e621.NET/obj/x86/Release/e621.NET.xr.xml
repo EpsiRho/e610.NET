@@ -169,6 +169,9 @@
       <RootProperty Name="DisplayMemberPath" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
+      <RootProperty Name="Header" />
+    </RootType>
     <RootType FullName="System.String" />
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationViewItem">
       <RootProperty Name="Content" />
@@ -188,6 +191,7 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
       <RootProperty Name="Background" />
       <RootProperty Name="Content" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
     </RootType>
     <RootType FullName="Microsoft.UI.Xaml.Controls.InfoBar">
       <RootProperty Name="IsOpen" />
@@ -203,7 +207,6 @@
       <RootProperty Name="Maximum" />
       <RootProperty Name="Minimum" />
       <RootProperty Name="StepFrequency" />
-      <RootEvent Name="ValueChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
       <RootMethod Name="GetZIndex" />
@@ -214,11 +217,18 @@
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="e610.NET.Pages.PoolView" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
-      <RootProperty Name="IsOn" />
-      <RootProperty Name="OffContent" />
-      <RootProperty Name="OnContent" />
-      <RootEvent Name="Toggled" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="ItemContainerStyle" />
+      <RootProperty Name="CanDragItems" />
+      <RootProperty Name="AllowDrop" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootEvent Name="ItemClick" />
+      <RootEvent Name="SelectionChanged" />
+      <RootEvent Name="RightTapped" />
     </RootType>
     <RootType FullName="e610.NET.PostsViewPage" />
     <RootType FullName="Microsoft.UI.Xaml.Controls.ProgressRing">
@@ -232,18 +242,6 @@
       <RootProperty Name="AutoPlay" />
       <RootProperty Name="PosterSource" />
       <RootProperty Name="AreTransportControlsEnabled" />
-      <RootEvent Name="RightTapped" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="IsItemClickEnabled" />
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="ItemContainerStyle" />
-      <RootProperty Name="CanDragItems" />
-      <RootProperty Name="AllowDrop" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootEvent Name="SelectionChanged" />
-      <RootEvent Name="ItemClick" />
       <RootEvent Name="RightTapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
@@ -269,6 +267,11 @@
     <RootType FullName="Windows.UI.Xaml.Controls.MenuFlyout">
       <RootProperty Name="Placement" />
       <RootProperty Name="ShowMode" />
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.MenuFlyoutItem">
+      <RootProperty Name="Text" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="e610.NET.SinglePostView" />
   </Roots.RootTypes>
