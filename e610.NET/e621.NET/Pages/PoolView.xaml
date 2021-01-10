@@ -12,16 +12,10 @@
         <ResourceDictionary>
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceDictionary x:Key="Default">
-                    <AcrylicBrush x:Key="SideBar"
-                          BackgroundSource="HostBackdrop"
-                          TintColor="#001439"
-                          TintOpacity="0.8" 
-                          FallbackColor="#001439"/>
-                    <AcrylicBrush x:Key="MainBackground"
-                          BackgroundSource="HostBackdrop"
-                          TintColor="#001439"
-                          TintOpacity="0.3"
-                          FallbackColor="#001439"/>
+                    <SolidColorBrush x:Key="SideBar"
+                          Color="#001439"/>
+                    <SolidColorBrush x:Key="MainBackground"
+                          Color="#000F2D"/>
                     <SolidColorBrush x:Key="TextBackgound" Color="#FF464646"/>
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
@@ -32,17 +26,21 @@
             <ColumnDefinition Width="10*" MinWidth="180"/>
             <ColumnDefinition Width="90*" />
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-        <ScrollViewer Background="{ThemeResource MainBackground}" Grid.Column="1">
+        <Grid Grid.Row="0" Grid.Column="1" Background="{ThemeResource SideBar}" Canvas.ZIndex="10">
+            <StackPanel Orientation="Vertical">
+                <TextBlock x:Name="PoolTitle" FontSize="24" FontWeight="Bold"/>
+                <Button x:Name="DescToggle" Content="Show Description" Click="DescToggle_Click" Visibility="Collapsed"/>
+                <TextBlock x:Name="PoolDesc" FontSize="18" Visibility="Collapsed" TextWrapping="WrapWholeWords" Margin="0,0,10,0"/>
+            </StackPanel>
+        </Grid>
+        <ScrollViewer Background="{ThemeResource MainBackground}" Grid.Column="1" Grid.Row="1">
             <StackPanel Grid.Column="1">
-                <Grid Grid.Row="0" Grid.Column="1" Background="{ThemeResource SideBar}" >
-                    <StackPanel Orientation="Vertical">
-                        <TextBlock x:Name="PoolTitle" FontSize="24" FontWeight="Bold"/>
-                        <Button x:Name="DescToggle" Content="Show Description" Click="DescToggle_Click" Visibility="Collapsed"/>
-                        <TextBlock x:Name="PoolDesc" FontSize="18" Visibility="Collapsed" TextWrapping="WrapWholeWords" Margin="0,0,10,0"/>
-                    </StackPanel>
-                </Grid>
-                <Grid Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch">
+                <Grid Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch" x:Name="MainPanel">
                     <GridView x:Name="ImageGrid" ItemsSource="{x:Bind ViewModel.Posts}" Background="{ThemeResource MainBackground}"
                               HorizontalAlignment="Stretch" Margin="0,0,70,0"
                               ItemClick="ImageGrid_ItemClick" IsItemClickEnabled="True">
@@ -64,7 +62,10 @@
         </ScrollViewer>
 
 
-        <StackPanel Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Orientation="Vertical" Background="{ThemeResource SideBar}">
+        <StackPanel Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Orientation="Vertical" Background="{ThemeResource SideBar}" Translation="0,0,52">
+            <StackPanel.Shadow>
+                <ThemeShadow x:Name="SidePanelShadow"/>
+            </StackPanel.Shadow>
             <!--Search Title, Bar, and Button-->
             <TextBlock Text="Search" FontSize="18" Margin="10,10,10,0"  HorizontalAlignment="Center"/>
             <StackPanel Orientation="Vertical" Margin="10,10,10,10">

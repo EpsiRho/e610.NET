@@ -43,6 +43,9 @@ namespace e610.NET
             PostCountSlider.Value = GlobalVars.postCount;
             pageCount = GlobalVars.pageCount;
             canGetTags = true;
+
+            SidePanelShadow.Receivers.Add(MainPanel);
+
             if (GlobalVars.newSearch == true)
             {
                 ViewModel = new PostsViewModel();
@@ -364,34 +367,41 @@ namespace e610.NET
 
         private void SearchTagAutoComplete_ItemClick(object sender, ItemClickEventArgs e)
         {
-            canGetTags = false;
-            string clickedTag = (string)e.ClickedItem;
-            string[] tags = SearchBox.Text.Split(" ");
-            int pos = SearchBox.SelectionStart;
-            SearchBox.Text = "";
-            int count = 0;
-            for (int i = 0; i < tags.Count(); i++)
+            try
             {
-                count += tags[i].Count();
-                if(pos == count)
+                canGetTags = false;
+                string clickedTag = (string)e.ClickedItem;
+                string[] tags = SearchBox.Text.Split(" ");
+                int pos = SearchBox.SelectionStart;
+                SearchBox.Text = "";
+                int count = 0;
+                for (int i = 0; i < tags.Count(); i++)
                 {
-                    pos = (pos - tags[i].Count()) + clickedTag.Count() + 1;
-                    if (tags[i][0] == '-')
+                    count += tags[i].Count();
+                    if (pos == count)
                     {
-                        tags[i] = "-" + clickedTag;
+                        pos = (pos - tags[i].Count()) + clickedTag.Count() + 1;
+                        if (tags[i][0] == '-')
+                        {
+                            tags[i] = "-" + clickedTag;
+                        }
+                        else
+                        {
+                            tags[i] = clickedTag;
+                        }
+                        SearchBox.Focus(FocusState.Programmatic);
                     }
-                    else
-                    {
-                        tags[i] = clickedTag;
-                    }
-                    SearchBox.Focus(FocusState.Programmatic);
+                    SearchBox.Text += tags[i] + " ";
+                    count++;
                 }
-                SearchBox.Text += tags[i] + " ";
-                count++;
+                SearchTagAutoComplete.Items.Clear();
+                SearchBox.SelectionStart = pos;
+                canGetTags = true;
             }
-            SearchTagAutoComplete.Items.Clear();
-            SearchBox.SelectionStart = pos;
-            canGetTags = true;
+            catch (Exception)
+            {
+
+            }
         }
     }
 }

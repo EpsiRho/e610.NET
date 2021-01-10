@@ -47,7 +47,8 @@ namespace e610.NET.Pages
             SearchBox.Text = GlobalVars.searchText;
             PoolTitle.Text = CurrentPool.name.Replace("_", " ") + " | " + CurrentPool.post_count + " Posts |";
             PoolDesc.Text = CurrentPool.description;
-            if(PoolDesc.Text != "")
+            SidePanelShadow.Receivers.Add(MainPanel);
+            if (PoolDesc.Text != "")
             {
                 DescToggle.Visibility = Visibility.Visible;
             }

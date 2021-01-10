@@ -9,15 +9,18 @@ using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Graphics.Display;
 using Windows.Media.Core;
 using Windows.Storage;
 using Windows.Storage.Streams;
 using Windows.UI;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -55,45 +58,10 @@ namespace e610.NET
             SearchBox.Text = GlobalVars.searchText;
             canGetTags = true;
 
-            if (GlobalVars.Binding == "Sample Height")
-            {
-                Binding heightBinding = new Binding();
-                heightBinding.Source = singlePost.sample.height;
-                heightBinding.Mode = BindingMode.OneWay;
-                bigpicture.SetBinding(HeightProperty, heightBinding);
-                Binding widthBinding = new Binding();
-                widthBinding.Source = singlePost.sample.width;
-                widthBinding.Mode = BindingMode.OneWay;
-                bigpicture.SetBinding(WidthProperty, widthBinding);
-                ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
-                GlobalVars.Binding = "Sample Height";
-            }
-            else if (GlobalVars.Binding == "Page Height")
-            {
-                Binding heightBinding = new Binding();
-                heightBinding.Source = page.ActualHeight - 55;
-                heightBinding.Mode = BindingMode.OneWay;
-                bigpicture.SetBinding(HeightProperty, heightBinding);
-                Binding widthBinding = new Binding();
-                widthBinding.Source = singlePost.sample.width;
-                widthBinding.Mode = BindingMode.OneWay;
-                bigpicture.SetBinding(WidthProperty, widthBinding);
-                ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
-                GlobalVars.Binding = "Page Height";
-            }
-            else
-            {
-                Binding heightBinding = new Binding();
-                heightBinding.Source = singlePost.file.height;
-                heightBinding.Mode = BindingMode.OneWay;
-                bigpicture.SetBinding(HeightProperty, heightBinding);
-                Binding widthBinding = new Binding();
-                widthBinding.Source = singlePost.file.width;
-                widthBinding.Mode = BindingMode.OneWay;
-                bigpicture.SetBinding(WidthProperty, widthBinding);
-                ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
-                GlobalVars.Binding = "Full Height";
-            }
+            Window.Current.SizeChanged += OnWindowSizeChanged;
+
+            SidePanelShadow.Receivers.Add(PostPanel);
+            TopPanelShadow.Receivers.Add(PostPanel);
 
             // Update the vote up / down with the post score
             VoteUpCount.Text = singlePost.score.up.ToString();
@@ -451,6 +419,43 @@ namespace e610.NET
                 PoolsMenu.Items.Clear();
             });
         }
+        private void OnWindowSizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
+        {
+            Size window = GetCurrentDisplaySize();
+            try
+            {
+                if (singlePost.file.ext == "webm")
+                {
+                    bigvideo.Source = new Uri(singlePost.file.url);
+                    bigvideo.Visibility = Visibility.Visible;
+                    ImageLoadProgress.Visibility = Visibility.Collapsed;
+                    bigvideo.Width = double.NaN;
+                    bigvideo.Height = window.Height - 105;
+                }
+                else
+                {
+                    if (GlobalVars.Binding == "Page Height")
+                    {
+                        bigpicture.Width = double.NaN;
+                        bigpicture.Height = window.Height - 105;
+                        CommandBar.HorizontalAlignment = HorizontalAlignment.Center;
+                        ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
+                        GlobalVars.Binding = "Page Height";
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+        public static Size GetCurrentDisplaySize()
+        {
+            var bounds = ApplicationView.GetForCurrentView().VisibleBounds;
+            var scaleFactor = DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
+            var size = new Size(bounds.Width * scaleFactor, bounds.Height * scaleFactor);
+            return size;
+        }
 
         // Button Functions //
         private void SearchButton_Tapped(object sender, TappedRoutedEventArgs e)
@@ -677,67 +682,71 @@ namespace e610.NET
         private void Tags_ItemClick(object sender, ItemClickEventArgs e)
         {
             string ClickedItem = (string)e.ClickedItem;
-            if (SearchBox.Text.Contains("-" + ClickedItem))
-            {
-                SearchBox.Text = SearchBox.Text.Replace("-" + ClickedItem, ClickedItem);
-            }
-            else if (SearchBox.Text.Contains(ClickedItem))
-            {
-                SearchBox.Text = SearchBox.Text.Replace(ClickedItem, "");
-            }
-            else 
-            { 
-                if (SearchBox.Text.Count() > 0)
-                {
-                    if (SearchBox.Text.Count() == SearchBox.Text.LastIndexOf(' '))
-                    {
-                        SearchBox.Text.Remove(SearchBox.Text.LastIndexOf(' '));
-                    }
-                    SearchBox.Text += " " + ClickedItem;
-                }
-                else
-                {
-                    SearchBox.Text += ClickedItem;
-                }
-            }
+            GlobalVars.newSearch = true;
+            GlobalVars.searchText = ClickedItem;
+            this.Frame.Navigate(typeof(PostsViewPage), null, new DrillInNavigationTransitionInfo());
+            //if (SearchBox.Text.Contains("-" + ClickedItem))
+            //{
+            //    SearchBox.Text = SearchBox.Text.Replace("-" + ClickedItem, ClickedItem);
+            //}
+            //else if (SearchBox.Text.Contains(ClickedItem))
+            //{
+            //    SearchBox.Text = SearchBox.Text.Replace(ClickedItem, "");
+            //}
+            //else 
+            //{ 
+            //    if (SearchBox.Text.Count() > 0)
+            //    {
+            //        if (SearchBox.Text.Count() == SearchBox.Text.LastIndexOf(' '))
+            //        {
+            //            SearchBox.Text.Remove(SearchBox.Text.LastIndexOf(' '));
+            //        }
+            //        SearchBox.Text += " " + ClickedItem;
+            //    }
+            //    else
+            //    {
+            //        SearchBox.Text += ClickedItem;
+            //    }
+            //}
+
         }
 
         private void Tags_RightTapped(object sender, RightTappedRoutedEventArgs e)
         {
-            try
-            {
-                string ClickedItem = (e.OriginalSource as FrameworkElement).DataContext as string;
-                if (SearchBox.Text.Contains(ClickedItem))
-                {
-                    if (SearchBox.Text.Contains("-" + ClickedItem))
-                    {
-                        SearchBox.Text = SearchBox.Text.Replace("-"+ClickedItem, "");
-                    }
-                    else 
-                    {
-                        SearchBox.Text = SearchBox.Text.Replace(ClickedItem, "-" + ClickedItem);
-                    }
-                }
-                else
-                {
-                    if (SearchBox.Text.Count() > 0)
-                    {
-                        if (SearchBox.Text.Count() == SearchBox.Text.LastIndexOf(' '))
-                        {
-                            SearchBox.Text.Remove(SearchBox.Text.LastIndexOf(' '));
-                        }
-                        SearchBox.Text += " -" + ClickedItem;
-                    }
-                    else
-                    {
-                        SearchBox.Text += "-" + ClickedItem;
-                    }
-                }
-            }
-            catch (Exception)
-            {
+            //try
+            //{
+            //    string ClickedItem = (e.OriginalSource as FrameworkElement).DataContext as string;
+            //    if (SearchBox.Text.Contains(ClickedItem))
+            //    {
+            //        if (SearchBox.Text.Contains("-" + ClickedItem))
+            //        {
+            //            SearchBox.Text = SearchBox.Text.Replace("-"+ClickedItem, "");
+            //        }
+            //        else 
+            //        {
+            //            SearchBox.Text = SearchBox.Text.Replace(ClickedItem, "-" + ClickedItem);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        if (SearchBox.Text.Count() > 0)
+            //        {
+            //            if (SearchBox.Text.Count() == SearchBox.Text.LastIndexOf(' '))
+            //            {
+            //                SearchBox.Text.Remove(SearchBox.Text.LastIndexOf(' '));
+            //            }
+            //            SearchBox.Text += " -" + ClickedItem;
+            //        }
+            //        else
+            //        {
+            //            SearchBox.Text += "-" + ClickedItem;
+            //        }
+            //    }
+            //}
+            //catch (Exception)
+            //{
 
-            }
+            //}
         }
 
         private void Title_Click(object sender, RoutedEventArgs e)
@@ -859,7 +868,14 @@ namespace e610.NET
                 Pool selected = (Pool)MovementSelection.SelectedItem;
                 if (SearchBox.Text.Contains("order:id"))
                 {
-                    LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'b'));
+                    if (selected.name.Contains("Tags:"))
+                    {
+                        LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'b'));
+                    }
+                    else
+                    {
+                        LoadThread.Start(new LoadPostsArgs("pool:" + selected.id, singlePost.id, 'b'));
+                    }
                 }
                 else if (!selected.name.Contains("Tags:"))
                 {
@@ -869,6 +885,7 @@ namespace e610.NET
                 {
                     LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'a'));
                 }
+                ImageScrollView.ChangeView(null, 0, null, false);
             }
             catch (Exception)
             {
@@ -884,7 +901,14 @@ namespace e610.NET
                 Pool selected = (Pool)MovementSelection.SelectedItem;
                 if (SearchBox.Text.Contains("order:id"))
                 {
-                    LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'a'));
+                    if (selected.name.Contains("Tags:"))
+                    {
+                        LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'a'));
+                    }
+                    else
+                    {
+                        LoadThread.Start(new LoadPostsArgs("pool:" + selected.id, singlePost.id, 'a'));
+                    }
                 }
                 else if (!selected.name.Contains("Tags:"))
                 {
@@ -894,6 +918,7 @@ namespace e610.NET
                 {
                     LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'b'));
                 }
+                ImageScrollView.ChangeView(null, 0, null, false);
             }
             catch (Exception)
             {
@@ -1024,6 +1049,8 @@ namespace e610.NET
                     ImageLoadProgress.Visibility = Visibility.Collapsed;
                     bigpicture.Visibility = Visibility.Collapsed;
                     smallpicture.Visibility = Visibility.Collapsed;
+                    bigvideo.Width = double.NaN;
+                    bigvideo.Height = page.ActualHeight - 55;
                 });
             }
             else if (singlePost.file.ext == "swf")
@@ -1057,49 +1084,89 @@ namespace e610.NET
             {
                 ImageLoadProgress.Visibility = Visibility.Collapsed;
             });
+            try
+            {
+                if (GlobalVars.Binding == "Sample Height")
+                {
+                    await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                    {
+                        bigpicture.Width = singlePost.sample.width;
+                        bigpicture.Height = singlePost.sample.height;
+                        CommandBar.HorizontalAlignment = HorizontalAlignment.Center;
+                        ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
+                        GlobalVars.Binding = "Sample Height";
+                        Bindings.Update();
+                    });
+                }
+                else if (GlobalVars.Binding == "Page Height")
+                {
+                    await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                    {
+                        bigpicture.Width = double.NaN;
+                        bigpicture.Height = page.ActualHeight - 65;
+                        CommandBar.HorizontalAlignment = HorizontalAlignment.Center;
+                        ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
+                        GlobalVars.Binding = "Page Height";
+                        Bindings.Update();
+                    });
+                }
+                else
+                {
+                    await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                    {
+                        bigpicture.Width = singlePost.file.width;
+                        bigpicture.Height = singlePost.file.height;
+                        CommandBar.HorizontalAlignment = HorizontalAlignment.Left;
+                        ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
+                        GlobalVars.Binding = "Full Height";
+                        Bindings.Update();
+                    });
+                }
+            }
+            catch (Exception)
+            {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    bigpicture.Width = singlePost.sample.width;
+                    bigpicture.Height = singlePost.sample.height;
+                });
+            }
         }
 
         private void ImageMenuItem_Click(object sender, RoutedEventArgs e)
         {
             MenuFlyoutItem clickItem = (MenuFlyoutItem)e.OriginalSource;
-            if (clickItem.Text == "Sample Height")
+            try
             {
-                Binding heightBinding = new Binding();
-                heightBinding.Source = singlePost.sample.height;
-                heightBinding.Mode = BindingMode.OneWay;
-                bigpicture.SetBinding(HeightProperty, heightBinding);
-                Binding widthBinding = new Binding();
-                widthBinding.Source = singlePost.sample.width;
-                widthBinding.Mode = BindingMode.OneWay;
-                bigpicture.SetBinding(WidthProperty, widthBinding);
-                ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
-                GlobalVars.Binding = "Sample Height";
+                if (clickItem.Text == "Sample Height")
+                {
+                    bigpicture.Width = singlePost.sample.width;
+                    bigpicture.Height = singlePost.sample.height;
+                    CommandBar.HorizontalAlignment = HorizontalAlignment.Center;
+                    ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
+                    GlobalVars.Binding = "Sample Height";
+                }
+                else if (clickItem.Text == "Page Height")
+                {
+                    bigpicture.Width = double.NaN;
+                    bigpicture.Height = page.ActualHeight - 65;
+                    CommandBar.HorizontalAlignment = HorizontalAlignment.Center;
+                    ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
+                    GlobalVars.Binding = "Page Height";
+                }
+                else
+                {
+                    bigpicture.Width = singlePost.file.width;
+                    bigpicture.Height = singlePost.file.height;
+                    CommandBar.HorizontalAlignment = HorizontalAlignment.Left;
+                    ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
+                    GlobalVars.Binding = "Full Height";
+                }
             }
-            else if(clickItem.Text == "Page Height")
+            catch (Exception)
             {
-                Binding heightBinding = new Binding();
-                heightBinding.Source = page.ActualHeight - 55;
-                heightBinding.Mode = BindingMode.OneWay;
-                bigpicture.SetBinding(HeightProperty, heightBinding);
-                Binding widthBinding = new Binding();
-                widthBinding.Source = singlePost.sample.width;
-                widthBinding.Mode = BindingMode.OneWay;
-                bigpicture.SetBinding(WidthProperty, widthBinding);
-                ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
-                GlobalVars.Binding = "Page Height";
-            }
-            else
-            {
-                Binding heightBinding = new Binding();
-                heightBinding.Source = singlePost.file.height;
-                heightBinding.Mode = BindingMode.OneWay;
-                bigpicture.SetBinding(HeightProperty, heightBinding);
-                Binding widthBinding = new Binding();
-                widthBinding.Source = singlePost.file.width;
-                widthBinding.Mode = BindingMode.OneWay;
-                bigpicture.SetBinding(WidthProperty, widthBinding);
-                ImageScrollView.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
-                GlobalVars.Binding = "Full Height";
+                bigpicture.Width = singlePost.sample.width;
+                bigpicture.Height = singlePost.sample.height;
             }
         }
 
@@ -1222,6 +1289,91 @@ namespace e610.NET
             SearchTagAutoComplete.Items.Clear();
             SearchBox.SelectionStart = pos;
             canGetTags = true;
+        }
+
+        private void page_KeyDown(object sender, KeyRoutedEventArgs e)
+        {
+            if (SearchBox.FocusState != FocusState.Keyboard && SearchBox.FocusState != FocusState.Programmatic && SearchBox.FocusState != FocusState.Pointer)
+            {
+                if (e.Key == Windows.System.VirtualKey.Left)
+                {
+                    try
+                    {
+                        Thread LoadThread = new Thread(LoadPost);
+                        Pool selected = (Pool)MovementSelection.SelectedItem;
+                        if (SearchBox.Text.Contains("order:id"))
+                        {
+                            if (selected.name.Contains("Tags:"))
+                            {
+                                LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'b'));
+                            }
+                            else
+                            {
+                                LoadThread.Start(new LoadPostsArgs("pool:" + selected.id, singlePost.id, 'b'));
+                            }
+                        }
+                        else if (!selected.name.Contains("Tags:"))
+                        {
+                            LoadThread.Start(new LoadPostsArgs("pool:" + selected.id, singlePost.id, 'b'));
+                        }
+                        else
+                        {
+                            LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'a'));
+                        }
+                        ImageScrollView.ChangeView(null, 0, null, false);
+                    }
+                    catch (Exception)
+                    {
+
+                    }
+                }
+                else if (e.Key == Windows.System.VirtualKey.Right)
+                {
+                    try
+                    {
+                        Thread LoadThread = new Thread(LoadPost);
+                        Pool selected = (Pool)MovementSelection.SelectedItem;
+                        if (SearchBox.Text.Contains("order:id"))
+                        {
+                            if (selected.name.Contains("Tags:"))
+                            {
+                                LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'a'));
+                            }
+                            else
+                            {
+                                LoadThread.Start(new LoadPostsArgs("pool:" + selected.id, singlePost.id, 'a'));
+                            }
+                        }
+                        else if (!selected.name.Contains("Tags:"))
+                        {
+                            LoadThread.Start(new LoadPostsArgs("pool:" + selected.id, singlePost.id, 'a'));
+                        }
+                        else
+                        {
+                            LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'b'));
+                        }
+                        ImageScrollView.ChangeView(null, 0, null, false);
+                    }
+                    catch (Exception)
+                    {
+
+                    }
+                }
+                else if(e.Key == Windows.System.VirtualKey.Escape)
+                {
+                    try
+                    {
+                        if (Frame.CanGoBack)
+                        {
+                            Frame.GoBack();
+                        }
+                    }
+                    catch (Exception)
+                    {
+
+                    }
+                }
+            }
         }
     }
 }

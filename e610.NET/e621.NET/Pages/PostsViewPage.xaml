@@ -13,16 +13,10 @@
         <ResourceDictionary>
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceDictionary x:Key="Default">
-                    <AcrylicBrush x:Key="SideBar"
-                          BackgroundSource="HostBackdrop"
-                          TintColor="#001439"
-                          TintOpacity="0.8" 
-                          FallbackColor="#001439"/>
-                    <AcrylicBrush x:Key="MainBackground"
-                          BackgroundSource="HostBackdrop"
-                          TintColor="#001439"
-                          TintOpacity="0.4"
-                          FallbackColor="#001439"/>
+                    <SolidColorBrush x:Key="SideBar"
+                          Color="#001439"/>
+                    <SolidColorBrush x:Key="MainBackground"
+                          Color="#000F2D"/>
                     <SolidColorBrush x:Key="TextBackgound" Color="#FF464646"/>
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
@@ -36,9 +30,12 @@
         </Grid.ColumnDefinitions>
         
         <!--Sidebar StackPanel-->
-        <StackPanel Grid.Column="0" Orientation="Vertical" Background="{ThemeResource SideBar}">
+        <StackPanel Grid.Column="0" Orientation="Vertical" Background="{ThemeResource SideBar}" Translation="0,0,52">
+            <StackPanel.Shadow>
+                <ThemeShadow x:Name="SidePanelShadow"/>
+            </StackPanel.Shadow>
             <!--Search Title, Bar, and Button-->
-            <TextBlock Text="Search" FontSize="18" Margin="10,10,10,0"  HorizontalAlignment="Center"/>
+            <TextBlock Text="Search" FontSize="18" Margin="10,10,10,0" HorizontalAlignment="Center"/>
             <StackPanel Orientation="Vertical" Margin="10,10,10,10">
                 <TextBox Width="auto" Height="Auto" x:Name="SearchBox"
                      VerticalAlignment="Top" HorizontalAlignment="Stretch"
@@ -72,7 +69,7 @@
         </StackPanel>
 
         <!--Posts View-->
-        <Grid Background="{ThemeResource MainBackground}" Grid.Column="1" VerticalAlignment="Stretch">
+        <Grid Background="{ThemeResource MainBackground}" Grid.Column="1" VerticalAlignment="Stretch" x:Name="MainPanel">
             <GridView x:Name="ImageGrid" ItemsSource="{x:Bind ViewModel.Posts}" 
                   HorizontalAlignment="Stretch" 
                   ItemClick="ImageGrid_ItemClick" IsItemClickEnabled="True">
@@ -87,6 +84,7 @@
                     </DataTemplate>
                 </GridView.ItemTemplate>
             </GridView>
+            <Grid x:Name="ImageShadowHost"/>
         </Grid>
     </Grid>
 </Page>

@@ -27,6 +27,7 @@ namespace e610.NET
             this.InitializeComponent();
             GetSettings();
             InitializeGlobalVars();
+            NavShadow.Receivers.Add(MainContentFrame);
             MainContentFrame.Navigate(typeof(PostsViewPage)); // Navigate to posts view on load
             //Thread navThread = new Thread(PageNavigation);
             //navThread.Start();

@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "UAP,Version=v10.0.17763": {
+    "UAP,Version=v10.0.18362": {
       "ColorCode.Core/2.0.6": {
         "type": "package",
         "dependencies": {
@@ -862,7 +862,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.17763/win10-arm": {
+    "UAP,Version=v10.0.18362/win10-arm": {
       "ColorCode.Core/2.0.6": {
         "type": "package",
         "dependencies": {
@@ -1651,7 +1651,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.17763/win10-arm-aot": {
+    "UAP,Version=v10.0.18362/win10-arm-aot": {
       "ColorCode.Core/2.0.6": {
         "type": "package",
         "dependencies": {
@@ -2441,7 +2441,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.17763/win10-arm64-aot": {
+    "UAP,Version=v10.0.18362/win10-arm64-aot": {
       "ColorCode.Core/2.0.6": {
         "type": "package",
         "dependencies": {
@@ -3228,7 +3228,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.17763/win10-x64": {
+    "UAP,Version=v10.0.18362/win10-x64": {
       "ColorCode.Core/2.0.6": {
         "type": "package",
         "dependencies": {
@@ -4017,7 +4017,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.17763/win10-x64-aot": {
+    "UAP,Version=v10.0.18362/win10-x64-aot": {
       "ColorCode.Core/2.0.6": {
         "type": "package",
         "dependencies": {
@@ -4807,7 +4807,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.17763/win10-x86": {
+    "UAP,Version=v10.0.18362/win10-x86": {
       "ColorCode.Core/2.0.6": {
         "type": "package",
         "dependencies": {
@@ -5596,7 +5596,7 @@
         }
       }
     },
-    "UAP,Version=v10.0.17763/win10-x86-aot": {
+    "UAP,Version=v10.0.18362/win10-x86-aot": {
       "ColorCode.Core/2.0.6": {
         "type": "package",
         "dependencies": {
@@ -12676,7 +12676,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "UAP,Version=v10.0.17763": [
+    "UAP,Version=v10.0.18362": [
       "FFmpegInteropX >= 0.9.1",
       "FFmpegInteropX.FFmpegUWP >= 4.3.100",
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.11",
@@ -12712,20 +12712,20 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "uap10.0.17763"
+        "uap10.0.18362"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "uap10.0.17763": {
+        "uap10.0.18362": {
           "projectReferences": {}
         }
       }
     },
     "frameworks": {
-      "uap10.0.17763": {
+      "uap10.0.18362": {
         "dependencies": {
           "FFmpegInteropX": {
             "target": "Package",

@@ -9,36 +9,21 @@
     xmlns:control="using:Microsoft.UI.Xaml.Controls" 
     xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls" 
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" KeyDown="page_KeyDown">
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceDictionary x:Key="Default">
-                    <AcrylicBrush x:Key="SideBar"
-                          BackgroundSource="HostBackdrop"
-                          TintColor="#001439"
-                          TintOpacity="0.8" 
-                          FallbackColor="#001439"/>
-                    <AcrylicBrush x:Key="MainBackground"
-                          BackgroundSource="HostBackdrop"
-                          TintColor="#001439"
-                          TintOpacity="0.5"
-                          FallbackColor="#001439"/>
-                    <AcrylicBrush x:Key="ButtonBackground"
-                          BackgroundSource="Backdrop"
-                          TintColor="Black"
-                          TintOpacity="0.9"
-                          FallbackColor="Black"/>
-                    <AcrylicBrush x:Key="DescBackground"
-                          BackgroundSource="Backdrop"
-                          TintColor="#0B2C5F"
-                          TintOpacity="0.9"
-                          FallbackColor="#0B2C5F"/>
-                    <AcrylicBrush x:Key="CommentBackground"
-                          BackgroundSource="Backdrop"
-                          TintColor="#052049"
-                          TintOpacity="0.8"
-                          FallbackColor="#052049"/>
+                    <SolidColorBrush x:Key="SideBar"
+                          Color="#001439"/>
+                    <SolidColorBrush x:Key="MainBackground"
+                          Color="#000F2D"/>
+                    <SolidColorBrush x:Key="ButtonBackground"
+                          Color="Black"/>
+                    <SolidColorBrush x:Key="DescBackground"
+                          Color="#0B2C5F"/>
+                    <SolidColorBrush x:Key="CommentBackground"
+                          Color="#052049"/>
                     <SolidColorBrush x:Key="SideLine"
                                      Color="#009CB4"/>
                 </ResourceDictionary>
@@ -51,7 +36,10 @@
             <ColumnDefinition Width="90*"/>
         </Grid.ColumnDefinitions>
         <ScrollViewer Grid.Column="0">
-            <StackPanel Orientation="Vertical" Background="{ThemeResource SideBar}">
+            <StackPanel Orientation="Vertical" Background="{ThemeResource SideBar}" Translation="0,0,52">
+                <StackPanel.Shadow>
+                    <ThemeShadow x:Name="SidePanelShadow"/>
+                </StackPanel.Shadow>
                 <TextBlock Text="Search" FontSize="18" Margin="10,10,10,0"  HorizontalAlignment="Center"/>
                 <StackPanel Orientation="Vertical" Margin="10,10,10,10">
                     <TextBox Width="auto" Height="Auto" x:Name="SearchBox"
@@ -87,8 +75,11 @@
         <Grid Grid.Column="1" Background="{ThemeResource MainBackground}">
             <ScrollViewer x:Name="ImageScrollView" VerticalScrollBarVisibility ="Auto">
                 <StackPanel Orientation="Vertical">
-                    <Grid Background="{ThemeResource SideBar}">
-                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <StackPanel Background="{ThemeResource SideBar}" Translation="0,0,52" Margin="0,0,0,10">
+                        <StackPanel.Resources>
+                            <ThemeShadow x:Name="TopPanelShadow"/>
+                        </StackPanel.Resources>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="CommandBar">
                             <Button x:Name="PoolBar" Margin="10,10,5,10" Visibility="Visible" HorizontalAlignment="Center" Background="Black"
                                     Tapped="PoolBar_Tapped">
                                 <FlyoutBase.AttachedFlyout>
@@ -139,68 +130,73 @@
                                 </Button>
                             </StackPanel>
                         </StackPanel>
-                    </Grid>
-                    <control:ProgressBar Grid.Column="1" x:Name="DownloadProgress"  Visibility="Collapsed"
+                    </StackPanel>
+                    <StackPanel x:Name="PostPanel">
+                        <control:ProgressBar Grid.Column="1" x:Name="DownloadProgress"  Visibility="Collapsed"
                              IsIndeterminate="True" Width="192" Height="7" Foreground="White"
                              HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.ZIndex="30" Margin="10" Background="Black"/>
-                    <controls:ImageEx x:Name="bigpicture" Source="{x:Bind singlePost.file.url}"   
+
+                        <controls:ImageEx x:Name="bigpicture" Source="{x:Bind singlePost.file.url}"   
                    Canvas.ZIndex="1" Visibility="Collapsed"
                    RightTapped="bigpicture_RightTapped" ImageExOpened="bigpicture_ImageExOpened_1" >
-                    </controls:ImageEx>
-                    <controls:ImageEx x:Name="smallpicture" Source="{x:Bind singlePost.preview.url}" Width="{x:Bind singlePost.preview.width}" Height="{x:Bind singlePost.preview.height}" 
+                        </controls:ImageEx>
+                        <controls:ImageEx x:Name="smallpicture" Source="{x:Bind singlePost.preview.url}" Width="{x:Bind singlePost.preview.width}" Height="{x:Bind singlePost.preview.height}" 
                    Canvas.ZIndex="1" Visibility="Collapsed"
                    RightTapped="bigpicture_RightTapped"/>
-                    <MediaElement Visibility="Collapsed" Canvas.ZIndex="40"
+                        <MediaElement Visibility="Collapsed" Canvas.ZIndex="40"
                     AutoPlay="False" x:Name="bigvideo" PosterSource="{x:Bind singlePost.preview.url}"
-                    AreTransportControlsEnabled="True" RightTapped="bigpicture_RightTapped"/>
-                    <StackPanel Orientation="Horizontal" Background="{ThemeResource DescBackground}" CornerRadius="10" Margin="10,10,15,10">
-                        <Rectangle Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
-                        <StackPanel Orientation="Vertical">
-                            <HyperlinkButton x:Name="DescHyperlink" FontSize="28" Margin="10" FontWeight="SemiBold" Foreground="White" Click="DescHyperlink_Click">
-                                <TextBlock Text="Description: "/>
-                            </HyperlinkButton>
-                            <TextBlock x:Name="DescText" Text="{x:Bind singlePost.description}" Margin="10" TextWrapping="WrapWholeWords" FontSize="18"/>
+                    AreTransportControlsEnabled="True" RightTapped="bigpicture_RightTapped" IsLooping="True">
+                            
+                        </MediaElement>
+                        <StackPanel Orientation="Horizontal" Background="{ThemeResource DescBackground}" CornerRadius="10" Margin="10,10,15,10">
+                            <Rectangle Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
+                            <StackPanel Orientation="Vertical">
+                                <HyperlinkButton x:Name="DescHyperlink" FontSize="28" Margin="10" FontWeight="SemiBold" Foreground="White" Click="DescHyperlink_Click">
+                                    <TextBlock Text="Description: "/>
+                                </HyperlinkButton>
+                                <TextBlock x:Name="DescText" Text="{x:Bind singlePost.description}" Margin="10" Width="{x:Bind singlePost.sample.width}" TextWrapping="WrapWholeWords" FontSize="18"/>
+                            </StackPanel>
                         </StackPanel>
+                        <ListView x:Name="CommentsListView" IsItemClickEnabled="True" ItemsSource="{x:Bind CommentsSource}" SelectionChanged="CommentsListView_SelectionChanged">
+                            <ListView.ItemTemplate>
+                                <DataTemplate x:DataType="local:Comment">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <StackPanel Grid.Column="0" Orientation="Vertical">
+                                            <HyperlinkButton Content="{x:Bind creator_name}" FontSize="18" FontWeight="SemiBold" Foreground="White"/>
+                                            <!--<controls:ImageEx BorderBrush="{ThemeResource SystemControlBackgroundListMediumRevealBorderBrush}" Source="{x:Bind Avatar_Url}" Width="150" Height="150" Margin="0,0,0,10"/>-->
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="1">
+                                            <Grid Margin="10,0,0,-25" Background="{ThemeResource DescBackground}" CornerRadius="10" Visibility="{x:Bind quotevis}">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition Width="50*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Rectangle Grid.Column="0" Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
+                                                <StackPanel Grid.Column="1" Orientation="Vertical">
+                                                    <HyperlinkButton Content="{x:Bind quotedName}" Foreground="White" Margin="10,0,0,0" FontSize="16"/>
+                                                    <TextBlock Text="{x:Bind quote}" Margin="0,0,10,10" TextWrapping="WrapWholeWords"/>
+                                                </StackPanel>
+                                            </Grid>
+                                            <TextBlock Grid.Column="1" Text="{x:Bind body}" Margin="10,10,10,10" TextWrapping="WrapWholeWords" />
+                                        </StackPanel>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="Background" Value="{ThemeResource CommentBackground}"/>
+                                    <Setter Property="Margin" Value="10"/>
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                        </ListView>
                     </StackPanel>
-                    <ListView x:Name="CommentsListView" IsItemClickEnabled="True" ItemsSource="{x:Bind CommentsSource}" SelectionChanged="CommentsListView_SelectionChanged">
-                        <ListView.ItemTemplate>
-                            <DataTemplate x:DataType="local:Comment">
-                                <Grid>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition/>
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition/>
-                                        <ColumnDefinition/>
-                                    </Grid.ColumnDefinitions>
-                                    <StackPanel Grid.Column="0" Orientation="Vertical">
-                                        <HyperlinkButton Content="{x:Bind creator_name}" FontSize="18" FontWeight="SemiBold" Foreground="White"/>
-                                        <!--<controls:ImageEx BorderBrush="{ThemeResource SystemControlBackgroundListMediumRevealBorderBrush}" Source="{x:Bind Avatar_Url}" Width="150" Height="150" Margin="0,0,0,10"/>-->
-                                    </StackPanel>
-                                    <StackPanel Grid.Column="1">
-                                        <Grid Margin="10,0,0,-25" Background="{ThemeResource DescBackground}" CornerRadius="10" Visibility="{x:Bind quotevis}">
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition/>
-                                                <ColumnDefinition Width="50*"/>
-                                            </Grid.ColumnDefinitions>
-                                            <Rectangle Grid.Column="0" Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
-                                            <StackPanel Grid.Column="1" Orientation="Vertical">
-                                                <HyperlinkButton Content="{x:Bind quotedName}" Foreground="White" Margin="10,0,0,0" FontSize="16"/>
-                                                <TextBlock Text="{x:Bind quote}" Margin="0,0,10,10" TextWrapping="WrapWholeWords"/>
-                                            </StackPanel>
-                                        </Grid>
-                                        <TextBlock Grid.Column="1" Text="{x:Bind body}" Margin="10,10,10,10" TextWrapping="WrapWholeWords" />
-                                    </StackPanel>
-                                </Grid>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                        <ListView.ItemContainerStyle>
-                            <Style TargetType="ListViewItem">
-                                <Setter Property="Background" Value="{ThemeResource CommentBackground}"/>
-                                <Setter Property="Margin" Value="10"/>
-                            </Style>
-                        </ListView.ItemContainerStyle>
-                    </ListView>
                 </StackPanel>
             </ScrollViewer>
             <control:ProgressRing x:Name="ImageLoadProgress" Width="80" Height="80" IsActive="True" Foreground="White"/>

@@ -39,7 +39,6 @@ C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\System.
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\Microsoft.Graphics.Canvas.dll
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\Microsoft.Graphics.Canvas.winmd
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
-C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Debug\e610.NET.csprojAssemblyReference.cache
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Debug\App.g.i.cs
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Debug\App.g.cs
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Debug\Pages\AccountsPage.g.i.cs
@@ -440,3 +439,4 @@ C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\swresam
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\swscale-5.dll
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\swscale.lib
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Debug\.winmd_cache\$FFmpegInterop.winmd_637327960900000000.json
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Debug\e610.NET.csprojAssemblyReference.cache

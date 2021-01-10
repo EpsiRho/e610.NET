@@ -8,8 +8,24 @@
     xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Default">
+                    <AcrylicBrush x:Key="DialogBackground"
+                          BackgroundSource="Backdrop"
+                          TintColor="Black"
+                          TintOpacity="0.01" 
+                          FallbackColor="Black"/>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
     <Grid>
-        <muxc:NavigationView x:Name="MainNav" PaneDisplayMode="Top" IsBackEnabled="True" BackRequested="MainNav_BackRequested" ItemInvoked="MainNav_ItemInvoked">
+        <muxc:NavigationView x:Name="MainNav" PaneDisplayMode="Top" IsBackEnabled="True" BackRequested="MainNav_BackRequested" ItemInvoked="MainNav_ItemInvoked" >
+            <muxc:NavigationView.Shadow>
+                <muxc:ThemeShadow x:Name="NavShadow"/>
+            </muxc:NavigationView.Shadow>
             <muxc:NavigationView.MenuItems>
                 <muxc:NavigationViewItem  Content="Posts" Tag="PostsView" Tapped="PostsViewTapped"/>
                 <muxc:NavigationViewItem  Content="Pools" Tag="PoolsView" Tapped="PoolsViewTapped"/>
@@ -29,7 +45,9 @@
             PrimaryButtonText="Save"
             PrimaryButtonClick="SettingsDialog_PrimaryButtonClick"
             CloseButtonText="Cancel"
-            DefaultButton="Primary">
+            DefaultButton="Primary"
+            Background="{ThemeResource DialogBackground}"
+            BorderThickness="0">
             <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
                 <ComboBox x:Name="RatingSelection" Width="200" VerticalAlignment="Top" 
                           HorizontalAlignment="Left" Header="Highest Rating allowed" Margin="10,10,0,0" 
@@ -38,7 +56,7 @@
                     <x:String>rating:questionable</x:String>
                     <x:String>rating:explicit</x:String>
                 </ComboBox>
-                <ToggleSwitch x:Name="CommentSwitch" Header="Show Comments"/>
+                <ToggleSwitch x:Name="CommentSwitch" Header="Show Comments" Margin="10,10,0,0"/>
             </StackPanel>
         </ContentDialog>
     </Grid>

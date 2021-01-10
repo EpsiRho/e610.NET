@@ -1,2 +1,2 @@
-MainPackage=C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Release\e610.NET_1.2.2.0_x86.msix
-SymbolPackage=C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Release\Symbols\e610.NET_1.2.2.0_x86.appxsym
+MainPackage=C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Release\e610.NET_1.3.0.0_x86.msix
+SymbolPackage=C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Release\Symbols\e610.NET_1.3.0.0_x86.appxsym
