@@ -32,37 +32,37 @@
         <!--Sidebar StackPanel-->
         <StackPanel Grid.Column="0" Orientation="Vertical" Background="{ThemeResource SideBar}" Translation="0,0,52">
             <StackPanel.Shadow>
-                <ThemeShadow x:ConnectionId='9' x:Name="SidePanelShadow"/>
+                <ThemeShadow x:ConnectionId='11' x:Name="SidePanelShadow"/>
             </StackPanel.Shadow>
             <!--Search Title, Bar, and Button-->
             <TextBlock Text="Search" FontSize="18" Margin="10,10,10,0" HorizontalAlignment="Center"/>
             <StackPanel Orientation="Vertical" Margin="10,10,10,10">
-                <TextBox x:ConnectionId='15' Width="auto" Height="Auto" x:Name="SearchBox"
+                <TextBox x:ConnectionId='17' Width="auto" Height="Auto" x:Name="SearchBox"
                      VerticalAlignment="Top" HorizontalAlignment="Stretch"
                      TextWrapping="Wrap"                                                                />
-                <ListView x:ConnectionId='16' x:Name="SearchTagAutoComplete" Visibility="Visible" IsItemClickEnabled="True"                                            />
-                <Button x:ConnectionId='17' x:Name="SearchButton"                              HorizontalAlignment="Stretch" Margin="0,5,0,0">
+                <ListView x:ConnectionId='18' x:Name="SearchTagAutoComplete" Visibility="Visible" IsItemClickEnabled="True"                                            />
+                <Button x:ConnectionId='19' x:Name="SearchButton"                              HorizontalAlignment="Stretch" Margin="0,5,0,0">
                     <SymbolIcon Symbol="Accept"/>
                 </Button>
             </StackPanel>
 
             <!--Progressbar, Hidden under Search Button-->
-            <control:ProgressBar x:ConnectionId='10' x:Name="LoadingBar" IsIndeterminate="True" Visibility="Collapsed"  Margin="0,0,0,0"
+            <control:ProgressBar x:ConnectionId='12' x:Name="LoadingBar" IsIndeterminate="True" Visibility="Collapsed"  Margin="0,0,0,0"
                          Height="3" Foreground="White" Width="150"
                          ShowPaused="False" ShowError="False"/>
 
             <!--Post Count Control-->
             <TextBlock Text="Post Count" FontSize="18" Margin="10,0,10,0" HorizontalAlignment="Center"/>
-            <Slider x:ConnectionId='11' x:Name="PostCountSlider" Margin="10,0,10,0" Maximum="300" Minimum="25" StepFrequency="5"/>
+            <Slider x:ConnectionId='13' x:Name="PostCountSlider" Margin="10,0,10,0" Maximum="300" Minimum="25" StepFrequency="5"/>
 
             <!--Page controls and number-->
             <TextBlock Text="Page" FontSize="18" Margin="10,0,10,5" HorizontalAlignment="Center"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:ConnectionId='12' x:Name="BackPage" Margin="0,0,5,0"                         >
+                <Button x:ConnectionId='14' x:Name="BackPage" Margin="0,0,5,0"                         >
                     <SymbolIcon Symbol="Back"/>
                 </Button>
-                <TextBlock x:ConnectionId='13'                           FontSize="20" Margin="0,0,0,0"/>
-                <Button x:ConnectionId='14' x:Name="ForwardPage"                             Margin="5,0,0,0">
+                <TextBlock x:ConnectionId='15'                           FontSize="20" Margin="0,0,0,0"/>
+                <Button x:ConnectionId='16' x:Name="ForwardPage"                             Margin="5,0,0,0">
                     <SymbolIcon Symbol="Forward"/>
                 </Button>
             </StackPanel>
@@ -70,21 +70,33 @@
 
         <!--Posts View-->
         <Grid x:ConnectionId='2' Background="{ThemeResource MainBackground}" Grid.Column="1" VerticalAlignment="Stretch" x:Name="MainPanel">
-            <GridView x:ConnectionId='3' x:Name="ImageGrid"                                        
+            <Grid.Resources>
+                <SwipeItems x:Key="left" Mode="Execute">
+                    <SwipeItem x:ConnectionId='4' BehaviorOnInvoked="Close"                                
+                                            Background="#000F2D"/>
+                </SwipeItems>
+                <SwipeItems x:Key="right" Mode="Execute">
+                    <SwipeItem x:ConnectionId='3' BehaviorOnInvoked="Close"                                 
+                                           Background="#000F2D"/>
+                </SwipeItems>
+            </Grid.Resources>
+            <SwipeControl RightItems="{StaticResource right}" LeftItems="{StaticResource left}" Background="Transparent">
+                <GridView x:ConnectionId='6' x:Name="ImageGrid"                                        
                   HorizontalAlignment="Stretch" 
                                                   IsItemClickEnabled="True">
-                <GridView.ItemTemplate>
-                    <DataTemplate                        >
-                        <Grid x:ConnectionId='6' Margin="10,0,0,10" Width="150" Height="150">
-                            <uwpcontrols:ImageEx x:ConnectionId='7' Source="{Binding preview.url}"                                                                            />
-                            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="{ThemeResource TextBackgound}">
-                                <TextBlock x:ConnectionId='8'                          Margin="0,-4,0,0"            />
-                            </StackPanel>
-                        </Grid>
-                    </DataTemplate>
-                </GridView.ItemTemplate>
-            </GridView>
-            <Grid x:ConnectionId='4' x:Name="ImageShadowHost"/>
+                    <GridView.ItemTemplate>
+                        <DataTemplate                        >
+                            <Grid x:ConnectionId='8' Margin="10,0,0,10" Width="150" Height="150">
+                                <uwpcontrols:ImageEx x:ConnectionId='9' Source="{Binding preview.url}"                                                                            />
+                                <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="{ThemeResource TextBackgound}">
+                                    <TextBlock x:ConnectionId='10'                          Margin="0,-4,0,0"            />
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+            </SwipeControl>
+            <Grid x:ConnectionId='5' x:Name="ImageShadowHost"/>
         </Grid>
     </Grid>
 </Page>

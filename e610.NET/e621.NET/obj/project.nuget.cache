@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZpjqzqVjnqd7aH/pDsJnsLKLRT/jWPpibEeQiUSXFZL6vHXfWQ8+cogxpJVUMDD94eVAwt21cX5vaHB72dgvHQ==",
+  "dgSpecHash": "TQ01PtCpC5FSGD1JylT5PmCaTB6pX01wb/gujuOzsG+uNe9sTKvUUM+JEzGw7xuvntxekqwo+RESQa8O3UOetQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\jhset\\Documents\\GitHub\\e610.NET\\e610.NET\\e621.NET\\e610.NET.csproj",
   "expectedPackageFiles": [
@@ -24,7 +24,7 @@
     "C:\\Users\\jhset\\.nuget\\packages\\microsoft.toolkit.uwp.ui.controls\\6.1.1\\microsoft.toolkit.uwp.ui.controls.6.1.1.nupkg.sha512",
     "C:\\Users\\jhset\\.nuget\\packages\\microsoft.ui.xaml\\2.5.0\\microsoft.ui.xaml.2.5.0.nupkg.sha512",
     "C:\\Users\\jhset\\.nuget\\packages\\microsoft.xaml.behaviors.uwp.managed\\2.0.1\\microsoft.xaml.behaviors.uwp.managed.2.0.1.nupkg.sha512",
-    "C:\\Users\\jhset\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\jhset\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\jhset\\.nuget\\packages\\nito.asyncex\\4.0.1\\nito.asyncex.4.0.1.nupkg.sha512",
     "C:\\Users\\jhset\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512",

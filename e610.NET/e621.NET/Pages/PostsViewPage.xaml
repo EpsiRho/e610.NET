@@ -70,20 +70,32 @@
 
         <!--Posts View-->
         <Grid Background="{ThemeResource MainBackground}" Grid.Column="1" VerticalAlignment="Stretch" x:Name="MainPanel">
-            <GridView x:Name="ImageGrid" ItemsSource="{x:Bind ViewModel.Posts}" 
+            <Grid.Resources>
+                <SwipeItems x:Key="left" Mode="Execute">
+                    <SwipeItem BehaviorOnInvoked="Close" Invoked="LeftSwipeItem_Invoked"
+                                            Background="#000F2D"/>
+                </SwipeItems>
+                <SwipeItems x:Key="right" Mode="Execute">
+                    <SwipeItem BehaviorOnInvoked="Close" Invoked="RightSwipeItem_Invoked"
+                                           Background="#000F2D"/>
+                </SwipeItems>
+            </Grid.Resources>
+            <SwipeControl RightItems="{StaticResource right}" LeftItems="{StaticResource left}" Background="Transparent">
+                <GridView x:Name="ImageGrid" ItemsSource="{x:Bind ViewModel.Posts}" 
                   HorizontalAlignment="Stretch" 
                   ItemClick="ImageGrid_ItemClick" IsItemClickEnabled="True">
-                <GridView.ItemTemplate>
-                    <DataTemplate x:DataType="local:Post">
-                        <Grid Margin="10,0,0,10" Width="150" Height="150">
-                            <uwpcontrols:ImageEx Source="{Binding preview.url}" Width="{x:Bind preview.width}" Height="{x:Bind preview.height}" x:Phase="2"/>
-                            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="{ThemeResource TextBackgound}">
-                                <TextBlock Text="{x:Bind file.ext}" Margin="0,-4,0,0" x:Phase="1"/>
-                            </StackPanel>
-                        </Grid>
-                    </DataTemplate>
-                </GridView.ItemTemplate>
-            </GridView>
+                    <GridView.ItemTemplate>
+                        <DataTemplate x:DataType="local:Post">
+                            <Grid Margin="10,0,0,10" Width="150" Height="150">
+                                <uwpcontrols:ImageEx Source="{Binding preview.url}" Width="{x:Bind preview.width}" Height="{x:Bind preview.height}" x:Phase="2"/>
+                                <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="{ThemeResource TextBackgound}">
+                                    <TextBlock Text="{x:Bind file.ext}" Margin="0,-4,0,0" x:Phase="1"/>
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+            </SwipeControl>
             <Grid x:Name="ImageShadowHost"/>
         </Grid>
     </Grid>

@@ -403,5 +403,45 @@ namespace e610.NET
 
             }
         }
+
+        private void LeftSwipeItem_Invoked(SwipeItem sender, SwipeItemInvokedEventArgs args)
+        {
+            try
+            {
+                if (pageCount != 1)
+                {
+                    Thread LoadThread = new Thread(LoadPosts);
+                    //Post p = ViewModel.Posts.First();
+                    ViewModel.ClearPosts();
+                    pageCount--;
+                    LoadThread.Start(new LoadPostsArgs(SearchBox.Text, pageCount));
+                    Bindings.Update();
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void RightSwipeItem_Invoked(SwipeItem sender, SwipeItemInvokedEventArgs args)
+        {
+            try
+            {
+                if (ViewModel.Posts.Count > 0)
+                {
+                    Thread LoadThread = new Thread(LoadPosts);
+                    //Post p = ViewModel.Posts.Last();
+                    ViewModel.ClearPosts();
+                    pageCount++;
+                    LoadThread.Start(new LoadPostsArgs(SearchBox.Text, pageCount));
+                    Bindings.Update();
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
     }
 }

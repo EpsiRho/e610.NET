@@ -132,14 +132,25 @@
                         </StackPanel>
                     </StackPanel>
                     <StackPanel x:Name="PostPanel">
+                        <StackPanel.Resources>
+                            <SwipeItems x:Key="left" Mode="Execute">
+                                <SwipeItem BehaviorOnInvoked="Close" Invoked="LeftSwipeItem_Invoked"
+                                            Background="#000F2D"/>
+                            </SwipeItems>
+                            <SwipeItems x:Key="right" Mode="Execute">
+                                <SwipeItem BehaviorOnInvoked="Close" Invoked="RightSwipeItem_Invoked"
+                                           Background="#000F2D"/>
+                            </SwipeItems>
+                        </StackPanel.Resources>
                         <control:ProgressBar Grid.Column="1" x:Name="DownloadProgress"  Visibility="Collapsed"
                              IsIndeterminate="True" Width="192" Height="7" Foreground="White"
                              HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.ZIndex="30" Margin="10" Background="Black"/>
-
-                        <controls:ImageEx x:Name="bigpicture" Source="{x:Bind singlePost.file.url}"   
-                   Canvas.ZIndex="1" Visibility="Collapsed"
-                   RightTapped="bigpicture_RightTapped" ImageExOpened="bigpicture_ImageExOpened_1" >
-                        </controls:ImageEx>
+                        <SwipeControl RightItems="{StaticResource right}" LeftItems="{StaticResource left}" Background="Transparent">
+                            <controls:ImageEx x:Name="bigpicture" Source="{x:Bind singlePost.file.url}"   
+                                              Canvas.ZIndex="1" Visibility="Collapsed"
+                                              RightTapped="bigpicture_RightTapped" ImageExOpened="bigpicture_ImageExOpened_1" >
+                            </controls:ImageEx>
+                        </SwipeControl>
                         <controls:ImageEx x:Name="smallpicture" Source="{x:Bind singlePost.preview.url}" Width="{x:Bind singlePost.preview.width}" Height="{x:Bind singlePost.preview.height}" 
                    Canvas.ZIndex="1" Visibility="Collapsed"
                    RightTapped="bigpicture_RightTapped"/>

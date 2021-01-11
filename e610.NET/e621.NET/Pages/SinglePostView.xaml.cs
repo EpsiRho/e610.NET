@@ -161,13 +161,13 @@ namespace e610.NET
         }
         private async void CommentsPopulate()
         {
-            Thread.Sleep(10);
-            if (GlobalVars.ShowComments)
+            try
             {
-                List<Comment> Comments = GetComments();
-                for (int i = 0; i < Comments.Count(); i++)
+                Thread.Sleep(10);
+                if (GlobalVars.ShowComments)
                 {
-                    try
+                    List<Comment> Comments = GetComments();
+                    for (int i = 0; i < Comments.Count(); i++)
                     {
                         Comment c = Comments[i];
                         if (c.body.Contains("[quote]"))
@@ -217,11 +217,11 @@ namespace e610.NET
                             CommentsSource.Add(c);
                         });
                     }
-                    catch (Exception)
-                    {
-
-                    }
                 }
+            }
+            catch (Exception)
+            {
+
             }
         }
         private Pool getPoolInfo(int poolID)
@@ -1375,5 +1375,72 @@ namespace e610.NET
                 }
             }
         }
+
+        private void LeftSwipeItem_Invoked(SwipeItem sender, SwipeItemInvokedEventArgs args)
+        {
+            try
+            {
+                Thread LoadThread = new Thread(LoadPost);
+                Pool selected = (Pool)MovementSelection.SelectedItem;
+                if (SearchBox.Text.Contains("order:id"))
+                {
+                    if (selected.name.Contains("Tags:"))
+                    {
+                        LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'b'));
+                    }
+                    else
+                    {
+                        LoadThread.Start(new LoadPostsArgs("pool:" + selected.id, singlePost.id, 'b'));
+                    }
+                }
+                else if (!selected.name.Contains("Tags:"))
+                {
+                    LoadThread.Start(new LoadPostsArgs("pool:" + selected.id, singlePost.id, 'b'));
+                }
+                else
+                {
+                    LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'a'));
+                }
+                ImageScrollView.ChangeView(null, 0, null, false);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void RightSwipeItem_Invoked(SwipeItem sender, SwipeItemInvokedEventArgs args)
+        {
+            try
+            {
+                Thread LoadThread = new Thread(LoadPost);
+                Pool selected = (Pool)MovementSelection.SelectedItem;
+                if (SearchBox.Text.Contains("order:id"))
+                {
+                    if (selected.name.Contains("Tags:"))
+                    {
+                        LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'a'));
+                    }
+                    else
+                    {
+                        LoadThread.Start(new LoadPostsArgs("pool:" + selected.id, singlePost.id, 'a'));
+                    }
+                }
+                else if (!selected.name.Contains("Tags:"))
+                {
+                    LoadThread.Start(new LoadPostsArgs("pool:" + selected.id, singlePost.id, 'a'));
+                }
+                else
+                {
+                    LoadThread.Start(new LoadPostsArgs(SearchBox.Text, singlePost.id, 'b'));
+                }
+                ImageScrollView.ChangeView(null, 0, null, false);
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
     }
 }

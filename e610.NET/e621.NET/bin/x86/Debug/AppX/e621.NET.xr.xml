@@ -227,6 +227,21 @@
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="e610.NET.Pages.PoolView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.SwipeItems">
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SwipeItem">
+      <RootProperty Name="BehaviorOnInvoked" />
+      <RootProperty Name="Background" />
+      <RootEvent Name="Invoked" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SwipeControl">
+      <RootProperty Name="RightItems" />
+      <RootProperty Name="LeftItems" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="Visibility" />
       <RootProperty Name="IsItemClickEnabled" />
@@ -246,6 +261,10 @@
       <RootProperty Name="Height" />
       <RootProperty Name="IsActive" />
       <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RefreshContainer">
+      <RootProperty Name="Content" />
+      <RootEvent Name="RefreshRequested" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.MediaElement">
       <RootProperty Name="Visibility" />
