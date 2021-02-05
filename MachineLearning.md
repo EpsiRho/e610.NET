@@ -22,7 +22,7 @@ that drew the original.
 
 ## When / Where will I be able to use this tool?
 It will be built into the e610.NET app first, though I may make a standalone app for it as well. As for when, that'll be whenever it's done training and I can Implement the 
-model into the program. Training will start whenever I get enough images, so please contribute if you can!
+model into the program. I've started uploading the first dataset to Azure for the first test, But eventually I'd like a dataset with cropped images as well.
 
 ## Do you use any of my data?
 No. The model is saved in the program itself, and will never talk to any server of my own. e610 only talks to the e621 api. <br>
