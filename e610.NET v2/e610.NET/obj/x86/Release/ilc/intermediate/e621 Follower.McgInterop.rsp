@@ -1,0 +1,39 @@
+﻿/debug:pdbonly
+/nowarn:0436;0618;1668;1685;1701;1702
+/debug+
+/nostdlib+
+/optimize+
+/out:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\intermediate\e621 Follower.McgInterop.dll"
+/pdb:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\intermediate\e621 Follower.McgInterop.pdb"
+/platform:anycpu
+/warnaserror+
+/unsafe
+/nologo
+/target:library
+/define:MCG_PRE_BUILD
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.7-rel-28605-00\tools\SharedLibrary\ret\AnalysisILToc\System.Private.CoreLib.iltoc"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.7-rel-28605-00\tools\SharedLibrary\ret\AnalysisILToc\System.Private.Interop.iltoc"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.7-rel-28605-00\tools\SharedLibrary\ret\AnalysisILToc\System.Private.Uri.iltoc"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\in\System.Reflection.DispatchProxy.dll"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\in\System.Reflection.dll"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.7-rel-28605-00\tools\SharedLibrary\ret\AnalysisILToc\System.Runtime.iltoc"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\in\System.Runtime.InteropServices.dll"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\in\System.Runtime.InteropServices.WindowsRuntime.dll"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\in\System.Numerics.Vectors.dll"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.7-rel-28605-00\tools\SharedLibrary\ret\AnalysisILToc\System.Threading.iltoc"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\in\System.Diagnostics.Debug.dll"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.7-rel-28605-00\tools\SharedLibrary\ret\AnalysisILToc\System.Runtime.Extensions.iltoc"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.7-rel-28605-00\tools\SharedLibrary\ret\AnalysisILToc\System.Collections.iltoc"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.7-rel-28605-00\tools\SharedLibrary\ret\AnalysisILToc\System.ObjectModel.iltoc"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\in\System.Runtime.WindowsRuntime.dll"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\in\System.Runtime.WindowsRuntime.UI.Xaml.dll"
+/r:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.7-rel-28605-00\tools\SharedLibrary\ret\AnalysisILToc\System.Private.SharedLibrary.Interop.Generated.iltoc"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\intermediate\System.Private.e621 Follower.Generated.dll"
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\intermediate\e621 Follower.McgInterop\Adapters.g.cs"
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\intermediate\e621 Follower.McgInterop\AssemblyInfo.g.cs"
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\intermediate\e621 Follower.McgInterop\Data.g.cs"
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\intermediate\e621 Follower.McgInterop\Helpers.g.cs"
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\intermediate\e621 Follower.McgInterop\ImplTypes.g.cs"
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\intermediate\e621 Follower.McgInterop\PInvoke.g.cs"
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\intermediate\e621 Follower.McgInterop\SafeTypes.g.cs"
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x86\Release\ilc\intermediate\e621 Follower.McgInterop\SharedStubs.g.cs"

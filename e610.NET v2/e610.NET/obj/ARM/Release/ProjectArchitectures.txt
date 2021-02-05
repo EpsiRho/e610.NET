@@ -1,0 +1,2 @@
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\Background Notifier.csproj;arm
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\e610.NET.csproj;arm

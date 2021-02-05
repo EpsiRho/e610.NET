@@ -1,0 +1,24 @@
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\bin\x86\Release\Background_Notifier.winmd
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\bin\x86\Release\Background_Notifier.pdb
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\bin\x86\Release\Background_Notifier.pri
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\Background Notifier.csproj.CoreCompileInputs.cache
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\Background_Notifier.winmd
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\Background_Notifier.pdb
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\Microsoft.Toolkit.Uwp.Notifications.pri.xml
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\Background_Notifier.winmdobj
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\Background_Notifier.compile.pdb
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\priconfig.xml
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\priconfig.xml.intermediate
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\unfiltered.layout.resfiles
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\unfiltered.layout.resfiles.intermediate
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\filtered.layout.resfiles
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\filtered.layout.resfiles.intermediate
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\excluded.layout.resfiles
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\excluded.layout.resfiles.intermediate
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\resources.resfiles
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\resources.resfiles.intermediate
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\pri.resfiles
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\pri.resfiles.intermediate
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\qualifiers.txt
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\qualifiers.txt.intermediate
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\obj\x86\Release\MultipleQualifiersPerDimensionFound.txt
