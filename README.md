@@ -10,9 +10,5 @@ e610.NET is a UWP application built to follow and keep up with artists and tags 
 * See all posts and easily follow new tags
 * Looking for the sauce? Try using the artist search with an image! [Machine Learning FAQ](https://github.com/EpsiRho/e610.NET/blob/main/MachineLearning.md)
 
-## Upcoming Features (Applies to v2, but may be delayed to a later version)
-* Pool navigation
-* Tag tab completion in searchbar
-* Comments
-* Descriptions
-* artists profile
+## V2 Progress
+### You can see what all needs to be done, has been done, or is currently being worked on at the [V2 Project Page](https://github.com/EpsiRho/e610.NET/projects/1)
