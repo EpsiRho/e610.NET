@@ -11,18 +11,18 @@ I also just want my sauce :eyes:<br><br>
 
 ## Now why would you download 2TB of images, Epsi?
 I needed training data, However I ran into a problem. As you might have guessed, 2TB is a *lot* of data. So much that by the 900,000th image, 
-My pc ran out of memory, and the training failed. So this next time I'll be using an Azure ML server. This only leaves me with 300GB(Unless I pay a lot more).
+My pc ran out of memory, and the training failed. So this next time I'll be using an Azure ML server.
 <br>
 I'll be training a smaller dataset as a test, but I still would like to try and train the full dataset at a later date. 
 
 ## How can I help?
 Well, thanks for asking! I'm currently working on getting a dataset for the first test What I need is more cropped images to help the AI get artist correct when aa full image
 isn't given. So, if you happen to have any, memes or otherwise, DM me on twitter, [@EpsilonRho](https://twitter.com/EpsilonRho), with those images **and** the name of the artist 
-that drew the original. Once I get a bunch of those, the top artists with the most images(up to 300GB) will be used in the dataset.
+that drew the original.
 
 ## When / Where will I be able to use this tool?
 It will be built into the e610.NET app first, though I may make a standalone app for it as well. As for when, that'll be whenever it's done training and I can Implement the 
-model into the program. Training will start whenever I get enough images, so please contribute if you can!
+model into the program. I've started uploading the first dataset to Azure for the first test, But eventually I'd like a dataset with cropped images as well.
 
 ## Do you use any of my data?
 No. The model is saved in the program itself, and will never talk to any server of my own. e610 only talks to the e621 api. <br>
