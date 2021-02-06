@@ -10,6 +10,7 @@ using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml;
 
 namespace e610.NET
 {
@@ -90,6 +91,7 @@ namespace e610.NET
         }
 
         public int index;
+        public Visibility show_badge;
         public int id { get; set; }
         public DateTime created_at { get; set; }
         public File file { get; set; }

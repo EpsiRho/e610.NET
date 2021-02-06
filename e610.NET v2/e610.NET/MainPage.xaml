@@ -38,6 +38,9 @@
                     <Button Margin="12,12,0,12" Height="35" x:Name="SearchButton" Click="SearchButton_Click">
                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE721;"/>
                     </Button>
+                    <Button Margin="12,12,0,12" Height="35" x:Name="MLButton" Click="MLButton_Click" ToolTipService.ToolTip="Machine learning assisted artist search">
+                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8EC;"/>
+                    </Button>
                     <Button Margin="12" Height="35" x:Name="SettingsButton" Click="SettingsButton_Click">
                         <SymbolIcon Symbol="Setting"/>
                     </Button>
@@ -115,9 +118,12 @@
                     <GridView x:Name="PostsView" Margin="10" ItemsSource="{x:Bind ViewModel.Posts}" ItemClick="PostsView_ItemClick" IsItemClickEnabled="True">
                         <GridView.ItemTemplate>
                             <DataTemplate x:DataType="local:Post">
-                                <StackPanel Margin="10" Width="150" Height="150">
+                                <Grid Margin="10" Width="150" Height="150">
+                                    <StackPanel>
+                                        <TextBlock Text="New" FontSize="10" Margin="10" Visibility="{x:Bind show_badge}"/>
+                                    </StackPanel>
                                     <Image Source="{x:Bind preview.url}" Width="{x:Bind preview.width}" Height="{x:Bind preview.height}"/>
-                                </StackPanel>
+                                </Grid>
                             </DataTemplate>
                         </GridView.ItemTemplate>
                     </GridView>
@@ -226,7 +232,7 @@
                 <HyperlinkButton Content="App Settings" FontSize="18" Foreground="White" Click="AppHyperlinkClick"/>
                 <StackPanel x:Name="AppSettingsPanel" Visibility="Collapsed">
                     <ToggleSwitch x:Name="ListSide" Header="Following List Side" Margin="10,10,0,0" IsOn="true"
-                              OnContent="Right" OffContent="Left" Toggled="ListSide_Toggled"/>
+                              OnContent="Right" OffContent="Left"/>
                 </StackPanel>
                 <HyperlinkButton Content="Notifications" FontSize="18" Foreground="White" Click="NotificationHyperlinkClick"/>
                 <StackPanel x:Name="NotificationsSettingsPanel" Visibility="Collapsed">

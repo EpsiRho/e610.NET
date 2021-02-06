@@ -45,6 +45,7 @@ namespace e610.NET
         string clickedTag;
         string Username;
         string ApiKey;
+        int lastId;
         // Page Load //
         public MainPage()
         {
@@ -59,6 +60,7 @@ namespace e610.NET
         private void GetSettings()
         {
             Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            lastId = -1;
             Username = (string)localSettings.Values["username"];
             if (Username == null)
             {
@@ -73,7 +75,51 @@ namespace e610.NET
                 localSettings.Values["apikey"] = "";
             }
             ApiKeyBox.Text = ApiKey;
-            // TO-DO: Fix stupid Settings bug
+            string notif = (string)localSettings.Values["notif"];
+            if(notif == null)
+            {
+                notif = "30";
+                localSettings.Values["notif"] = "30";
+            }
+            NotificationTime.Text = "30";
+            string side = (string)localSettings.Values["side"];
+            if(side == null)
+            {
+                side = "right";
+                localSettings.Values["side"] = "right";
+            }
+            if(side == "right")
+            {
+                ListSide.IsOn = true;
+                Grid.SetColumn(PostsScrollView, 0);
+                Grid.SetColumn(FollowingScrollView, 1);
+                Grid.SetColumn(ImageBG, 0);
+                Grid.SetColumn(CloseButton, 0);
+                Grid.SetColumn(RecentProgressRing, 0);
+                Grid.SetColumn(FollowingProgressRing, 0);
+                Grid.SetColumn(PostHolder, 1);
+                Grid.SetColumn(TagScroller, 0);
+                LeftColumn.Width = new GridLength(50, GridUnitType.Star);
+                RightColumn.Width = new GridLength(0, GridUnitType.Auto);
+                LeftPostColumn.Width = new GridLength(0, GridUnitType.Auto);
+                RightPostColumn.Width = new GridLength(90, GridUnitType.Star);
+            }
+            else
+            {
+                ListSide.IsOn = false;
+                Grid.SetColumn(PostsScrollView, 1);
+                Grid.SetColumn(FollowingScrollView, 0);
+                Grid.SetColumn(ImageBG, 1);
+                Grid.SetColumn(CloseButton, 1);
+                Grid.SetColumn(RecentProgressRing, 1);
+                Grid.SetColumn(FollowingProgressRing, 1);
+                Grid.SetColumn(PostHolder, 0);
+                Grid.SetColumn(TagScroller, 1);
+                LeftColumn.Width = new GridLength(0, GridUnitType.Auto);
+                RightColumn.Width = new GridLength(50, GridUnitType.Star);
+                LeftPostColumn.Width = new GridLength(90, GridUnitType.Star);
+                RightPostColumn.Width = new GridLength(0, GridUnitType.Auto);
+            }
         }
         private async void LoadSaveFile()
         {
@@ -510,6 +556,7 @@ namespace e610.NET
         // Load Posts //
         private async void LoadRecentPosts(object n)
         {
+            Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
             List<string> names = (List<string>)n;
             string arg = "";
             foreach (string name in names)
@@ -550,12 +597,33 @@ namespace e610.NET
                 {
                     ShowInfoPopup("No Posts Found");
                 }
+                if (lastId == -1)
+                {
+                    try
+                    {
+                        lastId = (int)localSettings.Values["lastid"];
+                    }
+                    catch (Exception)
+                    {
+                        lastId = DeserializedJson.posts[0].id;
+                        localSettings.Values["lastid"] = DeserializedJson.posts[0].id;
+                    }
+                }
+
 
                 foreach (Post p in DeserializedJson.posts)
                 {
                     // If the url is null the post is blacklisted
                     if (p.preview.url != null)
                     {
+                        if(lastId < p.id)
+                        {
+                            p.show_badge = Visibility.Visible;
+                        }
+                        else
+                        {
+                            p.show_badge = Visibility.Collapsed;
+                        }
                         await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                         {
                             ViewModel.AddPost(p);
@@ -1064,14 +1132,10 @@ namespace e610.NET
             Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
             localSettings.Values["username"] = UsernameBox.Text;
             localSettings.Values["apikey"] = ApiKeyBox.Text;
-            localSettings.Values["notifTime"] = NotificationTime.Text;
-        }
-        private void ListSide_Toggled(object sender, RoutedEventArgs e)
-        {
-            Windows.Storage.ApplicationDataContainer localSettings = Windows.Storage.ApplicationData.Current.LocalSettings;
+            localSettings.Values["notif"] = NotificationTime.Text;
             if (ListSide.IsOn)
             {
-                localSettings.Values["notifTime"] = "SETTORIGHT";
+                localSettings.Values["side"] = "right";
                 Grid.SetColumn(PostsScrollView, 0);
                 Grid.SetColumn(FollowingScrollView, 1);
                 Grid.SetColumn(ImageBG, 0);
@@ -1080,14 +1144,14 @@ namespace e610.NET
                 Grid.SetColumn(FollowingProgressRing, 0);
                 Grid.SetColumn(PostHolder, 1);
                 Grid.SetColumn(TagScroller, 0);
-                LeftColumn.Width = new GridLength(50,GridUnitType.Star);
+                LeftColumn.Width = new GridLength(50, GridUnitType.Star);
                 RightColumn.Width = new GridLength(0, GridUnitType.Auto);
                 LeftPostColumn.Width = new GridLength(0, GridUnitType.Auto);
                 RightPostColumn.Width = new GridLength(90, GridUnitType.Star);
             }
             else
             {
-                localSettings.Values["notifTime"] = "SETTOLEFT";
+                localSettings.Values["side"] = "left";
                 Grid.SetColumn(PostsScrollView, 1);
                 Grid.SetColumn(FollowingScrollView, 0);
                 Grid.SetColumn(ImageBG, 1);
@@ -1151,6 +1215,11 @@ namespace e610.NET
             NotificationTime.Text = new string(NotificationTime.Text.Where(char.IsDigit).ToArray());
             NotificationTime.SelectionStart = NotificationTime.Text.Length;
             NotificationTime.SelectionLength = 0;
+        }
+
+        private void MLButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
