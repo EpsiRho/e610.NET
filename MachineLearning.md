@@ -16,13 +16,12 @@ My pc ran out of memory, and the training failed. So this next time I'll be usin
 I'll be training a smaller dataset as a test, but I still would like to try and train the full dataset at a later date. 
 
 ## How can I help?
-Well, thanks for asking! I'm currently working on getting a dataset for the first test What I need is more cropped images to help the AI get artist correct when aa full image
-isn't given. So, if you happen to have any, memes or otherwise, DM me on twitter, [@EpsilonRho](https://twitter.com/EpsilonRho), with those images **and** the name of the artist 
+Well, thanks for asking! I'm currently working on getting a dataset for the first test. What I need is more cropped images to help the AI get artists correct more often without the full image. So, if you happen to have any, memes or otherwise, DM me on twitter, [@EpsilonRho](https://twitter.com/EpsilonRho), with those images **and** the name of the artist 
 that drew the original.
 
 ## When / Where will I be able to use this tool?
 It will be built into the e610.NET app first, though I may make a standalone app for it as well. As for when, that'll be whenever it's done training and I can Implement the 
-model into the program. I've started uploading the first dataset to Azure for the first test, But eventually I'd like a dataset with cropped images as well.
+model into the program. I've started uploading the first dataset to Azure for the first test, But eventually I'd like a larger dataset with cropped images as well.
 
 ## Do you use any of my data?
 No. The model is saved in the program itself, and will never talk to any server of my own. e610 only talks to the e621 api. <br>
