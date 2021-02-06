@@ -8,7 +8,7 @@
 
   <Identity
     Name="e610.NET"
-    Publisher="CN=John Setta, O=John Setta, STREET=2098 Oak Dairy Ln SW, L=Huntsville, S=Alabama, PostalCode=35803, C=US"
+    Publisher="CN=Epsi, O=Alpine Tech, C=US"
     Version="2.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="dd2fdc72-3de4-49f4-89ea-157df478baa7" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>

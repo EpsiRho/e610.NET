@@ -63,6 +63,7 @@
       <RootProperty Name="CloseButtonText" />
       <RootProperty Name="DefaultButton" />
       <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Content" />
       <RootEvent Name="PrimaryButtonClick" />
     </RootType>
@@ -124,6 +125,15 @@
       <RootEvent Name="TextChanged" />
       <RootEvent Name="KeyDown" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Width" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Items" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
       <RootProperty Name="Header" />
       <RootProperty Name="Margin" />
@@ -131,6 +141,7 @@
       <RootProperty Name="OnContent" />
       <RootProperty Name="OffContent" />
     </RootType>
+    <RootType FullName="System.String" />
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
     </RootType>
@@ -180,6 +191,9 @@
     <RootType FullName="Windows.UI.Xaml.Controls.MediaElement">
       <RootProperty Name="Visibility" />
       <RootProperty Name="AreTransportControlsEnabled" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
       <RootEvent Name="RightTapped" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">

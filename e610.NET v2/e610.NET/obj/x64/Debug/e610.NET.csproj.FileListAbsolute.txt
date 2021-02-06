@@ -69,3 +69,4 @@ C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x64\Debug\Mult
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x64\Debug\.winmd_cache\$Background_Notifier.winmd_637481015250876588.json
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_637112822540000000.json
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x64\Debug\.winmd_cache\$Background_Notifier.winmd_637481936959870093.json

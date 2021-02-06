@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-8T6CVI5</Machine>
+    <Machine>DESKTOP-RRAQKQ8</Machine>
     <WindowsUser>jhset</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>0ddcdaf2-0e50-41f1-982f-1006b31e1dce</PackageIdentityName>
     <PackageIdentityPublisher>CN=Epsi, O=Alpine Tech, C=US</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,8 +18,8 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>DA2FA25E2F4A32E81208839CE3A2DD407D1054289D1D9C4D132B1B8246B5C33B</RegisteredManifestChecksum>
+    <LayoutDir>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\x86\Debug\AppX</LayoutDir>
+    <RegisteredManifestChecksum>4467323AA3118843F374D472EEAFB01D762CBA610495BCF711E3ABC318345900</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e610.NET_1.3.0.0_x86__b8wk27p9mjrr0</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e610.NET_b8wk27p9mjrr0!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e610.NET</RegisteredPackageID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.3.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-02-02T22:53:23.138</Modified>
+      <Modified>2021-02-06T07:32:02.625</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\e621.NET.exe">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\x86\Debug\e621.NET.exe">
       <PackagePath>entrypoint\e621.NET.exe</PackagePath>
-      <Modified>2021-02-02T22:53:20.928</Modified>
+      <Modified>2021-02-06T07:31:58.123</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -214,263 +214,263 @@
       <PackagePath>VLC\Themes\Generic.xbf</PackagePath>
       <Modified>2018-07-28T02:13:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.809</Modified>
+      <Modified>2021-02-06T07:15:33.468</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\LargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\LargeTile.scale-125.png">
       <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.829</Modified>
+      <Modified>2021-02-06T07:15:33.469</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\LargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\LargeTile.scale-150.png">
       <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.855</Modified>
+      <Modified>2021-02-06T07:15:33.470</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.901</Modified>
+      <Modified>2021-02-06T07:15:33.470</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.037</Modified>
+      <Modified>2021-02-06T07:15:33.471</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.535</Modified>
+      <Modified>2021-02-06T07:15:33.472</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\SmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\SmallTile.scale-125.png">
       <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.544</Modified>
+      <Modified>2021-02-06T07:15:33.472</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\SmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\SmallTile.scale-150.png">
       <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.553</Modified>
+      <Modified>2021-02-06T07:15:33.473</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.564</Modified>
+      <Modified>2021-02-06T07:15:33.473</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.581</Modified>
+      <Modified>2021-02-06T07:15:33.474</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.216</Modified>
+      <Modified>2021-02-06T07:15:33.474</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\SplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.246</Modified>
+      <Modified>2021-02-06T07:15:33.475</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\SplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.286</Modified>
+      <Modified>2021-02-06T07:15:33.475</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.599</Modified>
+      <Modified>2021-02-06T07:15:33.477</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.592</Modified>
+      <Modified>2021-02-06T07:15:33.477</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square150x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square150x150Logo.scale-125.png">
       <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.602</Modified>
+      <Modified>2021-02-06T07:15:33.478</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square150x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square150x150Logo.scale-150.png">
       <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.613</Modified>
+      <Modified>2021-02-06T07:15:33.479</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.665</Modified>
+      <Modified>2021-02-06T07:15:33.480</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.161</Modified>
+      <Modified>2021-02-06T07:15:33.481</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.167</Modified>
+      <Modified>2021-02-06T07:15:33.481</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.195</Modified>
+      <Modified>2021-02-06T07:15:33.482</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.173</Modified>
+      <Modified>2021-02-06T07:15:33.482</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.180</Modified>
+      <Modified>2021-02-06T07:15:33.483</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.121</Modified>
+      <Modified>2021-02-06T07:15:33.483</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.155</Modified>
+      <Modified>2021-02-06T07:15:33.483</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.134</Modified>
+      <Modified>2021-02-06T07:15:33.484</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.140</Modified>
+      <Modified>2021-02-06T07:15:33.484</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.044</Modified>
+      <Modified>2021-02-06T07:15:33.484</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.scale-125.png">
       <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.051</Modified>
+      <Modified>2021-02-06T07:15:33.485</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.scale-150.png">
       <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.057</Modified>
+      <Modified>2021-02-06T07:15:33.485</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.076</Modified>
+      <Modified>2021-02-06T07:15:33.486</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.082</Modified>
+      <Modified>2021-02-06T07:15:33.487</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.targetsize-24.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.088</Modified>
+      <Modified>2021-02-06T07:15:33.487</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.115</Modified>
+      <Modified>2021-02-06T07:15:33.488</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.094</Modified>
+      <Modified>2021-02-06T07:15:33.489</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.101</Modified>
+      <Modified>2021-02-06T07:15:33.489</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.605</Modified>
+      <Modified>2021-02-06T07:15:33.489</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\StoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\StoreLogo.scale-125.png">
       <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.612</Modified>
+      <Modified>2021-02-06T07:15:33.490</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\StoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\StoreLogo.scale-150.png">
       <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.620</Modified>
+      <Modified>2021-02-06T07:15:33.490</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.627</Modified>
+      <Modified>2021-02-06T07:15:33.491</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.640</Modified>
+      <Modified>2021-02-06T07:15:33.491</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.677</Modified>
+      <Modified>2021-02-06T07:15:33.491</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Wide310x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Wide310x150Logo.scale-125.png">
       <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.690</Modified>
+      <Modified>2021-02-06T07:15:33.492</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Wide310x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Wide310x150Logo.scale-150.png">
       <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.705</Modified>
+      <Modified>2021-02-06T07:15:33.492</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.792</Modified>
+      <Modified>2021-02-06T07:15:33.493</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2020-11-17T23:42:28.792</Modified>
+      <Modified>2021-02-06T07:15:33.471</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.353</Modified>
+      <Modified>2021-02-06T07:15:33.476</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.628</Modified>
+      <Modified>2021-02-06T07:15:33.480</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.065</Modified>
+      <Modified>2021-02-06T07:15:33.486</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:32.127</Modified>
+      <Modified>2021-02-06T07:15:33.487</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-07T16:14:31.726</Modified>
+      <Modified>2021-02-06T07:15:33.493</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2021-01-05T03:37:14.600</Modified>
+      <Modified>2021-02-06T07:15:33.515</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\.nuget\packages\libvlcx\3.1.0.1\build\uap10.0\x86\libvlc.dll">
       <PackagePath>libvlc.dll</PackagePath>
@@ -1716,33 +1716,33 @@
       <PackagePath>libvlccore.lib</PackagePath>
       <Modified>2018-07-26T02:52:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\e621.NET.xr.xml">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\x86\Debug\e621.NET.xr.xml">
       <PackagePath>e621.NET.xr.xml</PackagePath>
-      <Modified>2021-01-23T16:28:28.021</Modified>
+      <Modified>2021-02-06T07:15:59.825</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-02-02T22:53:20.755</Modified>
+      <Modified>2021-02-06T07:31:57.569</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\Pages\AccountsPage.xbf">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\x86\Debug\Pages\AccountsPage.xbf">
       <PackagePath>Pages\AccountsPage.xbf</PackagePath>
-      <Modified>2021-02-02T22:53:20.728</Modified>
+      <Modified>2021-02-06T07:31:57.536</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\Pages\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\x86\Debug\Pages\MainPage.xbf">
       <PackagePath>Pages\MainPage.xbf</PackagePath>
-      <Modified>2021-02-02T22:53:20.756</Modified>
+      <Modified>2021-02-06T07:31:57.570</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\Pages\PoolView.xbf">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\x86\Debug\Pages\PoolView.xbf">
       <PackagePath>Pages\PoolView.xbf</PackagePath>
-      <Modified>2021-02-02T22:53:20.739</Modified>
+      <Modified>2021-02-06T07:31:57.547</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\Pages\PostsViewPage.xbf">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\x86\Debug\Pages\PostsViewPage.xbf">
       <PackagePath>Pages\PostsViewPage.xbf</PackagePath>
-      <Modified>2021-02-02T22:53:20.747</Modified>
+      <Modified>2021-02-06T07:31:57.560</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\Pages\SinglePostView.xbf">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\x86\Debug\Pages\SinglePostView.xbf">
       <PackagePath>Pages\SinglePostView.xbf</PackagePath>
-      <Modified>2021-02-02T22:53:20.755</Modified>
+      <Modified>2021-02-06T07:31:57.569</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -1756,13 +1756,13 @@
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
       <Modified>2020-12-03T15:46:54.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-02-02T22:53:21.924</Modified>
+      <Modified>2021-02-06T07:32:00.351</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x86\Debug\Core\e621.NET.exe">
+    <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\x86\Debug\Core\e621.NET.exe">
       <PackagePath>e621.NET.exe</PackagePath>
-      <Modified>2021-02-02T22:53:23.112</Modified>
+      <Modified>2021-02-06T07:32:02.595</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

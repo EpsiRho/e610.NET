@@ -23,6 +23,7 @@ using Windows.UI.ViewManagement;
 using Windows.Graphics.Display;
 using System.Text.RegularExpressions;
 using Windows.UI.Core;
+using Windows.UI;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -46,6 +47,7 @@ namespace e610.NET
         string Username;
         string ApiKey;
         int lastId;
+        bool gottenLastId;
         // Page Load //
         public MainPage()
         {
@@ -85,8 +87,8 @@ namespace e610.NET
             string side = (string)localSettings.Values["side"];
             if(side == null)
             {
-                side = "right";
-                localSettings.Values["side"] = "right";
+                side = "left";
+                localSettings.Values["side"] = "left";
             }
             if(side == "right")
             {
@@ -120,24 +122,85 @@ namespace e610.NET
                 LeftPostColumn.Width = new GridLength(90, GridUnitType.Star);
                 RightPostColumn.Width = new GridLength(0, GridUnitType.Auto);
             }
+            string mute = (string)localSettings.Values["mute"];
+            if (mute == null)
+            {
+                mute = "on";
+                localSettings.Values["mute"] = "on";
+            }
+            if(mute == "on")
+            {
+                MuteVideo.IsOn = true;
+            }
+            else
+            {
+                MuteVideo.IsOn = false;
+            }
+            string rating = (string)localSettings.Values["rating"];
+            if(rating == null)
+            {
+                RatingSelection.SelectedItem = "rating:safe";
+                localSettings.Values["rating"] = "rating:safe";
+            }
+            else
+            {
+                RatingSelection.SelectedItem = rating;
+            }
+            string landing = (string)localSettings.Values["landing"];
+            if (landing == null)
+            {
+                landing = "all";
+                localSettings.Values["landing"] = "all";
+            }
+            if (landing == "all")
+            {
+                LandingSwitch.IsOn = false;
+            }
+            else
+            {
+                LandingSwitch.IsOn = true;
+            }
         }
         private async void LoadSaveFile()
         {
             try
             {
+                gottenLastId = false;
                 StorageFolder storageFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
                 StorageFile saveFile = await storageFolder.CreateFileAsync("SaveFile.txt", Windows.Storage.CreationCollisionOption.OpenIfExists);
                 string text = await Windows.Storage.FileIO.ReadTextAsync(saveFile);
                 follows = new List<string>(text.Split('\n'));
                 List<string> tags = new List<string>();
-                foreach (string s in follows)
+                bool landing = false;
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                 {
-                    if (s != "")
+                    landing = LandingSwitch.IsOn;
+                });
+                if (landing)
+                {
+                    foreach (string s in follows)
                     {
-                        string[] split = s.Split(":");
-                        string arg = "~" + split[0];
-                        tags.Add(arg);
+                        if (s != "")
+                        {
+                            string[] split = s.Split(":");
+                            string arg = "~" + split[0];
+                            tags.Add(arg);
+                        }
                     }
+                    await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                    {
+                        RecentBackButton.Background = new SolidColorBrush(Color.FromArgb(255, 0, 40, 121));
+                    });
+                }
+                else
+                {
+                    await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                    {
+                        PostsTitle.Text = "Posts: All";
+                        FollowingScrollView.Visibility = Visibility.Collapsed;
+                        AllButton.Background = new SolidColorBrush(Color.FromArgb(255, 0, 40, 121));
+                    });
+                    tags.Add(" ");
                 }
                 Thread loadRecent = new Thread(LoadRecentPosts);
                 loadRecent.Start(tags);
@@ -237,16 +300,21 @@ namespace e610.NET
             Post p = (Post)e.ClickedItem;
             singlePost = p;
             RecentProgressRing.Visibility = Visibility.Visible;
+            FollowingScrollView.Visibility = Visibility.Collapsed;
             FullImage.Width = double.NaN;
             FullImage.Height = page.ActualHeight - 68;
             FullVideo.Width = double.NaN;
-            FullVideo.Height = page.ActualHeight - 68;
+            FullVideo.Height = page.ActualHeight - 100;
             ImageGrid.Width = double.NaN;
             ImageGrid.Height = page.ActualHeight - 68;
             if (p.file.ext == "webm")
             {
                 FullVideo.Source = new Uri(p.file.url, UriKind.Absolute);
                 FullVideo.Visibility = Visibility.Visible;
+                if (MuteVideo.IsOn)
+                {
+                    FullVideo.Volume = 0;
+                }
                 ImageBG.Visibility = Visibility.Visible;
                 RecentProgressRing.Visibility = Visibility.Collapsed;
             }
@@ -274,6 +342,10 @@ namespace e610.NET
             FullVideo.Source = null;
             FullImage.Visibility = Visibility.Collapsed;
             FullVideo.Visibility = Visibility.Collapsed;
+            if(PostsTitle.Text == "Posts: Followed")
+            {
+                FollowingScrollView.Visibility = Visibility.Visible;
+            }
             ArtistsTags.Items.Clear();
             CopyrightsTags.Items.Clear();
             CharactersTags.Items.Clear();
@@ -289,6 +361,7 @@ namespace e610.NET
             {
                 ViewModel.ClearPosts();
                 RecentBackButton.Visibility = Visibility.Visible;
+                FollowingScrollView.Visibility = Visibility.Collapsed;
                 Tag clickedTag = (Tag)e.ClickedItem;
                 PostsTitle.Text = "Posts: " + clickedTag.name;
                 Thread t = new Thread(LoadNewPosts);
@@ -331,10 +404,12 @@ namespace e610.NET
         {
             if (RecentProgressRing.Visibility == Visibility.Collapsed)
             {
-                PostsTitle.Text = "Recent Posts";
+                PostsTitle.Text = "Posts: Followed";
+                RecentBackButton.Background = new SolidColorBrush(Color.FromArgb(255, 0, 40, 121));
                 ViewModel.ClearPosts();
-                RecentBackButton.Visibility = Visibility.Collapsed;
+                //RecentBackButton.Visibility = Visibility.Collapsed;
                 AddTagButton.Visibility = Visibility.Collapsed;
+                FollowingScrollView.Visibility = Visibility.Visible;
                 List<string> tags = new List<string>();
                 foreach (string s in follows)
                 {
@@ -358,8 +433,9 @@ namespace e610.NET
             else if(SearchBox.Visibility == Visibility.Visible && SearchBox.Text != "")
             {
                 ViewModel.ClearPosts();
-                RecentBackButton.Visibility = Visibility.Visible;
+                //RecentBackButton.Visibility = Visibility.Visible;
                 AddTagButton.Visibility = Visibility.Collapsed;
+                FollowingScrollView.Visibility = Visibility.Collapsed;
                 CloseButton.Visibility = Visibility.Collapsed;
                 ImageBG.Visibility = Visibility.Collapsed;
                 RecentProgressRing.Visibility = Visibility.Collapsed;
@@ -376,8 +452,6 @@ namespace e610.NET
                 LoreTags.Items.Clear();
                 InvalidTags.Items.Clear();
                 PostsTitle.Text = "Posts: " + SearchBox.Text;
-                Thread followButton = new Thread(ShowFollowButton);
-                followButton.Start();
                 List<string> tags = new List<string>(SearchBox.Text.Split(" "));
                 Thread t = new Thread(LoadRecentPosts);
                 t.Start(tags);
@@ -567,6 +641,24 @@ namespace e610.NET
                 }
             }
 
+            string rating = "";
+            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+            {
+                rating = (string)RatingSelection.SelectedItem;
+            });
+            switch (rating)
+            {
+                case "rating:safe":
+                    rating = "rating:safe ";
+                    break;
+                case "rating:questionable":
+                    rating = "rating:questionable rating:safe ";
+                    break;
+                case "rating:explicit":
+                    rating = "";
+                    break;
+            }
+
             var client = new RestClient(); // Client to handle Requests
             var request = new RestRequest(RestSharp.Method.GET); // REST request
 
@@ -582,7 +674,7 @@ namespace e610.NET
             //    request.AddQueryParameter("login", "EpsilonRho");
             //    request.AddQueryParameter("api_key", "o4AwL5uw1QbuMvCQvfykQzsr");
             //}
-            request.AddQueryParameter("tags", arg);
+            request.AddQueryParameter("tags", rating + arg);
             request.AddQueryParameter("limit", "75");
 
             // Send the request
@@ -635,10 +727,23 @@ namespace e610.NET
                         
                     }
                 }
+                string title = "";
                 await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                 {
                     RecentProgressRing.Visibility = Visibility.Collapsed;
+                    title = PostsTitle.Text;
                 });
+                if (!gottenLastId)
+                {
+                    lastId = DeserializedJson.posts[0].id;
+                    localSettings.Values["lastid"] = DeserializedJson.posts[0].id;
+                    gottenLastId = true;
+                }
+                if(title != "Posts: Followed" && title != "Posts: All" && ViewModel.Posts.Count() > 0)
+                {
+                    Thread followButton = new Thread(ShowFollowButton);
+                    followButton.Start();
+                }
             }
             catch(Exception e)
             {
@@ -833,7 +938,7 @@ namespace e610.NET
                     found = true;
                 }
             }
-            if (!found)
+            if (!found && tagName.Split(" ").Count() == 1 )
             {
                 await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                 {
@@ -1000,6 +1105,10 @@ namespace e610.NET
                     });
                 }
             }
+            _ = Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+            {
+                FullVideo.Width = ((page.ActualWidth - FollowingScrollView.ActualWidth) - TagScroller.ActualWidth) - 150;
+            });
         }
         private void FollowTagClick(object sender, RoutedEventArgs e)
         {
@@ -1107,11 +1216,13 @@ namespace e610.NET
                 if(SearchBox.Text != "")
                 {
                     ViewModel.ClearPosts();
-                    RecentBackButton.Visibility = Visibility.Visible;
-                    AddTagButton.Visibility = Visibility.Collapsed;
+                    //RecentBackButton.Visibility = Visibility.Visible;
+                    FollowingScrollView.Visibility = Visibility.Collapsed;
+                    if (SearchBox.Text.Split(" ").Count() == 1)
+                    {
+                        AddTagButton.Visibility = Visibility.Collapsed;
+                    }
                     PostsTitle.Text = "Posts: " + SearchBox.Text;
-                    Thread followButton = new Thread(ShowFollowButton);
-                    followButton.Start();
                     List<string> tags = new List<string>(SearchBox.Text.Split(" "));
                     Thread t = new Thread(LoadRecentPosts);
                     t.Start(tags);
@@ -1165,6 +1276,59 @@ namespace e610.NET
                 LeftPostColumn.Width = new GridLength(90, GridUnitType.Star);
                 RightPostColumn.Width = new GridLength(0, GridUnitType.Auto);
             }
+            if (MuteVideo.IsOn)
+            {
+                localSettings.Values["mute"] = "on";
+            }
+            else
+            {
+                localSettings.Values["mute"] = "off";
+            }
+            if (LandingSwitch.IsOn)
+            {
+                localSettings.Values["landing"] = "followed";
+            }
+            else
+            {
+                localSettings.Values["landing"] = "all";
+            }
+            switch ((string)RatingSelection.SelectedItem)
+            {
+                case "rating:safe":
+                    localSettings.Values["rating"] = "rating:safe";
+                    break;
+                case "rating:questionable":
+                    localSettings.Values["rating"] = "rating:questionable";
+                    break;
+                case "rating:explicit":
+                    localSettings.Values["rating"] = "rating:explicit";
+                    break;
+            }
+            Thread t = new Thread(LoadRecentPosts);
+            List<string> tags = new List<string>();
+            if (PostsTitle.Text == "Posts: Followed")
+            {
+                foreach (string s in follows)
+                {
+                    if (s != "")
+                    {
+                        string[] split = s.Split(":");
+                        string arg = "~" + split[0];
+                        tags.Add(arg);
+                    }
+                }
+            }
+            else if (PostsTitle.Text == "Posts: All")
+            {
+                tags.Add(" ");
+            }
+            else
+            {
+                string tagName = PostsTitle.Text.Replace("Posts: ", "");
+                tags.Add(tagName);
+            }
+            ViewModel.ClearPosts();
+            t.Start(tags);
         }
         private void LoginHyperlinkClick(object sender, RoutedEventArgs e)
         {
@@ -1220,6 +1384,24 @@ namespace e610.NET
         private void MLButton_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void RatingSelection_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void AllButtonButton_Click(object sender, RoutedEventArgs e)
+        {
+            PostsTitle.Text = "Posts: All";
+            ViewModel.ClearPosts();
+            AddTagButton.Visibility = Visibility.Collapsed;
+            FollowingScrollView.Visibility = Visibility.Collapsed;
+            AllButton.Background = new SolidColorBrush(Color.FromArgb(255, 0, 40, 121));
+            List<string> tags = new List<string>();
+            tags.Add(" ");
+            Thread t = new Thread(LoadRecentPosts);
+            t.Start(tags);
         }
     }
 }

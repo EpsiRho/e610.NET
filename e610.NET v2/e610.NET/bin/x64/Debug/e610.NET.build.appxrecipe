@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-8T6CVI5</Machine>
+    <Machine>DESKTOP-RRAQKQ8</Machine>
     <WindowsUser>jhset</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>dd2fdc72-3de4-49f4-89ea-157df478baa7</PackageIdentityName>
-    <PackageIdentityPublisher>CN=John Setta, O=John Setta, STREET=2098 Oak Dairy Ln SW, L=Huntsville, S=Alabama, PostalCode=35803, C=US</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=Epsi, O=Alpine Tech, C=US</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>

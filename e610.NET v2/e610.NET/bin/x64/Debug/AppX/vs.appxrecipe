@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-8T6CVI5</Machine>
+    <Machine>DESKTOP-RRAQKQ8</Machine>
     <WindowsUser>jhset</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>dd2fdc72-3de4-49f4-89ea-157df478baa7</PackageIdentityName>
-    <PackageIdentityPublisher>CN=John Setta, O=John Setta, STREET=2098 Oak Dairy Ln SW, L=Huntsville, S=Alabama, PostalCode=35803, C=US</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=Epsi, O=Alpine Tech, C=US</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
@@ -19,24 +19,24 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>D95E04F52DB9454719E6D9153D777B8465134F3AB3637283591A11B77936A0C0</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>e610.NET_2.0.0.0_x64__ac0w67xneh28g</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>e610.NET_ac0w67xneh28g!App</RegisteredUserModeAppID>
+    <RegisteredManifestChecksum>72EF1F08FCDF048D0F3D8B735DADDEF95E2C92F32D5B9EA25E84565C116BB07D</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>e610.NET_2.0.0.0_x64__b8wk27p9mjrr0</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>e610.NET_b8wk27p9mjrr0!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e610.NET</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=John Setta, O=John Setta, STREET=2098 Oak Dairy Ln SW, L=Huntsville, S=Alabama, PostalCode=35803, C=US</RegisteredPackagePublisher>
+    <RegisteredPackagePublisher>CN=Epsi, O=Alpine Tech, C=US</RegisteredPackagePublisher>
     <RegisteredVersion>2.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-02-05T18:43:06.277</Modified>
+      <Modified>2021-02-06T09:43:07.293</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\bin\x64\Debug\e621 Follower.exe">
       <PackagePath>entrypoint\e621 Follower.exe</PackagePath>
-      <Modified>2021-02-05T18:42:09.117</Modified>
+      <Modified>2021-02-06T09:43:06.176</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\.nuget\packages\microsoft.toolkit\6.1.1\lib\netstandard2.0\Microsoft.Toolkit.dll">
       <PackagePath>Microsoft.Toolkit.dll</PackagePath>
@@ -72,7 +72,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2020-02-28T01:17:32.000</Modified>
+      <Modified>2020-02-28T00:17:32.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
@@ -80,7 +80,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\bin\x64\Debug\Background_Notifier.winmd">
       <PackagePath>Background_Notifier.winmd</PackagePath>
-      <Modified>2021-02-05T05:58:45.087</Modified>
+      <Modified>2021-02-06T07:34:55.987</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -88,53 +88,53 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2021-02-02T21:24:11.489</Modified>
+      <Modified>2021-02-06T07:16:05.401</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2021-01-25T05:36:31.749</Modified>
+      <Modified>2021-02-06T07:16:05.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T05:36:31.752</Modified>
+      <Modified>2021-02-06T07:16:05.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T05:36:31.752</Modified>
+      <Modified>2021-02-06T07:16:05.396</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T05:36:31.753</Modified>
+      <Modified>2021-02-06T07:16:05.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T05:36:31.753</Modified>
+      <Modified>2021-02-06T07:16:05.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T05:36:31.754</Modified>
+      <Modified>2021-02-06T07:16:05.397</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-01-25T05:36:31.777</Modified>
+      <Modified>2021-02-06T07:16:05.398</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\bin\x64\Debug\e621 Follower.xr.xml">
       <PackagePath>e621 Follower.xr.xml</PackagePath>
-      <Modified>2021-02-05T18:40:40.994</Modified>
+      <Modified>2021-02-06T08:40:02.280</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-02-05T18:42:08.988</Modified>
+      <Modified>2021-02-06T09:43:05.947</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-02-05T18:42:08.988</Modified>
+      <Modified>2021-02-06T09:43:05.947</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -150,11 +150,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-02-05T05:58:51.181</Modified>
+      <Modified>2021-02-06T07:35:55.820</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\bin\x64\Debug\Core\e621 Follower.exe">
       <PackagePath>e621 Follower.exe</PackagePath>
-      <Modified>2021-02-05T18:43:06.271</Modified>
+      <Modified>2021-02-06T09:43:07.290</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -18,6 +18,11 @@
                           TintColor="Black"
                           TintOpacity="0.3" 
                           FallbackColor="Black"/>
+                    <AcrylicBrush x:Key="DialogBackground"
+                          BackgroundSource="Backdrop"
+                          TintColor="Black"
+                          TintOpacity="0.01" 
+                          FallbackColor="Black"/>
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
         </ResourceDictionary>
@@ -29,140 +34,169 @@
         </Grid.RowDefinitions>
         
         <!-- Top Bar -->
-        <Border BorderBrush="White" BorderThickness="2" Margin="0" Background="#001439" Canvas.ZIndex="1">
+        <Border BorderBrush="White" BorderThickness="0" Margin="0" Background="#001439" Canvas.ZIndex="1">
             <Grid>
                 <TextBlock Text="E610.NET" FontSize="32" VerticalAlignment="Center" Margin="12" />
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-                    <TextBox x:ConnectionId='67' x:Name="SearchBox" PlaceholderText="Search" Width="250" Visibility="Collapsed"
+                    <TextBox x:ConnectionId='71' x:Name="SearchBox" PlaceholderText="Search" Width="250" Visibility="Collapsed"
                              Height="25" Margin="12,12,0,12" HorizontalAlignment="Right"                            />
-                    <Button x:ConnectionId='68' Margin="12,12,0,12" Height="35" x:Name="SearchButton"                           >
+                    <Button x:ConnectionId='72' Margin="12,12,0,12" Height="35" x:Name="SearchButton"                           >
                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE721;"/>
                     </Button>
-                    <Button x:ConnectionId='69' Margin="12,12,0,12" Height="35" x:Name="MLButton"                        ToolTipService.ToolTip="Machine learning assisted artist search">
+                    <Button x:ConnectionId='73' Margin="12,12,0,12" Height="35" x:Name="MLButton"                        ToolTipService.ToolTip="Machine learning assisted artist search">
                         <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8EC;"/>
                     </Button>
-                    <Button x:ConnectionId='70' Margin="12" Height="35" x:Name="SettingsButton"                             >
+                    <Button x:ConnectionId='74' Margin="12" Height="35" x:Name="SettingsButton"                             >
                         <SymbolIcon Symbol="Setting"/>
                     </Button>
                 </StackPanel>
             </Grid>
         </Border>
 
+        
+
         <!-- Info Popup -->
         <Border x:ConnectionId='3' x:Name="InfoPopup" Background="{ThemeResource ImageBackground}" CornerRadius="15" Canvas.ZIndex="10" BorderBrush="Gray" BorderThickness="2"
                 HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="1" Margin="20" Visibility="Collapsed">
-            <TextBlock x:ConnectionId='66' x:Name="InfoPopupText" FontSize="24" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <TextBlock x:ConnectionId='70' x:Name="InfoPopupText" FontSize="24" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
         </Border>
         
         <!-- Content -->
         <Grid x:ConnectionId='4' Grid.Row="1" Background="#000F2D" x:Name="ContentGrid">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition x:ConnectionId='19' x:Name="LeftColumn" Width="50*"/>
-                <ColumnDefinition x:ConnectionId='20' x:Name="RightColumn" Width="auto"/>
+                <ColumnDefinition x:ConnectionId='22' x:Name="LeftColumn" Width="50*"/>
+                <ColumnDefinition x:ConnectionId='23' x:Name="RightColumn" Width="auto"/>
             </Grid.ColumnDefinitions>
             <!-- Recent Posts -->
-            <control:ProgressRing x:ConnectionId='21' x:Name="RecentProgressRing" Visibility="Visible" IsActive="True" Canvas.ZIndex="4"
+            <control:ProgressRing x:ConnectionId='24' x:Name="RecentProgressRing" Visibility="Visible" IsActive="True" Canvas.ZIndex="4"
                                   Width="50" Height="50" Foreground="White" Margin="10,90,10,50"/>
 
-            <Border x:ConnectionId='22' Grid.Row="1" BorderBrush="White" BorderThickness="2" Canvas.ZIndex="2" HorizontalAlignment="Left" 
-                    VerticalAlignment="Top" Margin="20,10,10,0" CornerRadius="0" x:Name="RecentBackButton" Visibility="Collapsed">
-                <Button x:ConnectionId='65' Content="Home" FontSize="18"                                Visibility="Visible"
-                    Background="#000F2D" BorderThickness="0" Foreground="White" ToolTipService.ToolTip="Back to your posts from your follows">
-                    <Button.Resources>
-                        <ResourceDictionary>
-                            <ResourceDictionary.ThemeDictionaries>
-                                <ResourceDictionary x:Key="Dark">
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
-                                </ResourceDictionary>
-                                <ResourceDictionary x:Key="Light">
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
-                                </ResourceDictionary>
-                            </ResourceDictionary.ThemeDictionaries>
-                        </ResourceDictionary>
-                    </Button.Resources>
-                </Button>
-            </Border>
+            
 
-            <Border x:ConnectionId='23' Grid.Row="1" BorderBrush="White" BorderThickness="2" Canvas.ZIndex="2" x:Name="AddTagButton"
-                    HorizontalAlignment="Left" VerticalAlignment="Top" Margin="95,10,10,0" CornerRadius="0" Visibility="Collapsed">
-                <Button x:ConnectionId='64' Grid.Row="1" Content="Follow" FontSize="18"                            Visibility="Visible" Background="#000F2D" Foreground="White" 
-                        Canvas.ZIndex="0" ToolTipService.ToolTip="Follow this tag" BorderThickness="0">
-                    <Button.Resources>
-                        <ResourceDictionary>
-                            <ResourceDictionary.ThemeDictionaries>
-                                <ResourceDictionary x:Key="Dark">
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
-                                </ResourceDictionary>
-                                <ResourceDictionary x:Key="Light">
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
-                                </ResourceDictionary>
-                            </ResourceDictionary.ThemeDictionaries>
-                        </ResourceDictionary>
-                    </Button.Resources>
-                </Button>
-            </Border>
+            <ScrollViewer x:ConnectionId='25' BorderBrush="White" BorderThickness="0" Margin="10,20,10,10" x:Name="PostsScrollView">
+                <StackPanel Orientation="Vertical" Margin="10,00,10,10">
+                    <StackPanel>
+                        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.ZIndex="2" Orientation="Horizontal">
 
-            <ScrollViewer x:ConnectionId='24' BorderBrush="White" BorderThickness="2" Margin="10,20,10,10" x:Name="PostsScrollView">
-                <StackPanel Orientation="Vertical" Margin="10,20,10,10">
-                    <Grid>
+                            <Border x:ConnectionId='64' BorderBrush="White" BorderThickness="2" HorizontalAlignment="Left" 
+                                    VerticalAlignment="Top" Margin="0,0,0,0" CornerRadius="0" x:Name="AllButton" Visibility="Visible">
+                                <Button x:ConnectionId='69' Content="Front Page" FontSize="18"                               Visibility="Visible"
+                                        Background="#000F2D" BorderThickness="0" Foreground="White" ToolTipService.ToolTip="Show all recent posts on e621">
+                                    <Button.Resources>
+                                        <ResourceDictionary>
+                                            <ResourceDictionary.ThemeDictionaries>
+                                                <ResourceDictionary x:Key="Dark">
+                                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
+                                                </ResourceDictionary>
+                                                <ResourceDictionary x:Key="Light">
+                                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
+                                                </ResourceDictionary>
+                                            </ResourceDictionary.ThemeDictionaries>
+                                        </ResourceDictionary>
+                                    </Button.Resources>
+                                </Button>
+                            </Border>
+
+                            <Border x:ConnectionId='65' BorderBrush="White" BorderThickness="2" HorizontalAlignment="Left" 
+                                    VerticalAlignment="Top" Margin="10,0,0,0" CornerRadius="0" x:Name="RecentBackButton" Visibility="Visible">
+                                <Button x:ConnectionId='68' Content="Following" FontSize="18"                                Visibility="Visible"
+                                        Background="#000F2D" BorderThickness="0" Foreground="White" ToolTipService.ToolTip="Load recent posts from your follows">
+                                    <Button.Resources>
+                                        <ResourceDictionary>
+                                            <ResourceDictionary.ThemeDictionaries>
+                                                <ResourceDictionary x:Key="Dark">
+                                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
+                                                </ResourceDictionary>
+                                                <ResourceDictionary x:Key="Light">
+                                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
+                                                </ResourceDictionary>
+                                            </ResourceDictionary.ThemeDictionaries>
+                                        </ResourceDictionary>
+                                    </Button.Resources>
+                                </Button>
+                            </Border>
+                            
+                            <Border x:ConnectionId='66' BorderBrush="White" BorderThickness="2" x:Name="AddTagButton" HorizontalAlignment="Left" 
+                                    VerticalAlignment="Top" Margin="10,0,0,0" CornerRadius="0" Visibility="Collapsed">
+                                <Button x:ConnectionId='67' Grid.Row="1" Content="Follow" FontSize="18"                            Visibility="Visible" Background="#000F2D" Foreground="White" 
+                                        Canvas.ZIndex="0" ToolTipService.ToolTip="Follow this tag" BorderThickness="0">
+                                    <Button.Resources>
+                                        <ResourceDictionary>
+                                            <ResourceDictionary.ThemeDictionaries>
+                                                <ResourceDictionary x:Key="Dark">
+                                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
+                                                </ResourceDictionary>
+                                                <ResourceDictionary x:Key="Light">
+                                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
+                                                </ResourceDictionary>
+                                            </ResourceDictionary.ThemeDictionaries>
+                                        </ResourceDictionary>
+                                    </Button.Resources>
+                                </Button>
+                            </Border>
+                        </StackPanel>
                         <TextBlock x:ConnectionId='63' x:Name="PostsTitle" Text="Posts: Followed" FontSize="24" HorizontalAlignment="Center" Margin="10" TextDecorations="Underline"/>
-                    </Grid>
-                    <GridView x:ConnectionId='58' x:Name="PostsView" Margin="10"                                                                        IsItemClickEnabled="True">
+                    </StackPanel>
+                    <GridView x:ConnectionId='59' x:Name="PostsView" Margin="10"                                                                        IsItemClickEnabled="True">
                         <GridView.ItemTemplate>
                             <DataTemplate                        >
-                                <Grid x:ConnectionId='60' Margin="10" Width="150" Height="150">
-                                    <StackPanel>
-                                        <TextBlock x:ConnectionId='62' Text="New" FontSize="10" Margin="10"                                 />
+                                <Grid x:ConnectionId='61' Margin="10" Width="150" Height="150">
+                                    <Image x:ConnectionId='62'                                                                                              />
+                                    <StackPanel Background="Gray" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="2">
+                                        <TextBlock Text="New" FontSize="11" Margin="1" Visibility="Collapsed" FontWeight="Bold"/>
                                     </StackPanel>
-                                    <Image x:ConnectionId='61'                                                                                              />
                                 </Grid>
                             </DataTemplate>
                         </GridView.ItemTemplate>
                     </GridView>
                 </StackPanel>
             </ScrollViewer>
-            <ScrollViewer x:ConnectionId='25' x:Name="ImageBG" Visibility="Collapsed" Canvas.ZIndex="2">
-                <Grid x:ConnectionId='34' Background="#000F2D" Canvas.ZIndex="2" x:Name="ImageGrid">
+            <ScrollViewer x:ConnectionId='26' x:Name="ImageBG" Visibility="Collapsed" Canvas.ZIndex="2">
+                <Grid x:ConnectionId='35' Background="#000F2D" Canvas.ZIndex="2" x:Name="ImageGrid">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition x:ConnectionId='35' x:Name="LeftPostColumn" Width="auto"/>
-                        <ColumnDefinition x:ConnectionId='36' x:Name="RightPostColumn" Width="90*"/>
+                        <ColumnDefinition x:ConnectionId='36' x:Name="LeftPostColumn" Width="auto"/>
+                        <ColumnDefinition x:ConnectionId='37' x:Name="RightPostColumn" Width="90*"/>
                     </Grid.ColumnDefinitions>
-                    <ScrollViewer x:ConnectionId='37' x:Name="TagScroller" Grid.Column="0" BorderBrush="White" BorderThickness="2" Padding="10" Margin="10,20,10,10">
+                    <ScrollViewer x:ConnectionId='38' x:Name="TagScroller" Grid.Column="0" BorderBrush="White" BorderThickness="2" Padding="10" Margin="10,20,10,10">
                         <StackPanel Orientation="Vertical" Background="#000F2D" HorizontalAlignment="Center">
                             <TextBlock Text="Tags" HorizontalAlignment="Center" VerticalAlignment="Bottom"
                                     Margin="10" FontSize="24"/>
-                            <HyperlinkButton x:ConnectionId='42' x:Name="ArtistsTitle" Foreground="White" Content="Artists:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
-                            <ListView x:ConnectionId='43' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="ArtistsTags" VerticalAlignment="Stretch"                            IsItemClickEnabled="True">
+                            <HyperlinkButton x:ConnectionId='43' x:Name="ArtistsTitle" Foreground="White" Content="Artists:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
+                            <ListView x:ConnectionId='44' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="ArtistsTags" VerticalAlignment="Stretch"                            IsItemClickEnabled="True">
                                 
                             </ListView>
-                            <HyperlinkButton x:ConnectionId='44' x:Name="CopyrightsTitle" Foreground="White" Content="Copyrights:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
-                            <ListView x:ConnectionId='45' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="CopyrightsTags" VerticalAlignment="Stretch"                            IsItemClickEnabled="True"/>
-                            <HyperlinkButton x:ConnectionId='46' x:Name="CharactersTitle" Foreground="White" Content="Characters:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
-                            <ListView x:ConnectionId='47' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="CharactersTags" VerticalAlignment="Stretch"                            IsItemClickEnabled="True"/>
-                            <HyperlinkButton x:ConnectionId='48' x:Name="SpeciesTitle" Foreground="White" Content="Species:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
-                            <ListView x:ConnectionId='49' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="SpeciesTags" VerticalAlignment="Stretch"                            IsItemClickEnabled="True"/>
-                            <HyperlinkButton x:ConnectionId='50' x:Name="GeneralTitle" Foreground="White" Content="General:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
-                            <ListView x:ConnectionId='51' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="GeneralTags" VerticalAlignment="Stretch"                            IsItemClickEnabled="True"/>
-                            <HyperlinkButton x:ConnectionId='52' x:Name="MetaTitle" Foreground="White" Content="Meta:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
-                            <ListView x:ConnectionId='53' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="MetaTags" VerticalAlignment="Stretch"                            IsItemClickEnabled="True"/>
-                            <HyperlinkButton x:ConnectionId='54' x:Name="LoreTitle" Foreground="White" Content="Lore:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
-                            <ListView x:ConnectionId='55' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="LoreTags" VerticalAlignment="Stretch"                            IsItemClickEnabled="True"/>
-                            <HyperlinkButton x:ConnectionId='56' x:Name="InvalidTitle" Foreground="White" Content="Invalid:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
-                            <ListView x:ConnectionId='57' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="InvalidTags" VerticalAlignment="Stretch"                            IsItemClickEnabled="True"/>
+                            <HyperlinkButton x:ConnectionId='45' x:Name="CopyrightsTitle" Foreground="White" Content="Copyrights:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
+                            <ListView x:ConnectionId='46' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="CopyrightsTags" VerticalAlignment="Stretch"                            IsItemClickEnabled="True"/>
+                            <HyperlinkButton x:ConnectionId='47' x:Name="CharactersTitle" Foreground="White" Content="Characters:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
+                            <ListView x:ConnectionId='48' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="CharactersTags" VerticalAlignment="Stretch"                            IsItemClickEnabled="True"/>
+                            <HyperlinkButton x:ConnectionId='49' x:Name="SpeciesTitle" Foreground="White" Content="Species:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
+                            <ListView x:ConnectionId='50' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="SpeciesTags" VerticalAlignment="Stretch"                            IsItemClickEnabled="True"/>
+                            <HyperlinkButton x:ConnectionId='51' x:Name="GeneralTitle" Foreground="White" Content="General:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
+                            <ListView x:ConnectionId='52' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="GeneralTags" VerticalAlignment="Stretch"                            IsItemClickEnabled="True"/>
+                            <HyperlinkButton x:ConnectionId='53' x:Name="MetaTitle" Foreground="White" Content="Meta:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
+                            <ListView x:ConnectionId='54' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="MetaTags" VerticalAlignment="Stretch"                            IsItemClickEnabled="True"/>
+                            <HyperlinkButton x:ConnectionId='55' x:Name="LoreTitle" Foreground="White" Content="Lore:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
+                            <ListView x:ConnectionId='56' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="LoreTags" VerticalAlignment="Stretch"                            IsItemClickEnabled="True"/>
+                            <HyperlinkButton x:ConnectionId='57' x:Name="InvalidTitle" Foreground="White" Content="Invalid:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
+                            <ListView x:ConnectionId='58' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="InvalidTags" VerticalAlignment="Stretch"                            IsItemClickEnabled="True"/>
                         </StackPanel>
                     </ScrollViewer>
-                    <Grid x:ConnectionId='38' Background="#000F2D" Grid.Column="1" x:Name="PostHolder">
-                        <Image x:ConnectionId='39' x:Name="FullImage"                                     Visibility="Collapsed"                                     Margin="10,20,10,10"/>
-                        <MediaElement x:ConnectionId='40' x:Name="FullVideo" Visibility="Collapsed" AreTransportControlsEnabled="True"                                    />
-                        <Button x:ConnectionId='41' x:Name="CloseButton" HorizontalAlignment="Right" VerticalAlignment="Top" Background="Black"
+                    <Grid x:ConnectionId='39' Background="#000F2D" Grid.Column="1" x:Name="PostHolder">
+                        <Image x:ConnectionId='40' x:Name="FullImage"                                     Visibility="Collapsed"                                     Margin="10,20,10,10"/>
+                        <MediaElement x:ConnectionId='41' x:Name="FullVideo" Visibility="Collapsed" AreTransportControlsEnabled="True"                                     Margin="10,20,10,10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <Button x:ConnectionId='42' x:Name="CloseButton" HorizontalAlignment="Right" VerticalAlignment="Top" Background="Black"
                              Margin="40" Canvas.ZIndex="3" Visibility="Collapsed"                          >
                             <SymbolIcon Symbol="Cancel" Foreground="White"/>
                             <Button.Resources>
@@ -187,21 +221,21 @@
             </ScrollViewer>
 
             <!-- Following -->
-            <control:ProgressRing x:ConnectionId='26' Grid.Column="1" x:Name="FollowingProgressRing" Visibility="Visible" IsActive="True" Canvas.ZIndex="10"
+            <control:ProgressRing x:ConnectionId='27' Grid.Column="1" x:Name="FollowingProgressRing" Visibility="Visible" IsActive="True" Canvas.ZIndex="10"
                                 Width="50" Height="50" Foreground="White" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <ScrollViewer x:ConnectionId='27' x:Name="FollowingScrollView" Grid.Column="1" BorderBrush="White" BorderThickness="2" Margin="10,20,10,10">
+            <ScrollViewer x:ConnectionId='28' x:Name="FollowingScrollView" Grid.Column="1" BorderBrush="White" BorderThickness="2" Margin="10,20,10,10">
                 <StackPanel Grid.Column="1" Orientation="Vertical" Margin="10,20,10,10">
                     <TextBlock Text="Following" FontSize="24" HorizontalAlignment="Center" Margin="10,10,10,0" TextDecorations="Underline"/>
-                    <ListView x:ConnectionId='28' Margin="10"                                                                              
+                    <ListView x:ConnectionId='29' Margin="10"                                                                              
                               IsItemClickEnabled="True" IsRightTapEnabled="True"                                     >
                         <ListView.ItemTemplate>
                             <DataTemplate                       >
-                                <Grid x:ConnectionId='30'>
+                                <Grid x:ConnectionId='31'>
                                     <StackPanel Margin="10" Orientation="Horizontal">
-                                        <TextBlock x:ConnectionId='31'                      Margin="0,0,10,0" FontSize="18"/>
-                                        <TextBlock x:ConnectionId='32'                                                           
+                                        <TextBlock x:ConnectionId='32'                      Margin="0,0,10,0" FontSize="18"/>
+                                        <TextBlock x:ConnectionId='33'                                                           
                                                    Foreground="LimeGreen" FontSize="14" VerticalAlignment="Center"/>
-                                        <control:ProgressRing x:ConnectionId='33' Grid.Column="1" x:Name="FollowingProgressRing"                                     IsActive="True" Canvas.ZIndex="10"
+                                        <control:ProgressRing x:ConnectionId='34' Grid.Column="1" x:Name="FollowingProgressRing"                                     IsActive="True" Canvas.ZIndex="10"
                                                 Width="10" Height="10" Foreground="White" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                     </StackPanel>
                                 </Grid>
@@ -220,19 +254,31 @@
                                                                   
             CloseButtonText="Cancel"
             DefaultButton="Primary"
-            BorderThickness="0">
+            BorderThickness="0"
+            Background="{ThemeResource DialogBackground}">
             <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
                 <HyperlinkButton x:ConnectionId='6' Content="Login" FontSize="18" Foreground="White"                            />
                 <StackPanel x:ConnectionId='7' x:Name="LoginSettingsPanel" Visibility="Collapsed">
                     <TextBlock Text="Username:" />
-                    <TextBox x:ConnectionId='17' x:Name="UsernameBox"/>
+                    <TextBox x:ConnectionId='20' x:Name="UsernameBox"/>
                     <TextBlock Text="Api Key:" />
-                    <TextBox x:ConnectionId='18' x:Name="ApiKeyBox"/>
+                    <TextBox x:ConnectionId='21' x:Name="ApiKeyBox"/>
                 </StackPanel>
                 <HyperlinkButton x:ConnectionId='8' Content="App Settings" FontSize="18" Foreground="White"                          />
                 <StackPanel x:ConnectionId='9' x:Name="AppSettingsPanel" Visibility="Collapsed">
-                    <ToggleSwitch x:ConnectionId='16' x:Name="ListSide" Header="Following List Side" Margin="10,10,0,0" IsOn="true"
+                    <ComboBox x:ConnectionId='16' x:Name="RatingSelection" Width="200" VerticalAlignment="Top" 
+                          HorizontalAlignment="Left" Header="Highest Rating allowed" Margin="0,10,0,0" 
+                                                                             >
+                        <x:String>rating:safe</x:String>
+                        <x:String>rating:questionable</x:String>
+                        <x:String>rating:explicit</x:String>
+                    </ComboBox>
+                    <ToggleSwitch x:ConnectionId='17' x:Name="ListSide" Header="Following List Side" Margin="0,10,0,0" IsOn="true"
                               OnContent="Right" OffContent="Left"/>
+                    <ToggleSwitch x:ConnectionId='18' x:Name="LandingSwitch" Header="Start Page" Margin="0,10,0,0" IsOn="false"
+                              OffContent="Posts from all" OnContent="Posts from followed tags"/>
+                    <ToggleSwitch x:ConnectionId='19' x:Name="MuteVideo" Header="Mute Videos by Default" Margin="0,10,0,0" IsOn="true"
+                              OnContent="On" OffContent="Off"/>
                 </StackPanel>
                 <HyperlinkButton x:ConnectionId='10' Content="Notifications" FontSize="18" Foreground="White"                                   />
                 <StackPanel x:ConnectionId='11' x:Name="NotificationsSettingsPanel" Visibility="Collapsed">

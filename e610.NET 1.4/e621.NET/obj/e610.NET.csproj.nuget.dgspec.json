@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jhset\\Documents\\GitHub\\e610.NET\\e610.NET\\e621.NET\\e610.NET.csproj": {}
+    "C:\\Users\\jhset\\Documents\\GitHub\\e610.NET\\e610.NET 1.4\\e621.NET\\e610.NET.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jhset\\Documents\\GitHub\\e610.NET\\e610.NET\\e621.NET\\e610.NET.csproj": {
+    "C:\\Users\\jhset\\Documents\\GitHub\\e610.NET\\e610.NET 1.4\\e621.NET\\e610.NET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jhset\\Documents\\GitHub\\e610.NET\\e610.NET\\e621.NET\\e610.NET.csproj",
+        "projectUniqueName": "C:\\Users\\jhset\\Documents\\GitHub\\e610.NET\\e610.NET 1.4\\e621.NET\\e610.NET.csproj",
         "projectName": "e610.NET",
-        "projectPath": "C:\\Users\\jhset\\Documents\\GitHub\\e610.NET\\e610.NET\\e621.NET\\e610.NET.csproj",
+        "projectPath": "C:\\Users\\jhset\\Documents\\GitHub\\e610.NET\\e610.NET 1.4\\e621.NET\\e610.NET.csproj",
         "packagesPath": "C:\\Users\\jhset\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jhset\\Documents\\GitHub\\e610.NET\\e610.NET\\e621.NET\\obj\\",
+        "outputPath": "C:\\Users\\jhset\\Documents\\GitHub\\e610.NET\\e610.NET 1.4\\e621.NET\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
           "C:\\Users\\jhset\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "uap10.0.18362"

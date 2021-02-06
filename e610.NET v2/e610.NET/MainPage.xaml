@@ -18,6 +18,11 @@
                           TintColor="Black"
                           TintOpacity="0.3" 
                           FallbackColor="Black"/>
+                    <AcrylicBrush x:Key="DialogBackground"
+                          BackgroundSource="Backdrop"
+                          TintColor="Black"
+                          TintOpacity="0.01" 
+                          FallbackColor="Black"/>
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
         </ResourceDictionary>
@@ -29,7 +34,7 @@
         </Grid.RowDefinitions>
         
         <!-- Top Bar -->
-        <Border BorderBrush="White" BorderThickness="2" Margin="0" Background="#001439" Canvas.ZIndex="1">
+        <Border BorderBrush="White" BorderThickness="0" Margin="0" Background="#001439" Canvas.ZIndex="1">
             <Grid>
                 <TextBlock Text="E610.NET" FontSize="32" VerticalAlignment="Center" Margin="12" />
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
@@ -48,6 +53,8 @@
             </Grid>
         </Border>
 
+        
+
         <!-- Info Popup -->
         <Border x:Name="InfoPopup" Background="{ThemeResource ImageBackground}" CornerRadius="15" Canvas.ZIndex="10" BorderBrush="Gray" BorderThickness="2"
                 HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="1" Margin="20" Visibility="Collapsed">
@@ -64,65 +71,92 @@
             <control:ProgressRing x:Name="RecentProgressRing" Visibility="Visible" IsActive="True" Canvas.ZIndex="4"
                                   Width="50" Height="50" Foreground="White" Margin="10,90,10,50"/>
 
-            <Border Grid.Row="1" BorderBrush="White" BorderThickness="2" Canvas.ZIndex="2" HorizontalAlignment="Left" 
-                    VerticalAlignment="Top" Margin="20,10,10,0" CornerRadius="0" x:Name="RecentBackButton" Visibility="Collapsed">
-                <Button Content="Home" FontSize="18" Click="RecentBackButton_Click" Visibility="Visible"
-                    Background="#000F2D" BorderThickness="0" Foreground="White" ToolTipService.ToolTip="Back to your posts from your follows">
-                    <Button.Resources>
-                        <ResourceDictionary>
-                            <ResourceDictionary.ThemeDictionaries>
-                                <ResourceDictionary x:Key="Dark">
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
-                                </ResourceDictionary>
-                                <ResourceDictionary x:Key="Light">
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
-                                </ResourceDictionary>
-                            </ResourceDictionary.ThemeDictionaries>
-                        </ResourceDictionary>
-                    </Button.Resources>
-                </Button>
-            </Border>
+            
 
-            <Border Grid.Row="1" BorderBrush="White" BorderThickness="2" Canvas.ZIndex="2" x:Name="AddTagButton"
-                    HorizontalAlignment="Left" VerticalAlignment="Top" Margin="95,10,10,0" CornerRadius="0" Visibility="Collapsed">
-                <Button Grid.Row="1" Content="Follow" FontSize="18" Click="AddTagButton_Click" Visibility="Visible" Background="#000F2D" Foreground="White" 
-                        Canvas.ZIndex="0" ToolTipService.ToolTip="Follow this tag" BorderThickness="0">
-                    <Button.Resources>
-                        <ResourceDictionary>
-                            <ResourceDictionary.ThemeDictionaries>
-                                <ResourceDictionary x:Key="Dark">
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
-                                </ResourceDictionary>
-                                <ResourceDictionary x:Key="Light">
-                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
-                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
-                                </ResourceDictionary>
-                            </ResourceDictionary.ThemeDictionaries>
-                        </ResourceDictionary>
-                    </Button.Resources>
-                </Button>
-            </Border>
+            <ScrollViewer BorderBrush="White" BorderThickness="0" Margin="10,20,10,10" x:Name="PostsScrollView">
+                <StackPanel Orientation="Vertical" Margin="10,00,10,10">
+                    <StackPanel>
+                        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.ZIndex="2" Orientation="Horizontal">
 
-            <ScrollViewer BorderBrush="White" BorderThickness="2" Margin="10,20,10,10" x:Name="PostsScrollView">
-                <StackPanel Orientation="Vertical" Margin="10,20,10,10">
-                    <Grid>
+                            <Border BorderBrush="White" BorderThickness="2" HorizontalAlignment="Left" 
+                                    VerticalAlignment="Top" Margin="0,0,0,0" CornerRadius="0" x:Name="AllButton" Visibility="Visible">
+                                <Button Content="Front Page" FontSize="18" Click="AllButtonButton_Click" Visibility="Visible"
+                                        Background="#000F2D" BorderThickness="0" Foreground="White" ToolTipService.ToolTip="Show all recent posts on e621">
+                                    <Button.Resources>
+                                        <ResourceDictionary>
+                                            <ResourceDictionary.ThemeDictionaries>
+                                                <ResourceDictionary x:Key="Dark">
+                                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
+                                                </ResourceDictionary>
+                                                <ResourceDictionary x:Key="Light">
+                                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
+                                                </ResourceDictionary>
+                                            </ResourceDictionary.ThemeDictionaries>
+                                        </ResourceDictionary>
+                                    </Button.Resources>
+                                </Button>
+                            </Border>
+
+                            <Border BorderBrush="White" BorderThickness="2" HorizontalAlignment="Left" 
+                                    VerticalAlignment="Top" Margin="10,0,0,0" CornerRadius="0" x:Name="RecentBackButton" Visibility="Visible">
+                                <Button Content="Following" FontSize="18" Click="RecentBackButton_Click" Visibility="Visible"
+                                        Background="#000F2D" BorderThickness="0" Foreground="White" ToolTipService.ToolTip="Load recent posts from your follows">
+                                    <Button.Resources>
+                                        <ResourceDictionary>
+                                            <ResourceDictionary.ThemeDictionaries>
+                                                <ResourceDictionary x:Key="Dark">
+                                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
+                                                </ResourceDictionary>
+                                                <ResourceDictionary x:Key="Light">
+                                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
+                                                </ResourceDictionary>
+                                            </ResourceDictionary.ThemeDictionaries>
+                                        </ResourceDictionary>
+                                    </Button.Resources>
+                                </Button>
+                            </Border>
+                            
+                            <Border BorderBrush="White" BorderThickness="2" x:Name="AddTagButton" HorizontalAlignment="Left" 
+                                    VerticalAlignment="Top" Margin="10,0,0,0" CornerRadius="0" Visibility="Collapsed">
+                                <Button Grid.Row="1" Content="Follow" FontSize="18" Click="AddTagButton_Click" Visibility="Visible" Background="#000F2D" Foreground="White" 
+                                        Canvas.ZIndex="0" ToolTipService.ToolTip="Follow this tag" BorderThickness="0">
+                                    <Button.Resources>
+                                        <ResourceDictionary>
+                                            <ResourceDictionary.ThemeDictionaries>
+                                                <ResourceDictionary x:Key="Dark">
+                                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
+                                                </ResourceDictionary>
+                                                <ResourceDictionary x:Key="Light">
+                                                    <SolidColorBrush x:Key="ButtonForegroundPointerOver" Color="Gray"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#000F2D"/>
+                                                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#001C52"/>
+                                                </ResourceDictionary>
+                                            </ResourceDictionary.ThemeDictionaries>
+                                        </ResourceDictionary>
+                                    </Button.Resources>
+                                </Button>
+                            </Border>
+                        </StackPanel>
                         <TextBlock x:Name="PostsTitle" Text="Posts: Followed" FontSize="24" HorizontalAlignment="Center" Margin="10" TextDecorations="Underline"/>
-                    </Grid>
+                    </StackPanel>
                     <GridView x:Name="PostsView" Margin="10" ItemsSource="{x:Bind ViewModel.Posts}" ItemClick="PostsView_ItemClick" IsItemClickEnabled="True">
                         <GridView.ItemTemplate>
                             <DataTemplate x:DataType="local:Post">
                                 <Grid Margin="10" Width="150" Height="150">
-                                    <StackPanel>
-                                        <TextBlock Text="New" FontSize="10" Margin="10" Visibility="{x:Bind show_badge}"/>
-                                    </StackPanel>
                                     <Image Source="{x:Bind preview.url}" Width="{x:Bind preview.width}" Height="{x:Bind preview.height}"/>
+                                    <StackPanel Background="Gray" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="2">
+                                        <TextBlock Text="New" FontSize="11" Margin="1" Visibility="Collapsed" FontWeight="Bold"/>
+                                    </StackPanel>
                                 </Grid>
                             </DataTemplate>
                         </GridView.ItemTemplate>
@@ -161,7 +195,7 @@
                     </ScrollViewer>
                     <Grid Background="#000F2D" Grid.Column="1" x:Name="PostHolder">
                         <Image x:Name="FullImage" ImageOpened="FullImage_ImageOpened" Visibility="Collapsed" RightTapped="FullImage_RightTapped" Margin="10,20,10,10"/>
-                        <MediaElement x:Name="FullVideo" Visibility="Collapsed" AreTransportControlsEnabled="True" RightTapped="FullVideo_RightTapped"/>
+                        <MediaElement x:Name="FullVideo" Visibility="Collapsed" AreTransportControlsEnabled="True" RightTapped="FullVideo_RightTapped" Margin="10,20,10,10" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         <Button x:Name="CloseButton" HorizontalAlignment="Right" VerticalAlignment="Top" Background="Black"
                              Margin="40" Canvas.ZIndex="3" Visibility="Collapsed" Click="CloseButton_Click">
                             <SymbolIcon Symbol="Cancel" Foreground="White"/>
@@ -220,7 +254,8 @@
             PrimaryButtonClick="SettingsDialog_PrimaryButtonClick"
             CloseButtonText="Cancel"
             DefaultButton="Primary"
-            BorderThickness="0">
+            BorderThickness="0"
+            Background="{ThemeResource DialogBackground}">
             <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
                 <HyperlinkButton Content="Login" FontSize="18" Foreground="White" Click="LoginHyperlinkClick"/>
                 <StackPanel x:Name="LoginSettingsPanel" Visibility="Collapsed">
@@ -231,8 +266,19 @@
                 </StackPanel>
                 <HyperlinkButton Content="App Settings" FontSize="18" Foreground="White" Click="AppHyperlinkClick"/>
                 <StackPanel x:Name="AppSettingsPanel" Visibility="Collapsed">
-                    <ToggleSwitch x:Name="ListSide" Header="Following List Side" Margin="10,10,0,0" IsOn="true"
+                    <ComboBox x:Name="RatingSelection" Width="200" VerticalAlignment="Top" 
+                          HorizontalAlignment="Left" Header="Highest Rating allowed" Margin="0,10,0,0" 
+                          SelectionChanged="RatingSelection_SelectionChanged">
+                        <x:String>rating:safe</x:String>
+                        <x:String>rating:questionable</x:String>
+                        <x:String>rating:explicit</x:String>
+                    </ComboBox>
+                    <ToggleSwitch x:Name="ListSide" Header="Following List Side" Margin="0,10,0,0" IsOn="true"
                               OnContent="Right" OffContent="Left"/>
+                    <ToggleSwitch x:Name="LandingSwitch" Header="Start Page" Margin="0,10,0,0" IsOn="false"
+                              OffContent="Posts from all" OnContent="Posts from followed tags"/>
+                    <ToggleSwitch x:Name="MuteVideo" Header="Mute Videos by Default" Margin="0,10,0,0" IsOn="true"
+                              OnContent="On" OffContent="Off"/>
                 </StackPanel>
                 <HyperlinkButton Content="Notifications" FontSize="18" Foreground="White" Click="NotificationHyperlinkClick"/>
                 <StackPanel x:Name="NotificationsSettingsPanel" Visibility="Collapsed">
