@@ -1,5 +1,8 @@
 # Search for artists with Machine Learning!
 
+## Progress Updates:
+The first dataset will consist of 500 or less images from each of [these artists](https://github.com/EpsiRho/e610.NET/blob/main/Artists.md)
+
 ## What is this?
 I'm trying to train a machine learning model to detect what artist drew an image.
 If this works, anytime someone doesn't post the sauce, you can load an image into the e610 and get a list of closest matches to what artist might have drawn it.
@@ -14,10 +17,6 @@ I needed training data, However I ran into a problem. As you might have guessed,
 My pc ran out of memory, and the training failed. So this next time I'll be using an Azure ML server.
 <br>
 I'll be training a smaller dataset as a test, but I still would like to try and train the full dataset at a later date. 
-
-## How can I help?
-Well, thanks for asking! I'm currently working on getting a dataset for the first test. What I need is more cropped images to help the AI get artists correct more often without the full image. So, if you happen to have any, memes or otherwise, DM me on twitter, [@EpsilonRho](https://twitter.com/EpsilonRho), with those images **and** the name of the artist 
-that drew the original.
 
 ## When / Where will I be able to use this tool?
 It will be built into the e610.NET app first, though I may make a standalone app for it as well. As for when, that'll be whenever it's done training and I can Implement the 
