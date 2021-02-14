@@ -1,0 +1,23 @@
+LIBRARY kernel32.dll
+EXPORTS
+   FindClose
+   SetThreadErrorMode
+   GetCurrentProcessId
+   CheckTokenMembershipEx
+   LocalAlloc
+   CloseHandle
+   FormatMessageW
+
+   GetFileAttributesExW
+   GetCurrentProcess
+   LocalFree
+
+
+
+
+   FindFirstFileExW
+   SetFileCompletionNotificationModes
+   GetCurrentThread
+
+
+   DuplicateHandle

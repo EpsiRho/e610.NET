@@ -53,6 +53,9 @@ namespace e610.NET
 
             SidePanelShadow.Receivers.Add(MainPanel);
 
+            Thread LoadThread = new Thread(LoadPosts);
+            LoadThread.Start(new LoadPostsArgs(SearchBox.Text, -1));
+
             //if (GlobalVars.newSearch == true)
             //{
             //    ViewModel = new PostsViewModel();
@@ -394,6 +397,12 @@ namespace e610.NET
                         bigpicture.Source = new Uri(pick.file.url);
                         bigpicture.Visibility = Visibility.Visible;
                     }
+                    if (singlePost.comment_count > 0)
+                    {
+                        Thread commentsThread = new Thread(new ThreadStart(CommentsPopulate));
+                        commentsThread.Start();
+                        commentsThread = null;
+                    }
                     TopBar.Visibility = Visibility.Visible;
                     ImageGrid.Visibility = Visibility.Collapsed;
                     CloseButton.Visibility = Visibility.Visible;
@@ -401,6 +410,8 @@ namespace e610.NET
                     BackPage.Visibility = Visibility.Collapsed;
                     ForwardPage.Visibility = Visibility.Collapsed;
                     PageNumberText.Visibility = Visibility.Collapsed;
+                    DescRect.Visibility = Visibility.Visible;
+                    DescText.Text = singlePost.description;
                     Thread tags = new Thread(PopulateTreeView);
                     tags.Start();
                     Bindings.Update();
@@ -434,6 +445,10 @@ namespace e610.NET
                 LoadThread.Start(new LoadPostsArgs(SearchBox.Text, pageCount));
                 Bindings.Update();
             }
+        }
+        private void Account_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(AccountsPage), null, new DrillInNavigationTransitionInfo());
         }
 
         // Helper Functions //
@@ -503,6 +518,119 @@ namespace e610.NET
             catch (Exception)
             {
 
+            }
+        }
+        private List<Comment> GetComments()
+        {
+            try
+            {
+                var client = new RestClient();
+                client.BaseUrl = new Uri("https://e621.net/comments.json?");
+                client.UserAgent = "e610.NET/1.4(by EpsilonRho)";
+                var request = new RestRequest(RestSharp.Method.GET);
+                if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
+                {
+                    request.AddQueryParameter("login", GlobalVars.Username);
+                    request.AddQueryParameter("api_key", GlobalVars.APIKey);
+                }
+                request.AddQueryParameter("search[post_id]", singlePost.id.ToString());
+                request.AddQueryParameter("group_by", "comment");
+                request.AddQueryParameter("format", "json");
+                IRestResponse response = client.Execute(request);
+                string edited = response.Content.Remove(0, 1);
+                edited = edited.Remove(edited.Count() - 1, 1);
+                List<Comment> DeserializedJson = JsonConvert.DeserializeObject<List<Comment>>(response.Content);
+                response = null;
+                edited = null;
+                return DeserializedJson;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+        private async void CommentsPopulate()
+        {
+            try
+            {
+                Thread.Sleep(10);
+                if (GlobalVars.ShowComments)
+                {
+                    List<Comment> Comments = GetComments();
+                    for (int i = 0; i < Comments.Count(); i++)
+                    {
+                        Comment c = Comments[i];
+                        if (c.body.Contains("[quote]"))
+                        {
+                            c.quotevis = Visibility.Visible;
+                            c.quote = c.body.Substring(c.body.IndexOf("["), c.body.IndexOf("[/") - (c.body.IndexOf("[")));
+                            c.body = c.body.Replace(c.quote, "");
+                            c.body = c.body.Replace("[/quote]", "");
+                            if (c.quote.Contains("[quote]\""))
+                            {
+                                c.quotedName = c.quote.Substring(c.quote.IndexOf("\""), c.quote.IndexOf("\n") - c.quote.IndexOf("\""));
+                                c.quote = c.quote.Replace("[quote]", "");
+                                c.quote = c.quote.Replace(c.quotedName, "");
+                                string[] temp = c.quotedName.Split("/");
+                                for (int k = 1; k < temp.Length; k++)
+                                {
+                                    c.quotedName = c.quotedName.Replace(temp[k], "");
+                                }
+                                c.quotedName = c.quotedName.Replace("/", "");
+                                c.quotedName = c.quotedName.Replace("\"", "");
+                                c.quotedName = c.quotedName.Replace(":", "");
+                                c.quotedName += "said:";
+                                temp = temp[temp.Count() - 1].Split(" ");
+                                try
+                                {
+                                    c.quotedID = Int32.Parse(temp[0]);
+                                }
+                                catch (Exception)
+                                {
+
+                                }
+                            }
+                            else
+                            {
+                                c.quote = c.quote.Replace("[quote]", "");
+                                c.quotedID = 0;
+                                c.quotedName = "Quote:";
+                            }
+                        }
+                        else
+                        {
+                            c.quotevis = Visibility.Collapsed;
+                        }
+                        c.Avatar_Url = "";
+                        await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                        {
+                            CommentsSource.Add(c);
+                        });
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+        private void CommentsListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var listView = sender as ListView;
+            if (listView != null)
+            {
+                listView.SelectedIndex = -1;
+            }
+        }
+        private void DescHyperlink_Click(object sender, RoutedEventArgs e)
+        {
+            if (DescText.Visibility == Visibility.Visible)
+            {
+                DescText.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                DescText.Visibility = Visibility.Visible;
             }
         }
 
@@ -910,6 +1038,8 @@ namespace e610.NET
                 MetaTags.Items.Clear();
                 LoreTags.Items.Clear();
                 InvalidTags.Items.Clear();
+                CommentsSource.Clear();
+                PoolsMenu.Items.Clear();
             });
         }
         private void Title_Click(object sender, RoutedEventArgs e)
@@ -1179,6 +1309,8 @@ namespace e610.NET
             BackPage.Visibility = Visibility.Visible;
             ForwardPage.Visibility = Visibility.Visible;
             PageNumberText.Visibility = Visibility.Visible;
+            DescRect.Visibility = Visibility.Collapsed;
+            DescText.Text = "";
             Thread TagClean = new Thread(TagsCleanup);
             TagClean.Start();
             Bindings.Update();
@@ -1280,45 +1412,159 @@ namespace e610.NET
             localSettings.Values["volume"] = GlobalVars.MuteVolume;
         }
 
-
-
-
-
+        // Top Bar Functions //
         private void ImageSize_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            FlyoutBase.ShowAttachedFlyout(ImageSize);
         }
-
         private void PoolButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
             FlyoutBase.ShowAttachedFlyout(PoolButton);
         }
-
         private void VoteUpButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            var client = new RestClient();
+            client.BaseUrl = new Uri("https://e621.net/posts/" + singlePost.id + "/votes.json");
+            client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
+            var request = new RestRequest(RestSharp.Method.POST);
+            if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
+            {
+                request.AddQueryParameter("login", GlobalVars.Username);
+                request.AddQueryParameter("api_key", GlobalVars.APIKey);
+            }
+            request.AddQueryParameter("score", "1");
+            var response = client.Execute(request);
+            VoteResponse DeserializedJson = JsonConvert.DeserializeObject<VoteResponse>(response.Content);
+            if (DeserializedJson.our_score == 1)
+            {
+                singlePost.score.up++;
+                VoteUpCount.Text = singlePost.score.up.ToString();
+                InfoPopup.Title = "Upvoted";
+                InfoPopup.Message = "Post Updated";
+                InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational;
+                InfoPopup.IsOpen = true;
+            }
+            else
+            {
+                singlePost.score.up--;
+                VoteUpCount.Text = singlePost.score.up.ToString();
+                InfoPopup.Title = "Un-Upvoted";
+                InfoPopup.Message = "Post Updated";
+                InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational;
+                InfoPopup.IsOpen = true;
+            }
+            Thread ClosePopup = new Thread(CloseInfoPopup);
+            ClosePopup.Start();
         }
-
         private void VoteDownButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            var client = new RestClient();
+            client.BaseUrl = new Uri("https://e621.net/posts/" + singlePost.id + "/votes.json");
+            client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
+            var request = new RestRequest(RestSharp.Method.POST);
+            if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
+            {
+                request.AddQueryParameter("login", GlobalVars.Username);
+                request.AddQueryParameter("api_key", GlobalVars.APIKey);
+            }
+            request.AddQueryParameter("score", "-1");
+            var response = client.Execute(request);
+            VoteResponse DeserializedJson = JsonConvert.DeserializeObject<VoteResponse>(response.Content);
+            if (DeserializedJson.our_score == -1)
+            {
+                singlePost.score.down--;
+                VoteDownCount.Text = singlePost.score.down.ToString();
+                InfoPopup.Title = "Downvoted";
+                InfoPopup.Message = "Post Updated";
+                InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational;
+                InfoPopup.IsOpen = true;
+            }
+            else
+            {
+                singlePost.score.down++;
+                VoteDownCount.Text = singlePost.score.down.ToString();
+                InfoPopup.Title = "Un-Downvoted";
+                InfoPopup.Message = "Post Updated";
+                InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational;
+                InfoPopup.IsOpen = true;
+            }
+            Thread ClosePopup = new Thread(CloseInfoPopup);
+            ClosePopup.Start();
         }
-
         private void FavoiteButton_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            var client = new RestClient();
+            client.BaseUrl = new Uri("https://e621.net/favorites.json");
+            client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
+            var request = new RestRequest(RestSharp.Method.POST);
+            if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
+            {
+                request.AddQueryParameter("login", GlobalVars.Username);
+                request.AddQueryParameter("api_key", GlobalVars.APIKey);
+            }
+            request.AddQueryParameter("post_id", singlePost.id.ToString());
+            var response = client.Execute(request);
+            if (!response.Content.Contains("You have already favorited this post"))
+            {
+                InfoPopup.Title = "Favorited";
+                InfoPopup.Message = "Post Updated";
+                InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational;
+                InfoPopup.IsOpen = true;
+            }
+            else
+            {
+                client.BaseUrl = new Uri("https://e621.net/favorites/" + singlePost.id.ToString() + ".json");
+                client.UserAgent = "e610.NET/1.3(by EpsilonRho)";
+                request = new RestRequest(RestSharp.Method.DELETE);
+                if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
+                {
+                    request.AddQueryParameter("login", GlobalVars.Username);
+                    request.AddQueryParameter("api_key", GlobalVars.APIKey);
+                }
+                response = client.Execute(request);
+                InfoPopup.Title = "Un-Favorited";
+                InfoPopup.Message = "Post Updated";
+                InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational;
+                InfoPopup.IsOpen = true;
+            }
+            Thread ClosePopup = new Thread(CloseInfoPopup);
+            ClosePopup.Start();
         }
-
         private void ImageMenuItem_Click(object sender, RoutedEventArgs e)
         {
-
+            MenuFlyoutItem clickItem = (MenuFlyoutItem)e.OriginalSource;
+            try
+            {
+                if (clickItem.Text == "Sample Height")
+                {
+                    bigpicture.Width = singlePost.sample.width;
+                    bigpicture.Height = singlePost.sample.height;
+                    CommandBar.HorizontalAlignment = HorizontalAlignment.Center;
+                    GlobalVars.Binding = "Sample Height";
+                }
+                else if (clickItem.Text == "Page Height")
+                {
+                    bigpicture.Width = double.NaN;
+                    bigpicture.Height = PostPage.ActualHeight - 65;
+                    CommandBar.HorizontalAlignment = HorizontalAlignment.Center;
+                    GlobalVars.Binding = "Page Height";
+                }
+                else
+                {
+                    bigpicture.Width = singlePost.file.width;
+                    bigpicture.Height = singlePost.file.height;
+                    CommandBar.HorizontalAlignment = HorizontalAlignment.Left;
+                    GlobalVars.Binding = "Full Height";
+                }
+            }
+            catch (Exception)
+            {
+                bigpicture.Width = singlePost.sample.width;
+                bigpicture.Height = singlePost.sample.height;
+            }
         }
 
 
-        private void Account_Click(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(AccountsPage), null, new DrillInNavigationTransitionInfo());
-        }
 
 
 

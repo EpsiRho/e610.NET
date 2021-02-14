@@ -11,7 +11,6 @@ using global::Windows.Foundation;
 using global::Windows.Foundation.Collections;
 
 [assembly: global::System.Runtime.InteropServices.McgGeneratedAssembly]
-[assembly: global::System.Runtime.CompilerServices.IgnoresAccessChecksTo("VLC")]
 [assembly: global::System.Runtime.CompilerServices.IgnoresAccessChecksTo("System.Private.WinRTInterop.CoreLib")]
 [assembly: global::System.Runtime.CompilerServices.IgnoresAccessChecksTo("System.Runtime.WindowsRuntime")]
 [assembly: global::System.Runtime.CompilerServices.IgnoresAccessChecksTo("System.Security.Cryptography.X509Certificates")]

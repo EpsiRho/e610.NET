@@ -26,3 +26,12 @@ Version 1.3
 - Fixed favoriting
 - Added Image resizing 
 - Added setting to disable comments
+Version 1.4
+- Adjusted background colors
+- Reduced memory usage
+- Moved buttons on home page
+- Lowered api requests when going from post to post
+- Blacklist is now shown on the account page(but is not editable)
+- Swipe controls added
+- Now built for ARM and ARM64
+- Back button disabled due to an issue, will come back later

@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ZgAAD3O8LrgEdCavpX6tUmiDZawQ8EduZqYfQC1rojPcjqCGaa4q1AUcku9d6bpwaklhgQbsdN0exNeGMRdQgw==",
+  "dgSpecHash": "VvEGVLoI7fB6U+De/StEcCVo72ACwrQr9gml450drltugbimLEqU8U3FcDPBvkSs5KMWNnUxS6uq4auk8EKAQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\jhset\\Documents\\GitHub\\e610.NET\\e610.NET v2\\e610.NET\\e610.NET.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.8-rel-28605-00\\microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.10\\microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\jhset\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.netcore.universalwindowsplatform\\6.2.10\\microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
     "C:\\Users\\jhset\\.nuget\\packages\\microsoft.toolkit\\6.1.1\\microsoft.toolkit.6.1.1.nupkg.sha512",
     "C:\\Users\\jhset\\.nuget\\packages\\microsoft.toolkit.uwp\\6.1.1\\microsoft.toolkit.uwp.6.1.1.nupkg.sha512",
@@ -14,7 +14,7 @@
     "C:\\Users\\jhset\\.nuget\\packages\\microsoft.toolkit.uwp.ui\\6.1.1\\microsoft.toolkit.uwp.ui.6.1.1.nupkg.sha512",
     "C:\\Users\\jhset\\.nuget\\packages\\microsoft.ui.xaml\\2.5.0\\microsoft.ui.xaml.2.5.0.nupkg.sha512",
     "C:\\Users\\jhset\\.nuget\\packages\\microsoft.xaml.behaviors.uwp.managed\\2.0.1\\microsoft.xaml.behaviors.uwp.managed.2.0.1.nupkg.sha512",
-    "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\jhset\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Users\\jhset\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\jhset\\.nuget\\packages\\restsharp\\106.11.7\\restsharp.106.11.7.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",

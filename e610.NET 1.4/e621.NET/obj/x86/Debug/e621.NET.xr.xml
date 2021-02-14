@@ -52,6 +52,7 @@
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="IsEnabled" />
       <RootProperty Name="Width" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="Background" />
@@ -107,8 +108,8 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Visibility" />
       <RootProperty Name="FontWeight" />
+      <RootProperty Name="Visibility" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GridView">
@@ -147,6 +148,7 @@
       <RootProperty Name="AcceptsReturn" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="MaxHeight" />
+      <RootProperty Name="IsReadOnly" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="FontSize" />
       <RootEvent Name="TextChanged" />
@@ -255,33 +257,19 @@
       <RootProperty Name="IsLooping" />
       <RootEvent Name="RightTapped" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.FlyoutBase">
-      <RootMethod Name="GetAttachedFlyout" />
-      <RootMethod Name="SetAttachedFlyout" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.MenuFlyout">
-      <RootProperty Name="Placement" />
-      <RootProperty Name="ShowMode" />
-      <RootProperty Name="Items" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.MenuFlyoutItem">
-      <RootProperty Name="Text" />
-      <RootEvent Name="Click" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="CanDragItems" />
-      <RootProperty Name="AllowDrop" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="IsItemClickEnabled" />
-      <RootProperty Name="Visibility" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="ItemContainerStyle" />
+      <RootProperty Name="CanDragItems" />
+      <RootProperty Name="AllowDrop" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootEvent Name="SelectionChanged" />
       <RootEvent Name="ItemClick" />
       <RootEvent Name="RightTapped" />
-      <RootEvent Name="SelectionChanged" />
     </RootType>
-    <RootType FullName="e610.NET.PostsViewPage" />
     <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
       <RootProperty Name="Width" />
       <RootProperty Name="VerticalAlignment" />
@@ -298,6 +286,20 @@
       <RootProperty Name="Property" />
       <RootProperty Name="Value" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.FlyoutBase">
+      <RootMethod Name="GetAttachedFlyout" />
+      <RootMethod Name="SetAttachedFlyout" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.MenuFlyout">
+      <RootProperty Name="Placement" />
+      <RootProperty Name="ShowMode" />
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.MenuFlyoutItem">
+      <RootProperty Name="Text" />
+      <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="e610.NET.PostsViewPage" />
     <RootType FullName="e610.NET.SinglePostView" />
   </Roots.RootTypes>
 </Roots>

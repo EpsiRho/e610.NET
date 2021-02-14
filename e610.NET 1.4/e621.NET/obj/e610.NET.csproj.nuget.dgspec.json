@@ -15,11 +15,13 @@
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
           "C:\\Users\\jhset\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "uap10.0.18362"
@@ -37,17 +39,9 @@
       "frameworks": {
         "uap10.0.18362": {
           "dependencies": {
-            "FFmpegInteropX": {
-              "target": "Package",
-              "version": "[0.9.1, )"
-            },
-            "FFmpegInteropX.FFmpegUWP": {
-              "target": "Package",
-              "version": "[4.3.100, )"
-            },
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
-              "version": "[6.2.11, )"
+              "version": "[6.2.12, )"
             },
             "Microsoft.Toolkit.Uwp.UI.Controls": {
               "target": "Package",
@@ -64,10 +58,6 @@
             "RestSharp": {
               "target": "Package",
               "version": "[106.11.7, )"
-            },
-            "VLC.MediaElement": {
-              "target": "Package",
-              "version": "[3.1.0.1, )"
             }
           },
           "imports": [

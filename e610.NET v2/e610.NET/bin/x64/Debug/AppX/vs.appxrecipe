@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>DESKTOP-RRAQKQ8</Machine>
+    <Machine>DESKTOP-8T6CVI5</Machine>
     <WindowsUser>jhset</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>72EF1F08FCDF048D0F3D8B735DADDEF95E2C92F32D5B9EA25E84565C116BB07D</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>3D4298506373B090541B104655DC0D27E9DD09FEC7933E398600081A101C8D83</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e610.NET_2.0.0.0_x64__b8wk27p9mjrr0</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e610.NET_b8wk27p9mjrr0!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e610.NET</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-02-06T09:43:07.293</Modified>
+      <Modified>2021-02-07T03:11:33.798</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\bin\x64\Debug\e621 Follower.exe">
       <PackagePath>entrypoint\e621 Follower.exe</PackagePath>
-      <Modified>2021-02-06T09:43:06.176</Modified>
+      <Modified>2021-02-07T03:11:31.516</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\.nuget\packages\microsoft.toolkit\6.1.1\lib\netstandard2.0\Microsoft.Toolkit.dll">
       <PackagePath>Microsoft.Toolkit.dll</PackagePath>
@@ -72,7 +72,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\6.2.10\runtimes\win10-x64\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2020-02-28T00:17:32.000</Modified>
+      <Modified>2020-02-28T01:17:32.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\.nuget\packages\system.runtime.compilerservices.unsafe\4.5.3\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll">
       <PackagePath>System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
@@ -80,7 +80,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\Background Notifier\bin\x64\Debug\Background_Notifier.winmd">
       <PackagePath>Background_Notifier.winmd</PackagePath>
-      <Modified>2021-02-06T07:34:55.987</Modified>
+      <Modified>2021-02-07T03:11:25.755</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -88,53 +88,53 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2021-02-06T07:16:05.401</Modified>
+      <Modified>2021-02-02T21:24:11.489</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2021-02-06T07:16:05.395</Modified>
+      <Modified>2021-01-25T05:36:31.749</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-02-06T07:16:05.395</Modified>
+      <Modified>2021-01-25T05:36:31.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-02-06T07:16:05.396</Modified>
+      <Modified>2021-01-25T05:36:31.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-02-06T07:16:05.397</Modified>
+      <Modified>2021-01-25T05:36:31.753</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-02-06T07:16:05.397</Modified>
+      <Modified>2021-01-25T05:36:31.753</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-02-06T07:16:05.397</Modified>
+      <Modified>2021-01-25T05:36:31.754</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-02-06T07:16:05.398</Modified>
+      <Modified>2021-01-25T05:36:31.777</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\bin\x64\Debug\e621 Follower.xr.xml">
       <PackagePath>e621 Follower.xr.xml</PackagePath>
-      <Modified>2021-02-06T08:40:02.280</Modified>
+      <Modified>2021-02-06T10:04:40.408</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-02-06T09:43:05.947</Modified>
+      <Modified>2021-02-07T03:11:31.373</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-02-06T09:43:05.947</Modified>
+      <Modified>2021-02-07T03:11:31.372</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\X64\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -150,11 +150,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-02-06T07:35:55.820</Modified>
+      <Modified>2021-02-07T03:11:32.242</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET v2\e610.NET\bin\x64\Debug\Core\e621 Follower.exe">
       <PackagePath>e621 Follower.exe</PackagePath>
-      <Modified>2021-02-06T09:43:07.290</Modified>
+      <Modified>2021-02-07T03:11:33.783</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

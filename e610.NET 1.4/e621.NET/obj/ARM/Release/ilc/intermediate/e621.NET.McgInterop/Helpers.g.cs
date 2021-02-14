@@ -780,13 +780,41 @@ namespace __Interop
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
+					void* arg1, 
+					int arg2)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static void HasThisCall__9<TArg0>(
+					object __this, 
+					global::System.IntPtr pfn, 
+					TArg0 arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+		}
+
+		internal static int StdCall__10(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					void* arg0, 
 					void* arg1)
 		{
 			// This method is implemented elsewhere in the toolchain
 			return 0;
 		}
 
-		internal static int StdCall__9(
+		internal static int StdCall__11(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__12(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -799,7 +827,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__10(
+		internal static int StdCall__13(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -811,7 +839,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__11(
+		internal static int StdCall__14(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -824,7 +852,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static void HasThisCall__12<TArg0, TArg1>(
+		internal static void HasThisCall__15<TArg0, TArg1>(
 					object __this, 
 					global::System.IntPtr pfn, 
 					TArg0 arg0, 
@@ -833,7 +861,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static int StdCall__13(
+		internal static int StdCall__16(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -844,16 +872,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__14(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__15(
+		internal static int StdCall__17(
 					global::System.IntPtr pfn, 
 					void* pthis)
 		{
@@ -861,14 +880,14 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static void HasThisCall__16(
+		internal static void HasThisCall__18(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static int StdCall__17(
+		internal static int StdCall__19(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -879,7 +898,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__18(
+		internal static int StdCall__20(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -889,112 +908,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__19(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::Windows.Foundation.Point arg0, 
-					void* arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__20(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::Windows.Foundation.Rect arg0, 
-					void* arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
 		internal static int StdCall__21(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::Windows.Foundation.Point arg0, 
-					void* arg1, 
-					void* arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__22(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::Windows.Foundation.Rect arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__23(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					sbyte arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__24(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					double arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__25(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::Windows.Foundation.Point arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__26(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					int arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__27(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::Windows.UI.Xaml.Input.ManipulationModes arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__28(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::Windows.Foundation.Size arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__29(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					void* arg1, 
-					sbyte arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__30(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					uint arg0, 
@@ -1005,7 +919,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static void HasThisCall__31<TArg0>(
+		internal static void HasThisCall__22<TArg0>(
 					object __this, 
 					global::System.IntPtr pfn, 
 					object arg0, 
@@ -1014,10 +928,95 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
+		internal static int StdCall__23(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::Windows.Foundation.Point arg0, 
+					void* arg1)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__24(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::Windows.Foundation.Rect arg0, 
+					void* arg1)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__25(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::Windows.Foundation.Point arg0, 
+					void* arg1, 
+					void* arg2)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__26(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::Windows.Foundation.Rect arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__27(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					sbyte arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__28(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					double arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__29(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::Windows.Foundation.Point arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__30(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					int arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__31(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::Windows.UI.Xaml.Input.ManipulationModes arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
 		internal static int StdCall__32(
 					global::System.IntPtr pfn, 
 					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0)
+					global::Windows.Foundation.Size arg0)
 		{
 			// This method is implemented elsewhere in the toolchain
 			return 0;
@@ -1026,13 +1025,33 @@ namespace __Interop
 		internal static int StdCall__33(
 					global::System.IntPtr pfn, 
 					void* pthis, 
-					global::Windows.UI.Xaml.Thickness arg0)
+					void* arg0, 
+					void* arg1, 
+					sbyte arg2)
 		{
 			// This method is implemented elsewhere in the toolchain
 			return 0;
 		}
 
 		internal static int StdCall__34(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::System.Runtime.InteropServices.HSTRING arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__35(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::Windows.UI.Xaml.Thickness arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__36(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Type__Impl.UnsafeType arg0, 
@@ -1042,7 +1061,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static void HasThisCall__35<TArg0>(
+		internal static void HasThisCall__37<TArg0>(
 					object __this, 
 					global::System.IntPtr pfn, 
 					TArg0 arg0, 
@@ -1051,7 +1070,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static int StdCall__36(
+		internal static int StdCall__38(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -1061,7 +1080,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__37(
+		internal static int StdCall__39(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Color arg0, 
@@ -1071,7 +1090,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__38(
+		internal static int StdCall__40(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -1082,7 +1101,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__39(
+		internal static int StdCall__41(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Composition.CompositionBatchTypes arg0, 
@@ -1092,7 +1111,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__40(
+		internal static int StdCall__42(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Color arg0)
@@ -1101,7 +1120,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__41(
+		internal static int StdCall__43(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0)
@@ -1110,7 +1129,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__42(
+		internal static int StdCall__44(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector3 arg0)
@@ -1119,7 +1138,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__43(
+		internal static int StdCall__45(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0)
@@ -1128,7 +1147,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__44(
+		internal static int StdCall__46(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Quaternion arg0)
@@ -1137,7 +1156,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__45(
+		internal static int StdCall__47(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Matrix4x4 arg0)
@@ -1146,7 +1165,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static void HasThisCall__46(
+		internal static void HasThisCall__48(
 					object __this, 
 					global::System.IntPtr pfn, 
 					string arg0)
@@ -1154,7 +1173,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static int StdCall__47(
+		internal static int StdCall__49(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -1164,7 +1183,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__48(
+		internal static int StdCall__50(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -1174,7 +1193,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__49(
+		internal static int StdCall__51(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -1184,7 +1203,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__50(
+		internal static int StdCall__52(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -1194,7 +1213,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__51(
+		internal static int StdCall__53(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -1204,7 +1223,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__52(
+		internal static int StdCall__54(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -1214,7 +1233,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__53(
+		internal static int StdCall__55(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -1224,7 +1243,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__54(
+		internal static int StdCall__56(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -1234,7 +1253,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__55(
+		internal static int StdCall__57(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -1244,7 +1263,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__56(
+		internal static int StdCall__58(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.TimeSpan arg0)
@@ -1253,7 +1272,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__57(
+		internal static int StdCall__59(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -1263,7 +1282,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__58(
+		internal static int StdCall__60(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -1274,7 +1293,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__59(
+		internal static int StdCall__61(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -1284,7 +1303,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__60(
+		internal static int StdCall__62(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -1295,7 +1314,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__61(
+		internal static int StdCall__63(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Matrix3x2 arg0)
@@ -1304,7 +1323,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__62(
+		internal static int StdCall__64(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -1314,7 +1333,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__63(
+		internal static int StdCall__65(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -1324,7 +1343,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__64(
+		internal static int StdCall__66(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -1335,7 +1354,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__65(
+		internal static int StdCall__67(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -1345,7 +1364,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__66(
+		internal static int StdCall__68(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Size arg0, 
@@ -1355,7 +1374,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static global::Windows.Foundation.Size HasThisCall__67(
+		internal static global::Windows.Foundation.Size HasThisCall__69(
 					object __this, 
 					global::System.IntPtr pfn, 
 					global::Windows.Foundation.Size arg0)
@@ -1364,7 +1383,7 @@ namespace __Interop
 			return default(global::Windows.Foundation.Size);
 		}
 
-		internal static int StdCall__68(
+		internal static int StdCall__70(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -1375,7 +1394,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__69(
+		internal static int StdCall__71(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -1385,7 +1404,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__70(
+		internal static int StdCall__72(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Text.FontWeight arg0)
@@ -1394,7 +1413,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__71(
+		internal static int StdCall__73(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -1404,7 +1423,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__72(
+		internal static int StdCall__74(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Type__Impl.UnsafeType arg0)
@@ -1413,15 +1432,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static void HasThisCall__73<TArg0>(
-					object __this, 
-					global::System.IntPtr pfn, 
-					TArg0 arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-		}
-
-		internal static int StdCall__74(
+		internal static int StdCall__75(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Xaml.ElementHighContrastAdjustment arg0)
@@ -1430,7 +1441,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__75(
+		internal static int StdCall__76(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Point arg0, 
@@ -1441,7 +1452,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static TResult HasThisCall__76<TResult>(
+		internal static TResult HasThisCall__77<TResult>(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
@@ -1449,7 +1460,7 @@ namespace __Interop
 			return default(TResult);
 		}
 
-		internal static int StdCall__77(
+		internal static int StdCall__78(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -1461,23 +1472,12 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static bool HasThisCall__78(
+		internal static bool HasThisCall__79(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
 			// This method is implemented elsewhere in the toolchain
 			return default(bool);
-		}
-
-		internal static int StdCall__79(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					void* arg1, 
-					int arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
 		}
 
 		internal static int StdCall__80(
@@ -1636,13 +1636,42 @@ namespace __Interop
 		internal static int StdCall__95(
 					global::System.IntPtr pfn, 
 					void* pthis, 
+					double arg0, 
+					double arg1)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static void HasThisCall__96(
+					object __this, 
+					global::System.IntPtr pfn, 
+					double arg0, 
+					double arg1)
+		{
+			// This method is implemented elsewhere in the toolchain
+		}
+
+		internal static int StdCall__97(
+					global::System.IntPtr pfn, 
+					void* pthis, 
 					global::Windows.UI.Text.TextDecorations arg0)
 		{
 			// This method is implemented elsewhere in the toolchain
 			return 0;
 		}
 
-		internal static int StdCall__96(
+		internal static int StdCall__98(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					void* arg0, 
+					double arg1)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__99(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -1654,7 +1683,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__97(
+		internal static int StdCall__100(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -1662,35 +1691,6 @@ namespace __Interop
 					void* arg2, 
 					sbyte arg3, 
 					void* arg4)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__98(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					double arg0, 
-					double arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static void HasThisCall__99(
-					object __this, 
-					global::System.IntPtr pfn, 
-					double arg0, 
-					double arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-		}
-
-		internal static int StdCall__100(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					double arg1)
 		{
 			// This method is implemented elsewhere in the toolchain
 			return 0;
@@ -1867,9 +1867,8 @@ namespace __Interop
 		internal static int StdCall__119(
 					global::System.IntPtr pfn, 
 					void* pthis, 
-					void* arg0, 
-					uint arg1, 
-					global::Windows.Foundation.Rect arg2)
+					sbyte arg0, 
+					void* arg1)
 		{
 			// This method is implemented elsewhere in the toolchain
 			return 0;
@@ -1878,36 +1877,13 @@ namespace __Interop
 		internal static int StdCall__120(
 					global::System.IntPtr pfn, 
 					void* pthis, 
-					void* arg0, 
-					global::Windows.Foundation.Rect arg1, 
-					void* arg2, 
-					uint arg3, 
-					global::Windows.Foundation.Rect arg4, 
-					void* arg5)
+					ulong arg0)
 		{
 			// This method is implemented elsewhere in the toolchain
 			return 0;
 		}
 
 		internal static int StdCall__121(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					global::Windows.Foundation.Rect arg1, 
-					uint arg2, 
-					void* arg3, 
-					uint arg4, 
-					void* arg5, 
-					uint arg6, 
-					void* arg7, 
-					void* arg8, 
-					void* arg9)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__122(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -1918,760 +1894,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__123(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					sbyte arg0, 
-					void* arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__124(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					ulong arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__125(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					float arg0, 
-					int arg1, 
-					void* arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__126(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					float arg1, 
-					float arg2, 
-					float arg3, 
-					void* arg4)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__127(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					float arg1, 
-					float arg2, 
-					void* arg3)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__128(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					uint arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__129(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1, 
-					void* arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static uint HasThisCall__130(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static void HasThisCall__131(
-					object __this, 
-					global::System.IntPtr pfn, 
-					uint arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-		}
-
-		internal static int StdCall__132(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1, 
-					void* arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__133(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					uint arg1, 
-					uint arg2, 
-					void* arg3, 
-					global::System.TimeSpan arg4, 
-					void* arg5)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__134(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					ulong arg0, 
-					void* arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static ulong HasThisCall__135(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static void HasThisCall__136(
-					object __this, 
-					global::System.IntPtr pfn, 
-					ulong arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-		}
-
-		internal static TResult HasThisCall__137<TResult>(
-					object __this, 
-					global::System.IntPtr pfn, 
-					ulong arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(TResult);
-		}
-
-		internal static int StdCall__138(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					uint arg1, 
-					global::Windows.Storage.Streams.InputStreamOptions arg2, 
-					void* arg3)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IBuffer, uint> HasThisCall__139(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IBuffer, uint>);
-		}
-
-		internal static int StdCall__140(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					uint arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static void HasThisCall__141<TArg0>(
-					object __this, 
-					global::System.IntPtr pfn, 
-					TArg0 arg0, 
-					uint arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-		}
-
-		internal static void HasThisCall__142<TArg0>(
-					object __this, 
-					global::System.IntPtr pfn, 
-					TArg0 arg0, 
-					global::Windows.Foundation.AsyncStatus arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-		}
-
-		internal static TResult HasThisCall__143<TArg0, TResult>(
-					object __this, 
-					global::System.IntPtr pfn, 
-					TArg0 arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(TResult);
-		}
-
-		internal static global::Windows.Foundation.AsyncOperationProgressHandler<uint, uint> HasThisCall__144(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::Windows.Foundation.AsyncOperationProgressHandler<uint, uint>);
-		}
-
-		internal static int StdCall__145(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1, 
-					global::System.Runtime.InteropServices.HSTRING arg2, 
-					long arg3, 
-					sbyte arg4, 
-					int arg5, 
-					int arg6, 
-					int arg7, 
-					int arg8, 
-					void* arg9)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__146(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1, 
-					global::System.Runtime.InteropServices.HSTRING arg2, 
-					long arg3, 
-					sbyte arg4, 
-					int arg5, 
-					int arg6, 
-					double arg7, 
-					int arg8, 
-					int arg9, 
-					int arg10, 
-					void* arg11)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__147(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1, 
-					global::System.Runtime.InteropServices.HSTRING arg2, 
-					sbyte arg3, 
-					sbyte arg4, 
-					void* arg5, 
-					sbyte arg6, 
-					void* arg7)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__148(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0, 
-					global::System.TimeSpan arg1, 
-					global::System.TimeSpan arg2, 
-					void* arg3)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__149(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0, 
-					void* arg1, 
-					void* arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__150(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					sbyte arg1, 
-					sbyte arg2, 
-					void* arg3, 
-					void* arg4, 
-					void* arg5)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__151(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					sbyte arg1, 
-					sbyte arg2, 
-					void* arg3, 
-					void* arg4)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__152(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					sbyte arg1, 
-					sbyte arg2, 
-					void* arg3)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__153(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0, 
-					sbyte arg1, 
-					sbyte arg2, 
-					void* arg3, 
-					void* arg4)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__154(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0, 
-					sbyte arg1, 
-					sbyte arg2, 
-					void* arg3)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__155(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.TimeSpan arg0, 
-					void* arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__156(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.TimeSpan arg0, 
-					global::System.TimeSpan arg1, 
-					void* arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__157(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					uint arg0, 
-					uint arg1, 
-					void* arg2, 
-					void* arg3)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__158(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					float arg0, 
-					float arg1, 
-					float arg2, 
-					float arg3, 
-					void* arg4)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__159(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					int arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__160(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__161(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1, 
-					sbyte arg2, 
-					void* arg3)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__162(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1, 
-					global::System.Runtime.InteropServices.HSTRING arg2, 
-					global::System.Runtime.InteropServices.HSTRING arg3, 
-					sbyte arg4)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__163(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1, 
-					global::System.Runtime.InteropServices.HSTRING arg2, 
-					int arg3, 
-					global::System.Runtime.InteropServices.HSTRING arg4, 
-					global::System.Runtime.InteropServices.HSTRING arg5, 
-					global::System.Runtime.InteropServices.HSTRING arg6)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__164(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1, 
-					global::System.Runtime.InteropServices.HSTRING arg2, 
-					sbyte arg3, 
-					float arg4, 
-					global::System.Runtime.InteropServices.HSTRING arg5)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__165(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					float arg1, 
-					global::System.Runtime.InteropServices.HSTRING arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__166(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1, 
-					global::System.Runtime.InteropServices.HSTRING arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__167(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					void* arg1, 
-					void* arg2, 
-					void* arg3, 
-					void* arg4, 
-					void* arg5)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__168(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					float arg0, 
-					void* arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__169(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					float arg0, 
-					uint arg1, 
-					void* arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__170(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1, 
-					int arg2, 
-					void* arg3)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__171(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0, 
-					uint arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__172(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					int arg0, 
-					int arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__173(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					int arg0, 
-					int arg1, 
-					void* arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__174(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					int arg0, 
-					uint arg1, 
-					global::System.Runtime.InteropServices.HSTRING arg2, 
-					void* arg3)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__175(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					int arg1, 
-					void* arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static void HasThisCall__176(
-					object __this, 
-					global::System.IntPtr pfn, 
-					float arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-		}
-
-		internal static int StdCall__177(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					long arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static void HasThisCall__178(
-					object __this, 
-					global::System.IntPtr pfn, 
-					long arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-		}
-
-		internal static void HasThisCall__179(
-					object __this, 
-					global::System.IntPtr pfn, 
-					int arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-		}
-
-		internal static void HasThisCall__180(
-					object __this, 
-					global::System.IntPtr pfn, 
-					global::libVLCX.TrackType arg0, 
-					int arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-		}
-
-		internal static int StdCall__181(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					int arg0, 
-					uint arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__182(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					long arg0, 
-					void* arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__183(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					uint arg0, 
-					void* arg1, 
-					void* arg2, 
-					void* arg3)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__184(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					int arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1, 
-					sbyte arg2, 
-					void* arg3)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__185(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					void* arg0, 
-					sbyte arg1, 
-					void* arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__186(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					uint arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1, 
-					uint arg2, 
-					uint arg3, 
-					void* arg4)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__187(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					uint arg0, 
-					int arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__188(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					uint arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__189(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					uint arg0, 
-					float arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__190(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0, 
-					int arg1, 
-					int arg2, 
-					int arg3, 
-					void* arg4)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__191(
+		internal static int StdCall__122(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2683,7 +1906,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__192(
+		internal static int StdCall__123(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2695,7 +1918,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__193(
+		internal static int StdCall__124(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2709,7 +1932,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__194(
+		internal static int StdCall__125(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2726,7 +1949,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__195(
+		internal static int StdCall__126(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2738,7 +1961,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__196(
+		internal static int StdCall__127(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2749,7 +1972,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__197(
+		internal static int StdCall__128(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2760,7 +1983,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__198(
+		internal static int StdCall__129(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2771,7 +1994,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__199(
+		internal static int StdCall__130(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector4 arg0)
@@ -2780,7 +2003,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__200(
+		internal static int StdCall__131(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2792,7 +2015,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__201(
+		internal static int StdCall__132(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2805,7 +2028,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__202(
+		internal static int StdCall__133(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2820,7 +2043,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__203(
+		internal static int StdCall__134(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2836,7 +2059,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__204(
+		internal static int StdCall__135(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2853,7 +2076,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__205(
+		internal static int StdCall__136(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2867,7 +2090,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__206(
+		internal static int StdCall__137(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2882,7 +2105,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__207(
+		internal static int StdCall__138(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2898,7 +2121,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__208(
+		internal static int StdCall__139(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2913,7 +2136,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__209(
+		internal static int StdCall__140(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2929,7 +2152,18 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__210(
+		internal static int StdCall__141(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					void* arg0, 
+					global::System.Runtime.InteropServices.HSTRING arg1, 
+					void* arg2)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__142(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2941,7 +2175,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__211(
+		internal static int StdCall__143(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2954,7 +2188,132 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__212(
+		internal static int StdCall__144(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					uint arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static uint HasThisCall__145(
+					object __this, 
+					global::System.IntPtr pfn)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static void HasThisCall__146(
+					object __this, 
+					global::System.IntPtr pfn, 
+					uint arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+		}
+
+		internal static int StdCall__147(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					ulong arg0, 
+					void* arg1)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static ulong HasThisCall__148(
+					object __this, 
+					global::System.IntPtr pfn)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static void HasThisCall__149(
+					object __this, 
+					global::System.IntPtr pfn, 
+					ulong arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+		}
+
+		internal static TResult HasThisCall__150<TResult>(
+					object __this, 
+					global::System.IntPtr pfn, 
+					ulong arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return default(TResult);
+		}
+
+		internal static int StdCall__151(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					void* arg0, 
+					uint arg1, 
+					global::Windows.Storage.Streams.InputStreamOptions arg2, 
+					void* arg3)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IBuffer, uint> HasThisCall__152(
+					object __this, 
+					global::System.IntPtr pfn)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return default(global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IBuffer, uint>);
+		}
+
+		internal static int StdCall__153(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					void* arg0, 
+					uint arg1)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static void HasThisCall__154<TArg0>(
+					object __this, 
+					global::System.IntPtr pfn, 
+					TArg0 arg0, 
+					uint arg1)
+		{
+			// This method is implemented elsewhere in the toolchain
+		}
+
+		internal static void HasThisCall__155<TArg0>(
+					object __this, 
+					global::System.IntPtr pfn, 
+					TArg0 arg0, 
+					global::Windows.Foundation.AsyncStatus arg1)
+		{
+			// This method is implemented elsewhere in the toolchain
+		}
+
+		internal static TResult HasThisCall__156<TArg0, TResult>(
+					object __this, 
+					global::System.IntPtr pfn, 
+					TArg0 arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return default(TResult);
+		}
+
+		internal static global::Windows.Foundation.AsyncOperationProgressHandler<uint, uint> HasThisCall__157(
+					object __this, 
+					global::System.IntPtr pfn)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return default(global::Windows.Foundation.AsyncOperationProgressHandler<uint, uint>);
+		}
+
+		internal static int StdCall__158(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -2965,7 +2324,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__213(
+		internal static int StdCall__159(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -2977,7 +2336,18 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__214(
+		internal static int StdCall__160(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					void* arg0, 
+					int arg1, 
+					void* arg2)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__161(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -2989,7 +2359,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__215(
+		internal static int StdCall__162(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -3003,7 +2373,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__216(
+		internal static int StdCall__163(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3016,7 +2386,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__217(
+		internal static int StdCall__164(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					uint arg0, 
@@ -3030,7 +2400,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__218(
+		internal static int StdCall__165(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3041,7 +2411,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__219(
+		internal static int StdCall__166(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3056,7 +2426,18 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__220(
+		internal static int StdCall__167(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					float arg0, 
+					int arg1, 
+					void* arg2)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__168(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3066,7 +2447,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__221(
+		internal static int StdCall__169(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3077,7 +2458,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__222(
+		internal static int StdCall__170(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3087,7 +2468,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__223(
+		internal static int StdCall__171(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3098,7 +2479,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__224(
+		internal static int StdCall__172(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3110,7 +2491,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__225(
+		internal static int StdCall__173(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3121,7 +2502,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__226(
+		internal static int StdCall__174(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3133,7 +2514,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__227(
+		internal static int StdCall__175(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3146,7 +2527,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__228(
+		internal static int StdCall__176(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3158,7 +2539,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__229(
+		internal static int StdCall__177(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3171,7 +2552,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__230(
+		internal static int StdCall__178(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3185,7 +2566,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__231(
+		internal static int StdCall__179(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3198,7 +2579,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__232(
+		internal static int StdCall__180(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3212,7 +2593,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__233(
+		internal static int StdCall__181(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3227,7 +2608,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__234(
+		internal static int StdCall__182(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3241,7 +2622,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__235(
+		internal static int StdCall__183(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3255,7 +2636,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__236(
+		internal static int StdCall__184(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3270,7 +2651,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__237(
+		internal static int StdCall__185(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -3284,7 +2665,20 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__238(
+		internal static int StdCall__186(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					float arg0, 
+					float arg1, 
+					float arg2, 
+					float arg3, 
+					void* arg4)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__187(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3295,7 +2689,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__239(
+		internal static int StdCall__188(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3308,7 +2702,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__240(
+		internal static int StdCall__189(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3320,7 +2714,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__241(
+		internal static int StdCall__190(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3334,7 +2728,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__242(
+		internal static int StdCall__191(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3346,7 +2740,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__243(
+		internal static int StdCall__192(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3360,7 +2754,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__244(
+		internal static int StdCall__193(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3373,7 +2767,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__245(
+		internal static int StdCall__194(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3388,7 +2782,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__246(
+		internal static int StdCall__195(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3401,7 +2795,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__247(
+		internal static int StdCall__196(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3416,7 +2810,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__248(
+		internal static int StdCall__197(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Rect arg0, 
@@ -3426,7 +2820,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__249(
+		internal static int StdCall__198(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Rect arg0, 
@@ -3437,7 +2831,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__250(
+		internal static int StdCall__199(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Rect arg0, 
@@ -3448,7 +2842,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__251(
+		internal static int StdCall__200(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Rect arg0, 
@@ -3460,7 +2854,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__252(
+		internal static int StdCall__201(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Rect arg0, 
@@ -3472,7 +2866,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__253(
+		internal static int StdCall__202(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Rect arg0, 
@@ -3483,7 +2877,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__254(
+		internal static int StdCall__203(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3497,7 +2891,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__255(
+		internal static int StdCall__204(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Rect arg0, 
@@ -3509,7 +2903,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__256(
+		internal static int StdCall__205(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3524,7 +2918,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__257(
+		internal static int StdCall__206(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Rect arg0, 
@@ -3536,7 +2930,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__258(
+		internal static int StdCall__207(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3551,7 +2945,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__259(
+		internal static int StdCall__208(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Rect arg0, 
@@ -3564,7 +2958,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__260(
+		internal static int StdCall__209(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3580,7 +2974,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__261(
+		internal static int StdCall__210(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Rect arg0, 
@@ -3593,7 +2987,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__262(
+		internal static int StdCall__211(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3609,7 +3003,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__263(
+		internal static int StdCall__212(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Rect arg0, 
@@ -3623,7 +3017,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__264(
+		internal static int StdCall__213(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3640,7 +3034,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__265(
+		internal static int StdCall__214(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Rect arg0, 
@@ -3654,7 +3048,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__266(
+		internal static int StdCall__215(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3671,7 +3065,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__267(
+		internal static int StdCall__216(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3683,7 +3077,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__268(
+		internal static int StdCall__217(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3695,7 +3089,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__269(
+		internal static int StdCall__218(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3708,7 +3102,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__270(
+		internal static int StdCall__219(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3721,7 +3115,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__271(
+		internal static int StdCall__220(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3735,7 +3129,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__272(
+		internal static int StdCall__221(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3749,7 +3143,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__273(
+		internal static int StdCall__222(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3760,7 +3154,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__274(
+		internal static int StdCall__223(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3772,7 +3166,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__275(
+		internal static int StdCall__224(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3783,7 +3177,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__276(
+		internal static int StdCall__225(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3795,7 +3189,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__277(
+		internal static int StdCall__226(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3807,7 +3201,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__278(
+		internal static int StdCall__227(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3820,7 +3214,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__279(
+		internal static int StdCall__228(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3832,7 +3226,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__280(
+		internal static int StdCall__229(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3845,7 +3239,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__281(
+		internal static int StdCall__230(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3858,7 +3252,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__282(
+		internal static int StdCall__231(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3872,7 +3266,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__283(
+		internal static int StdCall__232(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -3885,7 +3279,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__284(
+		internal static int StdCall__233(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -3899,7 +3293,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__285(
+		internal static int StdCall__234(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -3910,7 +3304,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__286(
+		internal static int StdCall__235(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -3922,7 +3316,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__287(
+		internal static int StdCall__236(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -3934,7 +3328,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__288(
+		internal static int StdCall__237(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -3946,7 +3340,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__289(
+		internal static int StdCall__238(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -3959,7 +3353,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__290(
+		internal static int StdCall__239(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -3974,7 +3368,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__291(
+		internal static int StdCall__240(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -3986,7 +3380,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__292(
+		internal static int StdCall__241(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -3998,7 +3392,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__293(
+		internal static int StdCall__242(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -4011,7 +3405,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__294(
+		internal static int StdCall__243(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -4026,7 +3420,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__295(
+		internal static int StdCall__244(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4037,7 +3431,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__296(
+		internal static int StdCall__245(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4048,7 +3442,19 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__297(
+		internal static int StdCall__246(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					void* arg0, 
+					float arg1, 
+					float arg2, 
+					void* arg3)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__247(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4060,7 +3466,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__298(
+		internal static int StdCall__248(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4070,7 +3476,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__299(
+		internal static int StdCall__249(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4082,7 +3488,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__300(
+		internal static int StdCall__250(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4094,7 +3500,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__301(
+		internal static int StdCall__251(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4107,7 +3513,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__302(
+		internal static int StdCall__252(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4120,7 +3526,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__303(
+		internal static int StdCall__253(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4131,7 +3537,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__304(
+		internal static int StdCall__254(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4142,7 +3548,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__305(
+		internal static int StdCall__255(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4155,7 +3561,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__306(
+		internal static int StdCall__256(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4168,7 +3574,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__307(
+		internal static int StdCall__257(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4182,7 +3588,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__308(
+		internal static int StdCall__258(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4196,7 +3602,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__309(
+		internal static int StdCall__259(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4208,7 +3614,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__310(
+		internal static int StdCall__260(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4220,7 +3626,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__311(
+		internal static int StdCall__261(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4233,7 +3639,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__312(
+		internal static int StdCall__262(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4243,7 +3649,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__313(
+		internal static int StdCall__263(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4254,7 +3660,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__314(
+		internal static int StdCall__264(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4266,7 +3672,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__315(
+		internal static int StdCall__265(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Graphics.Imaging.BitmapSize arg0)
@@ -4275,7 +3681,17 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__316(
+		internal static int StdCall__266(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					float arg0, 
+					void* arg1)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__267(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -4286,7 +3702,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__317(
+		internal static int StdCall__268(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4297,7 +3713,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__318(
+		internal static int StdCall__269(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -4308,7 +3724,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__319(
+		internal static int StdCall__270(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -4320,7 +3736,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__320(
+		internal static int StdCall__271(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4332,7 +3748,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__321(
+		internal static int StdCall__272(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -4347,7 +3763,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__322(
+		internal static int StdCall__273(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -4363,7 +3779,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__323(
+		internal static int StdCall__274(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -4380,7 +3796,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__324(
+		internal static int StdCall__275(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -4402,7 +3818,18 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__325(
+		internal static int StdCall__276(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					int arg0, 
+					int arg1, 
+					void* arg2)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__277(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -4414,7 +3841,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__326(
+		internal static int StdCall__278(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Microsoft.Graphics.Canvas.Text.CanvasDrawTextOptions arg0)
@@ -4423,7 +3850,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__327(
+		internal static int StdCall__279(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4436,7 +3863,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__328(
+		internal static int StdCall__280(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -4449,7 +3876,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__329(
+		internal static int StdCall__281(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -4465,7 +3892,19 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__330(
+		internal static int StdCall__282(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					uint arg0, 
+					void* arg1, 
+					void* arg2, 
+					void* arg3)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__283(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					uint arg0, 
@@ -4478,7 +3917,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__331(
+		internal static int StdCall__284(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -4495,7 +3934,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__332(
+		internal static int StdCall__285(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4511,7 +3950,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__333(
+		internal static int StdCall__286(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4528,7 +3967,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__334(
+		internal static int StdCall__287(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Microsoft.Graphics.Canvas.Text.CanvasAnalyzedScript arg0, 
@@ -4539,7 +3978,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__335(
+		internal static int StdCall__288(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Microsoft.Graphics.Canvas.Text.CanvasAnalyzedScript arg0, 
@@ -4551,7 +3990,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__336(
+		internal static int StdCall__289(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Microsoft.Graphics.Canvas.Text.CanvasAnalyzedScript arg0, 
@@ -4565,7 +4004,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__337(
+		internal static int StdCall__290(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Microsoft.Graphics.Canvas.Text.CanvasAnalyzedScript arg0, 
@@ -4580,7 +4019,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__338(
+		internal static int StdCall__291(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4594,7 +4033,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__339(
+		internal static int StdCall__292(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4607,7 +4046,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__340(
+		internal static int StdCall__293(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4623,7 +4062,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__341(
+		internal static int StdCall__294(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4636,7 +4075,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__342(
+		internal static int StdCall__295(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4648,7 +4087,20 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__343(
+		internal static int StdCall__296(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					void* arg0, 
+					float arg1, 
+					float arg2, 
+					float arg3, 
+					void* arg4)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__297(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4661,7 +4113,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__344(
+		internal static int StdCall__298(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4680,7 +4132,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__345(
+		internal static int StdCall__299(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4693,7 +4145,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__346(
+		internal static int StdCall__300(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -4705,7 +4157,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__347(
+		internal static int StdCall__301(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -4715,7 +4167,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__348(
+		internal static int StdCall__302(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -4726,7 +4178,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__349(
+		internal static int StdCall__303(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -4740,7 +4192,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__350(
+		internal static int StdCall__304(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -4753,7 +4205,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__351(
+		internal static int StdCall__305(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -4764,7 +4216,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__352(
+		internal static int StdCall__306(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -4774,7 +4226,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__353(
+		internal static int StdCall__307(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Microsoft.Graphics.Canvas.Geometry.CanvasFigureSegmentOptions arg0)
@@ -4783,7 +4235,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__354(
+		internal static int StdCall__308(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -4797,7 +4249,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__355(
+		internal static int StdCall__309(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -4809,7 +4261,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__356(
+		internal static int StdCall__310(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -4820,7 +4272,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__357(
+		internal static int StdCall__311(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -4831,7 +4283,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__358(
+		internal static int StdCall__312(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -4842,7 +4294,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__359(
+		internal static int StdCall__313(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -4853,7 +4305,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__360(
+		internal static int StdCall__314(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -4864,7 +4316,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__361(
+		internal static int StdCall__315(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -4875,7 +4327,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__362(
+		internal static int StdCall__316(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -4885,7 +4337,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__363(
+		internal static int StdCall__317(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -4896,7 +4348,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__364(
+		internal static int StdCall__318(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -4908,7 +4360,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__365(
+		internal static int StdCall__319(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -4920,7 +4372,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__366(
+		internal static int StdCall__320(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -4933,7 +4385,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__367(
+		internal static int StdCall__321(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -4944,7 +4396,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__368(
+		internal static int StdCall__322(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -4956,7 +4408,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__369(
+		internal static int StdCall__323(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -4968,7 +4420,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__370(
+		internal static int StdCall__324(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -4981,7 +4433,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__371(
+		internal static int StdCall__325(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Microsoft.Graphics.Canvas.Text.CanvasTypographyFeature arg0)
@@ -4990,7 +4442,17 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__372(
+		internal static int StdCall__326(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					int arg0, 
+					uint arg1)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__327(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5002,7 +4464,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__373(
+		internal static int StdCall__328(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5015,7 +4477,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__374(
+		internal static int StdCall__329(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -5028,7 +4490,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__375(
+		internal static int StdCall__330(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Matrix3x2 arg0, 
@@ -5039,7 +4501,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__376(
+		internal static int StdCall__331(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -5051,7 +4513,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__377(
+		internal static int StdCall__332(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Matrix3x2 arg0, 
@@ -5061,7 +4523,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__378(
+		internal static int StdCall__333(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5073,7 +4535,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__379(
+		internal static int StdCall__334(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -5086,7 +4548,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__380(
+		internal static int StdCall__335(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -5098,7 +4560,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__381(
+		internal static int StdCall__336(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -5110,7 +4572,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__382(
+		internal static int StdCall__337(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Vector2 arg0, 
@@ -5124,7 +4586,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__383(
+		internal static int StdCall__338(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Numerics.Matrix3x2 arg0, 
@@ -5136,7 +4598,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__384(
+		internal static int StdCall__339(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5148,7 +4610,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__385(
+		internal static int StdCall__340(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5161,7 +4623,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__386(
+		internal static int StdCall__341(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					uint arg0, 
@@ -5176,7 +4638,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__387(
+		internal static int StdCall__342(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -5188,7 +4650,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__388(
+		internal static int StdCall__343(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					uint arg0, 
@@ -5201,7 +4663,17 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__389(
+		internal static int StdCall__344(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::System.Runtime.InteropServices.HSTRING arg0, 
+					global::System.Runtime.InteropServices.HSTRING arg1)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__345(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -5211,7 +4683,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__390(
+		internal static int StdCall__346(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -5221,7 +4693,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__391(
+		internal static int StdCall__347(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -5232,7 +4704,18 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__392(
+		internal static int StdCall__348(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::System.Runtime.InteropServices.HSTRING arg0, 
+					void* arg1, 
+					void* arg2)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__349(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -5243,7 +4726,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__393(
+		internal static int StdCall__350(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -5254,7 +4737,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__394(
+		internal static int StdCall__351(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -5268,7 +4751,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__395(
+		internal static int StdCall__352(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -5280,7 +4763,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__396(
+		internal static int StdCall__353(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -5293,7 +4776,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__397(
+		internal static int StdCall__354(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5303,7 +4786,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__398(
+		internal static int StdCall__355(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5314,7 +4797,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__399(
+		internal static int StdCall__356(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5325,7 +4808,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__400(
+		internal static int StdCall__357(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5336,7 +4819,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__401(
+		internal static int StdCall__358(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5348,7 +4831,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__402(
+		internal static int StdCall__359(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5360,7 +4843,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__403(
+		internal static int StdCall__360(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5375,7 +4858,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__404(
+		internal static int StdCall__361(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5386,7 +4869,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__405(
+		internal static int StdCall__362(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5398,7 +4881,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__406(
+		internal static int StdCall__363(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5410,7 +4893,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__407(
+		internal static int StdCall__364(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5422,7 +4905,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__408(
+		internal static int StdCall__365(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5435,7 +4918,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__409(
+		internal static int StdCall__366(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5448,7 +4931,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__410(
+		internal static int StdCall__367(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5464,7 +4947,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__411(
+		internal static int StdCall__368(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5479,7 +4962,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__412(
+		internal static int StdCall__369(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5495,7 +4978,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__413(
+		internal static int StdCall__370(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5512,7 +4995,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__414(
+		internal static int StdCall__371(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5527,7 +5010,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__415(
+		internal static int StdCall__372(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5538,7 +5021,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__416(
+		internal static int StdCall__373(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5553,7 +5036,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__417(
+		internal static int StdCall__374(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5569,7 +5052,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__418(
+		internal static int StdCall__375(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5585,7 +5068,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__419(
+		internal static int StdCall__376(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -5596,7 +5079,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__420(
+		internal static int StdCall__377(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -5609,7 +5092,19 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__421(
+		internal static int StdCall__378(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					void* arg0, 
+					global::System.Runtime.InteropServices.HSTRING arg1, 
+					int arg2, 
+					void* arg3)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__379(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5622,7 +5117,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__422(
+		internal static int StdCall__380(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5634,7 +5129,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__423(
+		internal static int StdCall__381(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5647,7 +5142,50 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__424(
+		internal static int StdCall__382(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					void* arg0, 
+					uint arg1, 
+					global::Windows.Foundation.Rect arg2)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__383(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					void* arg0, 
+					global::Windows.Foundation.Rect arg1, 
+					void* arg2, 
+					uint arg3, 
+					global::Windows.Foundation.Rect arg4, 
+					void* arg5)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__384(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					void* arg0, 
+					global::Windows.Foundation.Rect arg1, 
+					uint arg2, 
+					void* arg3, 
+					uint arg4, 
+					void* arg5, 
+					uint arg6, 
+					void* arg7, 
+					void* arg8, 
+					void* arg9)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__385(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Microsoft.Graphics.Canvas.Effects.ColorManagementSimpleProfile arg0, 
@@ -5657,7 +5195,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__425(
+		internal static int StdCall__386(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Microsoft.Graphics.Canvas.Effects.Matrix5x4 arg0)
@@ -5666,7 +5204,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__426(
+		internal static int StdCall__387(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5682,7 +5220,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__427(
+		internal static int StdCall__388(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -5695,7 +5233,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__428(
+		internal static int StdCall__389(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Microsoft.Graphics.Canvas.Text.CanvasFontProperty__Impl.UnsafeType arg0, 
@@ -5705,7 +5243,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__429(
+		internal static int StdCall__390(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					uint arg0, 
@@ -5716,7 +5254,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__430(
+		internal static int StdCall__391(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -5728,7 +5266,19 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__431(
+		internal static int StdCall__392(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					int arg0, 
+					global::System.Runtime.InteropServices.HSTRING arg1, 
+					sbyte arg2, 
+					void* arg3)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__393(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -5742,7 +5292,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__432(
+		internal static int StdCall__394(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -5754,7 +5304,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__433(
+		internal static int StdCall__395(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Microsoft.Graphics.Canvas.Text.CanvasAnalyzedScript arg0, 
@@ -5764,7 +5314,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__434(
+		internal static int StdCall__396(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Microsoft.Graphics.Canvas.Text.CanvasCharacterRange arg0, 
@@ -5780,7 +5330,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__435(
+		internal static int StdCall__397(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Microsoft.Graphics.Canvas.Text.CanvasCharacterRange arg0, 
@@ -5805,7 +5355,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__436(
+		internal static int StdCall__398(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Microsoft.Graphics.Canvas.Text.CanvasCharacterRange arg0, 
@@ -5823,7 +5373,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__437(
+		internal static int StdCall__399(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -5838,7 +5388,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__438(
+		internal static int StdCall__400(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5859,7 +5409,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__439(
+		internal static int StdCall__401(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5882,7 +5432,19 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__440(
+		internal static int StdCall__402(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					uint arg0, 
+					uint arg1, 
+					void* arg2, 
+					void* arg3)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__403(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Size arg0, 
@@ -5894,7 +5456,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__441(
+		internal static int StdCall__404(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Graphics.SizeInt32 arg0, 
@@ -5906,7 +5468,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__442(
+		internal static int StdCall__405(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5918,7 +5480,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__443(
+		internal static int StdCall__406(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Core.CoreInputDeviceTypes arg0, 
@@ -5928,7 +5490,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__444(
+		internal static int StdCall__407(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Microsoft.Graphics.Canvas.UI.CanvasTimingInformation__Impl.UnsafeType arg0, 
@@ -5938,7 +5500,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__445(
+		internal static int StdCall__408(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5949,7 +5511,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__446(
+		internal static int StdCall__409(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -5963,7 +5525,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__447(
+		internal static int StdCall__410(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Color arg0, 
@@ -5974,81 +5536,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken HasThisCall__448(
-					object __this, 
-					global::System.IntPtr pfn, 
-					global::Windows.UI.Xaml.RoutedEventHandler arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken);
-		}
-
-		internal static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken HasThisCall__449(
-					object __this, 
-					global::System.IntPtr pfn, 
-					global::System.EventHandler<global::Windows.UI.Xaml.RoutedEventArgs> arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken);
-		}
-
-		internal static global::Windows.UI.Xaml.Media.MediaElementState HasThisCall__450(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::Windows.UI.Xaml.Media.MediaElementState);
-		}
-
-		internal static global::VLC.DeinterlaceMode HasThisCall__451(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::VLC.DeinterlaceMode);
-		}
-
-		internal static global::System.TimeSpan HasThisCall__452(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::System.TimeSpan);
-		}
-
-		internal static global::Windows.UI.Xaml.Media.Stretch HasThisCall__453(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::Windows.UI.Xaml.Media.Stretch);
-		}
-
-		internal static void HasThisCall__454(
-					object __this, 
-					global::System.IntPtr pfn, 
-					global::System.TimeSpan arg0)
-		{
-			// This method is implemented elsewhere in the toolchain
-		}
-
-		internal static global::Windows.Foundation.Diagnostics.LoggingLevel HasThisCall__455(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::Windows.Foundation.Diagnostics.LoggingLevel);
-		}
-
-		internal static global::System.Nullable<int> HasThisCall__456(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::System.Nullable<int>);
-		}
-
-		internal static int StdCall__457(
+		internal static int StdCall__411(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Xaml.Media.Matrix arg0)
@@ -6057,15 +5545,17 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static global::Windows.UI.Color HasThisCall__458(
-					object __this, 
-					global::System.IntPtr pfn)
+		internal static int StdCall__412(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::System.Guid arg0, 
+					void* arg1)
 		{
 			// This method is implemented elsewhere in the toolchain
-			return default(global::Windows.UI.Color);
+			return 0;
 		}
 
-		internal static TResult HasThisCall__459<TResult>(
+		internal static TResult HasThisCall__413<TResult>(
 					object __this, 
 					global::System.IntPtr pfn, 
 					string arg0, 
@@ -6075,7 +5565,7 @@ namespace __Interop
 			return default(TResult);
 		}
 
-		internal static int StdCall__460(
+		internal static int StdCall__414(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Storage.StorageItemTypes arg0, 
@@ -6085,7 +5575,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static global::System.DateTimeOffset HasThisCall__461(
+		internal static global::System.DateTimeOffset HasThisCall__415(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
@@ -6093,7 +5583,7 @@ namespace __Interop
 			return default(global::System.DateTimeOffset);
 		}
 
-		internal static TResult HasThisCall__462<TArg0, TResult>(
+		internal static TResult HasThisCall__416<TArg0, TResult>(
 					object __this, 
 					global::System.IntPtr pfn, 
 					TArg0 arg0, 
@@ -6103,7 +5593,7 @@ namespace __Interop
 			return default(TResult);
 		}
 
-		internal static TResult HasThisCall__463<TArg0, TResult>(
+		internal static TResult HasThisCall__417<TArg0, TResult>(
 					object __this, 
 					global::System.IntPtr pfn, 
 					TArg0 arg0, 
@@ -6114,17 +5604,7 @@ namespace __Interop
 			return default(TResult);
 		}
 
-		internal static int StdCall__464(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Guid arg0, 
-					void* arg1)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__465(
+		internal static int StdCall__418(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -6135,7 +5615,15 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__466(
+		internal static global::Windows.UI.Color HasThisCall__419(
+					object __this, 
+					global::System.IntPtr pfn)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return default(global::Windows.UI.Color);
+		}
+
+		internal static int StdCall__420(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Point arg0, 
@@ -6146,7 +5634,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__467(
+		internal static int StdCall__421(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Text.TextGetOptions arg0, 
@@ -6156,7 +5644,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__468(
+		internal static int StdCall__422(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Text.TextSetOptions arg0, 
@@ -6166,7 +5654,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__469(
+		internal static int StdCall__423(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Text.TextSetOptions arg0, 
@@ -6176,7 +5664,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static float HasThisCall__470(
+		internal static float HasThisCall__424(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
@@ -6184,7 +5672,15 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static void HasThisCall__471(
+		internal static void HasThisCall__425(
+					object __this, 
+					global::System.IntPtr pfn, 
+					float arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+		}
+
+		internal static void HasThisCall__426(
 					object __this, 
 					global::System.IntPtr pfn, 
 					global::Windows.UI.Text.TextGetOptions arg0, 
@@ -6194,7 +5690,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static void HasThisCall__472<TArg0>(
+		internal static void HasThisCall__427<TArg0>(
 					object __this, 
 					global::System.IntPtr pfn, 
 					global::Windows.UI.Text.TextSetOptions arg0, 
@@ -6203,7 +5699,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static void HasThisCall__473<TArg0>(
+		internal static void HasThisCall__428<TArg0>(
 					object __this, 
 					global::System.IntPtr pfn, 
 					global::Windows.UI.Text.TextGetOptions arg0, 
@@ -6212,7 +5708,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static void HasThisCall__474(
+		internal static void HasThisCall__429(
 					object __this, 
 					global::System.IntPtr pfn, 
 					global::Windows.UI.Text.TextSetOptions arg0, 
@@ -6221,7 +5717,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static int StdCall__475(
+		internal static int StdCall__430(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Text.SelectionOptions arg0)
@@ -6230,7 +5726,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__476(
+		internal static int StdCall__431(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -6242,7 +5738,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int HasThisCall__477(
+		internal static int HasThisCall__432(
 					object __this, 
 					global::System.IntPtr pfn, 
 					global::Windows.UI.Text.TextRangeUnit arg0, 
@@ -6252,7 +5748,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int HasThisCall__478(
+		internal static int HasThisCall__433(
 					object __this, 
 					global::System.IntPtr pfn, 
 					global::Windows.UI.Text.TextRangeUnit arg0, 
@@ -6263,7 +5759,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__479(
+		internal static int StdCall__434(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					ushort arg0)
@@ -6272,7 +5768,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__480(
+		internal static int StdCall__435(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Runtime.InteropServices.HSTRING arg0, 
@@ -6284,7 +5780,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__481(
+		internal static int StdCall__436(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -6296,7 +5792,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__482(
+		internal static int StdCall__437(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Text.PointOptions arg0, 
@@ -6307,7 +5803,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__483(
+		internal static int StdCall__438(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -6321,7 +5817,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__484(
+		internal static int StdCall__439(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Text.PointOptions arg0)
@@ -6330,7 +5826,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__485(
+		internal static int StdCall__440(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Point arg0, 
@@ -6341,7 +5837,17 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static void HasThisCall__486(
+		internal static int StdCall__441(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					int arg0, 
+					int arg1)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static void HasThisCall__442(
 					object __this, 
 					global::System.IntPtr pfn, 
 					char arg0)
@@ -6349,7 +5855,15 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static int HasThisCall__487(
+		internal static void HasThisCall__443(
+					object __this, 
+					global::System.IntPtr pfn, 
+					int arg0)
+		{
+			// This method is implemented elsewhere in the toolchain
+		}
+
+		internal static int HasThisCall__444(
 					object __this, 
 					global::System.IntPtr pfn, 
 					global::Windows.UI.Text.TextRangeUnit arg0, 
@@ -6359,7 +5873,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int HasThisCall__488(
+		internal static int HasThisCall__445(
 					object __this, 
 					global::System.IntPtr pfn, 
 					global::Windows.UI.Text.TextRangeUnit arg0)
@@ -6368,7 +5882,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static bool HasThisCall__489<TArg0>(
+		internal static bool HasThisCall__446<TArg0>(
 					object __this, 
 					global::System.IntPtr pfn, 
 					TArg0 arg0)
@@ -6377,7 +5891,7 @@ namespace __Interop
 			return default(bool);
 		}
 
-		internal static global::Windows.UI.Text.FormatEffect HasThisCall__490(
+		internal static global::Windows.UI.Text.FormatEffect HasThisCall__447(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
@@ -6385,7 +5899,7 @@ namespace __Interop
 			return default(global::Windows.UI.Text.FormatEffect);
 		}
 
-		internal static void HasThisCall__491(
+		internal static void HasThisCall__448(
 					object __this, 
 					global::System.IntPtr pfn, 
 					global::Windows.UI.Text.FormatEffect arg0)
@@ -6393,7 +5907,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static void HasThisCall__492(
+		internal static void HasThisCall__449(
 					object __this, 
 					global::System.IntPtr pfn, 
 					global::Windows.UI.Color arg0)
@@ -6401,7 +5915,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static int StdCall__493(
+		internal static int StdCall__450(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					float arg0, 
@@ -6412,7 +5926,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__494(
+		internal static int StdCall__451(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -6424,7 +5938,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__495(
+		internal static int StdCall__452(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -6434,7 +5948,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static global::System.Uri HasThisCall__496(
+		internal static global::System.Uri HasThisCall__453(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
@@ -6442,7 +5956,7 @@ namespace __Interop
 			return default(global::System.Uri);
 		}
 
-		internal static int StdCall__497(
+		internal static int StdCall__454(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Color arg0, 
@@ -6453,7 +5967,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__498(
+		internal static int StdCall__455(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					uint arg0, 
@@ -6463,7 +5977,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static global::Windows.UI.Core.CoreCursorType HasThisCall__499(
+		internal static global::Windows.UI.Core.CoreCursorType HasThisCall__456(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
@@ -6471,7 +5985,7 @@ namespace __Interop
 			return default(global::Windows.UI.Core.CoreCursorType);
 		}
 
-		internal static int StdCall__500(
+		internal static int StdCall__457(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.ApplicationModel.DataTransfer.DataPackageOperation arg0)
@@ -6480,7 +5994,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__501(
+		internal static int StdCall__458(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.UI.Xaml.Media.Imaging.BitmapCreateOptions arg0)
@@ -6489,7 +6003,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__502(
+		internal static int StdCall__459(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -6501,7 +6015,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__503(
+		internal static int StdCall__460(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.Guid arg0, 
@@ -6512,7 +6026,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__504(
+		internal static int StdCall__461(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -6528,7 +6042,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__505(
+		internal static int StdCall__462(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Graphics.Imaging.BitmapBounds arg0)
@@ -6537,30 +6051,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__506(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0, 
-					global::System.Runtime.InteropServices.HSTRING arg1, 
-					uint arg2, 
-					void* arg3)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__507(
-					global::System.IntPtr pfn, 
-					void* pthis, 
-					global::System.Runtime.InteropServices.HSTRING arg0, 
-					ushort arg1, 
-					void* arg2)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return 0;
-		}
-
-		internal static int StdCall__508(
+		internal static int StdCall__463(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -6574,7 +6065,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__509(
+		internal static int StdCall__464(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -6587,7 +6078,41 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__510(
+		internal static int StdCall__465(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::System.Runtime.InteropServices.HSTRING arg0, 
+					global::System.Runtime.InteropServices.HSTRING arg1, 
+					void* arg2)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__466(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::System.Runtime.InteropServices.HSTRING arg0, 
+					global::System.Runtime.InteropServices.HSTRING arg1, 
+					uint arg2, 
+					void* arg3)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__467(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					global::System.Runtime.InteropServices.HSTRING arg0, 
+					ushort arg1, 
+					void* arg2)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__468(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Windows.Foundation.Rect arg0, 
@@ -6598,7 +6123,17 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__511(
+		internal static int StdCall__469(
+					global::System.IntPtr pfn, 
+					void* pthis, 
+					uint arg0, 
+					int arg1)
+		{
+			// This method is implemented elsewhere in the toolchain
+			return 0;
+		}
+
+		internal static int StdCall__470(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -6608,7 +6143,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IInputStream, ulong> HasThisCall__512(
+		internal static global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IInputStream, ulong> HasThisCall__471(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
@@ -6616,7 +6151,7 @@ namespace __Interop
 			return default(global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Storage.Streams.IInputStream, ulong>);
 		}
 
-		internal static global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress> HasThisCall__513(
+		internal static global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress> HasThisCall__472(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
@@ -6624,7 +6159,7 @@ namespace __Interop
 			return default(global::Windows.Foundation.AsyncOperationProgressHandler<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress>);
 		}
 
-		internal static int StdCall__514(
+		internal static int StdCall__473(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -6634,7 +6169,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken HasThisCall__515(
+		internal static global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken HasThisCall__474(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
@@ -6642,71 +6177,7 @@ namespace __Interop
 			return default(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken);
 		}
 
-		internal static global::Windows.UI.Xaml.RoutedEventHandler HasThisCall__516(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::Windows.UI.Xaml.RoutedEventHandler);
-		}
-
-		internal static global::System.EventHandler<global::VLC.LoginDialogEventArgs> HasThisCall__517(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::System.EventHandler<global::VLC.LoginDialogEventArgs>);
-		}
-
-		internal static global::System.EventHandler<global::VLC.DialogEventArgs> HasThisCall__518(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::System.EventHandler<global::VLC.DialogEventArgs>);
-		}
-
-		internal static global::System.EventHandler<global::VLC.DeferrableEventArgs> HasThisCall__519(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::System.EventHandler<global::VLC.DeferrableEventArgs>);
-		}
-
-		internal static global::System.EventHandler<global::VLC.LogRoutedEventArgs> HasThisCall__520(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::System.EventHandler<global::VLC.LogRoutedEventArgs>);
-		}
-
-		internal static global::System.EventHandler<global::Windows.UI.Xaml.RoutedEventArgs> HasThisCall__521(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::System.EventHandler<global::Windows.UI.Xaml.RoutedEventArgs>);
-		}
-
-		internal static global::System.EventHandler<global::VLC.MediaFailedRoutedEventArgs> HasThisCall__522(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::System.EventHandler<global::VLC.MediaFailedRoutedEventArgs>);
-		}
-
-		internal static global::System.EventHandler<global::VLC.DeferrableCancelEventArgs> HasThisCall__523(
-					object __this, 
-					global::System.IntPtr pfn)
-		{
-			// This method is implemented elsewhere in the toolchain
-			return default(global::System.EventHandler<global::VLC.DeferrableCancelEventArgs>);
-		}
-
-		internal static global::Windows.Foundation.Collections.VectorChangedEventHandler<object> HasThisCall__524(
+		internal static global::Windows.Foundation.Collections.VectorChangedEventHandler<object> HasThisCall__475(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
@@ -6714,7 +6185,7 @@ namespace __Interop
 			return default(global::Windows.Foundation.Collections.VectorChangedEventHandler<object>);
 		}
 
-		internal static global::Windows.UI.Xaml.Data.CurrentChangingEventHandler HasThisCall__525(
+		internal static global::Windows.UI.Xaml.Data.CurrentChangingEventHandler HasThisCall__476(
 					object __this, 
 					global::System.IntPtr pfn)
 		{
@@ -6722,7 +6193,7 @@ namespace __Interop
 			return default(global::Windows.UI.Xaml.Data.CurrentChangingEventHandler);
 		}
 
-		internal static int StdCall__526(
+		internal static int StdCall__477(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -6734,7 +6205,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__527(
+		internal static int StdCall__478(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -6748,7 +6219,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__528(
+		internal static int StdCall__479(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.IntPtr arg0, 
@@ -6762,7 +6233,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__529(
+		internal static int StdCall__480(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.IntPtr arg0)
@@ -6771,7 +6242,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__530(
+		internal static int StdCall__481(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::Internal_WinRT_Interop.WinRTCallbacks_DispatcherQueuePriority__System_Private_WinRTInterop_CoreLib arg0, 
@@ -6782,7 +6253,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__531(
+		internal static int StdCall__482(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -6794,7 +6265,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__532(
+		internal static int StdCall__483(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -6809,7 +6280,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__533(
+		internal static int StdCall__484(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -6822,7 +6293,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__534(
+		internal static int StdCall__485(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -6835,7 +6306,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__535(
+		internal static int StdCall__486(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					int arg0, 
@@ -6846,7 +6317,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static void StdCall__536(
+		internal static void StdCall__487(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					global::System.IntPtr arg0)
@@ -6854,7 +6325,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static int StdCall__537(
+		internal static int StdCall__488(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -6868,7 +6339,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__538(
+		internal static int StdCall__489(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -6880,7 +6351,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static int StdCall__539(
+		internal static int StdCall__490(
 					global::System.IntPtr pfn, 
 					void* pthis, 
 					void* arg0, 
@@ -6893,7 +6364,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static void StdCall__540(
+		internal static void StdCall__491(
 					global::System.IntPtr pfn, 
 					int arg0, 
 					int arg1, 
@@ -6902,7 +6373,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static void Call__541(
+		internal static void Call__492(
 					global::System.IntPtr pfn, 
 					int arg0, 
 					int arg1, 
@@ -6911,7 +6382,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static void StdCall__542(
+		internal static void StdCall__493(
 					global::System.IntPtr pfn, 
 					global::System.IntPtr arg0, 
 					int arg1, 
@@ -6925,7 +6396,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static void Call__543(
+		internal static void Call__494(
 					global::System.IntPtr pfn, 
 					global::System.IntPtr arg0, 
 					int arg1, 
@@ -6943,7 +6414,7 @@ namespace __Interop
 			// This method is implemented elsewhere in the toolchain
 		}
 
-		internal static int StdCall__544(
+		internal static int StdCall__495(
 					global::System.IntPtr pfn, 
 					global::System.IntPtr arg0, 
 					global::System.IntPtr arg1, 
@@ -6958,7 +6429,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static bool Call__545(
+		internal static bool Call__496(
 					global::System.IntPtr pfn, 
 					global::System.Net.Sockets.SafeCloseSocket__System_Net_Sockets arg0, 
 					global::System.Net.Sockets.SafeCloseSocket__System_Net_Sockets arg1, 
@@ -6974,7 +6445,7 @@ namespace __Interop
 			return default(bool);
 		}
 
-		internal static int StdCall__546(
+		internal static int StdCall__497(
 					global::System.IntPtr pfn, 
 					global::System.IntPtr arg0, 
 					global::System.IntPtr arg1, 
@@ -6988,7 +6459,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static bool Call__547(
+		internal static bool Call__498(
 					global::System.IntPtr pfn, 
 					global::System.Net.Sockets.SafeCloseSocket__System_Net_Sockets arg0, 
 					global::System.IntPtr arg1, 
@@ -7003,7 +6474,7 @@ namespace __Interop
 			return default(bool);
 		}
 
-		internal static int StdCall__548(
+		internal static int StdCall__499(
 					global::System.IntPtr pfn, 
 					global::System.IntPtr arg0, 
 					void* arg1, 
@@ -7014,7 +6485,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static bool Call__549(
+		internal static bool Call__500(
 					global::System.IntPtr pfn, 
 					global::System.Net.Sockets.SafeCloseSocket__System_Net_Sockets arg0, 
 					global::System_Threading.NativeOverlapped__System_Private_CoreLib* arg1, 
@@ -7025,7 +6496,7 @@ namespace __Interop
 			return default(bool);
 		}
 
-		internal static int StdCall__550(
+		internal static int StdCall__501(
 					global::System.IntPtr pfn, 
 					global::System.IntPtr arg0, 
 					global::System.IntPtr arg1, 
@@ -7036,7 +6507,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static bool Call__551(
+		internal static bool Call__502(
 					global::System.IntPtr pfn, 
 					global::System.Net.Sockets.SafeCloseSocket__System_Net_Sockets arg0, 
 					global::System.IntPtr arg1, 
@@ -7047,7 +6518,7 @@ namespace __Interop
 			return default(bool);
 		}
 
-		internal static global::System_Net_Sockets.SocketError__System_Net_Primitives StdCall__552(
+		internal static global::System_Net_Sockets.SocketError__System_Net_Primitives StdCall__503(
 					global::System.IntPtr pfn, 
 					global::System.IntPtr arg0, 
 					global::System.IntPtr arg1, 
@@ -7059,7 +6530,7 @@ namespace __Interop
 			return default(global::System_Net_Sockets.SocketError__System_Net_Primitives);
 		}
 
-		internal static global::System_Net_Sockets.SocketError__System_Net_Primitives Call__553(
+		internal static global::System_Net_Sockets.SocketError__System_Net_Primitives Call__504(
 					global::System.IntPtr pfn, 
 					global::System.Net.Sockets.SafeCloseSocket__System_Net_Sockets arg0, 
 					global::System.IntPtr arg1, 
@@ -7072,7 +6543,7 @@ namespace __Interop
 			return default(global::System_Net_Sockets.SocketError__System_Net_Primitives);
 		}
 
-		internal static global::System_Net_Sockets.SocketError__System_Net_Primitives StdCall__554(
+		internal static global::System_Net_Sockets.SocketError__System_Net_Primitives StdCall__505(
 					global::System.IntPtr pfn, 
 					global::System.IntPtr arg0, 
 					global::System.IntPtr arg1, 
@@ -7084,7 +6555,7 @@ namespace __Interop
 			return default(global::System_Net_Sockets.SocketError__System_Net_Primitives);
 		}
 
-		internal static global::System_Net_Sockets.SocketError__System_Net_Primitives Call__555(
+		internal static global::System_Net_Sockets.SocketError__System_Net_Primitives Call__506(
 					global::System.IntPtr pfn, 
 					global::System.IntPtr arg0, 
 					global::System.IntPtr arg1, 
@@ -7097,7 +6568,7 @@ namespace __Interop
 			return default(global::System_Net_Sockets.SocketError__System_Net_Primitives);
 		}
 
-		internal static int StdCall__556(
+		internal static int StdCall__507(
 					global::System.IntPtr pfn, 
 					global::System.IntPtr arg0, 
 					global::System.IntPtr arg1, 
@@ -7110,7 +6581,7 @@ namespace __Interop
 			return 0;
 		}
 
-		internal static bool Call__557(
+		internal static bool Call__508(
 					global::System.IntPtr pfn, 
 					global::System.Net.Sockets.SafeCloseSocket__System_Net_Sockets arg0, 
 					global::System.IntPtr arg1, 
@@ -7173,6 +6644,15 @@ namespace __Interop
 		[global::Internal.PreInitializedAddrOfDelegate]
 		public delegate int AddrOfTarget4(
 					global::System.IntPtr a0, 
+					void* a1);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget5(
+					global::System.IntPtr a0, 
 					void* a1, 
 					void* a2);
 
@@ -7181,16 +6661,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget5(global::System.IntPtr a0);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget6(
-					global::System.IntPtr a0, 
-					global::System.Runtime.InteropServices.HSTRING a1);
+		public delegate int AddrOfTarget6(global::System.IntPtr a0);
 
 		#endif
 
@@ -7199,8 +6670,7 @@ namespace __Interop
 		[global::Internal.PreInitializedAddrOfDelegate]
 		public delegate int AddrOfTarget7(
 					global::System.IntPtr a0, 
-					global::Windows.Foundation.Size a1, 
-					global::Windows.Foundation.Size* a2);
+					global::System.Runtime.InteropServices.HSTRING a1);
 
 		#endif
 
@@ -7209,7 +6679,8 @@ namespace __Interop
 		[global::Internal.PreInitializedAddrOfDelegate]
 		public delegate int AddrOfTarget8(
 					global::System.IntPtr a0, 
-					void* a1);
+					global::Windows.Foundation.Size a1, 
+					global::Windows.Foundation.Size* a2);
 
 		#endif
 
@@ -7589,7 +7060,7 @@ namespace __Interop
 		[global::Internal.PreInitializedAddrOfDelegate]
 		public delegate int AddrOfTarget47(
 					global::System.IntPtr a0, 
-					global::Microsoft.Graphics.Canvas.CanvasBufferPrecision* a1);
+					uint* a1);
 
 		#endif
 
@@ -7598,7 +7069,7 @@ namespace __Interop
 		[global::Internal.PreInitializedAddrOfDelegate]
 		public delegate int AddrOfTarget48(
 					global::System.IntPtr a0, 
-					uint* a1);
+					uint a1);
 
 		#endif
 
@@ -7607,8 +7078,7 @@ namespace __Interop
 		[global::Internal.PreInitializedAddrOfDelegate]
 		public delegate int AddrOfTarget49(
 					global::System.IntPtr a0, 
-					global::System.Runtime.InteropServices.HSTRING a1, 
-					sbyte* a2);
+					ulong* a1);
 
 		#endif
 
@@ -7617,56 +7087,6 @@ namespace __Interop
 		[global::Internal.PreInitializedAddrOfDelegate]
 		public delegate int AddrOfTarget50(
 					global::System.IntPtr a0, 
-					global::System.Runtime.InteropServices.HSTRING a1, 
-					void* a2, 
-					sbyte* a3);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget51(
-					global::System.IntPtr a0, 
-					uint a1, 
-					void** a2, 
-					uint* a3);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget52(
-					global::System.IntPtr a0, 
-					void** a1, 
-					void** a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget53(
-					global::System.IntPtr a0, 
-					uint a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget54(
-					global::System.IntPtr a0, 
-					ulong* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget55(
-					global::System.IntPtr a0, 
 					ulong a1);
 
 		#endif
@@ -7674,7 +7094,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget56(
+		public delegate int AddrOfTarget51(
 					global::System.IntPtr a0, 
 					ulong a1, 
 					void** a2);
@@ -7684,7 +7104,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget57(
+		public delegate int AddrOfTarget52(
 					global::System.IntPtr a0, 
 					void* a1, 
 					uint a2, 
@@ -7696,7 +7116,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget58(
+		public delegate int AddrOfTarget53(
 					global::System.IntPtr a0, 
 					void* a1, 
 					uint a2);
@@ -7706,7 +7126,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget59(
+		public delegate int AddrOfTarget54(
 					global::System.IntPtr a0, 
 					void* a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -7716,11 +7136,60 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget55(
+					global::System.IntPtr a0, 
+					global::Microsoft.Graphics.Canvas.CanvasBufferPrecision* a1);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget56(
+					global::System.IntPtr a0, 
+					global::Microsoft.Graphics.Canvas.Effects.ColorManagementSimpleProfile* a1);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget57(
+					global::System.IntPtr a0, 
+					global::System.Runtime.InteropServices.HSTRING a1, 
+					sbyte* a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget58(
+					global::System.IntPtr a0, 
+					global::System.Runtime.InteropServices.HSTRING a1, 
+					void* a2, 
+					sbyte* a3);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget59(
+					global::System.IntPtr a0, 
+					uint a1, 
+					void** a2, 
+					uint* a3);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
 		public delegate int AddrOfTarget60(
 					global::System.IntPtr a0, 
-					void* a1, 
-					uint* a2, 
-					sbyte* a3);
+					void** a1, 
+					void** a2);
 
 		#endif
 
@@ -7730,295 +7199,6 @@ namespace __Interop
 		public delegate int AddrOfTarget61(
 					global::System.IntPtr a0, 
 					uint a1, 
-					uint a2, 
-					void** a3, 
-					uint* a4);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget62(
-					global::System.IntPtr a0, 
-					int a1, 
-					global::System.Runtime.InteropServices.HSTRING a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget63(
-					global::System.IntPtr a0, 
-					global::System.Runtime.InteropServices.HSTRING a1, 
-					global::System.Runtime.InteropServices.HSTRING a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget64(
-					global::System.IntPtr a0, 
-					void* a1, 
-					global::System.Runtime.InteropServices.HSTRING a2, 
-					global::System.Runtime.InteropServices.HSTRING a3, 
-					global::System.Runtime.InteropServices.HSTRING a4, 
-					sbyte a5);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget65(
-					global::System.IntPtr a0, 
-					void* a1, 
-					global::System.Runtime.InteropServices.HSTRING a2, 
-					global::System.Runtime.InteropServices.HSTRING a3, 
-					global::libVLCX.Question a4, 
-					global::System.Runtime.InteropServices.HSTRING a5, 
-					global::System.Runtime.InteropServices.HSTRING a6, 
-					global::System.Runtime.InteropServices.HSTRING a7);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget66(
-					global::System.IntPtr a0, 
-					void* a1, 
-					global::System.Runtime.InteropServices.HSTRING a2, 
-					global::System.Runtime.InteropServices.HSTRING a3, 
-					sbyte a4, 
-					float a5, 
-					global::System.Runtime.InteropServices.HSTRING a6);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget67(
-					global::System.IntPtr a0, 
-					void* a1, 
-					float a2, 
-					global::System.Runtime.InteropServices.HSTRING a3);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget68(
-					global::System.IntPtr a0, 
-					float a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget69(
-					global::System.IntPtr a0, 
-					long a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget70(
-					global::System.IntPtr a0, 
-					int a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget71(
-					global::System.IntPtr a0, 
-					global::libVLCX.TrackType a1, 
-					int a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget72(
-					global::System.IntPtr a0, 
-					global::Microsoft.Graphics.Canvas.Effects.ColorManagementSimpleProfile* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget73(
-					global::System.IntPtr a0, 
-					global::System.Runtime.InteropServices.HSTRING a1, 
-					global::System.Runtime.InteropServices.HSTRING a2, 
-					global::System.Runtime.InteropServices.HSTRING a3, 
-					sbyte a4, 
-					global::System.IntPtr* a5);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget74(
-					global::System.IntPtr a0, 
-					global::Windows.UI.Xaml.Media.MediaElementState* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget75(
-					global::System.IntPtr a0, 
-					global::VLC.DeinterlaceMode* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget76(
-					global::System.IntPtr a0, 
-					global::System.TimeSpan* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget77(
-					global::System.IntPtr a0, 
-					global::Windows.UI.Xaml.Media.Stretch* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget78(
-					global::System.IntPtr a0, 
-					global::VLC.DeinterlaceMode a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget79(
-					global::System.IntPtr a0, 
-					global::System.TimeSpan a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget80(
-					global::System.IntPtr a0, 
-					global::Windows.UI.Xaml.Media.Stretch a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget81(
-					global::System.IntPtr a0, 
-					global::Windows.Foundation.Diagnostics.LoggingLevel* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget82(
-					global::System.IntPtr a0, 
-					global::System.Runtime.InteropServices.HSTRING a1, 
-					global::System.Runtime.InteropServices.HSTRING a2, 
-					global::libVLCX.Question a3, 
-					global::System.Runtime.InteropServices.HSTRING a4, 
-					global::System.Runtime.InteropServices.HSTRING a5, 
-					global::System.Runtime.InteropServices.HSTRING a6, 
-					global::System.IntPtr* a7);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget83(
-					global::System.IntPtr a0, 
-					global::libVLCX.Question* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget84(
-					global::System.IntPtr a0, 
-					global::System.Runtime.InteropServices.HSTRING a1, 
-					global::Windows.Foundation.Diagnostics.LoggingLevel a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget85(
-					global::System.IntPtr a0, 
-					global::System.Runtime.InteropServices.HSTRING a1, 
-					int a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget86(
-					global::System.IntPtr a0, 
-					global::System.Runtime.InteropServices.HSTRING a1, 
-					int a2, 
-					global::Windows.Foundation.Diagnostics.LoggingLevel a3);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget87(
-					global::System.IntPtr a0, 
-					global::libVLCX.MediaState* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget88(
-					global::System.IntPtr a0, 
-					global::Windows.UI.Color* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget89(
-					global::System.IntPtr a0, 
-					uint a1, 
 					global::System.Type__Impl.UnsafeType* a2);
 
 		#endif
@@ -8026,7 +7206,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget90(
+		public delegate int AddrOfTarget62(
 					global::System.IntPtr a0, 
 					global::System.Type__Impl.UnsafeType a1, 
 					uint* a2, 
@@ -8037,7 +7217,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget91(
+		public delegate int AddrOfTarget63(
 					global::System.IntPtr a0, 
 					uint a1, 
 					uint a2, 
@@ -8049,7 +7229,58 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget92(
+		public delegate int AddrOfTarget64(
+					global::System.IntPtr a0, 
+					global::System.Guid* a1);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget65(
+					global::System.IntPtr a0, 
+					global::Windows.Media.Capture.Frames.MediaFrameReaderStartStatus* a1);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget66(
+					global::System.IntPtr a0, 
+					void* a1, 
+					uint* a2, 
+					sbyte* a3);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget67(
+					global::System.IntPtr a0, 
+					uint a1, 
+					void* a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget68(
+					global::System.IntPtr a0, 
+					uint a1, 
+					uint a2, 
+					void** a3, 
+					uint* a4);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget69(
 					global::System.IntPtr a0, 
 					global::System.Runtime.InteropServices.HSTRING a1, 
 					global::Windows.Storage.CreationCollisionOption a2, 
@@ -8060,7 +7291,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget93(
+		public delegate int AddrOfTarget70(
 					global::System.IntPtr a0, 
 					global::System.Runtime.InteropServices.HSTRING a1, 
 					global::Windows.Storage.NameCollisionOption a2, 
@@ -8071,7 +7302,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget94(
+		public delegate int AddrOfTarget71(
 					global::System.IntPtr a0, 
 					global::Windows.Storage.StorageDeleteOption a1, 
 					void** a2);
@@ -8081,7 +7312,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget95(
+		public delegate int AddrOfTarget72(
 					global::System.IntPtr a0, 
 					global::Windows.Storage.FileAttributes* a1);
 
@@ -8090,7 +7321,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget96(
+		public delegate int AddrOfTarget73(
 					global::System.IntPtr a0, 
 					global::System.DateTimeOffset__Impl.UnsafeType* a1);
 
@@ -8099,7 +7330,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget97(
+		public delegate int AddrOfTarget74(
 					global::System.IntPtr a0, 
 					global::Windows.Storage.StorageItemTypes a1, 
 					sbyte* a2);
@@ -8109,7 +7340,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget98(
+		public delegate int AddrOfTarget75(
 					global::System.IntPtr a0, 
 					global::Windows.Storage.FileAccessMode a1, 
 					void** a2);
@@ -8119,7 +7350,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget99(
+		public delegate int AddrOfTarget76(
 					global::System.IntPtr a0, 
 					void* a1, 
 					global::System.Runtime.InteropServices.HSTRING a2, 
@@ -8130,7 +7361,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget100(
+		public delegate int AddrOfTarget77(
 					global::System.IntPtr a0, 
 					void* a1, 
 					global::System.Runtime.InteropServices.HSTRING a2, 
@@ -8142,35 +7373,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget101(
-					global::System.IntPtr a0, 
-					global::System.Guid* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget102(
-					global::System.IntPtr a0, 
-					global::Windows.Media.Capture.Frames.MediaFrameReaderStartStatus* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget103(
-					global::System.IntPtr a0, 
-					uint a1, 
-					void* a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget104(
+		public delegate int AddrOfTarget78(
 					global::System.IntPtr a0, 
 					global::Windows.System.RemoteSystems.RemoteSystemAccessStatus* a1);
 
@@ -8179,7 +7382,16 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget105(
+		public delegate int AddrOfTarget79(
+					global::System.IntPtr a0, 
+					global::Windows.UI.Color* a1);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget80(
 					global::System.IntPtr a0, 
 					void* a1, 
 					global::Windows.UI.Xaml.Visibility a2);
@@ -8189,7 +7401,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget106(
+		public delegate int AddrOfTarget81(
 					global::System.IntPtr a0, 
 					void* a1, 
 					global::System.Runtime.InteropServices.HSTRING a2);
@@ -8199,7 +7411,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget107(
+		public delegate int AddrOfTarget82(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode* a1);
 
@@ -8208,7 +7420,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget108(
+		public delegate int AddrOfTarget83(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.CaretType* a1);
 
@@ -8217,7 +7429,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget109(
+		public delegate int AddrOfTarget84(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.CaretType a1);
 
@@ -8226,7 +7438,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget110(
+		public delegate int AddrOfTarget85(
 					global::System.IntPtr a0, 
 					float* a1);
 
@@ -8235,7 +7447,16 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget111(
+		public delegate int AddrOfTarget86(
+					global::System.IntPtr a0, 
+					float a1);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget87(
 					global::System.IntPtr a0, 
 					int a1, 
 					int a2, 
@@ -8246,7 +7467,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget112(
+		public delegate int AddrOfTarget88(
 					global::System.IntPtr a0, 
 					global::Windows.Foundation.Point a1, 
 					global::Windows.UI.Text.PointOptions a2, 
@@ -8257,7 +7478,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget113(
+		public delegate int AddrOfTarget89(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.TextGetOptions a1, 
 					global::System.Runtime.InteropServices.HSTRING* a2);
@@ -8267,7 +7488,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget114(
+		public delegate int AddrOfTarget90(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.TextSetOptions a1, 
 					void* a2);
@@ -8277,7 +7498,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget115(
+		public delegate int AddrOfTarget91(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.TextGetOptions a1, 
 					void* a2);
@@ -8287,7 +7508,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget116(
+		public delegate int AddrOfTarget92(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.TextSetOptions a1, 
 					global::System.Runtime.InteropServices.HSTRING a2);
@@ -8297,7 +7518,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget117(
+		public delegate int AddrOfTarget93(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.SelectionOptions* a1);
 
@@ -8306,7 +7527,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget118(
+		public delegate int AddrOfTarget94(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.SelectionOptions a1);
 
@@ -8315,7 +7536,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget119(
+		public delegate int AddrOfTarget95(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.SelectionType* a1);
 
@@ -8324,7 +7545,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget120(
+		public delegate int AddrOfTarget96(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.TextRangeUnit a1, 
 					sbyte a2, 
@@ -8335,7 +7556,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget121(
+		public delegate int AddrOfTarget97(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.TextRangeUnit a1, 
 					int a2, 
@@ -8347,7 +7568,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget122(
+		public delegate int AddrOfTarget98(
 					global::System.IntPtr a0, 
 					ushort* a1);
 
@@ -8356,7 +7577,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget123(
+		public delegate int AddrOfTarget99(
 					global::System.IntPtr a0, 
 					ushort a1);
 
@@ -8365,7 +7586,16 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget124(
+		public delegate int AddrOfTarget100(
+					global::System.IntPtr a0, 
+					int a1);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget101(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.RangeGravity* a1);
 
@@ -8374,7 +7604,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget125(
+		public delegate int AddrOfTarget102(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.RangeGravity a1);
 
@@ -8383,7 +7613,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget126(
+		public delegate int AddrOfTarget103(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.LetterCase a1);
 
@@ -8392,7 +7622,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget127(
+		public delegate int AddrOfTarget104(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.TextRangeUnit a1, 
 					int a2, 
@@ -8403,7 +7633,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget128(
+		public delegate int AddrOfTarget105(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.TextRangeUnit a1, 
 					int* a2);
@@ -8413,7 +7643,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget129(
+		public delegate int AddrOfTarget106(
 					global::System.IntPtr a0, 
 					global::System.Runtime.InteropServices.HSTRING a1, 
 					int a2, 
@@ -8425,7 +7655,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget130(
+		public delegate int AddrOfTarget107(
 					global::System.IntPtr a0, 
 					uint* a1, 
 					int a2);
@@ -8435,7 +7665,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget131(
+		public delegate int AddrOfTarget108(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.HorizontalCharacterAlignment a1, 
 					global::Windows.UI.Text.VerticalCharacterAlignment a2, 
@@ -8447,7 +7677,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget132(
+		public delegate int AddrOfTarget109(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.PointOptions a1, 
 					global::Windows.Foundation.Rect* a2, 
@@ -8458,7 +7688,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget133(
+		public delegate int AddrOfTarget110(
 					global::System.IntPtr a0, 
 					int a1, 
 					int a2, 
@@ -8472,7 +7702,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget134(
+		public delegate int AddrOfTarget111(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.PointOptions a1);
 
@@ -8481,7 +7711,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget135(
+		public delegate int AddrOfTarget112(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.TextRangeUnit a1, 
 					int a2, 
@@ -8492,7 +7722,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget136(
+		public delegate int AddrOfTarget113(
 					global::System.IntPtr a0, 
 					global::Windows.Foundation.Point a1, 
 					global::Windows.UI.Text.PointOptions a2, 
@@ -8503,7 +7733,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget137(
+		public delegate int AddrOfTarget114(
 					global::System.IntPtr a0, 
 					int a1, 
 					int a2);
@@ -8513,7 +7743,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget138(
+		public delegate int AddrOfTarget115(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.FormatEffect* a1);
 
@@ -8522,7 +7752,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget139(
+		public delegate int AddrOfTarget116(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.FormatEffect a1);
 
@@ -8531,7 +7761,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget140(
+		public delegate int AddrOfTarget117(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Color a1);
 
@@ -8540,7 +7770,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget141(
+		public delegate int AddrOfTarget118(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.FontStretch* a1);
 
@@ -8549,7 +7779,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget142(
+		public delegate int AddrOfTarget119(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.FontStretch a1);
 
@@ -8558,7 +7788,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget143(
+		public delegate int AddrOfTarget120(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.FontStyle* a1);
 
@@ -8567,7 +7797,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget144(
+		public delegate int AddrOfTarget121(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.FontStyle a1);
 
@@ -8576,7 +7806,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget145(
+		public delegate int AddrOfTarget122(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.LinkType* a1);
 
@@ -8585,7 +7815,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget146(
+		public delegate int AddrOfTarget123(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.TextScript* a1);
 
@@ -8594,7 +7824,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget147(
+		public delegate int AddrOfTarget124(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.TextScript a1);
 
@@ -8603,7 +7833,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget148(
+		public delegate int AddrOfTarget125(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.UnderlineType* a1);
 
@@ -8612,7 +7842,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget149(
+		public delegate int AddrOfTarget126(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.UnderlineType a1);
 
@@ -8621,7 +7851,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget150(
+		public delegate int AddrOfTarget127(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.ParagraphAlignment* a1);
 
@@ -8630,7 +7860,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget151(
+		public delegate int AddrOfTarget128(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.ParagraphAlignment a1);
 
@@ -8639,7 +7869,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget152(
+		public delegate int AddrOfTarget129(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.LineSpacingRule* a1);
 
@@ -8648,7 +7878,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget153(
+		public delegate int AddrOfTarget130(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.MarkerAlignment* a1);
 
@@ -8657,7 +7887,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget154(
+		public delegate int AddrOfTarget131(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.MarkerAlignment a1);
 
@@ -8666,7 +7896,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget155(
+		public delegate int AddrOfTarget132(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.MarkerStyle* a1);
 
@@ -8675,7 +7905,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget156(
+		public delegate int AddrOfTarget133(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.MarkerStyle a1);
 
@@ -8684,7 +7914,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget157(
+		public delegate int AddrOfTarget134(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.MarkerType* a1);
 
@@ -8693,7 +7923,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget158(
+		public delegate int AddrOfTarget135(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.MarkerType a1);
 
@@ -8702,7 +7932,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget159(
+		public delegate int AddrOfTarget136(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.ParagraphStyle* a1);
 
@@ -8711,7 +7941,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget160(
+		public delegate int AddrOfTarget137(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.ParagraphStyle a1);
 
@@ -8720,7 +7950,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget161(
+		public delegate int AddrOfTarget138(
 					global::System.IntPtr a0, 
 					float a1, 
 					global::Windows.UI.Text.TabAlignment a2, 
@@ -8731,7 +7961,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget162(
+		public delegate int AddrOfTarget139(
 					global::System.IntPtr a0, 
 					int a1, 
 					float* a2, 
@@ -8743,7 +7973,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget163(
+		public delegate int AddrOfTarget140(
 					global::System.IntPtr a0, 
 					float a1, 
 					float a2, 
@@ -8754,7 +7984,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget164(
+		public delegate int AddrOfTarget141(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.LineSpacingRule a1, 
 					float a2);
@@ -8764,7 +7994,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget165(
+		public delegate int AddrOfTarget142(
 					global::System.IntPtr a0, 
 					global::Windows.System.VirtualKey* a1);
 
@@ -8773,7 +8003,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget166(
+		public delegate int AddrOfTarget143(
 					global::System.IntPtr a0, 
 					global::System.Runtime.InteropServices.__vtable_IInspectable** a1);
 
@@ -8782,7 +8012,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget167(
+		public delegate int AddrOfTarget144(
 					global::System.IntPtr a0, 
 					uint a1, 
 					global::System.Runtime.InteropServices.__vtable_IInspectable** a2, 
@@ -8793,7 +8023,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget168(
+		public delegate int AddrOfTarget145(
 					global::System.IntPtr a0, 
 					uint a1, 
 					global::System.DateTimeOffset__Impl.UnsafeType* a2, 
@@ -8804,7 +8034,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget169(
+		public delegate int AddrOfTarget146(
 					global::System.IntPtr a0, 
 					uint a1, 
 					global::System.DateTimeOffset__Impl.UnsafeType* a2);
@@ -8814,7 +8044,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget170(
+		public delegate int AddrOfTarget147(
 					global::System.IntPtr a0, 
 					global::System.DateTimeOffset__Impl.UnsafeType a1, 
 					uint* a2, 
@@ -8825,7 +8055,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget171(
+		public delegate int AddrOfTarget148(
 					global::System.IntPtr a0, 
 					uint a1, 
 					global::System.DateTimeOffset__Impl.UnsafeType a2);
@@ -8835,7 +8065,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget172(
+		public delegate int AddrOfTarget149(
 					global::System.IntPtr a0, 
 					global::System.DateTimeOffset__Impl.UnsafeType a1);
 
@@ -8844,7 +8074,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget173(
+		public delegate int AddrOfTarget150(
 					global::System.IntPtr a0, 
 					uint a1, 
 					uint a2, 
@@ -8856,7 +8086,16 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget174(
+		public delegate int AddrOfTarget151(
+					global::System.IntPtr a0, 
+					global::System.TimeSpan* a1);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget152(
 					global::System.IntPtr a0, 
 					uint a1, 
 					global::System.TimeSpan* a2, 
@@ -8867,7 +8106,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget175(
+		public delegate int AddrOfTarget153(
 					global::System.IntPtr a0, 
 					uint a1, 
 					global::System.TimeSpan* a2);
@@ -8877,7 +8116,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget176(
+		public delegate int AddrOfTarget154(
 					global::System.IntPtr a0, 
 					global::System.TimeSpan a1, 
 					uint* a2, 
@@ -8888,7 +8127,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget177(
+		public delegate int AddrOfTarget155(
 					global::System.IntPtr a0, 
 					uint a1, 
 					global::System.TimeSpan a2);
@@ -8898,7 +8137,16 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget178(
+		public delegate int AddrOfTarget156(
+					global::System.IntPtr a0, 
+					global::System.TimeSpan a1);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget157(
 					global::System.IntPtr a0, 
 					uint a1, 
 					uint a2, 
@@ -8910,7 +8158,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget179(
+		public delegate int AddrOfTarget158(
 					global::System.IntPtr a0, 
 					ushort a1, 
 					global::System.Runtime.InteropServices.HSTRING* a2);
@@ -8920,7 +8168,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget180(
+		public delegate int AddrOfTarget159(
 					global::System.IntPtr a0, 
 					ushort a1, 
 					sbyte* a2);
@@ -8930,7 +8178,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget181(
+		public delegate int AddrOfTarget160(
 					global::System.IntPtr a0, 
 					ushort a1, 
 					global::System.Runtime.InteropServices.HSTRING a2, 
@@ -8941,7 +8189,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget182(
+		public delegate int AddrOfTarget161(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Xaml.CornerRadius* a1);
 
@@ -8950,7 +8198,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget183(
+		public delegate int AddrOfTarget162(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Xaml.Duration* a1);
 
@@ -8959,7 +8207,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget184(
+		public delegate int AddrOfTarget163(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Xaml.GridLength* a1);
 
@@ -8968,7 +8216,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget185(
+		public delegate int AddrOfTarget164(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Xaml.Thickness* a1);
 
@@ -8977,7 +8225,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget186(
+		public delegate int AddrOfTarget165(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Xaml.Controls.Primitives.GeneratorPosition* a1);
 
@@ -8986,7 +8234,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget187(
+		public delegate int AddrOfTarget166(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Xaml.Media.Matrix* a1);
 
@@ -8995,7 +8243,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget188(
+		public delegate int AddrOfTarget167(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Xaml.Media.Animation.KeyTime* a1);
 
@@ -9004,7 +8252,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget189(
+		public delegate int AddrOfTarget168(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Xaml.Media.Animation.RepeatBehavior* a1);
 
@@ -9013,7 +8261,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget190(
+		public delegate int AddrOfTarget169(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Xaml.Media.Media3D.Matrix3D* a1);
 
@@ -9022,7 +8270,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget191(
+		public delegate int AddrOfTarget170(
 					global::System.IntPtr a0, 
 					global::System.Numerics.Vector2* a1);
 
@@ -9031,7 +8279,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget192(
+		public delegate int AddrOfTarget171(
 					global::System.IntPtr a0, 
 					global::System.Numerics.Vector3* a1);
 
@@ -9040,7 +8288,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget193(
+		public delegate int AddrOfTarget172(
 					global::System.IntPtr a0, 
 					global::System.Numerics.Vector4* a1);
 
@@ -9049,7 +8297,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget194(
+		public delegate int AddrOfTarget173(
 					global::System.IntPtr a0, 
 					global::System.Numerics.Matrix3x2* a1);
 
@@ -9058,7 +8306,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget195(
+		public delegate int AddrOfTarget174(
 					global::System.IntPtr a0, 
 					global::System.Numerics.Matrix4x4* a1);
 
@@ -9067,7 +8315,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget196(
+		public delegate int AddrOfTarget175(
 					global::System.IntPtr a0, 
 					global::System.Numerics.Plane* a1);
 
@@ -9076,7 +8324,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget197(
+		public delegate int AddrOfTarget176(
 					global::System.IntPtr a0, 
 					global::System.Numerics.Quaternion* a1);
 
@@ -9085,7 +8333,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget198(
+		public delegate int AddrOfTarget177(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Xaml.Media.Imaging.DecodePixelType* a1);
 
@@ -9094,7 +8342,16 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget199(
+		public delegate int AddrOfTarget178(
+					global::System.IntPtr a0, 
+					global::Windows.UI.Xaml.Media.Stretch* a1);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget179(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Xaml.Controls.Orientation* a1);
 
@@ -9103,7 +8360,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget200(
+		public delegate int AddrOfTarget180(
 					global::System.IntPtr a0, 
 					void* a1, 
 					double a2);
@@ -9113,7 +8370,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget201(
+		public delegate int AddrOfTarget181(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Xaml.Automation.Peers.AccessibilityView* a1);
 
@@ -9122,7 +8379,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget202(
+		public delegate int AddrOfTarget182(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Core.CoreCursorType* a1);
 
@@ -9131,7 +8388,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget203(
+		public delegate int AddrOfTarget183(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Xaml.TextWrapping* a1);
 
@@ -9140,7 +8397,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget204(
+		public delegate int AddrOfTarget184(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Text.FontWeight* a1);
 
@@ -9149,7 +8406,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget205(
+		public delegate int AddrOfTarget185(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Xaml.Controls.Primitives.PlacementMode* a1);
 
@@ -9158,34 +8415,16 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget206(
+		public delegate int AddrOfTarget186(
 					global::System.IntPtr a0, 
-					global::Microsoft.UI.Xaml.Controls.TeachingTipPlacementMode* a1);
+					global::Microsoft.UI.Xaml.Controls.InfoBarSeverity* a1);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget207(
-					global::System.IntPtr a0, 
-					global::Microsoft.UI.Xaml.Controls.TeachingTipTailVisibility* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget208(
-					global::System.IntPtr a0, 
-					global::Microsoft.UI.Xaml.Controls.TeachingTipHeroContentPlacementMode* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget209(
+		public delegate int AddrOfTarget187(
 					global::System.IntPtr a0, 
 					void* a1, 
 					void* a2, 
@@ -9196,7 +8435,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget210(
+		public delegate int AddrOfTarget188(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Xaml.Media.Animation.EasingMode* a1);
 
@@ -9205,7 +8444,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget211(
+		public delegate int AddrOfTarget189(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Core.AppViewBackButtonVisibility* a1);
 
@@ -9214,7 +8453,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget212(
+		public delegate int AddrOfTarget190(
 					global::System.IntPtr a0, 
 					global::Windows.System.RemoteSystems.RemoteSystemDiscoveryType* a1);
 
@@ -9223,7 +8462,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget213(
+		public delegate int AddrOfTarget191(
 					global::System.IntPtr a0, 
 					global::Windows.System.RemoteSystems.RemoteSystemAuthorizationKind* a1);
 
@@ -9232,7 +8471,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget214(
+		public delegate int AddrOfTarget192(
 					global::System.IntPtr a0, 
 					global::Windows.System.RemoteSystems.RemoteSystemStatusType* a1);
 
@@ -9241,7 +8480,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget215(
+		public delegate int AddrOfTarget193(
 					global::System.IntPtr a0, 
 					uint* a1, 
 					void*** a2);
@@ -9251,7 +8490,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget216(
+		public delegate int AddrOfTarget194(
 					global::System.IntPtr a0, 
 					global::Windows.UI.ViewManagement.HandPreference* a1);
 
@@ -9260,7 +8499,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget217(
+		public delegate int AddrOfTarget195(
 					global::System.IntPtr a0, 
 					global::Windows.UI.ViewManagement.UserInteractionMode* a1);
 
@@ -9269,7 +8508,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget218(
+		public delegate int AddrOfTarget196(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Input.RadialControllerMenuKnownIcon* a1);
 
@@ -9278,7 +8517,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget219(
+		public delegate int AddrOfTarget197(
 					global::System.IntPtr a0, 
 					void* a1, 
 					global::System.Runtime.InteropServices.HSTRING* a2);
@@ -9288,7 +8527,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget220(
+		public delegate int AddrOfTarget198(
 					global::System.IntPtr a0, 
 					void* a1, 
 					global::System.Runtime.InteropServices.HSTRING a2, 
@@ -9299,16 +8538,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget221(
-					global::System.IntPtr a0, 
-					global::Windows.UI.ViewManagement.ApplicationViewState* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget222(
+		public delegate int AddrOfTarget199(
 					global::System.IntPtr a0, 
 					global::Windows.ApplicationModel.Activation.ActivationKind* a1);
 
@@ -9317,7 +8547,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget223(
+		public delegate int AddrOfTarget200(
 					global::System.IntPtr a0, 
 					global::Windows.Devices.Enumeration.DeviceInformationKind* a1);
 
@@ -9326,7 +8556,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget224(
+		public delegate int AddrOfTarget201(
 					global::System.IntPtr a0, 
 					global::Windows.UI.Input.Inking.InkDrawingAttributesKind* a1);
 
@@ -9335,7 +8565,16 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget225(
+		public delegate int AddrOfTarget202(
+					global::System.IntPtr a0, 
+					global::Windows.UI.ViewManagement.ApplicationViewState* a1);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget203(
 					global::System.IntPtr a0, 
 					global::Microsoft.Graphics.Canvas.Text.CanvasAnalyzedBidi* a1);
 
@@ -9344,7 +8583,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget226(
+		public delegate int AddrOfTarget204(
 					global::System.IntPtr a0, 
 					global::Microsoft.Graphics.Canvas.Text.CanvasAnalyzedScript* a1);
 
@@ -9353,7 +8592,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget227(
+		public delegate int AddrOfTarget205(
 					global::System.IntPtr a0, 
 					global::Microsoft.Graphics.Canvas.Text.CanvasAnalyzedGlyphOrientation__Impl.UnsafeType* a1);
 
@@ -9362,16 +8601,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget228(
-					global::System.IntPtr a0, 
-					global::libVLCX.TrackType* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget229(
+		public delegate int AddrOfTarget206(
 					global::System.IntPtr a0, 
 					ulong* a1, 
 					sbyte* a2);
@@ -9381,7 +8611,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget230(
+		public delegate int AddrOfTarget207(
 					global::System.IntPtr a0, 
 					void* a1, 
 					ulong a2);
@@ -9391,7 +8621,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget231(
+		public delegate int AddrOfTarget208(
 					global::System.IntPtr a0, 
 					void* a1, 
 					global::Windows.Web.Http.HttpProgress__Impl.UnsafeType a2);
@@ -9401,7 +8631,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget232(
+		public delegate int AddrOfTarget209(
 					global::System.IntPtr a0, 
 					global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken* a1);
 
@@ -9410,7 +8640,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget233(
+		public delegate int AddrOfTarget210(
 					global::System.IntPtr a0, 
 					global::Windows.ApplicationModel.Resources.Core.ResourceCandidateKind* a1);
 
@@ -9419,7 +8649,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget234(
+		public delegate int AddrOfTarget211(
 					global::System.IntPtr a0, 
 					global::Windows.Web.Http.HttpStatusCode* a1);
 
@@ -9428,7 +8658,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget235(
+		public delegate int AddrOfTarget212(
 					global::System.IntPtr a0, 
 					long* a1);
 
@@ -9437,7 +8667,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget236(
+		public delegate int AddrOfTarget213(
 					global::System.IntPtr a0, 
 					uint a1, 
 					global::System.Runtime.InteropServices.__vtable_IInspectable** a2);
@@ -9447,7 +8677,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget237(
+		public delegate int AddrOfTarget214(
 					global::System.IntPtr a0, 
 					global::System.Runtime.InteropServices.__vtable_IInspectable* a1, 
 					uint* a2, 
@@ -9458,7 +8688,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget238(
+		public delegate int AddrOfTarget215(
 					global::System.IntPtr a0, 
 					uint a1, 
 					global::System.Runtime.InteropServices.__vtable_IInspectable* a2);
@@ -9468,7 +8698,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget239(
+		public delegate int AddrOfTarget216(
 					global::System.IntPtr a0, 
 					global::System.Runtime.InteropServices.__vtable_IInspectable* a1);
 
@@ -9477,7 +8707,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget240(
+		public delegate int AddrOfTarget217(
 					global::System.IntPtr a0, 
 					uint a1, 
 					uint a2, 
@@ -9489,7 +8719,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget241(
+		public delegate int AddrOfTarget218(
 					global::System.IntPtr a0, 
 					global::System.IntPtr a1, 
 					global::System.Guid* a2, 
@@ -9500,7 +8730,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget242(
+		public delegate int AddrOfTarget219(
 					global::System.IntPtr a0, 
 					global::System.IntPtr* a1);
 
@@ -9509,7 +8739,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget243(
+		public delegate int AddrOfTarget220(
 					global::System.IntPtr a0, 
 					global::System.Guid* a1, 
 					global::System.IntPtr a2, 
@@ -9523,7 +8753,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget244(
+		public delegate int AddrOfTarget221(
 					global::System.IntPtr a0, 
 					global::System.Guid* a1, 
 					global::System.IntPtr a2, 
@@ -9537,7 +8767,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget245(
+		public delegate int AddrOfTarget222(
 					global::System.IntPtr a0, 
 					global::System.IntPtr a1, 
 					global::System.Guid* a2, 
@@ -9551,7 +8781,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget246(
+		public delegate int AddrOfTarget223(
 					global::System.IntPtr a0, 
 					global::System.Runtime.InteropServices.Variant* a1);
 
@@ -9560,7 +8790,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget247(
+		public delegate int AddrOfTarget224(
 					global::System.IntPtr a0, 
 					void* a1, 
 					short* a2);
@@ -9570,7 +8800,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget248(
+		public delegate int AddrOfTarget225(
 					global::System.IntPtr a0, 
 					global::Internal_WinRT_Interop.WinRTCallbacks_DispatcherQueuePriority__System_Private_WinRTInterop_CoreLib a1, 
 					void* a2, 
@@ -9581,7 +8811,16 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget249(
+		public delegate void AddrOfTarget226(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.ApplicationInitializationCallbackParams a1);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget227(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.DependencyObject a1, 
 					global::Windows.UI.Xaml.DependencyPropertyChangedEventArgs a2);
@@ -9591,7 +8830,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget250(
+		public delegate void AddrOfTarget228(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Core.CoreDispatcher a1, 
 					global::Windows.UI.Core.AcceleratorKeyEventArgs a2);
@@ -9601,14 +8840,14 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget251(global::System.__ComObject a0);
+		public delegate void AddrOfTarget229(global::System.__ComObject a0);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget252(
+		public delegate void AddrOfTarget230(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.DependencyObject a1, 
 					global::Windows.UI.Xaml.DependencyProperty a2);
@@ -9618,394 +8857,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget253(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Input.KeyRoutedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget254(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.RoutedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget255(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.DragEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget256(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Input.PointerRoutedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget257(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Input.TappedRoutedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget258(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Input.DoubleTappedRoutedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget259(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Input.HoldingRoutedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget260(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Input.RightTappedRoutedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget261(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Input.ManipulationStartingRoutedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget262(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Input.ManipulationInertiaStartingRoutedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget263(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Input.ManipulationStartedRoutedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget264(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Input.ManipulationDeltaRoutedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget265(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Input.ManipulationCompletedRoutedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget266(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.UIElement a1, 
-					global::Windows.UI.Xaml.DragStartingEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget267(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.UIElement a1, 
-					global::Windows.UI.Xaml.DropCompletedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget268(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.SizeChangedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget269(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.FrameworkElement a1, 
-					global::Windows.UI.Xaml.DataContextChangedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget270(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.FrameworkElement a1, 
-					object a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget271(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Composition.CompositionBatchCompletedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget272(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.FrameworkElement a1, 
-					global::Windows.UI.Xaml.EffectiveViewportChangedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget273(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase a1, 
-					global::Windows.UI.Xaml.Controls.Primitives.FlyoutBaseClosingEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget274(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.DependencyPropertyChangedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget275(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.Control a1, 
-					global::Windows.UI.Xaml.Controls.FocusEngagedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget276(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.Control a1, 
-					global::Windows.UI.Xaml.Controls.FocusDisengagedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget277(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.UIElement a1, 
-					global::Windows.UI.Xaml.Input.ContextRequestedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget278(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.UIElement a1, 
-					global::Windows.UI.Xaml.RoutedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget279(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.UIElement a1, 
-					global::Windows.UI.Xaml.Input.AccessKeyDisplayRequestedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget280(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.UIElement a1, 
-					global::Windows.UI.Xaml.Input.AccessKeyDisplayDismissedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget281(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.UIElement a1, 
-					global::Windows.UI.Xaml.Input.AccessKeyInvokedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget282(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.UIElement a1, 
-					global::Windows.UI.Xaml.Input.GettingFocusEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget283(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.UIElement a1, 
-					global::Windows.UI.Xaml.Input.LosingFocusEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget284(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.UIElement a1, 
-					global::Windows.UI.Xaml.Input.NoFocusCandidateFoundEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget285(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Input.KeyboardAccelerator a1, 
-					global::Windows.UI.Xaml.Input.KeyboardAcceleratorInvokedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget286(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.UIElement a1, 
-					global::Windows.UI.Xaml.Input.CharacterReceivedRoutedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget287(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.UIElement a1, 
-					global::Windows.UI.Xaml.Input.ProcessKeyboardAcceleratorEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget288(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.UIElement a1, 
-					global::Windows.UI.Xaml.BringIntoViewRequestedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget289(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.XamlRoot a1, 
-					global::Windows.UI.Xaml.XamlRootChangedEventArgs a2);
-
-		#endif
-
-		public delegate object AddrOfTarget290<T>(global::System.Collections.Generic.IEnumerable<T> a0);
-
-		public delegate int AddrOfTarget291<T>(
-					global::Windows.Foundation.Collections.IIterator<T> a0, 
-					global::System.Runtime.InteropServices.Toolbox.IIterator_Oper a1, 
-					ref object a2, 
-					int a3);
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget292(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.ApplicationInitializationCallbackParams a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget293(
+		public delegate void AddrOfTarget231(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.UnhandledExceptionEventArgs a2);
@@ -10015,7 +8867,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget294(
+		public delegate void AddrOfTarget232(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.ApplicationModel.SuspendingEventArgs a2);
@@ -10025,7 +8877,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget295(
+		public delegate void AddrOfTarget233(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.ApplicationModel.LeavingBackgroundEventArgs a2);
@@ -10035,17 +8887,395 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget296(
+		public delegate void AddrOfTarget234(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.ApplicationModel.EnteredBackgroundEventArgs a2);
 
 		#endif
 
+		public delegate object AddrOfTarget235<T>(global::System.Collections.Generic.IEnumerable<T> a0);
+
+		public delegate int AddrOfTarget236<T>(
+					global::Windows.Foundation.Collections.IIterator<T> a0, 
+					global::System.Runtime.InteropServices.Toolbox.IIterator_Oper a1, 
+					ref object a2, 
+					int a3);
+
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget297(
+		public delegate void AddrOfTarget237(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Input.KeyRoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget238(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.RoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget239(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.DragEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget240(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Input.PointerRoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget241(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Input.TappedRoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget242(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Input.DoubleTappedRoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget243(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Input.HoldingRoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget244(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Input.RightTappedRoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget245(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Input.ManipulationStartingRoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget246(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Input.ManipulationInertiaStartingRoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget247(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Input.ManipulationStartedRoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget248(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Input.ManipulationDeltaRoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget249(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Input.ManipulationCompletedRoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget250(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.UIElement a1, 
+					global::Windows.UI.Xaml.DragStartingEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget251(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.UIElement a1, 
+					global::Windows.UI.Xaml.DropCompletedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget252(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.SizeChangedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget253(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.FrameworkElement a1, 
+					global::Windows.UI.Xaml.DataContextChangedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget254(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.FrameworkElement a1, 
+					object a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget255(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Composition.CompositionBatchCompletedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget256(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.FrameworkElement a1, 
+					global::Windows.UI.Xaml.EffectiveViewportChangedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget257(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.Controls.Primitives.FlyoutBase a1, 
+					global::Windows.UI.Xaml.Controls.Primitives.FlyoutBaseClosingEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget258(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.DependencyPropertyChangedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget259(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.Controls.Control a1, 
+					global::Windows.UI.Xaml.Controls.FocusEngagedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget260(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.Controls.Control a1, 
+					global::Windows.UI.Xaml.Controls.FocusDisengagedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget261(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.UIElement a1, 
+					global::Windows.UI.Xaml.Input.ContextRequestedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget262(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.UIElement a1, 
+					global::Windows.UI.Xaml.RoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget263(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.UIElement a1, 
+					global::Windows.UI.Xaml.Input.AccessKeyDisplayRequestedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget264(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.UIElement a1, 
+					global::Windows.UI.Xaml.Input.AccessKeyDisplayDismissedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget265(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.UIElement a1, 
+					global::Windows.UI.Xaml.Input.AccessKeyInvokedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget266(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.UIElement a1, 
+					global::Windows.UI.Xaml.Input.GettingFocusEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget267(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.UIElement a1, 
+					global::Windows.UI.Xaml.Input.LosingFocusEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget268(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.UIElement a1, 
+					global::Windows.UI.Xaml.Input.NoFocusCandidateFoundEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget269(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.Input.KeyboardAccelerator a1, 
+					global::Windows.UI.Xaml.Input.KeyboardAcceleratorInvokedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget270(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.UIElement a1, 
+					global::Windows.UI.Xaml.Input.CharacterReceivedRoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget271(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.UIElement a1, 
+					global::Windows.UI.Xaml.Input.ProcessKeyboardAcceleratorEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget272(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.UIElement a1, 
+					global::Windows.UI.Xaml.BringIntoViewRequestedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget273(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.XamlRoot a1, 
+					global::Windows.UI.Xaml.XamlRootChangedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget274(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.Collections.IObservableVector<object> a1, 
 					global::Windows.Foundation.Collections.IVectorChangedEventArgs a2);
@@ -10055,20 +9285,20 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget298(
+		public delegate void AddrOfTarget275(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Controls.Primitives.ItemsChangedEventArgs a2);
 
 		#endif
 
-		public delegate int AddrOfTarget299<T>(
+		public delegate int AddrOfTarget276<T>(
 					global::System.Collections.Generic.IList<T> a0, 
 					global::System.Runtime.InteropServices.Toolbox.IList_Oper a1, 
 					int a2, 
 					ref object a3);
 
-		public delegate int AddrOfTarget300<T>(
+		public delegate int AddrOfTarget277<T>(
 					global::System.Collections.Generic.IReadOnlyList<T> a0, 
 					global::System.Runtime.InteropServices.Toolbox.IList_Oper a1, 
 					int a2, 
@@ -10077,7 +9307,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget301(
+		public delegate void AddrOfTarget278(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Controls.SelectionChangedEventArgs a2);
@@ -10087,7 +9317,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget302(
+		public delegate void AddrOfTarget279(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Controls.ItemClickEventArgs a2);
@@ -10097,7 +9327,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget303(
+		public delegate void AddrOfTarget280(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Controls.DragItemsStartingEventArgs a2);
@@ -10107,7 +9337,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget304(
+		public delegate void AddrOfTarget281(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.ListViewBase a1, 
 					global::Windows.UI.Xaml.Controls.DragItemsCompletedEventArgs a2);
@@ -10117,7 +9347,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget305(
+		public delegate void AddrOfTarget282(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.ListViewBase a1, 
 					global::Windows.UI.Xaml.Controls.ChoosingItemContainerEventArgs a2);
@@ -10127,7 +9357,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget306(
+		public delegate void AddrOfTarget283(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.ListViewBase a1, 
 					global::Windows.UI.Xaml.Controls.ChoosingGroupHeaderContainerEventArgs a2);
@@ -10137,14 +9367,14 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget307(
+		public delegate void AddrOfTarget284(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Media.Animation.ConnectedAnimation a1, 
 					object a2);
 
 		#endif
 
-		public delegate int AddrOfTarget308<T>(
+		public delegate int AddrOfTarget285<T>(
 					global::Windows.Foundation.AsyncOperationCompletedHandler<T> a0, 
 					global::Windows.Foundation.IAsyncOperation<T> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -10152,7 +9382,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget309(
+		public delegate void AddrOfTarget286(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<bool> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -10162,7 +9392,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget310(
+		public delegate void AddrOfTarget287(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.ListViewBase a1, 
 					global::Windows.UI.Xaml.Controls.ContainerContentChangingEventArgs a2);
@@ -10172,7 +9402,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget311(
+		public delegate void AddrOfTarget288(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Navigation.NavigationEventArgs a2);
@@ -10182,7 +9412,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget312(
+		public delegate void AddrOfTarget289(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Navigation.NavigatingCancelEventArgs a2);
@@ -10192,7 +9422,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget313(
+		public delegate void AddrOfTarget290(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Navigation.NavigationFailedEventArgs a2);
@@ -10202,257 +9432,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget314(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Documents.TextElement a1, 
-					global::Windows.UI.Xaml.Input.AccessKeyDisplayRequestedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget315(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Documents.TextElement a1, 
-					global::Windows.UI.Xaml.Input.AccessKeyDisplayDismissedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget316(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Documents.TextElement a1, 
-					global::Windows.UI.Xaml.Input.AccessKeyInvokedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget317(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Controls.ContextMenuEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget318(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.TextBlock a1, 
-					global::Windows.UI.Xaml.Controls.IsTextTrimmedChangedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget319(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Controls.TextChangedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget320(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Controls.TextControlPasteEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget321(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.TextBox a1, 
-					global::Windows.UI.Xaml.Controls.TextCompositionStartedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget322(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.TextBox a1, 
-					global::Windows.UI.Xaml.Controls.TextCompositionChangedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget323(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.TextBox a1, 
-					global::Windows.UI.Xaml.Controls.TextCompositionEndedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget324(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.TextBox a1, 
-					global::Windows.UI.Xaml.Controls.CandidateWindowBoundsChangedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget325(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.TextBox a1, 
-					global::Windows.UI.Xaml.Controls.TextBoxTextChangingEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget326(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.TextBox a1, 
-					global::Windows.UI.Xaml.Controls.TextControlCopyingToClipboardEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget327(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.TextBox a1, 
-					global::Windows.UI.Xaml.Controls.TextControlCuttingToClipboardEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget328(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.TextBox a1, 
-					global::Windows.UI.Xaml.Controls.TextBoxBeforeTextChangingEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget329(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.TextBox a1, 
-					global::Windows.UI.Xaml.Controls.TextBoxSelectionChangingEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget330(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.NavigationView a1, 
-					global::Windows.UI.Xaml.Controls.NavigationViewSelectionChangedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget331(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.NavigationView a1, 
-					global::Windows.UI.Xaml.Controls.NavigationViewItemInvokedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget332(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.NavigationView a1, 
-					global::Windows.UI.Xaml.Controls.NavigationViewDisplayModeChangedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget333(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.NavigationView a1, 
-					global::Windows.UI.Xaml.Controls.NavigationViewBackRequestedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget334(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.NavigationView a1, 
-					object a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget335(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.NavigationView a1, 
-					global::Windows.UI.Xaml.Controls.NavigationViewPaneClosingEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget336(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget337(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Controls.ScrollViewerViewChangingEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget338(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.ScrollViewer a1, 
-					global::Windows.UI.Xaml.Controls.AnchorRequestedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget339(
+		public delegate void AddrOfTarget291(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Controls.Primitives.RangeBaseValueChangedEventArgs a2);
@@ -10462,147 +9442,167 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget340(
+		public delegate void AddrOfTarget292(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.Documents.TextElement a1, 
+					global::Windows.UI.Xaml.Input.AccessKeyDisplayRequestedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget293(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.Documents.TextElement a1, 
+					global::Windows.UI.Xaml.Input.AccessKeyDisplayDismissedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget294(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.Documents.TextElement a1, 
+					global::Windows.UI.Xaml.Input.AccessKeyInvokedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget295(
 					global::System.__ComObject a0, 
 					object a1, 
-					global::Windows.UI.Xaml.ExceptionRoutedEventArgs a2);
+					global::Windows.UI.Xaml.Controls.ContextMenuEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget341(
+		public delegate void AddrOfTarget296(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.Controls.TextBlock a1, 
+					global::Windows.UI.Xaml.Controls.IsTextTrimmedChangedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget297(
 					global::System.__ComObject a0, 
 					object a1, 
-					global::Windows.UI.Xaml.Media.TimelineMarkerRoutedEventArgs a2);
+					global::Windows.UI.Xaml.Controls.TextChangedEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget342(
+		public delegate void AddrOfTarget298(
 					global::System.__ComObject a0, 
 					object a1, 
-					global::Windows.UI.Xaml.Media.RateChangedRoutedEventArgs a2);
+					global::Windows.UI.Xaml.Controls.TextControlPasteEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget343(
+		public delegate void AddrOfTarget299(
 					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.MediaElement a1, 
-					global::Windows.UI.Xaml.Media.PartialMediaFailureDetectedEventArgs a2);
+					global::Windows.UI.Xaml.Controls.TextBox a1, 
+					global::Windows.UI.Xaml.Controls.TextCompositionStartedEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget344(
+		public delegate void AddrOfTarget300(
 					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.VisualStateChangedEventArgs a2);
+					global::Windows.UI.Xaml.Controls.TextBox a1, 
+					global::Windows.UI.Xaml.Controls.TextCompositionChangedEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget345(
+		public delegate void AddrOfTarget301(
 					global::System.__ComObject a0, 
-					global::Windows.UI.Input.Inking.InkUnprocessedInput a1, 
-					global::Windows.UI.Core.PointerEventArgs a2);
+					global::Windows.UI.Xaml.Controls.TextBox a1, 
+					global::Windows.UI.Xaml.Controls.TextCompositionEndedEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget346(
+		public delegate void AddrOfTarget302(
 					global::System.__ComObject a0, 
-					global::Windows.UI.Input.Inking.InkPresenter a1, 
-					global::Windows.UI.Input.Inking.InkStrokesCollectedEventArgs a2);
+					global::Windows.UI.Xaml.Controls.TextBox a1, 
+					global::Windows.UI.Xaml.Controls.CandidateWindowBoundsChangedEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget347(
+		public delegate void AddrOfTarget303(
 					global::System.__ComObject a0, 
-					global::Windows.Foundation.Collections.IObservableVector<global::Windows.UI.Xaml.DependencyObject> a1, 
-					global::Windows.Foundation.Collections.IVectorChangedEventArgs a2);
+					global::Windows.UI.Xaml.Controls.TextBox a1, 
+					global::Windows.UI.Xaml.Controls.TextBoxTextChangingEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget348(
+		public delegate void AddrOfTarget304(
 					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.InkToolbar a1, 
-					object a2);
+					global::Windows.UI.Xaml.Controls.TextBox a1, 
+					global::Windows.UI.Xaml.Controls.TextControlCopyingToClipboardEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget349(
+		public delegate void AddrOfTarget305(
 					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.InkToolbar a1, 
-					global::Windows.UI.Xaml.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs a2);
+					global::Windows.UI.Xaml.Controls.TextBox a1, 
+					global::Windows.UI.Xaml.Controls.TextControlCuttingToClipboardEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget350(
+		public delegate void AddrOfTarget306(
 					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.ColorPicker a1, 
-					global::Windows.UI.Xaml.Controls.ColorChangedEventArgs a2);
+					global::Windows.UI.Xaml.Controls.TextBox a1, 
+					global::Windows.UI.Xaml.Controls.TextBoxBeforeTextChangingEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget351(
+		public delegate void AddrOfTarget307(
 					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Controls.Primitives.DragStartedEventArgs a2);
+					global::Windows.UI.Xaml.Controls.TextBox a1, 
+					global::Windows.UI.Xaml.Controls.TextBoxSelectionChangingEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget352(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Controls.Primitives.DragDeltaEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget353(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Controls.Primitives.DragCompletedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget354(
+		public delegate void AddrOfTarget308(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.ContentDialog a1, 
 					global::Windows.UI.Xaml.Controls.ContentDialogClosingEventArgs a2);
@@ -10612,7 +9612,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget355(
+		public delegate void AddrOfTarget309(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.ContentDialog a1, 
 					global::Windows.UI.Xaml.Controls.ContentDialogClosedEventArgs a2);
@@ -10622,7 +9622,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget356(
+		public delegate void AddrOfTarget310(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.ContentDialog a1, 
 					global::Windows.UI.Xaml.Controls.ContentDialogOpenedEventArgs a2);
@@ -10632,7 +9632,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget357(
+		public delegate void AddrOfTarget311(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.ContentDialog a1, 
 					global::Windows.UI.Xaml.Controls.ContentDialogButtonClickEventArgs a2);
@@ -10642,7 +9642,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget358(
+		public delegate void AddrOfTarget312(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Controls.ContentDialogResult> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -10652,7 +9652,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget359(
+		public delegate void AddrOfTarget313(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.ComboBox a1, 
 					global::Windows.UI.Xaml.Controls.ComboBoxTextSubmittedEventArgs a2);
@@ -10662,7 +9662,187 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget360(
+		public delegate void AddrOfTarget314(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Controls.ScrollViewerViewChangedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget315(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Controls.ScrollViewerViewChangingEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget316(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.Controls.ScrollViewer a1, 
+					global::Windows.UI.Xaml.Controls.AnchorRequestedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget317(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.Controls.SwipeItem a1, 
+					global::Windows.UI.Xaml.Controls.SwipeItemInvokedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget318(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.ExceptionRoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget319(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Media.TimelineMarkerRoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget320(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Media.RateChangedRoutedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget321(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.Controls.MediaElement a1, 
+					global::Windows.UI.Xaml.Media.PartialMediaFailureDetectedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget322(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.VisualStateChangedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget323(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Input.Inking.InkUnprocessedInput a1, 
+					global::Windows.UI.Core.PointerEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget324(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Input.Inking.InkPresenter a1, 
+					global::Windows.UI.Input.Inking.InkStrokesCollectedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget325(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.Collections.IObservableVector<global::Windows.UI.Xaml.DependencyObject> a1, 
+					global::Windows.Foundation.Collections.IVectorChangedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget326(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.Controls.InkToolbar a1, 
+					object a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget327(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.Controls.InkToolbar a1, 
+					global::Windows.UI.Xaml.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget328(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.Controls.ColorPicker a1, 
+					global::Windows.UI.Xaml.Controls.ColorChangedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget329(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Controls.Primitives.DragStartedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget330(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Controls.Primitives.DragDeltaEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget331(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Controls.Primitives.DragCompletedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget332(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.Collections.IObservableVector<global::Windows.UI.Xaml.Controls.ICommandBarElement> a1, 
 					global::Windows.Foundation.Collections.IVectorChangedEventArgs a2);
@@ -10672,7 +9852,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget361(
+		public delegate void AddrOfTarget333(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.CommandBar a1, 
 					global::Windows.UI.Xaml.Controls.DynamicOverflowItemsChangingEventArgs a2);
@@ -10682,7 +9862,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget362(
+		public delegate void AddrOfTarget334(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.AutoSuggestBox a1, 
 					global::Windows.UI.Xaml.Controls.AutoSuggestBoxSuggestionChosenEventArgs a2);
@@ -10692,7 +9872,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget363(
+		public delegate void AddrOfTarget335(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.AutoSuggestBox a1, 
 					global::Windows.UI.Xaml.Controls.AutoSuggestBoxTextChangedEventArgs a2);
@@ -10702,7 +9882,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget364(
+		public delegate void AddrOfTarget336(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.AutoSuggestBox a1, 
 					global::Windows.UI.Xaml.Controls.AutoSuggestBoxQuerySubmittedEventArgs a2);
@@ -10712,7 +9892,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget365(
+		public delegate void AddrOfTarget337(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Data.CurrentChangingEventArgs a2);
@@ -10722,7 +9902,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget366(
+		public delegate void AddrOfTarget338(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Xaml.Data.LoadMoreItemsResult> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -10732,16 +9912,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget367(
-					global::System.__ComObject a0, 
-					global::FFmpegInterop.CodecRequiredEventArgs a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget368(
+		public delegate void AddrOfTarget339(
 					global::System.__ComObject a0, 
 					global::Microsoft.Graphics.Canvas.CanvasDevice a1, 
 					object a2);
@@ -10751,301 +9922,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget369(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.Collections.IObservableMap<string, object> a1, 
-					global::Windows.Foundation.Collections.IMapChangedEventArgs<string> a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget370(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IBuffer, uint> a1, 
-					uint a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget371(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IBuffer, uint> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget372(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperationWithProgress<uint, uint> a1, 
-					uint a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget373(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperationWithProgress<uint, uint> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget374(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::FFmpegInterop.SubtitleStreamInfo>> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget375(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::FFmpegInterop.FFmpegInteropMSS> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget376(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::FFmpegInterop.VideoFrame> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget377(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::FFmpegInterop.FrameGrabber> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget378(
-					global::System.__ComObject a0, 
-					int a1, 
-					string a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget379(
-					global::System.__ComObject a0, 
-					string a1, 
-					string a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget380(
-					global::System.__ComObject a0, 
-					global::libVLCX.Dialog a1, 
-					string a2, 
-					string a3, 
-					string a4, 
-					bool a5);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget381(
-					global::System.__ComObject a0, 
-					global::libVLCX.Dialog a1, 
-					string a2, 
-					string a3, 
-					global::libVLCX.Question a4, 
-					string a5, 
-					string a6, 
-					string a7);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget382(
-					global::System.__ComObject a0, 
-					global::libVLCX.Dialog a1, 
-					string a2, 
-					string a3, 
-					bool a4, 
-					float a5, 
-					string a6);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget383(
-					global::System.__ComObject a0, 
-					global::libVLCX.Dialog a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget384(
-					global::System.__ComObject a0, 
-					global::libVLCX.Dialog a1, 
-					float a2, 
-					string a3);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget385(
-					global::System.__ComObject a0, 
-					global::Windows.UI.Xaml.Controls.SwapChainPanel a1, 
-					object a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget386(
-					global::System.__ComObject a0, 
-					global::libVLCX.ParsedStatus a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget387(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::libVLCX.ParsedStatus> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget388(
-					global::System.__ComObject a0, 
-					global::libVLCX.Media a1, 
-					int a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget389(
-					global::System.__ComObject a0, 
-					global::libVLCX.RendererItem a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget390(
-					global::System.__ComObject a0, 
-					global::libVLCX.Media a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget391(
-					global::System.__ComObject a0, 
-					float a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget392(
-					global::System.__ComObject a0, 
-					long a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget393(
-					global::System.__ComObject a0, 
-					bool a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget394(
-					global::System.__ComObject a0, 
-					int a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget395(
-					global::System.__ComObject a0, 
-					string a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget396(
-					global::System.__ComObject a0, 
-					global::libVLCX.TrackType a1, 
-					int a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget397(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::libVLCX.PreparseResult> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget398(
+		public delegate void AddrOfTarget340(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<global::Microsoft.Graphics.Canvas.CanvasBitmap> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -11055,7 +9932,47 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget399(
+		public delegate void AddrOfTarget341(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IBuffer, uint> a1, 
+					uint a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget342(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IBuffer, uint> a1, 
+					global::Windows.Foundation.AsyncStatus a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget343(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.IAsyncOperationWithProgress<uint, uint> a1, 
+					uint a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget344(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.IAsyncOperationWithProgress<uint, uint> a1, 
+					global::Windows.Foundation.AsyncStatus a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget345(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<global::Microsoft.Graphics.Canvas.Svg.CanvasSvgDocument> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -11065,7 +9982,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget400(
+		public delegate void AddrOfTarget346(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<global::Microsoft.Graphics.Canvas.Svg.CanvasSvgNamedElement> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -11075,7 +9992,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget401(
+		public delegate void AddrOfTarget347(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Core.CoreWindow a1, 
 					global::Windows.UI.Core.WindowActivatedEventArgs a2);
@@ -11085,7 +10002,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget402(
+		public delegate void AddrOfTarget348(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Core.CoreWindow a1, 
 					global::Windows.UI.Core.KeyEventArgs a2);
@@ -11095,7 +10012,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget403(
+		public delegate void AddrOfTarget349(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Core.CoreWindow a1, 
 					global::Windows.UI.Core.PointerEventArgs a2);
@@ -11105,7 +10022,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget404(
+		public delegate void AddrOfTarget350(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Core.CoreWindow a1, 
 					global::Windows.UI.Core.VisibilityChangedEventArgs a2);
@@ -11115,7 +10032,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget405(
+		public delegate void AddrOfTarget351(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<global::Microsoft.Graphics.Canvas.CanvasVirtualBitmap> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -11125,7 +10042,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget406(
+		public delegate void AddrOfTarget352(
 					global::System.__ComObject a0, 
 					global::Microsoft.Graphics.Canvas.Printing.CanvasPrintDocument a1, 
 					global::Microsoft.Graphics.Canvas.Printing.CanvasPrintTaskOptionsChangedEventArgs a2);
@@ -11135,7 +10052,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget407(
+		public delegate void AddrOfTarget353(
 					global::System.__ComObject a0, 
 					global::Microsoft.Graphics.Canvas.Printing.CanvasPrintDocument a1, 
 					global::Microsoft.Graphics.Canvas.Printing.CanvasPreviewEventArgs a2);
@@ -11145,7 +10062,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget408(
+		public delegate void AddrOfTarget354(
 					global::System.__ComObject a0, 
 					global::Microsoft.Graphics.Canvas.Printing.CanvasPrintDocument a1, 
 					global::Microsoft.Graphics.Canvas.Printing.CanvasPrintEventArgs a2);
@@ -11155,7 +10072,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget409(
+		public delegate void AddrOfTarget355(
 					global::System.__ComObject a0, 
 					global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasAnimatedControl a1, 
 					global::Microsoft.Graphics.Canvas.UI.CanvasCreateResourcesEventArgs a2);
@@ -11165,7 +10082,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget410(
+		public delegate void AddrOfTarget356(
 					global::System.__ComObject a0, 
 					global::Microsoft.Graphics.Canvas.UI.Xaml.ICanvasAnimatedControl a1, 
 					global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasAnimatedUpdateEventArgs a2);
@@ -11175,7 +10092,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget411(
+		public delegate void AddrOfTarget357(
 					global::System.__ComObject a0, 
 					global::Microsoft.Graphics.Canvas.UI.Xaml.ICanvasAnimatedControl a1, 
 					global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasAnimatedDrawEventArgs a2);
@@ -11185,7 +10102,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget412(
+		public delegate void AddrOfTarget358(
 					global::System.__ComObject a0, 
 					global::Microsoft.Graphics.Canvas.UI.Xaml.ICanvasAnimatedControl a1, 
 					object a2);
@@ -11195,7 +10112,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget413(
+		public delegate void AddrOfTarget359(
 					global::System.__ComObject a0, 
 					global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl a1, 
 					global::Microsoft.Graphics.Canvas.UI.CanvasCreateResourcesEventArgs a2);
@@ -11205,7 +10122,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget414(
+		public delegate void AddrOfTarget360(
 					global::System.__ComObject a0, 
 					global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasControl a1, 
 					global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasDrawEventArgs a2);
@@ -11215,7 +10132,17 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget415(
+		public delegate void AddrOfTarget361(
+					global::System.__ComObject a0, 
+					global::Windows.UI.Xaml.Controls.SwapChainPanel a1, 
+					object a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget362(
 					global::System.__ComObject a0, 
 					global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasVirtualControl a1, 
 					global::Microsoft.Graphics.Canvas.UI.CanvasCreateResourcesEventArgs a2);
@@ -11225,7 +10152,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget416(
+		public delegate void AddrOfTarget363(
 					global::System.__ComObject a0, 
 					global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasVirtualControl a1, 
 					global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasRegionsInvalidatedEventArgs a2);
@@ -11235,7 +10162,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget417(
+		public delegate void AddrOfTarget364(
 					global::System.__ComObject a0, 
 					global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasVirtualImageSource a1, 
 					global::Microsoft.Graphics.Canvas.UI.Xaml.CanvasRegionsInvalidatedEventArgs a2);
@@ -11245,75 +10172,49 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget418(
+		public delegate void AddrOfTarget365(
 					global::System.__ComObject a0, 
-					object a1, 
-					global::VLC.DeferrableEventArgs a2);
+					global::Windows.UI.Xaml.Controls.NavigationView a1, 
+					global::Windows.UI.Xaml.Controls.NavigationViewSelectionChangedEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget419(
+		public delegate void AddrOfTarget366(
 					global::System.__ComObject a0, 
-					object a1, 
-					global::VLC.LogRoutedEventArgs a2);
+					global::Windows.UI.Xaml.Controls.NavigationView a1, 
+					global::Windows.UI.Xaml.Controls.NavigationViewItemInvokedEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget420(
+		public delegate void AddrOfTarget367(
 					global::System.__ComObject a0, 
-					object a1, 
-					global::VLC.MediaFailedRoutedEventArgs a2);
+					global::Windows.UI.Xaml.Controls.NavigationView a1, 
+					global::Windows.UI.Xaml.Controls.NavigationViewDisplayModeChangedEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget421(
+		public delegate void AddrOfTarget368(
 					global::System.__ComObject a0, 
-					object a1, 
-					global::VLC.DialogEventArgs a2);
+					global::Windows.UI.Xaml.Controls.NavigationView a1, 
+					global::Windows.UI.Xaml.Controls.NavigationViewBackRequestedEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget422(
+		public delegate void AddrOfTarget369(
 					global::System.__ComObject a0, 
-					object a1, 
-					global::VLC.LoginDialogEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget423(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::VLC.DeferrableCancelEventArgs a2);
-
-		#endif
-
-		public delegate global::System.Array AddrOfTarget424<T>(
-					global::Windows.Foundation.Collections.IIterator<T> a0, 
-					global::System.Runtime.InteropServices.Toolbox.IIterator_Oper a1, 
-					ref T a2, 
-					ref int a3);
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget425(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.Diagnostics.ILoggingChannel a1, 
+					global::Windows.UI.Xaml.Controls.NavigationView a1, 
 					object a2);
 
 		#endif
@@ -11321,127 +10222,17 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget426(
+		public delegate void AddrOfTarget370(
 					global::System.__ComObject a0, 
-					global::Windows.UI.ViewManagement.ApplicationView a1, 
-					object a2);
+					global::Windows.UI.Xaml.Controls.NavigationView a1, 
+					global::Windows.UI.Xaml.Controls.NavigationViewPaneClosingEventArgs a2);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget427(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IDictionary<string, object>> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget428(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.FileProperties.BasicProperties> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget429(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.Streams.IRandomAccessStreamWithContentType> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget430(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.Streams.IRandomAccessStream> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget431(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageStreamTransaction> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget432(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget433(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFile>> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget434(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.IStorageItem> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget435(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFolder>> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget436(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.IStorageItem>> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget437(
-					global::System.__ComObject a0, 
-					global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> a1, 
-					global::Windows.Foundation.AsyncStatus a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget438(
+		public delegate void AddrOfTarget371(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.RichTextBlock a1, 
 					global::Windows.UI.Xaml.Controls.IsTextTrimmedChangedEventArgs a2);
@@ -11451,7 +10242,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget439(
+		public delegate void AddrOfTarget372(
 					global::System.__ComObject a0, 
 					global::Windows.ApplicationModel.Background.BackgroundTaskRegistration a1, 
 					global::Windows.ApplicationModel.Background.BackgroundTaskProgressEventArgs a2);
@@ -11461,7 +10252,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget440(
+		public delegate void AddrOfTarget373(
 					global::System.__ComObject a0, 
 					global::Windows.ApplicationModel.Background.BackgroundTaskRegistration a1, 
 					global::Windows.ApplicationModel.Background.BackgroundTaskCompletedEventArgs a2);
@@ -11471,7 +10262,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget441(
+		public delegate void AddrOfTarget374(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Media.Capture.Frames.MediaFrameSourceGroup>> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -11481,7 +10272,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget442(
+		public delegate void AddrOfTarget375(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<global::Windows.Devices.Enumeration.DeviceInformationCollection> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -11491,7 +10282,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget443(
+		public delegate void AddrOfTarget376(
 					global::System.__ComObject a0, 
 					global::Windows.Media.Capture.Frames.MediaFrameReader a1, 
 					global::Windows.Media.Capture.Frames.MediaFrameArrivedEventArgs a2);
@@ -11501,7 +10292,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget444(
+		public delegate void AddrOfTarget377(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<global::Windows.Media.Capture.Frames.MediaFrameReaderStartStatus> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -11511,7 +10302,127 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget445(
+		public delegate void AddrOfTarget378(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.Collections.IObservableMap<string, object> a1, 
+					global::Windows.Foundation.Collections.IMapChangedEventArgs<string> a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget379(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IDictionary<string, object>> a1, 
+					global::Windows.Foundation.AsyncStatus a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget380(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.FileProperties.BasicProperties> a1, 
+					global::Windows.Foundation.AsyncStatus a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget381(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.Streams.IRandomAccessStreamWithContentType> a1, 
+					global::Windows.Foundation.AsyncStatus a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget382(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.Streams.IRandomAccessStream> a1, 
+					global::Windows.Foundation.AsyncStatus a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget383(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageStreamTransaction> a1, 
+					global::Windows.Foundation.AsyncStatus a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget384(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> a1, 
+					global::Windows.Foundation.AsyncStatus a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget385(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> a1, 
+					global::Windows.Foundation.AsyncStatus a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget386(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.IStorageItem> a1, 
+					global::Windows.Foundation.AsyncStatus a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget387(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFile>> a1, 
+					global::Windows.Foundation.AsyncStatus a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget388(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFolder>> a1, 
+					global::Windows.Foundation.AsyncStatus a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget389(
+					global::System.__ComObject a0, 
+					global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.IStorageItem>> a1, 
+					global::Windows.Foundation.AsyncStatus a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget390(
 					global::System.__ComObject a0, 
 					global::Windows.Graphics.Printing.PrintTaskSourceRequestedArgs a1);
 
@@ -11520,7 +10431,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget446(
+		public delegate void AddrOfTarget391(
 					global::System.__ComObject a0, 
 					global::Windows.Graphics.Printing.PrintTask a1, 
 					global::Windows.Graphics.Printing.PrintTaskCompletedEventArgs a2);
@@ -11530,7 +10441,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget447(
+		public delegate void AddrOfTarget392(
 					global::System.__ComObject a0, 
 					global::Windows.Graphics.Printing.PrintManager a1, 
 					global::Windows.Graphics.Printing.PrintTaskRequestedEventArgs a2);
@@ -11540,7 +10451,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget448(
+		public delegate void AddrOfTarget393(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<global::Windows.System.RemoteSystems.RemoteSystemAccessStatus> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -11550,7 +10461,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget449(
+		public delegate void AddrOfTarget394(
 					global::System.__ComObject a0, 
 					global::Windows.System.RemoteSystems.RemoteSystemWatcher a1, 
 					global::Windows.System.RemoteSystems.RemoteSystemAddedEventArgs a2);
@@ -11560,7 +10471,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget450(
+		public delegate void AddrOfTarget395(
 					global::System.__ComObject a0, 
 					global::Windows.System.RemoteSystems.RemoteSystemWatcher a1, 
 					global::Windows.System.RemoteSystems.RemoteSystemUpdatedEventArgs a2);
@@ -11570,7 +10481,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget451(
+		public delegate void AddrOfTarget396(
 					global::System.__ComObject a0, 
 					global::Windows.System.RemoteSystems.RemoteSystemWatcher a1, 
 					global::Windows.System.RemoteSystems.RemoteSystemRemovedEventArgs a2);
@@ -11580,7 +10491,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget452(
+		public delegate void AddrOfTarget397(
 					global::System.__ComObject a0, 
 					global::Windows.System.RemoteSystems.RemoteSystemWatcher a1, 
 					global::Windows.System.RemoteSystems.RemoteSystemEnumerationCompletedEventArgs a2);
@@ -11590,7 +10501,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget453(
+		public delegate void AddrOfTarget398(
 					global::System.__ComObject a0, 
 					global::Windows.System.Threading.ThreadPoolTimer a1);
 
@@ -11599,7 +10510,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget454(
+		public delegate void AddrOfTarget399(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Visibility a2);
@@ -11609,7 +10520,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget455(
+		public delegate void AddrOfTarget400(
 					global::System.__ComObject a0, 
 					global::Windows.Graphics.Display.DisplayInformation a1, 
 					object a2);
@@ -11619,7 +10530,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget456(
+		public delegate void AddrOfTarget401(
 					global::System.__ComObject a0, 
 					object a1, 
 					string a2);
@@ -11629,7 +10540,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget457(
+		public delegate void AddrOfTarget402(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Documents.Hyperlink a1, 
 					global::Windows.UI.Xaml.Documents.HyperlinkClickEventArgs a2);
@@ -11639,7 +10550,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget458(
+		public delegate void AddrOfTarget403(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.RichEditBox a1, 
 					global::Windows.UI.Xaml.Controls.TextCompositionStartedEventArgs a2);
@@ -11649,7 +10560,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget459(
+		public delegate void AddrOfTarget404(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.RichEditBox a1, 
 					global::Windows.UI.Xaml.Controls.TextCompositionChangedEventArgs a2);
@@ -11659,7 +10570,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget460(
+		public delegate void AddrOfTarget405(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.RichEditBox a1, 
 					global::Windows.UI.Xaml.Controls.TextCompositionEndedEventArgs a2);
@@ -11669,7 +10580,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget461(
+		public delegate void AddrOfTarget406(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.RichEditBox a1, 
 					global::Windows.UI.Xaml.Controls.CandidateWindowBoundsChangedEventArgs a2);
@@ -11679,7 +10590,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget462(
+		public delegate void AddrOfTarget407(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.RichEditBox a1, 
 					global::Windows.UI.Xaml.Controls.RichEditBoxTextChangingEventArgs a2);
@@ -11689,7 +10600,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget463(
+		public delegate void AddrOfTarget408(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.RichEditBox a1, 
 					global::Windows.UI.Xaml.Controls.TextControlCopyingToClipboardEventArgs a2);
@@ -11699,7 +10610,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget464(
+		public delegate void AddrOfTarget409(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.RichEditBox a1, 
 					global::Windows.UI.Xaml.Controls.TextControlCuttingToClipboardEventArgs a2);
@@ -11709,7 +10620,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget465(
+		public delegate void AddrOfTarget410(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.RichEditBox a1, 
 					global::Windows.UI.Xaml.Controls.ContentLinkChangedEventArgs a2);
@@ -11719,7 +10630,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget466(
+		public delegate void AddrOfTarget411(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.RichEditBox a1, 
 					global::Windows.UI.Xaml.Documents.ContentLinkInvokedEventArgs a2);
@@ -11729,7 +10640,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget467(
+		public delegate void AddrOfTarget412(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.RichEditBox a1, 
 					global::Windows.UI.Xaml.Controls.RichEditBoxSelectionChangingEventArgs a2);
@@ -11739,7 +10650,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget468(
+		public delegate void AddrOfTarget413(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Media.LoadedImageSurface a1, 
 					global::Windows.UI.Xaml.Media.LoadedImageSourceLoadCompletedEventArgs a2);
@@ -11749,7 +10660,17 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget469(
+		public delegate void AddrOfTarget414(
+					global::System.__ComObject a0, 
+					global::Windows.UI.ViewManagement.ApplicationView a1, 
+					object a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget415(
 					global::System.__ComObject a0, 
 					global::Windows.UI.ViewManagement.AccessibilitySettings a1, 
 					object a2);
@@ -11759,7 +10680,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget470(
+		public delegate void AddrOfTarget416(
 					global::System.__ComObject a0, 
 					global::Windows.UI.ViewManagement.UISettings a1, 
 					object a2);
@@ -11769,7 +10690,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget471(
+		public delegate void AddrOfTarget417(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Core.BackRequestedEventArgs a2);
@@ -11779,7 +10700,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget472(
+		public delegate void AddrOfTarget418(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Input.RadialController a1, 
 					global::Windows.UI.Input.RadialControllerRotationChangedEventArgs a2);
@@ -11789,7 +10710,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget473(
+		public delegate void AddrOfTarget419(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Input.RadialController a1, 
 					global::Windows.UI.Input.RadialControllerButtonClickedEventArgs a2);
@@ -11799,7 +10720,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget474(
+		public delegate void AddrOfTarget420(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.Collections.IObservableMap<object, object> a1, 
 					global::Windows.Foundation.Collections.IMapChangedEventArgs<object> a2);
@@ -11809,7 +10730,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget475(
+		public delegate void AddrOfTarget421(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Controls.Primitives.ScrollEventArgs a2);
@@ -11819,7 +10740,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget476(
+		public delegate void AddrOfTarget422(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.Collections.IObservableMap<string, string> a1, 
 					global::Windows.Foundation.Collections.IMapChangedEventArgs<string> a2);
@@ -11829,7 +10750,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget477(
+		public delegate void AddrOfTarget423(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.Foundation.Diagnostics.TracingStatusChangedEventArgs a2);
@@ -11839,7 +10760,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget478(
+		public delegate void AddrOfTarget424(
 					global::System.__ComObject a0, 
 					object a1, 
 					double a2);
@@ -11849,37 +10770,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget479(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Printing.PaginateEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget480(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Printing.GetPreviewPageEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget481(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Xaml.Printing.AddPagesEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget482(
+		public delegate void AddrOfTarget425(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Core.WindowSizeChangedEventArgs a2);
@@ -11889,7 +10780,37 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget483(
+		public delegate void AddrOfTarget426(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Printing.PaginateEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget427(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Printing.GetPreviewPageEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget428(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Xaml.Printing.AddPagesEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget429(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Media.Imaging.SvgImageSource a1, 
 					global::Windows.UI.Xaml.Media.Imaging.SvgImageSourceOpenedEventArgs a2);
@@ -11899,7 +10820,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget484(
+		public delegate void AddrOfTarget430(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Media.Imaging.SvgImageSource a1, 
 					global::Windows.UI.Xaml.Media.Imaging.SvgImageSourceFailedEventArgs a2);
@@ -11909,7 +10830,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget485(
+		public delegate void AddrOfTarget431(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Media.Imaging.DownloadProgressEventArgs a2);
@@ -11919,7 +10840,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget486(
+		public delegate void AddrOfTarget432(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Controls.NotifyEventArgs a2);
@@ -11929,7 +10850,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget487(
+		public delegate void AddrOfTarget433(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Controls.WebViewNavigationFailedEventArgs a2);
@@ -11939,7 +10860,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget488(
+		public delegate void AddrOfTarget434(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.WebView a1, 
 					global::Windows.UI.Xaml.Controls.WebViewNavigationStartingEventArgs a2);
@@ -11949,7 +10870,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget489(
+		public delegate void AddrOfTarget435(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.WebView a1, 
 					global::Windows.UI.Xaml.Controls.WebViewContentLoadingEventArgs a2);
@@ -11959,7 +10880,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget490(
+		public delegate void AddrOfTarget436(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.WebView a1, 
 					global::Windows.UI.Xaml.Controls.WebViewDOMContentLoadedEventArgs a2);
@@ -11969,7 +10890,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget491(
+		public delegate void AddrOfTarget437(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.WebView a1, 
 					global::Windows.UI.Xaml.Controls.WebViewNavigationCompletedEventArgs a2);
@@ -11979,7 +10900,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget492(
+		public delegate void AddrOfTarget438(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.WebView a1, 
 					global::Windows.UI.Xaml.Controls.WebViewLongRunningScriptDetectedEventArgs a2);
@@ -11989,7 +10910,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget493(
+		public delegate void AddrOfTarget439(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.WebView a1, 
 					object a2);
@@ -11999,7 +10920,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget494(
+		public delegate void AddrOfTarget440(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.WebView a1, 
 					global::Windows.UI.Xaml.Controls.WebViewUnviewableContentIdentifiedEventArgs a2);
@@ -12009,7 +10930,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget495(
+		public delegate void AddrOfTarget441(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.WebView a1, 
 					global::Windows.UI.Xaml.Controls.WebViewUnsupportedUriSchemeIdentifiedEventArgs a2);
@@ -12019,7 +10940,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget496(
+		public delegate void AddrOfTarget442(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.WebView a1, 
 					global::Windows.UI.Xaml.Controls.WebViewNewWindowRequestedEventArgs a2);
@@ -12029,7 +10950,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget497(
+		public delegate void AddrOfTarget443(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.WebView a1, 
 					global::Windows.UI.Xaml.Controls.WebViewPermissionRequestedEventArgs a2);
@@ -12039,7 +10960,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget498(
+		public delegate void AddrOfTarget444(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.WebView a1, 
 					global::Windows.UI.Xaml.Controls.WebViewSeparateProcessLostEventArgs a2);
@@ -12049,7 +10970,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget499(
+		public delegate void AddrOfTarget445(
 					global::System.__ComObject a0, 
 					global::Windows.UI.Xaml.Controls.WebView a1, 
 					global::Windows.UI.Xaml.Controls.WebViewWebResourceRequestedEventArgs a2);
@@ -12059,7 +10980,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget500(
+		public delegate void AddrOfTarget446(
 					global::System.__ComObject a0, 
 					object a1);
 
@@ -12068,17 +10989,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget501(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.Media.Devices.DefaultAudioRenderDeviceChangedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget502(
+		public delegate void AddrOfTarget447(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<global::Windows.Media.Capture.Frames.MediaFrameReader> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -12088,7 +10999,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget503(
+		public delegate void AddrOfTarget448(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<string> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -12098,7 +11009,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget504(
+		public delegate void AddrOfTarget449(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<uint> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -12108,7 +11019,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget505(
+		public delegate void AddrOfTarget450(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.Streams.IBuffer> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -12118,7 +11029,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget506(
+		public delegate void AddrOfTarget451(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<global::Windows.Graphics.Imaging.BitmapEncoder> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -12128,37 +11039,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget507(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Core.WindowActivatedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget508(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Core.CoreWindowEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget509(
-					global::System.__ComObject a0, 
-					object a1, 
-					global::Windows.UI.Core.VisibilityChangedEventArgs a2);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget510(
+		public delegate void AddrOfTarget452(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Input.FocusManagerGotFocusEventArgs a2);
@@ -12168,7 +11049,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget511(
+		public delegate void AddrOfTarget453(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Input.FocusManagerLostFocusEventArgs a2);
@@ -12178,7 +11059,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget512(
+		public delegate void AddrOfTarget454(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Input.GettingFocusEventArgs a2);
@@ -12188,7 +11069,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget513(
+		public delegate void AddrOfTarget455(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Input.LosingFocusEventArgs a2);
@@ -12198,7 +11079,37 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget514(
+		public delegate void AddrOfTarget456(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Core.WindowActivatedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget457(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Core.CoreWindowEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget458(
+					global::System.__ComObject a0, 
+					object a1, 
+					global::Windows.UI.Core.VisibilityChangedEventArgs a2);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate void AddrOfTarget459(
 					global::System.__ComObject a0, 
 					object a1, 
 					global::Windows.UI.Xaml.Media.RenderedEventArgs a2);
@@ -12208,7 +11119,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget515(
+		public delegate void AddrOfTarget460(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperationWithProgress<ulong, ulong> a1, 
 					ulong a2);
@@ -12218,7 +11129,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget516(
+		public delegate void AddrOfTarget461(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperationWithProgress<ulong, ulong> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -12228,7 +11139,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget517(
+		public delegate void AddrOfTarget462(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IBuffer, ulong> a1, 
 					ulong a2);
@@ -12238,7 +11149,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget518(
+		public delegate void AddrOfTarget463(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IBuffer, ulong> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -12248,7 +11159,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget519(
+		public delegate void AddrOfTarget464(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IInputStream, ulong> a1, 
 					ulong a2);
@@ -12258,7 +11169,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget520(
+		public delegate void AddrOfTarget465(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IInputStream, ulong> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -12268,7 +11179,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget521(
+		public delegate void AddrOfTarget466(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperationWithProgress<string, ulong> a1, 
 					ulong a2);
@@ -12278,7 +11189,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget522(
+		public delegate void AddrOfTarget467(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperationWithProgress<string, ulong> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -12288,7 +11199,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget523(
+		public delegate void AddrOfTarget468(
 					global::System.__ComObject a0, 
 					global::Windows.Web.Http.Filters.HttpBaseProtocolFilter a1, 
 					global::Windows.Web.Http.Filters.HttpServerCustomValidationRequestedEventArgs a2);
@@ -12298,7 +11209,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget524(
+		public delegate void AddrOfTarget469(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress> a1, 
 					global::Windows.Web.Http.HttpProgress a2);
@@ -12308,7 +11219,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget525(
+		public delegate void AddrOfTarget470(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Web.Http.HttpResponseMessage, global::Windows.Web.Http.HttpProgress> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -12318,7 +11229,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget526(
+		public delegate void AddrOfTarget471(
 					global::System.__ComObject a0, 
 					global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Security.Cryptography.Certificates.Certificate>> a1, 
 					global::Windows.Foundation.AsyncStatus a2);
@@ -12328,7 +11239,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget527(
+		public delegate void AddrOfTarget472(
 					int a0, 
 					int a1, 
 					global::System_Threading.NativeOverlapped__System_Private_CoreLib* a2);
@@ -12338,7 +11249,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget528(
+		public delegate void AddrOfTarget473(
 					global::System.IntPtr a0, 
 					int a1, 
 					int a2, 
@@ -12353,7 +11264,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget529(
+		public delegate int AddrOfTarget474(
 					global::System.IntPtr a0, 
 					global::System.IntPtr a1, 
 					global::System.IntPtr a2, 
@@ -12368,7 +11279,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget530(
+		public delegate int AddrOfTarget475(
 					global::System.IntPtr a0, 
 					global::System.IntPtr a1, 
 					int a2, 
@@ -12382,7 +11293,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget531(
+		public delegate int AddrOfTarget476(
 					global::System.IntPtr a0, 
 					global::System_Threading.NativeOverlapped__System_Private_CoreLib* a1, 
 					int a2, 
@@ -12393,7 +11304,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget532(
+		public delegate int AddrOfTarget477(
 					global::System.IntPtr a0, 
 					global::System.IntPtr a1, 
 					int a2, 
@@ -12404,7 +11315,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate global::System_Net_Sockets.SocketError__System_Net_Primitives AddrOfTarget533(
+		public delegate global::System_Net_Sockets.SocketError__System_Net_Primitives AddrOfTarget478(
 					global::System.IntPtr a0, 
 					global::System.IntPtr a1, 
 					int* a2, 
@@ -12416,7 +11327,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate global::System_Net_Sockets.SocketError__System_Net_Primitives AddrOfTarget534(
+		public delegate global::System_Net_Sockets.SocketError__System_Net_Primitives AddrOfTarget479(
 					global::System.IntPtr a0, 
 					global::System.IntPtr a1, 
 					int* a2, 
@@ -12428,7 +11339,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget535(
+		public delegate int AddrOfTarget480(
 					global::System.IntPtr a0, 
 					global::System.IntPtr a1, 
 					int a2, 
@@ -12441,21 +11352,21 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate object AddrOfTarget536(object a0);
+		public delegate object AddrOfTarget481(object a0);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate object AddrOfTarget537(global::System.__ComObject a0);
+		public delegate object AddrOfTarget482(global::System.__ComObject a0);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget538(
+		public delegate int AddrOfTarget483(
 					ref global::Windows.UI.Core.CorePhysicalKeyStatus a0, 
 					out global::Windows.UI.Core.CorePhysicalKeyStatus__Impl.UnsafeType a1);
 
@@ -12464,7 +11375,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget539(
+		public delegate int AddrOfTarget484(
 					ref global::Windows.UI.Core.CorePhysicalKeyStatus__Impl.UnsafeType a0, 
 					out global::Windows.UI.Core.CorePhysicalKeyStatus a1);
 
@@ -12473,7 +11384,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget540(
+		public delegate int AddrOfTarget485(
 					ref global::Windows.UI.Xaml.Markup.XmlnsDefinition a0, 
 					out global::Windows.UI.Xaml.Markup.XmlnsDefinition__Impl.UnsafeType a1);
 
@@ -12482,7 +11393,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget541(
+		public delegate int AddrOfTarget486(
 					ref global::Windows.UI.Xaml.Markup.XmlnsDefinition__Impl.UnsafeType a0, 
 					out global::Windows.UI.Xaml.Markup.XmlnsDefinition a1);
 
@@ -12491,14 +11402,14 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget542(ref global::Windows.UI.Xaml.Markup.XmlnsDefinition__Impl.UnsafeType a0);
+		public delegate void AddrOfTarget487(ref global::Windows.UI.Xaml.Markup.XmlnsDefinition__Impl.UnsafeType a0);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget543(
+		public delegate int AddrOfTarget488(
 					ref global::Microsoft.Graphics.Canvas.Text.CanvasLineMetrics a0, 
 					out global::Microsoft.Graphics.Canvas.Text.CanvasLineMetrics__Impl.UnsafeType a1);
 
@@ -12507,7 +11418,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget544(
+		public delegate int AddrOfTarget489(
 					ref global::Microsoft.Graphics.Canvas.Text.CanvasLineMetrics__Impl.UnsafeType a0, 
 					out global::Microsoft.Graphics.Canvas.Text.CanvasLineMetrics a1);
 
@@ -12516,7 +11427,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget545(
+		public delegate int AddrOfTarget490(
 					ref global::Microsoft.Graphics.Canvas.Text.CanvasFontProperty a0, 
 					out global::Microsoft.Graphics.Canvas.Text.CanvasFontProperty__Impl.UnsafeType a1);
 
@@ -12525,7 +11436,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget546(
+		public delegate int AddrOfTarget491(
 					ref global::Microsoft.Graphics.Canvas.Text.CanvasFontProperty__Impl.UnsafeType a0, 
 					out global::Microsoft.Graphics.Canvas.Text.CanvasFontProperty a1);
 
@@ -12534,14 +11445,14 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget547(ref global::Microsoft.Graphics.Canvas.Text.CanvasFontProperty__Impl.UnsafeType a0);
+		public delegate void AddrOfTarget492(ref global::Microsoft.Graphics.Canvas.Text.CanvasFontProperty__Impl.UnsafeType a0);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget548(
+		public delegate int AddrOfTarget493(
 					ref global::Microsoft.Graphics.Canvas.Text.CanvasAnalyzedBreakpoint a0, 
 					out global::Microsoft.Graphics.Canvas.Text.CanvasAnalyzedBreakpoint__Impl.UnsafeType a1);
 
@@ -12550,7 +11461,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget549(
+		public delegate int AddrOfTarget494(
 					ref global::Microsoft.Graphics.Canvas.Text.CanvasAnalyzedBreakpoint__Impl.UnsafeType a0, 
 					out global::Microsoft.Graphics.Canvas.Text.CanvasAnalyzedBreakpoint a1);
 
@@ -12559,7 +11470,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget550(
+		public delegate int AddrOfTarget495(
 					ref global::Microsoft.Graphics.Canvas.Text.CanvasAnalyzedGlyphOrientation a0, 
 					out global::Microsoft.Graphics.Canvas.Text.CanvasAnalyzedGlyphOrientation__Impl.UnsafeType a1);
 
@@ -12568,7 +11479,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget551(
+		public delegate int AddrOfTarget496(
 					ref global::Microsoft.Graphics.Canvas.Text.CanvasAnalyzedGlyphOrientation__Impl.UnsafeType a0, 
 					out global::Microsoft.Graphics.Canvas.Text.CanvasAnalyzedGlyphOrientation a1);
 
@@ -12577,7 +11488,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget552(
+		public delegate int AddrOfTarget497(
 					ref global::Microsoft.Graphics.Canvas.Text.CanvasScriptProperties a0, 
 					out global::Microsoft.Graphics.Canvas.Text.CanvasScriptProperties__Impl.UnsafeType a1);
 
@@ -12586,7 +11497,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget553(
+		public delegate int AddrOfTarget498(
 					ref global::Microsoft.Graphics.Canvas.Text.CanvasScriptProperties__Impl.UnsafeType a0, 
 					out global::Microsoft.Graphics.Canvas.Text.CanvasScriptProperties a1);
 
@@ -12595,14 +11506,14 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget554(ref global::Microsoft.Graphics.Canvas.Text.CanvasScriptProperties__Impl.UnsafeType a0);
+		public delegate void AddrOfTarget499(ref global::Microsoft.Graphics.Canvas.Text.CanvasScriptProperties__Impl.UnsafeType a0);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget555(
+		public delegate int AddrOfTarget500(
 					ref global::Microsoft.Graphics.Canvas.Text.CanvasGlyphShaping a0, 
 					out global::Microsoft.Graphics.Canvas.Text.CanvasGlyphShaping__Impl.UnsafeType a1);
 
@@ -12611,7 +11522,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget556(
+		public delegate int AddrOfTarget501(
 					ref global::Microsoft.Graphics.Canvas.Text.CanvasGlyphShaping__Impl.UnsafeType a0, 
 					out global::Microsoft.Graphics.Canvas.Text.CanvasGlyphShaping a1);
 
@@ -12620,7 +11531,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget557(
+		public delegate int AddrOfTarget502(
 					ref global::Microsoft.Graphics.Canvas.Text.CanvasJustificationOpportunity a0, 
 					out global::Microsoft.Graphics.Canvas.Text.CanvasJustificationOpportunity__Impl.UnsafeType a1);
 
@@ -12629,7 +11540,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget558(
+		public delegate int AddrOfTarget503(
 					ref global::Microsoft.Graphics.Canvas.Text.CanvasJustificationOpportunity__Impl.UnsafeType a0, 
 					out global::Microsoft.Graphics.Canvas.Text.CanvasJustificationOpportunity a1);
 
@@ -12638,7 +11549,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget559(
+		public delegate int AddrOfTarget504(
 					ref global::Microsoft.Graphics.Canvas.UI.CanvasTimingInformation a0, 
 					out global::Microsoft.Graphics.Canvas.UI.CanvasTimingInformation__Impl.UnsafeType a1);
 
@@ -12647,7 +11558,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget560(
+		public delegate int AddrOfTarget505(
 					ref global::Microsoft.Graphics.Canvas.UI.CanvasTimingInformation__Impl.UnsafeType a0, 
 					out global::Microsoft.Graphics.Canvas.UI.CanvasTimingInformation a1);
 
@@ -12656,7 +11567,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget561(
+		public delegate int AddrOfTarget506(
 					ref global::Windows.Web.Http.HttpProgress a0, 
 					out global::Windows.Web.Http.HttpProgress__Impl.UnsafeType a1);
 
@@ -12665,7 +11576,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget562(
+		public delegate int AddrOfTarget507(
 					ref global::Windows.Web.Http.HttpProgress__Impl.UnsafeType a0, 
 					out global::Windows.Web.Http.HttpProgress a1);
 
@@ -12674,14 +11585,14 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget563(ref global::Windows.Web.Http.HttpProgress__Impl.UnsafeType a0);
+		public delegate void AddrOfTarget508(ref global::Windows.Web.Http.HttpProgress__Impl.UnsafeType a0);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget564(
+		public delegate int AddrOfTarget509(
 					ref global::_.Interop_Winsock_WSAData__System_Net_NameResolution a0, 
 					out global::_.Interop_Winsock_WSAData__System_Net_NameResolution__Impl.UnsafeType a1);
 
@@ -12690,7 +11601,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget565(
+		public delegate int AddrOfTarget510(
 					ref global::_.Interop_Winsock_WSAData__System_Net_NameResolution__Impl.UnsafeType a0, 
 					out global::_.Interop_Winsock_WSAData__System_Net_NameResolution a1);
 
@@ -12699,7 +11610,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget566(
+		public delegate int AddrOfTarget511(
 					ref global::_.Interop_Winsock_IPv6MulticastRequest__System_Net_Sockets a0, 
 					out global::_.Interop_Winsock_IPv6MulticastRequest__System_Net_Sockets__Impl.UnsafeType a1);
 
@@ -12708,7 +11619,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget567(
+		public delegate int AddrOfTarget512(
 					ref global::_.Interop_Winsock_IPv6MulticastRequest__System_Net_Sockets__Impl.UnsafeType a0, 
 					out global::_.Interop_Winsock_IPv6MulticastRequest__System_Net_Sockets a1);
 
@@ -12717,7 +11628,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget568(
+		public delegate int AddrOfTarget513(
 					ref global::_.Interop_UNICODE_STRING__System_Security_Principal_Windows a0, 
 					out global::_.Interop_UNICODE_STRING__System_Security_Principal_Windows__Impl.UnsafeType a1);
 
@@ -12726,7 +11637,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget569(
+		public delegate int AddrOfTarget514(
 					ref global::_.Interop_UNICODE_STRING__System_Security_Principal_Windows__Impl.UnsafeType a0, 
 					out global::_.Interop_UNICODE_STRING__System_Security_Principal_Windows a1);
 
@@ -12735,14 +11646,14 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget570(ref global::_.Interop_UNICODE_STRING__System_Security_Principal_Windows__Impl.UnsafeType a0);
+		public delegate void AddrOfTarget515(ref global::_.Interop_UNICODE_STRING__System_Security_Principal_Windows__Impl.UnsafeType a0);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget571(
+		public delegate int AddrOfTarget516(
 					global::System_Net.SecPkgContext_ConnectionInfo__System_Net_Security a0, 
 					out global::System_Net.SecPkgContext_ConnectionInfo__System_Net_Security__Impl.UnsafeType a1);
 
@@ -12751,7 +11662,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget572(
+		public delegate int AddrOfTarget517(
 					ref global::System_Net.SecPkgContext_ConnectionInfo__System_Net_Security__Impl.UnsafeType a0, 
 					global::System_Net.SecPkgContext_ConnectionInfo__System_Net_Security a1);
 
@@ -12760,7 +11671,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget573(
+		public delegate int AddrOfTarget518(
 					ref global::_.Interop_IpHlpApi_FIXED_INFO__System_Net_Primitives a0, 
 					out global::_.Interop_IpHlpApi_FIXED_INFO__System_Net_Primitives__Impl.UnsafeType a1);
 
@@ -12769,7 +11680,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget574(
+		public delegate int AddrOfTarget519(
 					ref global::_.Interop_IpHlpApi_FIXED_INFO__System_Net_Primitives__Impl.UnsafeType a0, 
 					out global::_.Interop_IpHlpApi_FIXED_INFO__System_Net_Primitives a1);
 
@@ -12778,7 +11689,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget575(
+		public delegate int AddrOfTarget520(
 					ref global::_.Interop_IpHlpApi_IP_ADDR_STRING__System_Net_Primitives a0, 
 					out global::_.Interop_IpHlpApi_IP_ADDR_STRING__System_Net_Primitives__Impl.UnsafeType a1);
 
@@ -12787,7 +11698,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget576(
+		public delegate int AddrOfTarget521(
 					ref global::_.Interop_IpHlpApi_IP_ADDR_STRING__System_Net_Primitives__Impl.UnsafeType a0, 
 					out global::_.Interop_IpHlpApi_IP_ADDR_STRING__System_Net_Primitives a1);
 
@@ -12796,7 +11707,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget577(
+		public delegate int AddrOfTarget522(
 					ref global::_.Interop_CLAIM_SECURITY_ATTRIBUTE_V1__System_Security_Principal_Windows a0, 
 					out global::_.Interop_CLAIM_SECURITY_ATTRIBUTE_V1__System_Security_Principal_Windows__Impl.UnsafeType a1);
 
@@ -12805,7 +11716,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget578(
+		public delegate int AddrOfTarget523(
 					ref global::_.Interop_CLAIM_SECURITY_ATTRIBUTE_V1__System_Security_Principal_Windows__Impl.UnsafeType a0, 
 					out global::_.Interop_CLAIM_SECURITY_ATTRIBUTE_V1__System_Security_Principal_Windows a1);
 
@@ -12814,14 +11725,14 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget579(ref global::_.Interop_CLAIM_SECURITY_ATTRIBUTE_V1__System_Security_Principal_Windows__Impl.UnsafeType a0);
+		public delegate void AddrOfTarget524(ref global::_.Interop_CLAIM_SECURITY_ATTRIBUTE_V1__System_Security_Principal_Windows__Impl.UnsafeType a0);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget580(
+		public delegate int AddrOfTarget525(
 					global::System_Net.SecPkgContext_StreamSizes__System_Net_Security a0, 
 					out global::System_Net.SecPkgContext_StreamSizes__System_Net_Security__Impl.UnsafeType a1);
 
@@ -12830,7 +11741,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget581(
+		public delegate int AddrOfTarget526(
 					ref global::System_Net.SecPkgContext_StreamSizes__System_Net_Security__Impl.UnsafeType a0, 
 					global::System_Net.SecPkgContext_StreamSizes__System_Net_Security a1);
 
@@ -12839,7 +11750,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget582(
+		public delegate int AddrOfTarget527(
 					global::_.Interop_SecPkgContext_ApplicationProtocol__System_Net_Security a0, 
 					out global::_.Interop_SecPkgContext_ApplicationProtocol__System_Net_Security__Impl.UnsafeType a1);
 
@@ -12848,7 +11759,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget583(
+		public delegate int AddrOfTarget528(
 					ref global::_.Interop_SecPkgContext_ApplicationProtocol__System_Net_Security__Impl.UnsafeType a0, 
 					global::_.Interop_SecPkgContext_ApplicationProtocol__System_Net_Security a1);
 
@@ -12857,7 +11768,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget584(
+		public delegate int AddrOfTarget529(
 					ref global::_.Interop_SspiCli_SecPkgContext_IssuerListInfoEx__System_Net_Security a0, 
 					out global::_.Interop_SspiCli_SecPkgContext_IssuerListInfoEx__System_Net_Security__Impl.UnsafeType a1);
 
@@ -12866,7 +11777,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget585(
+		public delegate int AddrOfTarget530(
 					ref global::_.Interop_SspiCli_SecPkgContext_IssuerListInfoEx__System_Net_Security__Impl.UnsafeType a0, 
 					out global::_.Interop_SspiCli_SecPkgContext_IssuerListInfoEx__System_Net_Security a1);
 
@@ -12875,14 +11786,14 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate void AddrOfTarget586(ref global::_.Interop_SspiCli_SecPkgContext_IssuerListInfoEx__System_Net_Security__Impl.UnsafeType a0);
+		public delegate void AddrOfTarget531(ref global::_.Interop_SspiCli_SecPkgContext_IssuerListInfoEx__System_Net_Security__Impl.UnsafeType a0);
 
 		#endif
 
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget587(
+		public delegate int AddrOfTarget532(
 					global::System_Net.SecPkgContext_Sizes__System_Net_Security a0, 
 					out global::System_Net.SecPkgContext_Sizes__System_Net_Security__Impl.UnsafeType a1);
 
@@ -12891,7 +11802,7 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget588(
+		public delegate int AddrOfTarget533(
 					ref global::System_Net.SecPkgContext_Sizes__System_Net_Security__Impl.UnsafeType a0, 
 					global::System_Net.SecPkgContext_Sizes__System_Net_Security a1);
 

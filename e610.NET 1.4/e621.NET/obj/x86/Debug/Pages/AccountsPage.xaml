@@ -86,11 +86,11 @@
                     <Grid>
                         <TextBlock Text="Blacklist:" FontSize="24" Margin="10,10,10,10"/>
                         <Button x:ConnectionId='15' x:Name="SaveBlacklistButton" HorizontalAlignment="Right" Content="Save" FontSize="16"
-                                Margin="10,10,10,10"                                  />
+                                Margin="10,10,10,10"                                   IsEnabled="False"/>
                     </Grid>
                     <TextBox x:ConnectionId='14' Width="auto" Height="Auto" x:Name="BlacklistBox" Margin="10,10,10,10"
                      VerticalAlignment="Top" HorizontalAlignment="Stretch" AcceptsReturn="True"
-                     TextWrapping="Wrap" MaxHeight="110"/>
+                     TextWrapping="Wrap" MaxHeight="110" IsReadOnly="True"/>
                 </StackPanel>
             </Grid>
             <StackPanel Orientation="Vertical" Grid.Row="2" Margin="10">

@@ -1,0 +1,32 @@
+LIBRARY advapi32.dll
+EXPORTS
+   CryptDestroyHash
+   CryptSignHashW
+   CryptGenKey
+   CryptSetProvParam
+
+   LsaClose
+   CryptGetUserKey
+   CryptGetKeyParam
+   CryptGetProvParam
+   OpenThreadToken
+   LsaLookupNames2
+   CryptGetDefaultProviderW
+   CryptImportKey
+   CryptAcquireContextW
+   GetTokenInformation
+   CryptSetHashParam
+   OpenProcessToken
+   CryptReleaseContext
+   DuplicateTokenEx
+   CryptCreateHash
+   CryptDestroyKey
+   LsaFreeMemory
+   CryptGetHashParam
+   LsaLookupSids
+
+   ImpersonateLoggedOnUser
+
+   LsaOpenPolicy
+   LsaNtStatusToWinError
+   RevertToSelf

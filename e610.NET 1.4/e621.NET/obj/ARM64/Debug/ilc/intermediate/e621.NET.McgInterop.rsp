@@ -1,0 +1,42 @@
+﻿/debug:full
+/nowarn:0436;0618;1668;1685;1701;1702
+/debug+
+/nostdlib+
+/optimize-
+/out:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\intermediate\e621.NET.McgInterop.dll"
+/pdb:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\intermediate\e621.NET.McgInterop.pdb"
+/platform:anycpu
+/warnaserror+
+/unsafe
+/nologo
+/target:library
+/define:MCG_PRE_BUILD
+/define:DEBUG
+/define:WIN64
+/define:ARM64
+/r:"C:\Users\jhset\.nuget\packages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00\tools\SharedLibrary\chk\AnalysisILToc\System.Private.CoreLib.iltoc"
+/r:"C:\Users\jhset\.nuget\packages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00\tools\SharedLibrary\chk\AnalysisILToc\System.Private.Interop.iltoc"
+/r:"C:\Users\jhset\.nuget\packages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00\tools\SharedLibrary\chk\AnalysisILToc\System.Private.Uri.iltoc"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\in\System.Reflection.DispatchProxy.dll"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\in\System.Reflection.dll"
+/r:"C:\Users\jhset\.nuget\packages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00\tools\SharedLibrary\chk\AnalysisILToc\System.Runtime.iltoc"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\in\System.Runtime.InteropServices.dll"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\in\System.Runtime.InteropServices.WindowsRuntime.dll"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\in\System.Numerics.Vectors.dll"
+/r:"C:\Users\jhset\.nuget\packages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00\tools\SharedLibrary\chk\AnalysisILToc\System.Threading.iltoc"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\in\System.Diagnostics.Debug.dll"
+/r:"C:\Users\jhset\.nuget\packages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00\tools\SharedLibrary\chk\AnalysisILToc\System.Runtime.Extensions.iltoc"
+/r:"C:\Users\jhset\.nuget\packages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00\tools\SharedLibrary\chk\AnalysisILToc\System.Collections.iltoc"
+/r:"C:\Users\jhset\.nuget\packages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00\tools\SharedLibrary\chk\AnalysisILToc\System.ObjectModel.iltoc"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\in\System.Runtime.WindowsRuntime.dll"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\in\System.Runtime.WindowsRuntime.UI.Xaml.dll"
+/r:"C:\Users\jhset\.nuget\packages\runtime.win10-arm64.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00\tools\SharedLibrary\chk\AnalysisILToc\System.Private.SharedLibrary.Interop.Generated.iltoc"
+/r:"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\intermediate\System.Private.e621.NET.Generated.dll"
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\intermediate\e621.NET.McgInterop\Adapters.g.cs"
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\intermediate\e621.NET.McgInterop\AssemblyInfo.g.cs"
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\intermediate\e621.NET.McgInterop\Data.g.cs"
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\intermediate\e621.NET.McgInterop\Helpers.g.cs"
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\intermediate\e621.NET.McgInterop\ImplTypes.g.cs"
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\intermediate\e621.NET.McgInterop\PInvoke.g.cs"
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\intermediate\e621.NET.McgInterop\SafeTypes.g.cs"
+"C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Debug\ilc\intermediate\e621.NET.McgInterop\SharedStubs.g.cs"
