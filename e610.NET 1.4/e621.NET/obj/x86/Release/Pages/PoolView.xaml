@@ -1,5 +1,5 @@
 ﻿<Page x:ConnectionId='1' x:Name="page"
-    x:Class="e610.NET.Pages.PoolView"
+    x:Class="e610.NET.PoolView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:e610.NET"
@@ -12,16 +12,10 @@
         <ResourceDictionary>
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceDictionary x:Key="Default">
-                    <AcrylicBrush x:Key="SideBar"
-                          BackgroundSource="HostBackdrop"
-                          TintColor="#001439"
-                          TintOpacity="0.8" 
-                          FallbackColor="#001439"/>
-                    <AcrylicBrush x:Key="MainBackground"
-                          BackgroundSource="HostBackdrop"
-                          TintColor="#001439"
-                          TintOpacity="0.3"
-                          FallbackColor="#001439"/>
+                    <SolidColorBrush x:Key="SideBar"
+                          Color="#001439"/>
+                    <SolidColorBrush x:Key="MainBackground"
+                          Color="#000F2D"/>
                     <SolidColorBrush x:Key="TextBackgound" Color="#FF464646"/>
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
@@ -32,81 +26,100 @@
             <ColumnDefinition Width="10*" MinWidth="180"/>
             <ColumnDefinition Width="90*" />
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-        <ScrollViewer Background="{ThemeResource MainBackground}" Grid.Column="1">
+        <Grid Grid.Row="0" Grid.Column="1" Background="{ThemeResource SideBar}" Canvas.ZIndex="10">
+            <StackPanel Orientation="Vertical">
+                <TextBlock x:ConnectionId='23' x:Name="PoolTitle" FontSize="24" FontWeight="Bold"/>
+                <Button x:ConnectionId='24' x:Name="DescToggle" Content="Show Description"                          Visibility="Collapsed"/>
+                <TextBlock x:ConnectionId='25' x:Name="PoolDesc" FontSize="18" Visibility="Collapsed" TextWrapping="WrapWholeWords" Margin="0,0,10,0"/>
+            </StackPanel>
+        </Grid>
+        <ScrollViewer Background="{ThemeResource MainBackground}" Grid.Column="1" Grid.Row="1">
             <StackPanel Grid.Column="1">
-                <Grid Grid.Row="0" Grid.Column="1" Background="{ThemeResource SideBar}" >
-                    <StackPanel Orientation="Vertical">
-                        <TextBlock x:ConnectionId='19' x:Name="PoolTitle" FontSize="24" FontWeight="Bold"/>
-                        <Button x:ConnectionId='20' x:Name="DescToggle" Content="Show Description"                          Visibility="Collapsed"/>
-                        <TextBlock x:ConnectionId='21' x:Name="PoolDesc" FontSize="18" Visibility="Collapsed" TextWrapping="WrapWholeWords" Margin="0,0,10,0"/>
-                    </StackPanel>
-                </Grid>
-                <Grid Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch">
-                    <GridView x:ConnectionId='14' x:Name="ImageGrid"                                        Background="{ThemeResource MainBackground}"
+                <StackPanel.Resources>
+                    <SwipeItems x:Key="left" Mode="Execute">
+                        <SwipeItem x:ConnectionId='16' BehaviorOnInvoked="Close"                                
+                                            Background="#000F2D"/>
+                    </SwipeItems>
+                    <SwipeItems x:Key="right" Mode="Execute">
+                        <SwipeItem x:ConnectionId='15' BehaviorOnInvoked="Close"                                 
+                                           Background="#000F2D"/>
+                    </SwipeItems>
+                </StackPanel.Resources>
+                <Grid x:ConnectionId='17' Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch" x:Name="MainPanel">
+                    <SwipeControl RightItems="{StaticResource right}" LeftItems="{StaticResource left}" Background="Transparent">
+                        <GridView x:ConnectionId='18' x:Name="ImageGrid"                                        Background="{ThemeResource MainBackground}"
                               HorizontalAlignment="Stretch" Margin="0,0,70,0"
                                                               IsItemClickEnabled="True">
-                        <GridView.ItemTemplate>
-                            <DataTemplate                        >
-                                <Grid x:ConnectionId='16' Margin="10,0,0,10" Width="150">
-                                    <uwpcontrols:ImageEx x:ConnectionId='17' Source="{Binding preview.url}"                                                                            />
-                                    <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="{ThemeResource TextBackgound}">
-                                        <TextBlock x:ConnectionId='18'                          Margin="0,-4,0,0"            />
-                                    </StackPanel>
-                                </Grid>
-                            </DataTemplate>
-                        </GridView.ItemTemplate>
+                            <GridView.ItemTemplate>
+                                <DataTemplate                        >
+                                    <Grid x:ConnectionId='20' Margin="10,0,0,10" Width="150">
+                                        <uwpcontrols:ImageEx x:ConnectionId='21' Source="{Binding preview.url}"                                                                            />
+                                        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="{ThemeResource TextBackgound}">
+                                            <TextBlock x:ConnectionId='22'                          Margin="0,-4,0,0"            />
+                                        </StackPanel>
+                                    </Grid>
+                                </DataTemplate>
+                            </GridView.ItemTemplate>
 
 
-                    </GridView>
+                        </GridView>
+                    </SwipeControl>
                 </Grid>
             </StackPanel>
         </ScrollViewer>
 
 
-        <StackPanel Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Orientation="Vertical" Background="{ThemeResource SideBar}">
+        <StackPanel Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Orientation="Vertical" Background="{ThemeResource SideBar}" Translation="0,0,52">
+            <StackPanel.Shadow>
+                <ThemeShadow x:ConnectionId='3' x:Name="SidePanelShadow"/>
+            </StackPanel.Shadow>
             <!--Search Title, Bar, and Button-->
             <TextBlock Text="Search" FontSize="18" Margin="10,10,10,0"  HorizontalAlignment="Center"/>
             <StackPanel Orientation="Vertical" Margin="10,10,10,10">
-                <TextBox x:ConnectionId='12' Width="auto" Height="Auto" x:Name="SearchBox"
+                <TextBox x:ConnectionId='13' Width="auto" Height="Auto" x:Name="SearchBox"
                      VerticalAlignment="Top" HorizontalAlignment="Stretch"
                      TextWrapping="Wrap"                            />
-                <Button x:ConnectionId='13' x:Name="SearchButton"                              HorizontalAlignment="Stretch" Margin="0,5,0,0">
+                <Button x:ConnectionId='14' x:Name="SearchButton"                              HorizontalAlignment="Stretch" Margin="0,5,0,0">
                     <SymbolIcon Symbol="Accept"/>
                 </Button>
             </StackPanel>
 
             <!--Progressbar, Hidden under Search Button-->
-            <control:ProgressBar x:ConnectionId='3' x:Name="LoadingBar" IsIndeterminate="True" Visibility="Collapsed"  Margin="0,0,0,0"
+            <control:ProgressBar x:ConnectionId='4' x:Name="LoadingBar" IsIndeterminate="True" Visibility="Collapsed"  Margin="0,0,0,0"
                          Height="3" Foreground="White" Width="150"
                          ShowPaused="False" ShowError="False"/>
 
             <!--Post Count Control-->
             <TextBlock Text="Post Count" FontSize="18" Margin="10,0,10,0" HorizontalAlignment="Center"/>
-            <Slider x:ConnectionId='4' x:Name="PostCountSlider" Margin="10,0,10,0" Maximum="300" Minimum="25" StepFrequency="5" />
+            <Slider x:ConnectionId='5' x:Name="PostCountSlider" Margin="10,0,10,0" Maximum="300" Minimum="25" StepFrequency="5" />
 
             <!--Page controls and number-->
             <TextBlock Text="Page" FontSize="18" Margin="10,0,10,5" HorizontalAlignment="Center"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:ConnectionId='9' x:Name="BackPage" Margin="0,0,5,0"                         >
+                <Button x:ConnectionId='10' x:Name="BackPage" Margin="0,0,5,0"                         >
                     <SymbolIcon Symbol="Back"/>
                 </Button>
-                <TextBlock x:ConnectionId='10'                           FontSize="20" Margin="0,0,0,0"/>
-                <Button x:ConnectionId='11' x:Name="ForwardPage"                             Margin="5,0,0,0">
+                <TextBlock x:ConnectionId='11'                           FontSize="20" Margin="0,0,0,0"/>
+                <Button x:ConnectionId='12' x:Name="ForwardPage"                             Margin="5,0,0,0">
                     <SymbolIcon Symbol="Forward"/>
                 </Button>
             </StackPanel>
-            <Button x:ConnectionId='5' x:Name="DownloadPool" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10"                           >
+            <Button x:ConnectionId='6' x:Name="DownloadPool" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10"                           >
                 <Grid>
                     <Grid.Resources>
                         <ResourceDictionary Source="ms-appx:///Microsoft.UI.Xaml/DensityStyles/Compact.xaml" />
                     </Grid.Resources>
-                    <TextBlock x:ConnectionId='6' x:Name="NormalText" Text="Download Pool" Visibility="Visible"/>
+                    <TextBlock x:ConnectionId='7' x:Name="NormalText" Text="Download Pool" Visibility="Visible"/>
                     <StackPanel Orientation="Vertical">
-                        <control:ProgressBar x:ConnectionId='7' Grid.Column="1" x:Name="DownloadProgress"  Visibility="Collapsed"
+                        <control:ProgressBar x:ConnectionId='8' Grid.Column="1" x:Name="DownloadProgress"  Visibility="Collapsed"
                              IsIndeterminate="False" Width="120" Height="7" Foreground="White" 
                              HorizontalAlignment="Right" VerticalAlignment="Top" Canvas.ZIndex="30" Margin="10"/>
-                        <TextBlock x:ConnectionId='8' x:Name="FilesText" HorizontalAlignment="Center" Height="20"/>
+                        <TextBlock x:ConnectionId='9' x:Name="FilesText" HorizontalAlignment="Center" Height="20"/>
                     </StackPanel>
                 </Grid>
             </Button>

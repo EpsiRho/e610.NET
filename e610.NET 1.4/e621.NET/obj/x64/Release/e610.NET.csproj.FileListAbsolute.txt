@@ -2759,3 +2759,4 @@ C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x64\Release\i
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x64\Release\ilc\intermediate\SgGenerated\System.Xml.XmlSerializer.Generated.dll
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x64\Release\ilc\intermediate\SgGenerated\System.Xml.XmlSerializer.Generated.pdb
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x64\Release\ilc\intermediate\System.Private.e621.NET.Generated.dll
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x64\Release\e610.NET.csprojAssemblyReference.cache

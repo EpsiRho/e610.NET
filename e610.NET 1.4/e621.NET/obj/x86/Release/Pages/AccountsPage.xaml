@@ -12,85 +12,98 @@
         <ResourceDictionary>
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceDictionary x:Key="Default">
-                    <AcrylicBrush x:Key="MainBackground"
-                          BackgroundSource="HostBackdrop"
-                          TintColor="#001439"
-                          TintOpacity="0.7"
-                          FallbackColor="#001439"/>
-                    <AcrylicBrush x:Key="CommentBackground"
-                          BackgroundSource="Backdrop"
-                          TintColor="#052049"
-                          TintOpacity="0.8"
-                          FallbackColor="#052049"/>
+                    <SolidColorBrush x:Key="MainBackground"
+                          Color="#000F2D"/>
+                    <SolidColorBrush x:Key="CommentBackground"
+                          Color="#052049"/>
                     <SolidColorBrush x:Key="TextBackgound" Color="#FF464646"/>
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
         </ResourceDictionary>
     </Page.Resources>
     <Grid Background="{ThemeResource MainBackground}">
-        <StackPanel x:ConnectionId='2' x:Name="LoginPanel" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-100,0,0" Visibility="Visible">
+        <Button x:ConnectionId='2' x:Name="BackPage" Margin="10"                          VerticalAlignment="Top">
+            <SymbolIcon Symbol="Back"/>
+        </Button>
+        <StackPanel x:ConnectionId='3' x:Name="LoginPanel" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,-100,0,0" Visibility="Visible">
             <TextBlock Text="Login" FontSize="32" Margin="10" HorizontalAlignment="Center"/>
             <StackPanel Orientation="Horizontal" Margin="0,10,0,10" HorizontalAlignment="Center">
                 <TextBlock Text="E621 Username:" FontSize="24" Margin="0,0,10,0"/>
-                <TextBox x:ConnectionId='23' x:Name="UsernameBox"  MinWidth="150" FontSize="18"                                   />
+                <TextBox x:ConnectionId='26' x:Name="UsernameBox"  MinWidth="150" FontSize="18"                                   />
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10" HorizontalAlignment="Center">
                 <TextBlock Text="E621 API Key:" FontSize="24" Margin="0,0,10,0"/>
-                <TextBox x:ConnectionId='22' x:Name="APIKeyBox" MinWidth="150" FontSize="18"                                  />
+                <TextBox x:ConnectionId='25' x:Name="APIKeyBox" MinWidth="150" FontSize="18"                                  />
             </StackPanel>
-            <Button x:ConnectionId='20' Width="100" Content="Login" FontSize="18" HorizontalAlignment="Center"                       />
-            <TextBlock x:ConnectionId='21' x:Name="ErrorMessage" Foreground="Red" FontSize="18" Text="Authentication Failure" HorizontalAlignment="Center" Visibility="Collapsed"/>
+            <Button x:ConnectionId='23' Width="100" Content="Login" FontSize="18" HorizontalAlignment="Center"                       />
+            <TextBlock x:ConnectionId='24' x:Name="ErrorMessage" Foreground="Red" FontSize="18" Text="Authentication Failure" HorizontalAlignment="Center" Visibility="Collapsed"/>
         </StackPanel>
-        <Grid x:ConnectionId='3' x:Name="AccountPanel" Visibility="Collapsed" Margin="20">
+        <Grid x:ConnectionId='4' x:Name="AccountPanel" Visibility="Collapsed" Margin="20,50,20,20">
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <control:ProgressBar x:ConnectionId='4' x:Name="LoadingBar" IsIndeterminate="True" Width="200" Height="5" Foreground="White" VerticalAlignment="Center" Visibility="Collapsed"/>
-            <TextBlock x:ConnectionId='5' Grid.Row="0" x:Name="UsernameTitle" FontSize="32" Margin="10,0,10,0"/>
-            <Button x:ConnectionId='6' Grid.Row="0" Grid.Column="1" x:Name="LogoutButton" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Content="Logout"                           />
-            <StackPanel Orientation="Vertical" Background="{ThemeResource CommentBackground}" BorderBrush="AliceBlue" BorderThickness="5" Grid.Row="1">
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Join Date: " FontSize="18" Margin="15,10,10,0"/>
-                    <TextBlock x:ConnectionId='19'                                        FontSize="18" Margin="0,10,10,0"/>
+            <control:ProgressBar x:ConnectionId='5' x:Name="LoadingBar" IsIndeterminate="True" Width="200" Height="5" Foreground="White" VerticalAlignment="Center" Visibility="Collapsed"/>
+            <TextBlock x:ConnectionId='6' Grid.Row="0" x:Name="UsernameTitle" FontSize="32" Margin="10,0,10,0"/>
+            <Button x:ConnectionId='7' Grid.Row="0" x:Name="LogoutButton" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Content="Logout"                           />
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Vertical" Background="{ThemeResource CommentBackground}" BorderBrush="AliceBlue" BorderThickness="5" Grid.Row="1" Grid.Column="0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Join Date: " FontSize="18" Margin="15,10,10,0"/>
+                        <TextBlock x:ConnectionId='22'                                        FontSize="18" Margin="0,10,10,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Level: " FontSize="18" Margin="15,0,10,0"/>
+                        <TextBlock x:ConnectionId='21'                                          FontSize="18"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Post: " FontSize="18" Margin="15,0,10,0"/>
+                        <TextBlock x:ConnectionId='20'                                               FontSize="18"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Deleted Post: " FontSize="18" Margin="15,0,10,0"/>
+                        <TextBlock x:ConnectionId='19'                                                FontSize="18"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Level: " FontSize="18" Margin="15,0,10,0"/>
+                        <TextBlock x:ConnectionId='18'                                          FontSize="18"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Permissions: " FontSize="18" Margin="15,0,10,0"/>
+                        <TextBlock x:ConnectionId='17' x:Name="PermsText" FontSize="18"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Upload Limit: " FontSize="18" Margin="15,0,10,10"/>
+                        <TextBlock x:ConnectionId='16'                                                 FontSize="18"/>
+                    </StackPanel>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Level: " FontSize="18" Margin="15,0,10,0"/>
-                    <TextBlock x:ConnectionId='18'                                          FontSize="18"/>
+                <StackPanel Grid.Column="1" Orientation="Vertical" Background="{ThemeResource CommentBackground}" BorderBrush="AliceBlue" BorderThickness="5" Grid.Row="1" Margin="-5,0,0,0">
+                    <Grid>
+                        <TextBlock Text="Blacklist:" FontSize="24" Margin="10,10,10,10"/>
+                        <Button x:ConnectionId='15' x:Name="SaveBlacklistButton" HorizontalAlignment="Right" Content="Save" FontSize="16"
+                                Margin="10,10,10,10"                                   IsEnabled="False"/>
+                    </Grid>
+                    <TextBox x:ConnectionId='14' Width="auto" Height="Auto" x:Name="BlacklistBox" Margin="10,10,10,10"
+                     VerticalAlignment="Top" HorizontalAlignment="Stretch" AcceptsReturn="True"
+                     TextWrapping="Wrap" MaxHeight="110" IsReadOnly="True"/>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Post: " FontSize="18" Margin="15,0,10,0"/>
-                    <TextBlock x:ConnectionId='17'                                               FontSize="18"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Deleted Post: " FontSize="18" Margin="15,0,10,0"/>
-                    <TextBlock x:ConnectionId='16'                                                FontSize="18"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Level: " FontSize="18" Margin="15,0,10,0"/>
-                    <TextBlock x:ConnectionId='15'                                          FontSize="18"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Permissions: " FontSize="18" Margin="15,0,10,0"/>
-                    <TextBlock x:ConnectionId='14' x:Name="PermsText" FontSize="18"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="Upload Limit: " FontSize="18" Margin="15,0,10,10"/>
-                    <TextBlock x:ConnectionId='13'                                                 FontSize="18"/>
-                </StackPanel>
-            </StackPanel>
+            </Grid>
             <StackPanel Orientation="Vertical" Grid.Row="2" Margin="10">
-            <HyperlinkButton x:ConnectionId='7' Content="Favorites" FontSize="24" Foreground="White"                              />
-                <GridView x:ConnectionId='8' x:Name="ImageGrid"                                        Background="{ThemeResource MainBackground}"
-                            HorizontalAlignment="Stretch" Margin="0,0,70,0"
+            <HyperlinkButton x:ConnectionId='8' Content="Favorites" FontSize="24" Foreground="White"                              />
+                <GridView x:ConnectionId='9' x:Name="ImageGrid"                                        Background="{ThemeResource MainBackground}"
+                            HorizontalAlignment="Stretch" Margin="0,0,70,0" 
                                                             IsItemClickEnabled="True">
                     <GridView.ItemTemplate>
                         <DataTemplate                        >
-                            <Grid x:ConnectionId='10' Margin="10,0,0,10" Width="150">
-                                <uwpcontrols:ImageEx x:ConnectionId='11' Source="{Binding preview.url}"                                                                            />
+                            <Grid x:ConnectionId='11' Margin="10,0,0,10" Width="150">
+                                <uwpcontrols:ImageEx x:ConnectionId='12' Source="{Binding preview.url}"                                                                            />
                                 <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="{ThemeResource TextBackgound}">
-                                    <TextBlock x:ConnectionId='12'                          Margin="0,-4,0,0"            />
+                                    <TextBlock x:ConnectionId='13'                          Margin="0,-4,0,0"            />
                                 </StackPanel>
                             </Grid>
                         </DataTemplate>

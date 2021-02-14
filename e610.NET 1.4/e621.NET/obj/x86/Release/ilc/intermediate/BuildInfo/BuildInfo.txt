@@ -1,28 +1,17 @@
 Build Type: ret
 
 Tool chain:
-ilc.exe         : 2.2.29512.01 built by: PROJECTNREL
-nutc_driver.exe : 2.2.29512.01 built by: PROJECTNREL
-rhbind.exe      : 2.2.29512.1 built by: PROJECTNREL
-sg.exe          : 2.2.29512.01 built by: PROJECTNREL
+ilc.exe         : 2.2.29722.00 built by: PROJECTNREL
+nutc_driver.exe : 2.2.29722.00 built by: PROJECTNREL
+rhbind.exe      : 2.2.29722.0 built by: PROJECTNREL
+sg.exe          : 2.2.29722.00 built by: PROJECTNREL
 
 Framework:
-avcodec-58.dll                                        : 
-avdevice-58.dll                                       : 
-avfilter-7.dll                                        : 
-avformat-58.dll                                       : 
-avutil-56.dll                                         : 
 clrcompression.dll                                    : 4.6.29301.02 @BuiltBy: dlab14-vs2017mb6000011 @Branch: juhoyosa/test-pools @SrcCode: https://github.com/dotnet/corefx/tree/b521a6d2e938e75f5889caa8844179352b8e78d1
 ColorCode.Core.dll                                    : 2.0.6.18
 ColorCode.UWP.dll                                     : 2.0.6.18
-FFmpegInterop.dll                                     : 
-libvlc.dll                                            : 3.0.4
-libvlccore.dll                                        : 3.0.4
-libVLCX.dll                                           : 
 Microsoft.CSharp.dll                                  : 4.6.29301.02
 Microsoft.Graphics.Canvas.dll                         : 1.25.0
-Microsoft.Threading.Tasks.dll                         : 1.0.168.0
-Microsoft.Threading.Tasks.Extensions.dll              : 1.0.168.0
 Microsoft.Toolkit.dll                                 : 6.1.1.1
 Microsoft.Toolkit.Parsers.dll                         : 6.1.1.1
 Microsoft.Toolkit.Uwp.dll                             : 6.1.1.1
@@ -36,12 +25,7 @@ Microsoft.Xaml.Interactivity.dll                      : 2.0.1.0
 mscorlib.dll                                          : 4.6.29301.02
 netstandard.dll                                       : 4.6.29301.2
 Newtonsoft.Json.dll                                   : 12.0.3.23909
-Nito.AsyncEx.Concurrent.dll                           : 4.0.1.0
-Nito.AsyncEx.dll                                      : 4.0.1.0
-Nito.AsyncEx.Enlightenment.dll                        : 4.0.1.0
 RestSharp.dll                                         : 106.11.7
-swresample-3.dll                                      : 
-swscale-5.dll                                         : 
 System.AppContext.dll                                 : 4.6.29301.02
 System.Buffers.dll                                    : 4.6.29301.02
 System.Collections.Concurrent.dll                     : 4.6.29301.02
@@ -120,32 +104,31 @@ System.Numerics.dll                                   : 4.6.29301.2
 System.Numerics.Vectors.dll                           : 4.6.29301.02
 System.Numerics.Vectors.WindowsRuntime.dll            : 4.6.29301.02
 System.ObjectModel.dll                                : 4.6.29301.02
-System.Private.CompilerServices.ICastable.dll         : 4.6.29512.1
-System.Private.CoreLib.Augments.dll                   : 4.6.29512.1
-System.Private.CoreLib.DeveloperExperience.dll        : 4.6.29512.1
-System.Private.CoreLib.dll                            : 4.6.29505.0
-System.Private.CoreLib.DynamicDelegate.dll            : 4.6.29512.1
-System.Private.CoreLib.InteropServices.dll            : 4.6.29512.1
-System.Private.CoreLib.Threading.dll                  : 4.6.29512.1
-System.Private.CoreLib.WinRTInterop.dll               : 4.6.29512.1
+System.Private.CompilerServices.ICastable.dll         : 4.6.29722.0
+System.Private.CoreLib.Augments.dll                   : 4.6.29722.0
+System.Private.CoreLib.DeveloperExperience.dll        : 4.6.29722.0
+System.Private.CoreLib.dll                            : 4.6.29720.0
+System.Private.CoreLib.DynamicDelegate.dll            : 4.6.29722.0
+System.Private.CoreLib.InteropServices.dll            : 4.6.29722.0
+System.Private.CoreLib.Threading.dll                  : 4.6.29722.0
+System.Private.CoreLib.WinRTInterop.dll               : 4.6.29722.0
 System.Private.DataContractSerialization.dll          : 4.6.29301.02
-System.Private.Debug.dll                              : 4.6.29512.01 built by: PROJECTNREL
+System.Private.Debug.dll                              : 4.6.29722.00 built by: PROJECTNREL
 System.Private.DeveloperExperience.AppX.dll           : 4.6.0.0 built by: PROJECTNREL
-System.Private.DispatchProxy.dll                      : 4.6.29512.1
-System.Private.ILToolchain.dll                        : 4.6.29512.1
-System.Private.Interop.Extensions.dll                 : 4.6.29512.1
-System.Private.MCG.dll                                : 4.6.29512.1
-System.Private.Reflection.Core.dll                    : 4.6.29512.01
-System.Private.Reflection.Execution.dll               : 4.6.29512.01
-System.Private.Reflection.Metadata.dll                : 4.6.29512.01
+System.Private.DispatchProxy.dll                      : 4.6.29722.0
+System.Private.ILToolchain.dll                        : 4.6.29722.0
+System.Private.Interop.Extensions.dll                 : 4.6.29722.0
+System.Private.MCG.dll                                : 4.6.29722.0
+System.Private.Reflection.Core.dll                    : 4.6.29722.00
+System.Private.Reflection.Execution.dll               : 4.6.29722.00
+System.Private.Reflection.Metadata.dll                : 4.6.29722.00
 System.Private.Reflection.Metadata.Ecma335.dll        : 4.6.29301.02
 System.Private.ServiceModel.dll                       : 4.6.26823.01
-System.Private.StackTraceGenerator.dll                : 4.6.29512.01
-System.Private.StackTraceMetadata.dll                 : 4.6.29512.01
-System.Private.Threading.dll                          : 4.6.29512.01
-System.Private.TypeLoader.dll                         : 4.6.29512.01
+System.Private.StackTraceGenerator.dll                : 4.6.29722.00
+System.Private.StackTraceMetadata.dll                 : 4.6.29722.00
+System.Private.Threading.dll                          : 4.6.29722.00
 System.Private.Uri.dll                                : 4.6.29301.02
-System.Private.WinRTInterop.CoreLib.dll               : 4.6.29512.01 built by: PROJECTNREL
+System.Private.WinRTInterop.CoreLib.dll               : 4.6.29722.00 built by: PROJECTNREL
 System.Private.Xml.dll                                : 4.6.29301.02
 System.Private.Xml.Linq.dll                           : 4.6.29301.02
 System.Reflection.Context.dll                         : 4.6.29301.02

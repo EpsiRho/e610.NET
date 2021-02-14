@@ -6,7 +6,7 @@
     <autoResourcePackage qualifier="DXFeatureLevel" />
     <omitSchemaFromResourcePacks />
   </packaging>
-  <index root="\" startIndexAt="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\bin\x64\Release\ilc\resources.pri">
+  <index root="\" startIndexAt="C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\x64\Release\ilc\resources.pri">
     <default>
       <qualifier name="Language" value="en-US" />
       <qualifier name="Contrast" value="standard" />
