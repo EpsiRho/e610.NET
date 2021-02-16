@@ -77,7 +77,6 @@
 /in "C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x86\Release\ilc\intermediate\ILTransformed\System.Threading.Thread.ildll"
 /in "C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x86\Release\ilc\intermediate\ILTransformed\System.Transactions.Local.ildll"
 /in "C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x86\Release\ilc\intermediate\ILTransformed\System.Web.HttpUtility.ildll"
-/in "C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x86\Release\ilc\intermediate\ILTransformed\System.Xml.XmlSerializer.Generated.ildll"
 /out "C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x86\Release\ilc\intermediate\MDIL\e621.NET.mdilexe"
 /iltoc "C:\Users\jhset\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00\tools\SharedLibrary\ret\ILToc\System.Collections.iltoc*SharedLibrary"
 /iltoc "C:\Users\jhset\.nuget\packages\runtime.win10-x86.microsoft.net.native.sharedlibrary\2.2.8-rel-29722-00\tools\SharedLibrary\ret\ILToc\System.Collections.Concurrent.iltoc*SharedLibrary"

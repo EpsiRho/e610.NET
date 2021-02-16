@@ -2228,10 +2228,7 @@ C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x64\Release\q
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x64\Release\qualifiers.txt.intermediate
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x64\Release\MultipleQualifiersPerDimensionFound.txt
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x64\Release\ProjectArchitectures.txt
-C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x64\Release\.winmd_cache\$FFmpegInterop.winmd_637327960900000000.json
-C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x64\Release\.winmd_cache\$libVLCX.winmd_636682079960000000.json
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x64\Release\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_637214714760000000.json
-C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x64\Release\.winmd_cache\$VLC.winmd_636683407900000000.json
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x64\Release\ilc\in\Properties\Default.rd.xml
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x64\Release\ilc\in\Microsoft.Toolkit.Uwp.UI.Controls\Microsoft.Toolkit.Uwp.UI.Controls.xr.xml
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\x64\Release\ilc\in\e621.NET.xr.xml

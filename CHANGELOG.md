@@ -35,3 +35,15 @@ Version 1.4
 - Swipe controls added
 - Now built for ARM and ARM64
 - Back button disabled due to an issue, will come back later
+Version 1.5
+- Fixed description not hiding when closing a post by searching 
+- Added Copy Post, Copy Post Link, and Copy Content Link to the post context menu
+- Moved to new swipe gesture handling
+- Fixed swiping on posts navigating through pages instead
+- Fixed Tag Autocomplete not hiding after searching
+- Fixed image clipping into tp bar
+- Fixed image set to page height not changing size on window size change
+- Changed top bar text when a post is open
+- Updated pool loading
+- Updated app settings
+- A few changed were made in preparation for an upcoming feature, but they are disabled in this update

@@ -8,6 +8,7 @@
     mc:Ignorable="d"
     xmlns:control="using:Microsoft.UI.Xaml.Controls"
     xmlns:uwpcontrols="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" KeyDown="page_KeyDown">
     <Page.Resources>
         <ResourceDictionary>
@@ -77,6 +78,21 @@
                         <SymbolIcon Symbol="Forward"/>
                     </Button>
                 </StackPanel>
+                <Button x:Name="DownloadPool" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" Click="DownloadPool_Click"
+                        Visibility="Collapsed">
+                    <Grid>
+                        <Grid.Resources>
+                            <ResourceDictionary Source="ms-appx:///Microsoft.UI.Xaml/DensityStyles/Compact.xaml" />
+                        </Grid.Resources>
+                        <TextBlock x:Name="NormalText" Text="Download pool" Visibility="Visible"/>
+                        <StackPanel Orientation="Vertical">
+                            <control:ProgressBar Grid.Column="1" x:Name="DownloadProgress"  Visibility="Collapsed"
+                             IsIndeterminate="False" Width="120" Height="7" Foreground="White" 
+                             HorizontalAlignment="Right" VerticalAlignment="Top" Canvas.ZIndex="30" Margin="10"/>
+                            <TextBlock x:Name="FilesText" HorizontalAlignment="Center" Height="20"/>
+                        </StackPanel>
+                    </Grid>
+                </Button>
                 <StackPanel Orientation="Vertical">
                     <HyperlinkButton x:Name="ArtistsTitle" Foreground="White" Content="Artists:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
                     <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="ArtistsTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True"/>
@@ -99,13 +115,23 @@
         </ScrollViewer>
         <Grid Background="{ThemeResource SideBar}"
             Grid.Column="0">
+            <Rectangle Fill="Transparent" Width="35" Height="35" HorizontalAlignment="Center" 
+                       VerticalAlignment="Bottom" Margin="10" ToolTipService.ToolTip="Followed Tags (Not Implemented Yet)" 
+                       extensions:Mouse.Cursor="UniversalNo"/>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">
-                <Button Margin="0,0,10,0" x:Name="Account" Click="Account_Click">
+                <Button Margin="0,0,10,0" x:Name="Account" Click="Account_Click"
+                        ToolTipService.ToolTip="Account Page">
                     <StackPanel Orientation="Horizontal">
                         <SymbolIcon Symbol="Account"/>
                     </StackPanel>
                 </Button>
-                <Button x:Name="Settings" Click="Settings_Click">
+                <Button Margin="0,0,10,0" x:Name="Following" Click="Following_Click" IsEnabled="False">
+                    <StackPanel Orientation="Horizontal">
+                        <SymbolIcon Symbol="Favorite"/>
+                    </StackPanel>
+                </Button>
+                <Button x:Name="Settings" Click="Settings_Click"
+                        ToolTipService.ToolTip="Settings Popup">
                     <StackPanel Orientation="Horizontal">
                         <SymbolIcon Symbol="Setting"/>
                     </StackPanel>
@@ -115,16 +141,6 @@
 
         <!--Posts View-->
         <Grid Background="{ThemeResource MainBackground}" Grid.Column="1" VerticalAlignment="Stretch" x:Name="MainPanel" KeyDown="page_KeyDown">
-            <Grid.Resources>
-                <SwipeItems x:Key="left" Mode="Execute">
-                    <SwipeItem BehaviorOnInvoked="Close" Invoked="LeftSwipeItem_Invoked"
-                                            Background="#000F2D"/>
-                </SwipeItems>
-                <SwipeItems x:Key="right" Mode="Execute">
-                    <SwipeItem BehaviorOnInvoked="Close" Invoked="RightSwipeItem_Invoked"
-                                           Background="#000F2D"/>
-                </SwipeItems>
-            </Grid.Resources>
             <Button Canvas.ZIndex="15" x:Name="CloseButton" Click="CloseButton_Click" Visibility="Collapsed"
                     VerticalAlignment="Top" Margin="10,65,10,10" Background="Black">
                 <SymbolIcon Symbol="Cancel"/>
@@ -155,9 +171,8 @@
                     <Button x:Name="BackPost" Margin="0,0,5,0" Tapped="BackPost_Tapped" Background="Black">
                         <SymbolIcon Symbol="Back"/>
                     </Button>
-                    <ComboBox x:Name="MovementSelection" ItemsSource="{x:Bind MovementSource}" 
-                                      Width="250" VerticalAlignment="Center" DisplayMemberPath="name">
-                    </ComboBox>
+                    <TextBlock x:Name="SearchName" Margin="5,5,5,8" VerticalAlignment="Center" FontSize="18" TextDecorations="Underline">
+                    </TextBlock>
                     <Button x:Name="ForwardPost" Tapped="ForwardPost_Tapped" Margin="5,0,5,0" Background="Black">
                         <SymbolIcon Symbol="Forward"/>
                     </Button>
@@ -183,87 +198,92 @@
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
-            <SwipeControl RightItems="{StaticResource right}" LeftItems="{StaticResource left}" Background="Transparent" Margin="0,55,0,0">
-                <Grid>
-                    <control:ProgressRing x:Name="ImageLoadProgress" Width="80" Height="80" IsActive="True" IsIndeterminate="True"
+            <Grid>
+                <control:ProgressRing x:Name="ImageLoadProgress" Width="80" Height="80" IsActive="True" IsIndeterminate="True"
                                           Foreground="White" Visibility="Collapsed" Canvas.ZIndex="20"/>
-                    <ScrollViewer>
-                        <StackPanel>
-                            <uwpcontrols:ImageEx x:Name="bigpicture" Source=""   
-                                              Canvas.ZIndex="1" Visibility="Collapsed"
-                                              RightTapped="bigpicture_RightTapped" ImageExOpened="bigpicture_ImageExOpened"/>
-                            <uwpcontrols:ImageEx x:Name="smallpicture" Source="{x:Bind singlePost.preview.url}" Width="{x:Bind singlePost.preview.width}" Height="{x:Bind singlePost.preview.height}" 
+                <ScrollViewer x:Name="ImageScrollViewer">
+                    <StackPanel Margin="0,60,0,0">
+                        <uwpcontrols:ImageEx x:Name="bigpicture" Source=""
+                                             Canvas.ZIndex="1" Visibility="Collapsed"
+                                             RightTapped="bigpicture_RightTapped" ImageExOpened="bigpicture_ImageExOpened"
+                                             ManipulationMode="TranslateX,TranslateInertia,System" ManipulationDelta="bigpicture_ManipulationDelta"
+                                             ManipulationCompleted="bigpicture_ManipulationCompleted"/>
+                        <uwpcontrols:ImageEx x:Name="smallpicture" Source="{x:Bind singlePost.preview.url}" Width="{x:Bind singlePost.preview.width}" Height="{x:Bind singlePost.preview.height}" 
                                                 Canvas.ZIndex="1" Visibility="Collapsed"
-                                                RightTapped="bigpicture_RightTapped"/>
-                            <MediaElement Visibility="Collapsed" Canvas.ZIndex="40"
-                                                    AutoPlay="False" x:Name="bigvideo" PosterSource="{x:Bind singlePost.preview.url}"
-                                                    AreTransportControlsEnabled="True" RightTapped="bigpicture_RightTapped" IsLooping="True"/>
-                            <StackPanel x:Name="DescRect" Visibility="Collapsed" Orientation="Horizontal" Background="{ThemeResource DescBackground}" CornerRadius="10" Margin="10,10,15,10">
-                                <Rectangle Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
-                                <StackPanel Orientation="Vertical">
-                                    <HyperlinkButton x:Name="DescHyperlink" FontSize="28" Margin="10" FontWeight="SemiBold" Foreground="White" Click="DescHyperlink_Click">
-                                        <TextBlock Text="Description: "/>
-                                    </HyperlinkButton>
-                                    <TextBlock x:Name="DescText" Margin="10" Width="{x:Bind singlePost.sample.width}" TextWrapping="WrapWholeWords" FontSize="18"/>
-                                </StackPanel>
+                                                RightTapped="bigpicture_RightTapped" ManipulationMode="TranslateX,TranslateInertia,System" ManipulationDelta="bigpicture_ManipulationDelta"
+                                             ManipulationCompleted="bigpicture_ManipulationCompleted"/>
+                        <MediaElement Visibility="Collapsed" Canvas.ZIndex="40"
+                                      AutoPlay="False" x:Name="bigvideo" PosterSource="{x:Bind singlePost.preview.url}"
+                                      AreTransportControlsEnabled="True" RightTapped="bigpicture_RightTapped" IsLooping="True" ManipulationMode="TranslateX,TranslateInertia,System" ManipulationDelta="bigpicture_ManipulationDelta"
+                                      ManipulationCompleted="bigpicture_ManipulationCompleted"/>
+                        <StackPanel x:Name="DescRect" Visibility="Collapsed" Orientation="Horizontal" Background="{ThemeResource DescBackground}" CornerRadius="10" Margin="10,10,15,10">
+                            <Rectangle Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
+                            <StackPanel Orientation="Vertical">
+                                <HyperlinkButton x:Name="DescHyperlink" FontSize="28" Margin="10" FontWeight="SemiBold" Foreground="White" Click="DescHyperlink_Click">
+                                    <TextBlock Text="Description: "/>
+                                </HyperlinkButton>
+                                <TextBlock x:Name="DescText" Margin="10" Width="{x:Bind singlePost.sample.width}" TextWrapping="WrapWholeWords" FontSize="18"/>
                             </StackPanel>
-                            <ListView x:Name="CommentsListView" IsItemClickEnabled="True" ItemsSource="{x:Bind CommentsSource}" SelectionChanged="CommentsListView_SelectionChanged">
-                                <ListView.ItemTemplate>
-                                    <DataTemplate x:DataType="local:Comment">
-                                        <Grid>
-                                            <Grid.RowDefinitions>
-                                                <RowDefinition/>
-                                            </Grid.RowDefinitions>
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition/>
-                                                <ColumnDefinition/>
-                                            </Grid.ColumnDefinitions>
-                                            <StackPanel Grid.Column="0" Orientation="Vertical">
-                                                <HyperlinkButton Content="{x:Bind creator_name}" FontSize="18" FontWeight="SemiBold" Foreground="White"/>
-                                                <!--<controls:ImageEx BorderBrush="{ThemeResource SystemControlBackgroundListMediumRevealBorderBrush}" Source="{x:Bind Avatar_Url}" Width="150" Height="150" Margin="0,0,0,10"/>-->
-                                            </StackPanel>
-                                            <StackPanel Grid.Column="1">
-                                                <Grid Margin="10,0,0,-25" Background="{ThemeResource DescBackground}" CornerRadius="10" Visibility="{x:Bind quotevis}">
-                                                    <Grid.ColumnDefinitions>
-                                                        <ColumnDefinition/>
-                                                        <ColumnDefinition Width="50*"/>
-                                                    </Grid.ColumnDefinitions>
-                                                    <Rectangle Grid.Column="0" Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
-                                                    <StackPanel Grid.Column="1" Orientation="Vertical">
-                                                        <HyperlinkButton Content="{x:Bind quotedName}" Foreground="White" Margin="10,0,0,0" FontSize="16"/>
-                                                        <TextBlock Text="{x:Bind quote}" Margin="0,0,10,10" TextWrapping="WrapWholeWords"/>
-                                                    </StackPanel>
-                                                </Grid>
-                                                <TextBlock Grid.Column="1" Text="{x:Bind body}" Margin="10,10,10,10" TextWrapping="WrapWholeWords" />
-                                            </StackPanel>
-                                        </Grid>
-                                    </DataTemplate>
-                                </ListView.ItemTemplate>
-                                <ListView.ItemContainerStyle>
-                                    <Style TargetType="ListViewItem">
-                                        <Setter Property="Background" Value="{ThemeResource CommentBackground}"/>
-                                        <Setter Property="Margin" Value="10"/>
-                                    </Style>
-                                </ListView.ItemContainerStyle>
-                            </ListView>
                         </StackPanel>
-                    </ScrollViewer>
-                    <GridView x:Name="ImageGrid" ItemsSource="{x:Bind ViewModel.Posts}" 
+                        <ListView x:Name="CommentsListView" IsItemClickEnabled="True" ItemsSource="{x:Bind CommentsSource}" SelectionChanged="CommentsListView_SelectionChanged">
+                            <ListView.ItemTemplate>
+                                <DataTemplate x:DataType="local:Comment">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <StackPanel Grid.Column="0" Orientation="Vertical">
+                                            <HyperlinkButton Content="{x:Bind creator_name}" FontSize="18" FontWeight="SemiBold" Foreground="White"/>
+                                            <!--<controls:ImageEx BorderBrush="{ThemeResource SystemControlBackgroundListMediumRevealBorderBrush}" Source="{x:Bind Avatar_Url}" Width="150" Height="150" Margin="0,0,0,10"/>-->
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="1">
+                                            <Grid Margin="10,0,0,-25" Background="{ThemeResource DescBackground}" CornerRadius="10" Visibility="{x:Bind quotevis}">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition Width="50*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Rectangle Grid.Column="0" Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
+                                                <StackPanel Grid.Column="1" Orientation="Vertical">
+                                                    <HyperlinkButton Content="{x:Bind quotedName}" Foreground="White" Margin="10,0,0,0" FontSize="16"/>
+                                                    <TextBlock Text="{x:Bind quote}" Margin="0,0,10,10" TextWrapping="WrapWholeWords"/>
+                                                </StackPanel>
+                                            </Grid>
+                                            <TextBlock Grid.Column="1" Text="{x:Bind body}" Margin="10,10,10,10" TextWrapping="WrapWholeWords" />
+                                        </StackPanel>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="Background" Value="{ThemeResource CommentBackground}"/>
+                                    <Setter Property="Margin" Value="10"/>
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                        </ListView>
+                    </StackPanel>
+                </ScrollViewer>
+                <GridView x:Name="ImageGrid" ItemsSource="{x:Bind ViewModel.Posts}"
                   HorizontalAlignment="Stretch" KeyDown="page_KeyDown"
-                  ItemClick="ImageGrid_ItemClick" IsItemClickEnabled="True">
-                        <GridView.ItemTemplate>
-                            <DataTemplate x:DataType="local:Post">
-                                <Grid Margin="10,0,0,10" Width="150" Height="150">
-                                    <uwpcontrols:ImageEx Source="{Binding preview.url}" Width="{x:Bind preview.width}" Height="{x:Bind preview.height}" x:Phase="2"/>
-                                    <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="{ThemeResource TextBackgound}">
-                                        <TextBlock Text="{x:Bind file.ext}" Margin="0,-4,0,0" x:Phase="1"/>
-                                    </StackPanel>
-                                </Grid>
-                            </DataTemplate>
-                        </GridView.ItemTemplate>
-                    </GridView>
-                </Grid>
-            </SwipeControl>
+                  ItemClick="ImageGrid_ItemClick" IsItemClickEnabled="True"
+                  ManipulationMode="TranslateX,TranslateInertia,System" ManipulationDelta="ImageGrid_ManipulationDelta"
+                  ManipulationCompleted="ImageGrid_ManipulationCompleted">
+                    <GridView.ItemTemplate>
+                        <DataTemplate x:DataType="local:Post">
+                            <Grid Margin="10,0,0,10" Width="150" Height="150" ManipulationMode="TranslateX,TranslateInertia,System" ManipulationDelta="ImageGrid_ManipulationDelta"
+                                        ManipulationCompleted="ImageGrid_ManipulationCompleted">
+                                <uwpcontrols:ImageEx Source="{Binding preview.url}" Width="{x:Bind preview.width}" Height="{x:Bind preview.height}" x:Phase="2"/>
+                                <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="{ThemeResource TextBackgound}">
+                                    <TextBlock Text="{x:Bind file.ext}" Margin="0,-4,0,0" x:Phase="1"/>
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+            </Grid>
             <Grid x:Name="ImageShadowHost"/>
         </Grid>
 
@@ -277,16 +297,39 @@
             Background="{ThemeResource DialogBackground}"
             BorderThickness="0">
             <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
-                <ComboBox x:Name="RatingSelection" Width="200" VerticalAlignment="Top" 
-                          HorizontalAlignment="Left" Header="Highest Rating allowed" Margin="10,10,0,0" >
-                    <x:String>rating:safe</x:String>
-                    <x:String>rating:questionable</x:String>
-                    <x:String>rating:explicit</x:String>
-                </ComboBox>
-                <TextBlock Text="Post Count" Margin="10,0,10,0"/>
-                <Slider x:Name="PostCountSlider" Margin="10,0,10,0" Maximum="300" Minimum="25" StepFrequency="5"/>
-                <ToggleSwitch x:Name="CommentSwitch" Header="Show Comments" Margin="10,10,0,0"/>
-                <ToggleSwitch x:Name="VolumeSwitch" Header="Mute Videos By Default" Margin="10,10,0,0"/>
+                <TextBlock Text="e610 v1.5" FontSize="11" Margin="0,-17,0,0"/>
+                <HyperlinkButton Content="App Settings" FontSize="18" Foreground="White" Click="AppHyperlinkClick"/>
+                <StackPanel x:Name="AppSettingsPanel" Visibility="Collapsed">
+                    <ComboBox x:Name="RatingSelection" Width="200" VerticalAlignment="Top" 
+                          HorizontalAlignment="Left" Header="Highest Rating allowed" Margin="0,10,0,0" >
+                        <x:String>rating:safe</x:String>
+                        <x:String>rating:questionable</x:String>
+                        <x:String>rating:explicit</x:String>
+                    </ComboBox>
+                    <TextBlock Text="Post Count" Margin="10,0,10,0"/>
+                    <Slider x:Name="PostCountSlider" Margin="10,0,10,0" Maximum="300" Minimum="25" StepFrequency="5"/>
+                    <ToggleSwitch x:Name="CommentSwitch" Header="Show Comments" Margin="0,10,0,0"/>
+                    <ToggleSwitch x:Name="VolumeSwitch" Header="Mute Videos By Default" Margin="0,10,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <HyperlinkButton Content="Notifications" FontSize="18" IsEnabled="False"
+                                     Foreground="White" Click="NotificationHyperlinkClick"/>
+                    <TextBlock Text="?" FontSize="12" VerticalAlignment="Center" Margin="0,0,0,5" extensions:Mouse.Cursor="Help"
+                               ToolTipService.ToolTip="Get notifications on new posts from tags you follow (Not Implemented Yet)"/>
+                </StackPanel>
+                <StackPanel x:Name="NotificationsSettingsPanel" Visibility="Collapsed">
+                    <TextBlock Text="Time between updates (In Minutes)" VerticalAlignment="Center" Margin="0,0,0,5"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="NotificationTime" TextChanged="NotificationTime_TextChanged"/>
+                        <TextBlock Text="(must be >15)" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="RegisterButton" Content="Turn on Notifications" Margin="0,10,10,0" Click="RegisterButton_Click"/>
+                        <Button x:Name="DeregisterButton" Content="Turn off Notifications" Margin="0,10,0,0" Click="DeregisterButton_Click"/>
+                    </StackPanel>
+                    <TextBlock Text="Notification Status"/>
+                    <RadioButton x:Name="NotificationStatus" Content="Notifications Off" IsChecked="False" IsEnabled="False" Foreground="White"/>
+                </StackPanel>
             </StackPanel>
         </ContentDialog>
 

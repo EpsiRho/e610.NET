@@ -274,7 +274,6 @@ C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\ARM64\Release
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\ARM64\Release\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\ARM64\Release\Microsoft.Graphics.Canvas.dll
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\bin\ARM64\Release\Microsoft.Graphics.Canvas.winmd
-C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Release\e610.NET.csprojAssemblyReference.cache
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Release\App.g.i.cs
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Release\App.g.cs
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Release\Pages\AccountsPage.g.i.cs
@@ -808,3 +807,4 @@ C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Release
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Release\ilc\intermediate\SgGenerated\System.Xml.XmlSerializer.Generated.dll
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Release\ilc\intermediate\SgGenerated\System.Xml.XmlSerializer.Generated.pdb
 C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Release\ilc\intermediate\System.Private.e621.NET.Generated.dll
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET 1.4\e621.NET\obj\ARM64\Release\e610.NET.csprojAssemblyReference.cache

@@ -3,11 +3,11 @@ EXPORTS
    BCryptGetProperty
    BCryptDestroyKey
    BCryptDestroyHash
-   BCryptHashData
-
-   BCryptGenRandom
-   BCryptFinishHash
-   BCryptCreateHash
-   BCryptCloseAlgorithmProvider
    BCryptExportKey
+
+   BCryptFinishHash
+   BCryptGenRandom
+   BCryptHashData
+   BCryptCreateHash
    BCryptOpenAlgorithmProvider
+   BCryptCloseAlgorithmProvider

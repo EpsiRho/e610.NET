@@ -8353,7 +8353,7 @@ namespace __Interop
 		[global::Internal.PreInitializedAddrOfDelegate]
 		public delegate int AddrOfTarget179(
 					global::System.IntPtr a0, 
-					global::Windows.UI.Xaml.Controls.Orientation* a1);
+					global::Windows.UI.Core.CoreCursorType* a1);
 
 		#endif
 
@@ -8361,6 +8361,15 @@ namespace __Interop
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
 		public delegate int AddrOfTarget180(
+					global::System.IntPtr a0, 
+					global::Windows.UI.Xaml.Controls.Orientation* a1);
+
+		#endif
+
+
+		#if false
+		[global::Internal.PreInitializedAddrOfDelegate]
+		public delegate int AddrOfTarget181(
 					global::System.IntPtr a0, 
 					void* a1, 
 					double a2);
@@ -8370,18 +8379,9 @@ namespace __Interop
 
 		#if false
 		[global::Internal.PreInitializedAddrOfDelegate]
-		public delegate int AddrOfTarget181(
-					global::System.IntPtr a0, 
-					global::Windows.UI.Xaml.Automation.Peers.AccessibilityView* a1);
-
-		#endif
-
-
-		#if false
-		[global::Internal.PreInitializedAddrOfDelegate]
 		public delegate int AddrOfTarget182(
 					global::System.IntPtr a0, 
-					global::Windows.UI.Core.CoreCursorType* a1);
+					global::Windows.UI.Xaml.Automation.Peers.AccessibilityView* a1);
 
 		#endif
 

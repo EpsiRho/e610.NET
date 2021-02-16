@@ -10132,6 +10132,7 @@
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.18362": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.12",
+      "Microsoft.Toolkit.Uwp.UI >= 6.1.1",
       "Microsoft.Toolkit.Uwp.UI.Controls >= 6.1.1",
       "Microsoft.UI.Xaml >= 2.5.0",
       "Newtonsoft.Json >= 12.0.3",
@@ -10181,6 +10182,10 @@
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "[6.2.12, )"
+          },
+          "Microsoft.Toolkit.Uwp.UI": {
+            "target": "Package",
+            "version": "[6.1.1, )"
           },
           "Microsoft.Toolkit.Uwp.UI.Controls": {
             "target": "Package",

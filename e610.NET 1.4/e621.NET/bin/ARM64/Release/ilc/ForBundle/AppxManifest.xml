@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="e610.NET" Publisher="CN=John Setta, O=John Setta, STREET=2098 Oak Dairy Ln SW, L=Huntsville, S=Alabama, PostalCode=35803, C=US" Version="1.4.0.0" ProcessorArchitecture="arm64" />
+  <Identity Name="e610.NET" Publisher="CN=John Setta, O=John Setta, STREET=2098 Oak Dairy Ln SW, L=Huntsville, S=Alabama, PostalCode=35803, C=US" Version="1.5.0.0" ProcessorArchitecture="arm64" />
   <mp:PhoneIdentity PhoneProductId="0ddcdaf2-0e50-41f1-982f-1006b31e1dce" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>e610.NET</DisplayName>

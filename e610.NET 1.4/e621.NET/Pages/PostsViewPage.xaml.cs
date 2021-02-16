@@ -9,9 +9,14 @@ using System.Linq;
 using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading;
+using Windows.ApplicationModel.Background;
+using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Graphics.Display;
 using Windows.Storage;
+using Windows.Storage.Streams;
+using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -38,6 +43,11 @@ namespace e610.NET
         public int pageCount;
         public bool canGetTags;
         private Post singlePost;
+        private Pool singlePool;
+        private bool _isPostSwiped;
+        private bool _isGridSwiped;
+        private string ImageSizeString;
+        public bool stopDownload;
 
         public PostsViewPage()
         {
@@ -46,12 +56,15 @@ namespace e610.NET
         }
         private void PageLoad()
         {
+            ImageSizeString = "Page Height";
             SearchBox.Text = GlobalVars.searchText;
             PostCountSlider.Value = GlobalVars.postCount;
             pageCount = GlobalVars.pageCount;
             canGetTags = true;
 
             SidePanelShadow.Receivers.Add(MainPanel);
+
+            Window.Current.SizeChanged += OnWindowSizeChanged;
 
             Thread LoadThread = new Thread(LoadPosts);
             LoadThread.Start(new LoadPostsArgs(SearchBox.Text, -1));
@@ -84,11 +97,24 @@ namespace e610.NET
                 RatingSelection.SelectedItem = GlobalVars.Rating;
             }
 
-            GlobalVars.ShowComments = (bool)localSettings.Values["comments"];
-            CommentSwitch.IsOn = GlobalVars.ShowComments;
+            try
+            {
+                GlobalVars.ShowComments = (bool)localSettings.Values["comments"];
+                CommentSwitch.IsOn = GlobalVars.ShowComments;
+            }
+            catch (Exception)
+            {
 
-            GlobalVars.MuteVolume = (bool)localSettings.Values["volume"];
-            VolumeSwitch.IsOn = GlobalVars.MuteVolume;
+            }
+            try 
+            { 
+                GlobalVars.MuteVolume = (bool)localSettings.Values["volume"];
+                VolumeSwitch.IsOn = GlobalVars.MuteVolume;
+            }
+            catch (Exception)
+            {
+
+            }
         }
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
@@ -200,7 +226,6 @@ namespace e610.NET
                 int count = 0;
                 foreach (Post p in DeserializedJson.posts)
                 {
-                    // If the url is null the post is blacklisted
                     p.index = count;
                     if (p.preview.url != null)
                     {
@@ -228,6 +253,7 @@ namespace e610.NET
                 await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => // Call Shit needed from UI Thread
                 {
                     LoadingBar.Visibility = Visibility.Collapsed;
+                    SearchTagAutoComplete.Items.Clear();
                 });
                 GC.Collect();
             }
@@ -306,7 +332,16 @@ namespace e610.NET
             pageCount = 1;
             Bindings.Update();
             GlobalVars.postCount = (int)PostCountSlider.Value;
-            if(PageText.Visibility == Visibility.Collapsed)
+            SearchName.Text = SearchBox.Text.Trim();
+            if (SearchBox.Text.Contains("pool:"))
+            {
+                DownloadPool.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                DownloadPool.Visibility = Visibility.Collapsed;
+            }
+            if (PageText.Visibility == Visibility.Collapsed)
             {
                 bigpicture.Source = "";
                 TopBar.Visibility = Visibility.Collapsed;
@@ -320,6 +355,8 @@ namespace e610.NET
                 BackPage.Visibility = Visibility.Visible;
                 ForwardPage.Visibility = Visibility.Visible;
                 PageNumberText.Visibility = Visibility.Visible;
+                DescRect.Visibility = Visibility.Collapsed;
+                DescText.Text = "";
                 Thread TagClean = new Thread(TagsCleanup);
                 TagClean.Start();
                 Bindings.Update();
@@ -336,6 +373,15 @@ namespace e610.NET
                 pageCount = 1;
                 Bindings.Update();
                 GlobalVars.postCount = (int)PostCountSlider.Value;
+                SearchName.Text = SearchBox.Text.Trim();
+                if (SearchBox.Text.Contains("pool:"))
+                {
+                    DownloadPool.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    DownloadPool.Visibility = Visibility.Collapsed;
+                }
                 if (PageText.Visibility == Visibility.Collapsed)
                 {
                     bigpicture.Source = "";
@@ -350,6 +396,8 @@ namespace e610.NET
                     BackPage.Visibility = Visibility.Visible;
                     ForwardPage.Visibility = Visibility.Visible;
                     PageNumberText.Visibility = Visibility.Visible;
+                    DescRect.Visibility = Visibility.Collapsed;
+                    DescText.Text = "";
                     Thread TagClean = new Thread(TagsCleanup);
                     TagClean.Start();
                     Bindings.Update();
@@ -362,6 +410,7 @@ namespace e610.NET
             {
                 Post pick = (Post)e.ClickedItem;
                 singlePost = pick;
+                DownloadPool.Visibility = Visibility.Collapsed;
                 if (singlePost.pools.Count > 0)
                 {
                     // Added the pools to the listview
@@ -412,6 +461,41 @@ namespace e610.NET
                     PageNumberText.Visibility = Visibility.Collapsed;
                     DescRect.Visibility = Visibility.Visible;
                     DescText.Text = singlePost.description;
+                    try
+                    {
+                        if (ImageSizeString == "Sample Height")
+                        {
+                            bigpicture.Width = singlePost.sample.width;
+                            bigpicture.Height = singlePost.sample.height;
+                            bigvideo.Width = singlePost.sample.width;
+                            bigvideo.Height = singlePost.sample.height;
+                            ImageScrollViewer.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
+                            GlobalVars.Binding = "Sample Height";
+                        }
+                        else if (ImageSizeString == "Page Height")
+                        {
+                            bigpicture.Width = double.NaN;
+                            bigpicture.Height = PostPage.ActualHeight - 65;
+                            bigvideo.Width = double.NaN;
+                            bigvideo.Height = PostPage.ActualHeight - 65;
+                            ImageScrollViewer.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
+                            GlobalVars.Binding = "Page Height";
+                        }
+                        else
+                        {
+                            bigpicture.Width = singlePost.file.width;
+                            bigpicture.Height = singlePost.file.height;
+                            bigvideo.Width = singlePost.file.width;
+                            bigvideo.Height = singlePost.file.height;
+                            ImageScrollViewer.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
+                            GlobalVars.Binding = "Full Height";
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        bigpicture.Width = singlePost.sample.width;
+                        bigpicture.Height = singlePost.sample.height;
+                    }
                     Thread tags = new Thread(PopulateTreeView);
                     tags.Start();
                     Bindings.Update();
@@ -526,7 +610,7 @@ namespace e610.NET
             {
                 var client = new RestClient();
                 client.BaseUrl = new Uri("https://e621.net/comments.json?");
-                client.UserAgent = "e610.NET/1.4(by EpsilonRho)";
+                client.UserAgent = "e610.NET/1.5(by EpsilonRho)";
                 var request = new RestRequest(RestSharp.Method.GET);
                 if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
                 {
@@ -609,7 +693,7 @@ namespace e610.NET
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
             }
@@ -631,46 +715,6 @@ namespace e610.NET
             else
             {
                 DescText.Visibility = Visibility.Visible;
-            }
-        }
-
-        // Touch Functions //
-        private void LeftSwipeItem_Invoked(SwipeItem sender, SwipeItemInvokedEventArgs args)
-        {
-            try
-            {
-                if (pageCount != 1)
-                {
-                    Thread LoadThread = new Thread(LoadPosts);
-                    //Post p = ViewModel.Posts.First();
-                    ViewModel.ClearPosts();
-                    pageCount--;
-                    LoadThread.Start(new LoadPostsArgs(SearchBox.Text, pageCount));
-                    Bindings.Update();
-                }
-            }
-            catch (Exception)
-            {
-
-            }
-        }
-        private void RightSwipeItem_Invoked(SwipeItem sender, SwipeItemInvokedEventArgs args)
-        {
-            try
-            {
-                if (ViewModel.Posts.Count > 0)
-                {
-                    Thread LoadThread = new Thread(LoadPosts);
-                    //Post p = ViewModel.Posts.Last();
-                    ViewModel.ClearPosts();
-                    pageCount++;
-                    LoadThread.Start(new LoadPostsArgs(SearchBox.Text, pageCount));
-                    Bindings.Update();
-                }
-            }
-            catch (Exception)
-            {
-
             }
         }
 
@@ -735,13 +779,24 @@ namespace e610.NET
         }
 
         // Post Functions //
-            // Save Functions //
+        // Save Functions //
         private void bigpicture_RightTapped(object sender, RightTappedRoutedEventArgs e)
         {
             MenuFlyout myFlyout = new MenuFlyout();
-            MenuFlyoutItem firstItem = new MenuFlyoutItem { Text = "Save Post" };
-            firstItem.Click += new RoutedEventHandler(StartSaveAsync);
+            MenuFlyoutItem firstItem = new MenuFlyoutItem { Text = "Copy Post" };
+            firstItem.Click += new RoutedEventHandler(StartCopyAsync);
             myFlyout.Items.Add(firstItem);
+            MenuFlyoutItem secondItem = new MenuFlyoutItem { Text = "Save Post" };
+            secondItem.Click += new RoutedEventHandler(StartSaveAsync);
+            myFlyout.Items.Add(secondItem);
+            MenuFlyoutSubItem subMenu = new MenuFlyoutSubItem { Text = "Share" };
+            MenuFlyoutItem ThirdItem = new MenuFlyoutItem { Text = "Copy Post Link" };
+            ThirdItem.Click += new RoutedEventHandler(CopyPostLink);
+            subMenu.Items.Add(ThirdItem);
+            MenuFlyoutItem FourthItem = new MenuFlyoutItem { Text = "Copy Content Link" };
+            FourthItem.Click += new RoutedEventHandler(CopyContentLink);
+            subMenu.Items.Add(FourthItem);
+            myFlyout.Items.Add(subMenu);
             myFlyout.ShowAt(sender as UIElement, e.GetPosition(sender as UIElement));
         }
         private void StartSaveAsync(object sender, RoutedEventArgs e)
@@ -807,7 +862,114 @@ namespace e610.NET
                 ClosePopup.Start();
             }
         }
-            // Tag Functions //
+        private void StartCopyAsync(object sender, RoutedEventArgs e)
+        {
+            Thread saveThread = new Thread(new ThreadStart(CopyImage));
+            saveThread.Start();
+        }
+        private async void CopyImage()
+        {
+            try
+            {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    ImageLoadProgress.Visibility = Visibility.Visible;
+                });
+                HttpClient client = new HttpClient(); // Create HttpClient
+                byte[] buffer = await client.GetByteArrayAsync(singlePost.file.url);
+                var dataPackage = new DataPackage();
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    dataPackage.SetBitmap(RandomAccessStreamReference.CreateFromUri(new Uri(singlePost.file.url)));
+                    Windows.ApplicationModel.DataTransfer.Clipboard.SetContent(dataPackage);
+                    ImageLoadProgress.Visibility = Visibility.Collapsed;
+                    InfoPopup.Title = "Post Copied";
+                    InfoPopup.Message = "";
+                    InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Success;
+                    InfoPopup.IsOpen = true;
+                });
+                Thread ClosePopup = new Thread(CloseInfoPopup);
+                ClosePopup.Start();
+            }
+            catch (Exception e)
+            {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    ImageLoadProgress.Visibility = Visibility.Collapsed;
+                    InfoPopup.Title = "Copying Error";
+                    InfoPopup.Message = e.Message;
+                    InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Error;
+                    InfoPopup.IsOpen = true;
+                });
+                Thread ClosePopup = new Thread(CloseInfoPopup);
+                ClosePopup.Start();
+            }
+        }
+        private async void CopyContentLink(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var dataPackage = new DataPackage();
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    dataPackage.SetText(singlePost.file.url);
+                    Windows.ApplicationModel.DataTransfer.Clipboard.SetContent(dataPackage);
+                    ImageLoadProgress.Visibility = Visibility.Collapsed;
+                    InfoPopup.Title = "Content Link Copied";
+                    InfoPopup.Message = "";
+                    InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Success;
+                    InfoPopup.IsOpen = true;
+                });
+                Thread ClosePopup = new Thread(CloseInfoPopup);
+                ClosePopup.Start();
+            }
+            catch (Exception err)
+            {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    ImageLoadProgress.Visibility = Visibility.Collapsed;
+                    InfoPopup.Title = "Copying Error";
+                    InfoPopup.Message = err.Message;
+                    InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Error;
+                    InfoPopup.IsOpen = true;
+                });
+                Thread ClosePopup = new Thread(CloseInfoPopup);
+                ClosePopup.Start();
+            }
+        }
+        private async void CopyPostLink(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                var dataPackage = new DataPackage();
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    dataPackage.SetText("https://e621.net/posts/" + singlePost.id);
+                    Windows.ApplicationModel.DataTransfer.Clipboard.SetContent(dataPackage);
+                    ImageLoadProgress.Visibility = Visibility.Collapsed;
+                    InfoPopup.Title = "Post Link Copied";
+                    InfoPopup.Message = "";
+                    InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Success;
+                    InfoPopup.IsOpen = true;
+                });
+                Thread ClosePopup = new Thread(CloseInfoPopup);
+                ClosePopup.Start();
+            }
+            catch (Exception err)
+            {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    ImageLoadProgress.Visibility = Visibility.Collapsed;
+                    InfoPopup.Title = "Copying Error";
+                    InfoPopup.Message = err.Message;
+                    InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Error;
+                    InfoPopup.IsOpen = true;
+                });
+                Thread ClosePopup = new Thread(CloseInfoPopup);
+                ClosePopup.Start();
+            }
+        }
+        // Tag Functions //
         private void PopulateTreeView()
         {
             Thread.Sleep(200);
@@ -950,6 +1112,16 @@ namespace e610.NET
             BackPage.Visibility = Visibility.Visible;
             ForwardPage.Visibility = Visibility.Visible;
             PageNumberText.Visibility = Visibility.Visible;
+            DescRect.Visibility = Visibility.Collapsed;
+            DescText.Text = "";
+            if (SearchBox.Text.Contains("pool:"))
+            {
+                DownloadPool.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                DownloadPool.Visibility = Visibility.Collapsed;
+            }
             Thread TagClean = new Thread(TagsCleanup);
             TagClean.Start();
             Bindings.Update();
@@ -1129,7 +1301,7 @@ namespace e610.NET
                     break;
             }
         }
-            // Post Movement //
+        // Post Movement //
         private void ForwardPost_Tapped(object sender, TappedRoutedEventArgs e)
         {
             Thread LoadThread = new Thread(ForwardPostLoad);
@@ -1234,6 +1406,10 @@ namespace e610.NET
                 }
                 singlePost = ViewModel.Posts[ViewModel.Posts.Count - 1];
             }
+            else if(singlePost.index == 0)
+            {
+                return;
+            }
             else
             {
                 Post pick = ViewModel.Posts[singlePost.index - 1];
@@ -1292,7 +1468,7 @@ namespace e610.NET
                 tags.Start();
             }
         }
-            // Exit Functions //
+        // Exit Functions //
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             bigpicture.Source = null;
@@ -1311,6 +1487,14 @@ namespace e610.NET
             PageNumberText.Visibility = Visibility.Visible;
             DescRect.Visibility = Visibility.Collapsed;
             DescText.Text = "";
+            if (SearchBox.Text.Contains("pool:"))
+            {
+                DownloadPool.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                DownloadPool.Visibility = Visibility.Collapsed;
+            }
             Thread TagClean = new Thread(TagsCleanup);
             TagClean.Start();
             Bindings.Update();
@@ -1346,8 +1530,29 @@ namespace e610.NET
                         newMenuItem.Text = newpool.name;
                         newMenuItem.Click += (s, e1) =>
                         {
-                            GlobalVars.newPool = true;
-                            this.Frame.Navigate(typeof(PoolView), newpool, new DrillInNavigationTransitionInfo());
+                            singlePool = newpool;
+                            SearchBox.Text = "order:id pool:" + newpool.id;
+                            ViewModel.ClearPosts();
+                            Thread LoadThread = new Thread(LoadPosts);
+                            LoadThread.Start(new LoadPostsArgs(SearchBox.Text, -1));
+                            bigpicture.Source = "";
+                            TopBar.Visibility = Visibility.Collapsed;
+                            bigpicture.Visibility = Visibility.Collapsed;
+                            bigvideo.Visibility = Visibility.Collapsed;
+                            smallpicture.Visibility = Visibility.Collapsed;
+                            ImageGrid.Visibility = Visibility.Visible;
+                            CloseButton.Visibility = Visibility.Collapsed;
+                            ImageLoadProgress.Visibility = Visibility.Collapsed;
+                            PageText.Visibility = Visibility.Visible;
+                            BackPage.Visibility = Visibility.Visible;
+                            ForwardPage.Visibility = Visibility.Visible;
+                            PageNumberText.Visibility = Visibility.Visible;
+                            DescRect.Visibility = Visibility.Collapsed;
+                            DescText.Text = "";
+                            DownloadPool.Visibility = Visibility.Visible;
+                            Thread TagClean = new Thread(TagsCleanup);
+                            TagClean.Start();
+                            Bindings.Update();
                         };
                         PoolsMenu.Items.Add(newMenuItem);
                         //MovementSource.Add(newpool);
@@ -1381,6 +1586,42 @@ namespace e610.NET
             {
                 return null;
             }
+        }
+        private void OnWindowSizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
+        {
+            Size window = GetCurrentDisplaySize();
+            try
+            {
+                if (singlePost.file.ext == "webm")
+                {
+                    bigvideo.Source = new Uri(singlePost.file.url);
+                    bigvideo.Visibility = Visibility.Visible;
+                    ImageLoadProgress.Visibility = Visibility.Collapsed;
+                    bigvideo.Width = double.NaN;
+                    bigvideo.Height = window.Height - 105;
+                }
+                else
+                {
+                    if (ImageSizeString == "Page Height")
+                    {
+                        bigpicture.Width = double.NaN;
+                        bigpicture.Height = window.Height - 65;
+                        ImageScrollViewer.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
+                        ImageSizeString = "Page Height";
+                    }
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+        public static Size GetCurrentDisplaySize()
+        {
+            var bounds = ApplicationView.GetForCurrentView().VisibleBounds;
+            var scaleFactor = DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
+            var size = new Size(bounds.Width * scaleFactor, bounds.Height * scaleFactor);
+            return size;
         }
 
         // Settings //
@@ -1539,22 +1780,28 @@ namespace e610.NET
                 {
                     bigpicture.Width = singlePost.sample.width;
                     bigpicture.Height = singlePost.sample.height;
-                    CommandBar.HorizontalAlignment = HorizontalAlignment.Center;
-                    GlobalVars.Binding = "Sample Height";
+                    bigvideo.Width = singlePost.sample.width;
+                    bigvideo.Height = singlePost.sample.height;
+                    ImageScrollViewer.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
+                    ImageSizeString = "Sample Height";
                 }
                 else if (clickItem.Text == "Page Height")
                 {
                     bigpicture.Width = double.NaN;
                     bigpicture.Height = PostPage.ActualHeight - 65;
-                    CommandBar.HorizontalAlignment = HorizontalAlignment.Center;
-                    GlobalVars.Binding = "Page Height";
+                    bigvideo.Width = double.NaN;
+                    bigvideo.Height = PostPage.ActualHeight - 65;
+                    ImageScrollViewer.HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled;
+                    ImageSizeString = "Page Height";
                 }
                 else
                 {
                     bigpicture.Width = singlePost.file.width;
                     bigpicture.Height = singlePost.file.height;
-                    CommandBar.HorizontalAlignment = HorizontalAlignment.Left;
-                    GlobalVars.Binding = "Full Height";
+                    bigvideo.Width = singlePost.file.width;
+                    bigvideo.Height = singlePost.file.height;
+                    ImageScrollViewer.HorizontalScrollBarVisibility = ScrollBarVisibility.Auto;
+                    ImageSizeString = "Full Height";
                 }
             }
             catch (Exception)
@@ -1564,9 +1811,306 @@ namespace e610.NET
             }
         }
 
+        // Touch Gestures //
+        private void bigpicture_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
+        {
+            if (e.IsInertial && !_isPostSwiped)
+            {
+                var swipedDistance = e.Cumulative.Translation.X;
 
+                if (Math.Abs(swipedDistance) <= 200) return;
 
+                if (swipedDistance > 0)
+                {
+                    Thread LoadThread = new Thread(BackPostLoad);
+                    LoadThread.Start();
+                }
+                else
+                {
+                    Thread LoadThread = new Thread(ForwardPostLoad);
+                    LoadThread.Start();
+                }
+                _isPostSwiped = true;
+            }
+        }
+        private void bigpicture_ManipulationCompleted(object sender, ManipulationCompletedRoutedEventArgs e)
+        {
+            _isPostSwiped = false;
+        }
+        private void ImageGrid_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
+        {
+            if (e.IsInertial && !_isGridSwiped)
+            {
+                var swipedDistance = e.Cumulative.Translation.X;
 
+                if (Math.Abs(swipedDistance) <= 200) return;
 
+                if (swipedDistance < 0)
+                {
+                    try
+                    {
+                        if (ViewModel.Posts.Count > 0)
+                        {
+                            Thread LoadThread = new Thread(LoadPosts);
+                            //Post p = ViewModel.Posts.Last();
+                            ViewModel.ClearPosts();
+                            pageCount++;
+                            LoadThread.Start(new LoadPostsArgs(SearchBox.Text, pageCount));
+                            Bindings.Update();
+                        }
+                    }
+                    catch (Exception)
+                    {
+
+                    }
+                }
+                else
+                {
+                    try
+                    {
+                        if (pageCount != 1)
+                        {
+                            Thread LoadThread = new Thread(LoadPosts);
+                            //Post p = ViewModel.Posts.First();
+                            ViewModel.ClearPosts();
+                            pageCount--;
+                            LoadThread.Start(new LoadPostsArgs(SearchBox.Text, pageCount));
+                            Bindings.Update();
+                        }
+                    }
+                    catch (Exception)
+                    {
+
+                    }
+                }
+                _isGridSwiped = true;
+            }
+        }
+        private void ImageGrid_ManipulationCompleted(object sender, ManipulationCompletedRoutedEventArgs e)
+        {
+            _isGridSwiped = false;
+        }
+
+        private void DeregisterButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RegisterButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void NotificationTime_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            NotificationTime.Text = new string(NotificationTime.Text.Where(char.IsDigit).ToArray());
+            NotificationTime.SelectionStart = NotificationTime.Text.Length;
+            NotificationTime.SelectionLength = 0;
+        }
+        private void AppHyperlinkClick(object sender, RoutedEventArgs e)
+        {
+            if (AppSettingsPanel.Visibility == Visibility.Visible)
+            {
+                AppSettingsPanel.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                AppSettingsPanel.Visibility = Visibility.Visible;
+            }
+        }
+        private void NotificationHyperlinkClick(object sender, RoutedEventArgs e)
+        {
+            if (NotificationsSettingsPanel.Visibility == Visibility.Visible)
+            {
+                NotificationsSettingsPanel.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                var taskName = "Notifier";
+                NotificationStatus.IsChecked = false;
+                NotificationStatus.Content = "Notifications Off";
+                foreach (var t in BackgroundTaskRegistration.AllTasks)
+                {
+                    if (t.Value.Name == taskName)
+                    {
+                        NotificationStatus.IsChecked = true;
+                        NotificationStatus.Content = "Notifications On";
+                    }
+                }
+                NotificationsSettingsPanel.Visibility = Visibility.Visible;
+            }
+        }
+
+        private void Following_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        public Root DownloadPostHolder;
+        private void LoadPoolPostsForDownload(int page, string tags)
+        {
+            // Function Vars
+            var client = new RestClient(); // Client to handle Requests
+            double limit = 75; // Post Limit
+            var request = new RestRequest(RestSharp.Method.GET); // REST request
+
+            // Set Endpoint
+            // TODO: Switching between e621 - gelbooru - r34 - etc
+            client.BaseUrl = new Uri("https://e621.net/posts.json?");
+
+            // Set the useragent for e621
+            client.UserAgent = "e610.NET/1.5(by EpsilonRho)";
+
+            // If user is logged in set login parameters into request
+            if (GlobalVars.Username != "" && GlobalVars.APIKey != "")
+            {
+                request.AddQueryParameter("login", GlobalVars.Username);
+                request.AddQueryParameter("api_key", GlobalVars.APIKey);
+            }
+
+            // Set parameters for tags and post limit
+            request.AddQueryParameter("tags", GlobalVars.Rating + " "+ tags);
+            request.AddQueryParameter("limit", limit.ToString());
+
+            request.AddQueryParameter("page", page.ToString());
+
+            // Send the request
+            var response = client.Execute(request);
+
+            // Deserialize the response
+            DownloadPostHolder = JsonConvert.DeserializeObject<Root>(response.Content);
+        }
+        private void DownloadPool_Click(object sender, RoutedEventArgs e)
+        {
+            if (DownloadProgress.Visibility == Visibility.Visible)
+            {
+                stopDownload = true;
+            }
+            else
+            {
+                StartSaveAsync();
+            }
+        }
+        private void StartSaveAsync()
+        {
+            Thread saveThread = new Thread(SaveTags);
+            if (!saveThread.IsAlive)
+            {
+                try
+                {
+                    saveThread.Start();
+                }
+                catch (Exception)
+                {
+
+                }
+            }
+        }
+        private async void SaveTags()
+        {
+            int postCount = 0;
+            int viewPosts = 0;
+            int downloadpage = 1;
+            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+            {
+                DownloadProgress.IsIndeterminate = false;
+                DownloadProgress.Value = 0;
+                DownloadProgress.Maximum = 10;
+                DownloadProgress.Visibility = Visibility.Visible;
+                NormalText.Visibility = Visibility.Collapsed;
+            });
+            StorageFolder folder = null;
+            try
+            {
+                string foldername = singlePool.name.Replace("_", " ");
+                foldername = foldername.Replace(":", "");
+                foldername = foldername.Replace("<", "");
+                foldername = foldername.Replace(">", "");
+                foldername = foldername.Replace("\"", "");
+                foldername = foldername.Replace("\\", "");
+                foldername = foldername.Replace("/", "");
+                foldername = foldername.Replace("|", "");
+                foldername = foldername.Replace("?", "");
+                foldername = foldername.Replace("*", "");
+                folder = await Windows.Storage.DownloadsFolder.CreateFolderAsync(foldername);
+            }
+            catch (Exception)
+            {
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    DownloadProgress.Visibility = Visibility.Collapsed;
+                    InfoPopup.Title = "Saving Error";
+                    InfoPopup.Message = "File Already Exists";
+                    InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Warning;
+                    InfoPopup.IsOpen = true;
+                    DownloadPool.Visibility = Visibility.Collapsed;
+                });
+                return;
+            }
+            string tags = "";
+            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+            {
+                tags = SearchBox.Text;
+            });
+            LoadPoolPostsForDownload(downloadpage, tags);
+            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+            {
+                DownloadProgress.IsIndeterminate = false;
+                DownloadProgress.Maximum = singlePool.post_count;
+                DownloadProgress.Value = 0;
+                FilesText.Text = postCount.ToString() + "/" + singlePool.post_count.ToString();
+            });
+
+            while (postCount < singlePool.post_count)
+            {
+                try
+                {
+                    HttpClient client = new HttpClient(); // Create HttpClient
+                    byte[] buffer = await client.GetByteArrayAsync(DownloadPostHolder.posts[viewPosts].file.url); // Download file
+                    StorageFile file = await folder.CreateFileAsync(postCount.ToString() + "." + DownloadPostHolder.posts[viewPosts].file.ext);
+
+                    using (Stream stream = await file.OpenStreamForWriteAsync())
+                    {
+                        stream.Write(buffer, 0, buffer.Length); // Save
+                    }
+                    postCount++;
+                    viewPosts++;
+                    _ = Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                    {
+                        DownloadProgress.Value++;
+                        FilesText.Text = postCount.ToString() + "/" + singlePool.post_count.ToString();
+                    });
+                }
+                catch (Exception e)
+                {
+                    await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                    {
+                        DownloadProgress.Visibility = Visibility.Collapsed;
+                        InfoPopup.Title = "Saving Error";
+                        InfoPopup.Message = e.Message;
+                        InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Error;
+                        InfoPopup.IsOpen = true;
+                        DownloadPool.Visibility = Visibility.Collapsed;
+                    });
+                }
+                if (viewPosts == DownloadPostHolder.posts.Count)
+                {
+                    downloadpage++;
+                    LoadPoolPostsForDownload(downloadpage, tags);
+                    viewPosts = 0;
+                }
+            }
+            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+            {
+                DownloadProgress.Visibility = Visibility.Collapsed;
+                NormalText.Visibility = Visibility.Visible;
+                FilesText.Text = "";
+                InfoPopup.Title = "Post Saved";
+                InfoPopup.Message = "File Saved to downlaods";
+                InfoPopup.Severity = Microsoft.UI.Xaml.Controls.InfoBarSeverity.Success;
+                InfoPopup.IsOpen = true;
+                DownloadPool.Visibility = Visibility.Collapsed;
+            });
+        }
     }
 }

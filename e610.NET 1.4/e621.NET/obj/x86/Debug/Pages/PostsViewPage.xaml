@@ -8,6 +8,7 @@
     mc:Ignorable="d"
     xmlns:control="using:Microsoft.UI.Xaml.Controls"
     xmlns:uwpcontrols="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"                       >
     <Page.Resources>
         <ResourceDictionary>
@@ -47,65 +48,88 @@
         <ScrollViewer Margin="0,0,0,53" Canvas.ZIndex="10">
             <StackPanel Grid.Column="0" Orientation="Vertical" Background="{ThemeResource SideBar}" Translation="0,0,52">
                 <StackPanel.Shadow>
-                    <ThemeShadow x:ConnectionId='52' x:Name="SidePanelShadow"/>
+                    <ThemeShadow x:ConnectionId='60' x:Name="SidePanelShadow"/>
                 </StackPanel.Shadow>
                 <!--Search Title, Box, and Button-->
                 <TextBlock Text="Search" FontSize="18" Margin="10,10,10,0" HorizontalAlignment="Center"/>
                 <StackPanel Orientation="Vertical" Margin="10,10,10,10">
-                    <TextBox x:ConnectionId='74' Width="auto" Height="Auto" x:Name="SearchBox"
+                    <TextBox x:ConnectionId='86' Width="auto" Height="Auto" x:Name="SearchBox"
                      VerticalAlignment="Top" HorizontalAlignment="Stretch"
                      TextWrapping="Wrap"                                                                />
-                    <ListView x:ConnectionId='75' x:Name="SearchTagAutoComplete" Visibility="Visible" IsItemClickEnabled="True"                                            />
-                    <Button x:ConnectionId='76' x:Name="SearchButton"                              HorizontalAlignment="Stretch" Margin="0,5,0,0">
+                    <ListView x:ConnectionId='87' x:Name="SearchTagAutoComplete" Visibility="Visible" IsItemClickEnabled="True"                                            />
+                    <Button x:ConnectionId='88' x:Name="SearchButton"                              HorizontalAlignment="Stretch" Margin="0,5,0,0">
                         <SymbolIcon Symbol="Accept"/>
                     </Button>
                 </StackPanel>
 
                 <!--Progressbar, Hidden under Search Button-->
-                <control:ProgressBar x:ConnectionId='53' x:Name="LoadingBar" IsIndeterminate="True" Visibility="Collapsed"  Margin="0,0,0,0"
+                <control:ProgressBar x:ConnectionId='61' x:Name="LoadingBar" IsIndeterminate="True" Visibility="Collapsed"  Margin="0,0,0,0"
                          Height="3" Foreground="White" Width="150"
                          ShowPaused="False" ShowError="False"/>
 
                 <!--Page controls and number-->
-                <TextBlock x:ConnectionId='54' x:Name="PageText" Text="Page" FontSize="18" Margin="10,0,10,5" HorizontalAlignment="Center"/>
+                <TextBlock x:ConnectionId='62' x:Name="PageText" Text="Page" FontSize="18" Margin="10,0,10,5" HorizontalAlignment="Center"/>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <Button x:ConnectionId='71' x:Name="BackPage" Margin="0,0,5,0"                         >
+                    <Button x:ConnectionId='83' x:Name="BackPage" Margin="0,0,5,0"                         >
                         <SymbolIcon Symbol="Back"/>
                     </Button>
-                    <TextBlock x:ConnectionId='72' x:Name="PageNumberText"                           FontSize="20" Margin="0,0,0,0"/>
-                    <Button x:ConnectionId='73' x:Name="ForwardPage"                             Margin="5,0,0,0">
+                    <TextBlock x:ConnectionId='84' x:Name="PageNumberText"                           FontSize="20" Margin="0,0,0,0"/>
+                    <Button x:ConnectionId='85' x:Name="ForwardPage"                             Margin="5,0,0,0">
                         <SymbolIcon Symbol="Forward"/>
                     </Button>
                 </StackPanel>
+                <Button x:ConnectionId='63' x:Name="DownloadPool" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10"                           
+                        Visibility="Collapsed">
+                    <Grid>
+                        <Grid.Resources>
+                            <ResourceDictionary Source="ms-appx:///Microsoft.UI.Xaml/DensityStyles/Compact.xaml" />
+                        </Grid.Resources>
+                        <TextBlock x:ConnectionId='80' x:Name="NormalText" Text="Download pool" Visibility="Visible"/>
+                        <StackPanel Orientation="Vertical">
+                            <control:ProgressBar x:ConnectionId='81' Grid.Column="1" x:Name="DownloadProgress"  Visibility="Collapsed"
+                             IsIndeterminate="False" Width="120" Height="7" Foreground="White" 
+                             HorizontalAlignment="Right" VerticalAlignment="Top" Canvas.ZIndex="30" Margin="10"/>
+                            <TextBlock x:ConnectionId='82' x:Name="FilesText" HorizontalAlignment="Center" Height="20"/>
+                        </StackPanel>
+                    </Grid>
+                </Button>
                 <StackPanel Orientation="Vertical">
-                    <HyperlinkButton x:ConnectionId='55' x:Name="ArtistsTitle" Foreground="White" Content="Artists:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
-                    <ListView x:ConnectionId='56' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="ArtistsTags" VerticalAlignment="Stretch"                                                           IsItemClickEnabled="True"/>
-                    <HyperlinkButton x:ConnectionId='57' x:Name="CopyrightsTitle" Foreground="White" Content="Copyrights:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
-                    <ListView x:ConnectionId='58' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="CopyrightsTags" VerticalAlignment="Stretch"                                                           IsItemClickEnabled="True"/>
-                    <HyperlinkButton x:ConnectionId='59' x:Name="CharactersTitle" Foreground="White" Content="Characters:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
-                    <ListView x:ConnectionId='60' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="CharactersTags" VerticalAlignment="Stretch"                                                           IsItemClickEnabled="True"/>
-                    <HyperlinkButton x:ConnectionId='61' x:Name="SpeciesTitle" Foreground="White" Content="Species:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
-                    <ListView x:ConnectionId='62' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="SpeciesTags" VerticalAlignment="Stretch"                                                           IsItemClickEnabled="True"/>
-                    <HyperlinkButton x:ConnectionId='63' x:Name="GeneralTitle" Foreground="White" Content="General:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
-                    <ListView x:ConnectionId='64' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="GeneralTags" VerticalAlignment="Stretch"                                                           IsItemClickEnabled="True"/>
-                    <HyperlinkButton x:ConnectionId='65' x:Name="MetaTitle" Foreground="White" Content="Meta:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
-                    <ListView x:ConnectionId='66' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="MetaTags" VerticalAlignment="Stretch"                                                           IsItemClickEnabled="True"/>
-                    <HyperlinkButton x:ConnectionId='67' x:Name="LoreTitle" Foreground="White" Content="Lore:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
-                    <ListView x:ConnectionId='68' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="LoreTags" VerticalAlignment="Stretch"                                                           IsItemClickEnabled="True"/>
-                    <HyperlinkButton x:ConnectionId='69' x:Name="InvalidTitle" Foreground="White" Content="Invalid:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
-                    <ListView x:ConnectionId='70' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="InvalidTags" VerticalAlignment="Stretch"                                                           IsItemClickEnabled="True"/>
+                    <HyperlinkButton x:ConnectionId='64' x:Name="ArtistsTitle" Foreground="White" Content="Artists:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
+                    <ListView x:ConnectionId='65' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="ArtistsTags" VerticalAlignment="Stretch"                                                           IsItemClickEnabled="True"/>
+                    <HyperlinkButton x:ConnectionId='66' x:Name="CopyrightsTitle" Foreground="White" Content="Copyrights:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
+                    <ListView x:ConnectionId='67' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="CopyrightsTags" VerticalAlignment="Stretch"                                                           IsItemClickEnabled="True"/>
+                    <HyperlinkButton x:ConnectionId='68' x:Name="CharactersTitle" Foreground="White" Content="Characters:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
+                    <ListView x:ConnectionId='69' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="CharactersTags" VerticalAlignment="Stretch"                                                           IsItemClickEnabled="True"/>
+                    <HyperlinkButton x:ConnectionId='70' x:Name="SpeciesTitle" Foreground="White" Content="Species:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
+                    <ListView x:ConnectionId='71' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="SpeciesTags" VerticalAlignment="Stretch"                                                           IsItemClickEnabled="True"/>
+                    <HyperlinkButton x:ConnectionId='72' x:Name="GeneralTitle" Foreground="White" Content="General:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
+                    <ListView x:ConnectionId='73' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="GeneralTags" VerticalAlignment="Stretch"                                                           IsItemClickEnabled="True"/>
+                    <HyperlinkButton x:ConnectionId='74' x:Name="MetaTitle" Foreground="White" Content="Meta:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
+                    <ListView x:ConnectionId='75' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="MetaTags" VerticalAlignment="Stretch"                                                           IsItemClickEnabled="True"/>
+                    <HyperlinkButton x:ConnectionId='76' x:Name="LoreTitle" Foreground="White" Content="Lore:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
+                    <ListView x:ConnectionId='77' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="LoreTags" VerticalAlignment="Stretch"                                                           IsItemClickEnabled="True"/>
+                    <HyperlinkButton x:ConnectionId='78' x:Name="InvalidTitle" Foreground="White" Content="Invalid:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed"                    />
+                    <ListView x:ConnectionId='79' Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="InvalidTags" VerticalAlignment="Stretch"                                                           IsItemClickEnabled="True"/>
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>
         <Grid Background="{ThemeResource SideBar}"
             Grid.Column="0">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10">
-                <Button x:ConnectionId='50' Margin="0,0,10,0" x:Name="Account"                      >
+                <Button x:ConnectionId='57' Margin="0,0,10,0" x:Name="Account"                      
+                        ToolTipService.ToolTip="Account Page">
                     <StackPanel Orientation="Horizontal">
                         <SymbolIcon Symbol="Account"/>
                     </StackPanel>
                 </Button>
-                <Button x:ConnectionId='51' x:Name="Settings"                       >
+                <Button x:ConnectionId='58' Margin="0,0,10,0" x:Name="Following"                         IsEnabled="False"
+                        ToolTipService.ToolTip="Followed Tags (Not Implemented Yet)" extensions:Mouse.Cursor="UniversalNo">
+                    <StackPanel Orientation="Horizontal">
+                        <SymbolIcon Symbol="Favorite"/>
+                    </StackPanel>
+                </Button>
+                <Button x:ConnectionId='59' x:Name="Settings"                       
+                        ToolTipService.ToolTip="Settings Popup">
                     <StackPanel Orientation="Horizontal">
                         <SymbolIcon Symbol="Setting"/>
                     </StackPanel>
@@ -115,66 +139,55 @@
 
         <!--Posts View-->
         <Grid x:ConnectionId='2' Background="{ThemeResource MainBackground}" Grid.Column="1" VerticalAlignment="Stretch" x:Name="MainPanel"                       >
-            <Grid.Resources>
-                <SwipeItems x:Key="left" Mode="Execute">
-                    <SwipeItem x:ConnectionId='10' BehaviorOnInvoked="Close"                                
-                                            Background="#000F2D"/>
-                </SwipeItems>
-                <SwipeItems x:Key="right" Mode="Execute">
-                    <SwipeItem x:ConnectionId='9' BehaviorOnInvoked="Close"                                 
-                                           Background="#000F2D"/>
-                </SwipeItems>
-            </Grid.Resources>
-            <Button x:ConnectionId='11' Canvas.ZIndex="15" x:Name="CloseButton"                           Visibility="Collapsed"
+            <Button x:ConnectionId='17' Canvas.ZIndex="15" x:Name="CloseButton"                           Visibility="Collapsed"
                     VerticalAlignment="Top" Margin="10,65,10,10" Background="Black">
                 <SymbolIcon Symbol="Cancel"/>
             </Button>
-            <StackPanel x:ConnectionId='12' Background="{ThemeResource SideBar}" x:Name="TopBar" Visibility="Collapsed"
+            <StackPanel x:ConnectionId='18' Background="{ThemeResource SideBar}" x:Name="TopBar" Visibility="Collapsed"
                         Margin="0,0,0,10" Grid.Column="1" Canvas.ZIndex="10" Height="55" VerticalAlignment="Top">
-                <StackPanel x:ConnectionId='34' Orientation="Horizontal" HorizontalAlignment="Center" x:Name="CommandBar">
-                    <Button x:ConnectionId='35' x:Name="PoolButton" Margin="10,10,5,10" Visibility="Visible" HorizontalAlignment="Center" Background="Black"
+                <StackPanel x:ConnectionId='41' Orientation="Horizontal" HorizontalAlignment="Center" x:Name="CommandBar">
+                    <Button x:ConnectionId='42' x:Name="PoolButton" Margin="10,10,5,10" Visibility="Visible" HorizontalAlignment="Center" Background="Black"
                                                               >
                         <FlyoutBase.AttachedFlyout>
-                            <MenuFlyout x:ConnectionId='49' x:Name="PoolsMenu" Placement="Bottom" ShowMode="TransientWithDismissOnPointerMoveAway" />
+                            <MenuFlyout x:ConnectionId='56' x:Name="PoolsMenu" Placement="Bottom" ShowMode="TransientWithDismissOnPointerMoveAway" />
                         </FlyoutBase.AttachedFlyout>
                         <StackPanel Orientation="Horizontal">
                             <SymbolIcon Symbol="Library" Margin="0,0,5,0"/>
                             <TextBlock Text="Pools"/>
                         </StackPanel>
                     </Button>
-                    <Button x:ConnectionId='36' x:Name="ImageSize" Margin="0,0,5,0"                           Background="Black">
+                    <Button x:ConnectionId='43' x:Name="ImageSize" Margin="0,0,5,0"                           Background="Black">
                         <SymbolIcon Symbol="Pictures"/>
                         <FlyoutBase.AttachedFlyout>
-                            <MenuFlyout x:ConnectionId='45' x:Name="ImageSizeMenu" Placement="Bottom" ShowMode="TransientWithDismissOnPointerMoveAway">
-                                <MenuFlyoutItem x:ConnectionId='46' Text="Page Height"                            />
-                                <MenuFlyoutItem x:ConnectionId='47' Text="Sample Height"                            />
-                                <MenuFlyoutItem x:ConnectionId='48' Text="Full Height"                            />
+                            <MenuFlyout x:ConnectionId='52' x:Name="ImageSizeMenu" Placement="Bottom" ShowMode="TransientWithDismissOnPointerMoveAway">
+                                <MenuFlyoutItem x:ConnectionId='53' Text="Page Height"                            />
+                                <MenuFlyoutItem x:ConnectionId='54' Text="Sample Height"                            />
+                                <MenuFlyoutItem x:ConnectionId='55' Text="Full Height"                            />
                             </MenuFlyout>
                         </FlyoutBase.AttachedFlyout>
                     </Button>
-                    <Button x:ConnectionId='37' x:Name="BackPost" Margin="0,0,5,0"                          Background="Black">
+                    <Button x:ConnectionId='44' x:Name="BackPost" Margin="0,0,5,0"                          Background="Black">
                         <SymbolIcon Symbol="Back"/>
                     </Button>
-                    <ComboBox x:ConnectionId='38' x:Name="MovementSelection"                                       
-                                      Width="250" VerticalAlignment="Center" DisplayMemberPath="name">
-                    </ComboBox>
-                    <Button x:ConnectionId='39' x:Name="ForwardPost"                             Margin="5,0,5,0" Background="Black">
+                    <TextBlock x:ConnectionId='45' x:Name="SearchName" Margin="5,5,5,8" VerticalAlignment="Center" FontSize="18" TextDecorations="Underline">
+                    </TextBlock>
+                    <Button x:ConnectionId='46' x:Name="ForwardPost"                             Margin="5,0,5,0" Background="Black">
                         <SymbolIcon Symbol="Forward"/>
                     </Button>
                     <StackPanel Orientation="Horizontal">
-                        <Button x:ConnectionId='40' Background="Black" Canvas.ZIndex="20" Margin="0,10,5,10" x:Name="VoteUpButton"                             >
+                        <Button x:ConnectionId='47' Background="Black" Canvas.ZIndex="20" Margin="0,10,5,10" x:Name="VoteUpButton"                             >
                             <StackPanel Orientation="Horizontal">
                                 <SymbolIcon Symbol="Like"/>
-                                <TextBlock x:ConnectionId='44' x:Name="VoteUpCount"/>
+                                <TextBlock x:ConnectionId='51' x:Name="VoteUpCount"/>
                             </StackPanel>
                         </Button>
-                        <Button x:ConnectionId='41' Background="Black" Canvas.ZIndex="20" Margin="0,10,5,10" x:Name="VoteDownButton"                               >
+                        <Button x:ConnectionId='48' Background="Black" Canvas.ZIndex="20" Margin="0,10,5,10" x:Name="VoteDownButton"                               >
                             <StackPanel Orientation="Horizontal">
                                 <SymbolIcon Symbol="Dislike"/>
-                                <TextBlock x:ConnectionId='43' x:Name="VoteDownCount"/>
+                                <TextBlock x:ConnectionId='50' x:Name="VoteDownCount"/>
                             </StackPanel>
                         </Button>
-                        <Button x:ConnectionId='42' Background="Black" Canvas.ZIndex="20" Margin="0,10,0,10" x:Name="FavoiteButton"                              >
+                        <Button x:ConnectionId='49' Background="Black" Canvas.ZIndex="20" Margin="0,10,0,10" x:Name="FavoiteButton"                              >
                             <StackPanel Orientation="Horizontal">
                                 <SymbolIcon Symbol="Add" Margin="0,0,10,0"/>
                                 <TextBlock Text="Favorite"/>
@@ -183,88 +196,93 @@
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
-            <SwipeControl RightItems="{StaticResource right}" LeftItems="{StaticResource left}" Background="Transparent" Margin="0,55,0,0">
-                <Grid>
-                    <control:ProgressRing x:ConnectionId='14' x:Name="ImageLoadProgress" Width="80" Height="80" IsActive="True" IsIndeterminate="True"
+            <Grid>
+                <control:ProgressRing x:ConnectionId='20' x:Name="ImageLoadProgress" Width="80" Height="80" IsActive="True" IsIndeterminate="True"
                                           Foreground="White" Visibility="Collapsed" Canvas.ZIndex="20"/>
-                    <ScrollViewer>
-                        <StackPanel>
-                            <uwpcontrols:ImageEx x:ConnectionId='20' x:Name="bigpicture" Source=""   
-                                              Canvas.ZIndex="1" Visibility="Collapsed"
-                                                                                                                           />
-                            <uwpcontrols:ImageEx x:ConnectionId='21' x:Name="smallpicture"                                                                                                                                
+                <ScrollViewer x:ConnectionId='21' x:Name="ImageScrollViewer">
+                    <StackPanel Margin="0,60,0,0">
+                        <uwpcontrols:ImageEx x:ConnectionId='27' x:Name="bigpicture" Source=""
+                                             Canvas.ZIndex="1" Visibility="Collapsed"
+                                                                                                                          
+                                             ManipulationMode="TranslateX,TranslateInertia,System"                                                 
+                                                                                                     />
+                        <uwpcontrols:ImageEx x:ConnectionId='28' x:Name="smallpicture"                                                                                                                                
                                                 Canvas.ZIndex="1" Visibility="Collapsed"
-                                                                                    />
-                            <MediaElement x:ConnectionId='22' Visibility="Collapsed" Canvas.ZIndex="40"
-                                                    AutoPlay="False" x:Name="bigvideo"                                               
-                                                    AreTransportControlsEnabled="True"                                      IsLooping="True"/>
-                            <StackPanel x:ConnectionId='23' x:Name="DescRect" Visibility="Collapsed" Orientation="Horizontal" Background="{ThemeResource DescBackground}" CornerRadius="10" Margin="10,10,15,10">
-                                <Rectangle Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
-                                <StackPanel Orientation="Vertical">
-                                    <HyperlinkButton x:ConnectionId='32' x:Name="DescHyperlink" FontSize="28" Margin="10" FontWeight="SemiBold" Foreground="White"                            >
-                                        <TextBlock Text="Description: "/>
-                                    </HyperlinkButton>
-                                    <TextBlock x:ConnectionId='33' x:Name="DescText" Margin="10"                                          TextWrapping="WrapWholeWords" FontSize="18"/>
-                                </StackPanel>
+                                                                                     ManipulationMode="TranslateX,TranslateInertia,System"                                                 
+                                                                                                     />
+                        <MediaElement x:ConnectionId='29' Visibility="Collapsed" Canvas.ZIndex="40"
+                                      AutoPlay="False" x:Name="bigvideo"                                               
+                                      AreTransportControlsEnabled="True"                                      IsLooping="True" ManipulationMode="TranslateX,TranslateInertia,System"                                                 
+                                                                                              />
+                        <StackPanel x:ConnectionId='30' x:Name="DescRect" Visibility="Collapsed" Orientation="Horizontal" Background="{ThemeResource DescBackground}" CornerRadius="10" Margin="10,10,15,10">
+                            <Rectangle Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
+                            <StackPanel Orientation="Vertical">
+                                <HyperlinkButton x:ConnectionId='39' x:Name="DescHyperlink" FontSize="28" Margin="10" FontWeight="SemiBold" Foreground="White"                            >
+                                    <TextBlock Text="Description: "/>
+                                </HyperlinkButton>
+                                <TextBlock x:ConnectionId='40' x:Name="DescText" Margin="10"                                          TextWrapping="WrapWholeWords" FontSize="18"/>
                             </StackPanel>
-                            <ListView x:ConnectionId='24' x:Name="CommentsListView" IsItemClickEnabled="True"                                                                                           >
-                                <ListView.ItemTemplate>
-                                    <DataTemplate                           >
-                                        <Grid x:ConnectionId='26'>
-                                            <Grid.RowDefinitions>
-                                                <RowDefinition/>
-                                            </Grid.RowDefinitions>
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition/>
-                                                <ColumnDefinition/>
-                                            </Grid.ColumnDefinitions>
-                                            <StackPanel Grid.Column="0" Orientation="Vertical">
-                                                <HyperlinkButton x:ConnectionId='31'                                 FontSize="18" FontWeight="SemiBold" Foreground="White"/>
-                                                <!--<controls:ImageEx BorderBrush="{ThemeResource SystemControlBackgroundListMediumRevealBorderBrush}" Source="{x:Bind Avatar_Url}" Width="150" Height="150" Margin="0,0,0,10"/>-->
-                                            </StackPanel>
-                                            <StackPanel Grid.Column="1">
-                                                <Grid x:ConnectionId='27' Margin="10,0,0,-25" Background="{ThemeResource DescBackground}" CornerRadius="10"                               >
-                                                    <Grid.ColumnDefinitions>
-                                                        <ColumnDefinition/>
-                                                        <ColumnDefinition Width="50*"/>
-                                                    </Grid.ColumnDefinitions>
-                                                    <Rectangle Grid.Column="0" Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
-                                                    <StackPanel Grid.Column="1" Orientation="Vertical">
-                                                        <HyperlinkButton x:ConnectionId='29'                               Foreground="White" Margin="10,0,0,0" FontSize="16"/>
-                                                        <TextBlock x:ConnectionId='30'                       Margin="0,0,10,10" TextWrapping="WrapWholeWords"/>
-                                                    </StackPanel>
-                                                </Grid>
-                                                <TextBlock x:ConnectionId='28' Grid.Column="1"                      Margin="10,10,10,10" TextWrapping="WrapWholeWords" />
-                                            </StackPanel>
-                                        </Grid>
-                                    </DataTemplate>
-                                </ListView.ItemTemplate>
-                                <ListView.ItemContainerStyle>
-                                    <Style TargetType="ListViewItem">
-                                        <Setter Property="Background" Value="{ThemeResource CommentBackground}"/>
-                                        <Setter Property="Margin" Value="10"/>
-                                    </Style>
-                                </ListView.ItemContainerStyle>
-                            </ListView>
                         </StackPanel>
-                    </ScrollViewer>
-                    <GridView x:ConnectionId='15' x:Name="ImageGrid"                                        
+                        <ListView x:ConnectionId='31' x:Name="CommentsListView" IsItemClickEnabled="True"                                                                                           >
+                            <ListView.ItemTemplate>
+                                <DataTemplate                           >
+                                    <Grid x:ConnectionId='33'>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <StackPanel Grid.Column="0" Orientation="Vertical">
+                                            <HyperlinkButton x:ConnectionId='38'                                 FontSize="18" FontWeight="SemiBold" Foreground="White"/>
+                                            <!--<controls:ImageEx BorderBrush="{ThemeResource SystemControlBackgroundListMediumRevealBorderBrush}" Source="{x:Bind Avatar_Url}" Width="150" Height="150" Margin="0,0,0,10"/>-->
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="1">
+                                            <Grid x:ConnectionId='34' Margin="10,0,0,-25" Background="{ThemeResource DescBackground}" CornerRadius="10"                               >
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition Width="50*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Rectangle Grid.Column="0" Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
+                                                <StackPanel Grid.Column="1" Orientation="Vertical">
+                                                    <HyperlinkButton x:ConnectionId='36'                               Foreground="White" Margin="10,0,0,0" FontSize="16"/>
+                                                    <TextBlock x:ConnectionId='37'                       Margin="0,0,10,10" TextWrapping="WrapWholeWords"/>
+                                                </StackPanel>
+                                            </Grid>
+                                            <TextBlock x:ConnectionId='35' Grid.Column="1"                      Margin="10,10,10,10" TextWrapping="WrapWholeWords" />
+                                        </StackPanel>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="Background" Value="{ThemeResource CommentBackground}"/>
+                                    <Setter Property="Margin" Value="10"/>
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                        </ListView>
+                    </StackPanel>
+                </ScrollViewer>
+                <GridView x:ConnectionId='22' x:Name="ImageGrid"                                       
                   HorizontalAlignment="Stretch"                       
-                                                  IsItemClickEnabled="True">
-                        <GridView.ItemTemplate>
-                            <DataTemplate                        >
-                                <Grid x:ConnectionId='17' Margin="10,0,0,10" Width="150" Height="150">
-                                    <uwpcontrols:ImageEx x:ConnectionId='18' Source="{Binding preview.url}"                                                                            />
-                                    <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="{ThemeResource TextBackgound}">
-                                        <TextBlock x:ConnectionId='19'                          Margin="0,-4,0,0"            />
-                                    </StackPanel>
-                                </Grid>
-                            </DataTemplate>
-                        </GridView.ItemTemplate>
-                    </GridView>
-                </Grid>
-            </SwipeControl>
-            <Grid x:ConnectionId='13' x:Name="ImageShadowHost"/>
+                                                  IsItemClickEnabled="True"
+                  ManipulationMode="TranslateX,TranslateInertia,System"                                                
+                                                                         >
+                    <GridView.ItemTemplate>
+                        <DataTemplate                        >
+                            <Grid x:ConnectionId='24' Margin="10,0,0,10" Width="150" Height="150" ManipulationMode="TranslateX,TranslateInertia,System"                                                
+                                                                                               >
+                                <uwpcontrols:ImageEx x:ConnectionId='25' Source="{Binding preview.url}"                                                                            />
+                                <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="{ThemeResource TextBackgound}">
+                                    <TextBlock x:ConnectionId='26'                          Margin="0,-4,0,0"            />
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+            </Grid>
+            <Grid x:ConnectionId='19' x:Name="ImageShadowHost"/>
         </Grid>
 
         <ContentDialog x:ConnectionId='3' Grid.ColumnSpan="2" Visibility="Visible" Grid.Column="0"
@@ -277,16 +295,39 @@
             Background="{ThemeResource DialogBackground}"
             BorderThickness="0">
             <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
-                <ComboBox x:ConnectionId='5' x:Name="RatingSelection" Width="200" VerticalAlignment="Top" 
-                          HorizontalAlignment="Left" Header="Highest Rating allowed" Margin="10,10,0,0" >
-                    <x:String>rating:safe</x:String>
-                    <x:String>rating:questionable</x:String>
-                    <x:String>rating:explicit</x:String>
-                </ComboBox>
-                <TextBlock Text="Post Count" Margin="10,0,10,0"/>
-                <Slider x:ConnectionId='6' x:Name="PostCountSlider" Margin="10,0,10,0" Maximum="300" Minimum="25" StepFrequency="5"/>
-                <ToggleSwitch x:ConnectionId='7' x:Name="CommentSwitch" Header="Show Comments" Margin="10,10,0,0"/>
-                <ToggleSwitch x:ConnectionId='8' x:Name="VolumeSwitch" Header="Mute Videos By Default" Margin="10,10,0,0"/>
+                <TextBlock Text="e610 v1.5" FontSize="11" Margin="0,-17,0,0"/>
+                <HyperlinkButton x:ConnectionId='5' Content="App Settings" FontSize="18" Foreground="White"                          />
+                <StackPanel x:ConnectionId='6' x:Name="AppSettingsPanel" Visibility="Collapsed">
+                    <ComboBox x:ConnectionId='13' x:Name="RatingSelection" Width="200" VerticalAlignment="Top" 
+                          HorizontalAlignment="Left" Header="Highest Rating allowed" Margin="0,10,0,0" >
+                        <x:String>rating:safe</x:String>
+                        <x:String>rating:questionable</x:String>
+                        <x:String>rating:explicit</x:String>
+                    </ComboBox>
+                    <TextBlock Text="Post Count" Margin="10,0,10,0"/>
+                    <Slider x:ConnectionId='14' x:Name="PostCountSlider" Margin="10,0,10,0" Maximum="300" Minimum="25" StepFrequency="5"/>
+                    <ToggleSwitch x:ConnectionId='15' x:Name="CommentSwitch" Header="Show Comments" Margin="0,10,0,0"/>
+                    <ToggleSwitch x:ConnectionId='16' x:Name="VolumeSwitch" Header="Mute Videos By Default" Margin="0,10,0,0"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <HyperlinkButton x:ConnectionId='12' Content="Notifications" FontSize="18" IsEnabled="False"
+                                     Foreground="White"                                   />
+                    <TextBlock Text="?" FontSize="12" VerticalAlignment="Center" Margin="0,0,0,5" extensions:Mouse.Cursor="Help"
+                               ToolTipService.ToolTip="Get notifications on new posts from tags you follow (Not Implemented Yet)"/>
+                </StackPanel>
+                <StackPanel x:ConnectionId='7' x:Name="NotificationsSettingsPanel" Visibility="Collapsed">
+                    <TextBlock Text="Time between updates (In Minutes)" VerticalAlignment="Center" Margin="0,0,0,5"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:ConnectionId='11' x:Name="NotificationTime"                                           />
+                        <TextBlock Text="(must be >15)" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:ConnectionId='9' x:Name="RegisterButton" Content="Turn on Notifications" Margin="0,10,10,0"                             />
+                        <Button x:ConnectionId='10' x:Name="DeregisterButton" Content="Turn off Notifications" Margin="0,10,0,0"                               />
+                    </StackPanel>
+                    <TextBlock Text="Notification Status"/>
+                    <RadioButton x:ConnectionId='8' x:Name="NotificationStatus" Content="Notifications Off" IsChecked="False" IsEnabled="False" Foreground="White"/>
+                </StackPanel>
             </StackPanel>
         </ContentDialog>
 

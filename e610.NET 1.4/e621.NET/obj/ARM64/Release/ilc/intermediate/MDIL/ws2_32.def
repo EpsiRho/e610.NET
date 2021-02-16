@@ -1,39 +1,39 @@
 LIBRARY ws2_32.dll
 EXPORTS
-   WSASend
-   setsockopt
-   getsockname
-   closesocket
-   FreeAddrInfoExW
-   getsockopt
-
-   WSASocketW
-   GetNameInfoW
-
-   select
-
-
-   getpeername
-   WSAIoctl
    ioctlsocket
+   bind
+   setsockopt
+   GetAddrInfoExW
+   getsockopt
+   getsockname
+   gethostname
+   FreeAddrInfoExW
+   WSASocketW
+
+   send
+   recv
+   getpeername
    WSARecv
 
 
+
+   WSAIoctl
+   WSAStartup
+   select
+   GetNameInfoW
+   WSAGetOverlappedResult
+   listen
+   closesocket
+
+
+
+
+
+   GetAddrInfoW
+   WSAConnect
    freeaddrinfo
 
    shutdown
+   WSASend
+
    accept
-   WSAConnect
-   listen
-   GetAddrInfoW
-
-
-   bind
-
-   gethostname
-   GetAddrInfoExW
-   WSAGetOverlappedResult
-   send
-
-   WSAStartup
-   recv
