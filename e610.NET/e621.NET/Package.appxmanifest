@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
+
+  <Identity
+    Name="e610.NET"
+    Publisher="CN=John Setta, O=John Setta, STREET=2098 Oak Dairy Ln SW, L=Huntsville, S=Alabama, PostalCode=35803, C=US"
+    Version="1.5.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="0ddcdaf2-0e50-41f1-982f-1006b31e1dce" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>e610.NET</DisplayName>
+    <PublisherDisplayName>Epsi</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="e610.NET.App">
+      <uap:VisualElements
+        DisplayName="e610.NET"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="e610.NET is an e621 client for windows 10 built on UWP."
+        BackgroundColor="#0F548B">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\SmallTile.png" Square310x310Logo="Assets\LargeTile.png"/>
+        <uap:SplashScreen Image="Assets\SplashScreen.png"  BackgroundColor="#0F548B"/>
+      </uap:VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" EntryPoint="BackgroundNotificationHandler.Notification">
+          <BackgroundTasks>
+            <Task Type="systemEvent"/>
+            <Task Type="timer"/>
+          </BackgroundTasks>
+        </Extension>
+	  </Extensions>
+    </Application>
+  </Applications>
+
+	<Extensions>
+		<Extension Category="windows.activatableClass.inProcessServer">
+			<InProcessServer>
+				<Path>CLRHost.dll</Path>
+				<ActivatableClass ActivatableClassId="App.TokenRefreshBackgroundTask" ThreadingModel="both" />
+			</InProcessServer>
+		</Extension>
+	</Extensions>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <uap:Capability Name="videosLibrary"/>
+    <uap:Capability Name="picturesLibrary"/>
+  </Capabilities>
+</Package>

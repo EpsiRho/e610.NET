@@ -1,0 +1,44 @@
+﻿<Page x:Name="page"
+    x:Class="e610.NET.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:e610.NET"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:muxc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Default">
+                    <AcrylicBrush x:Key="DialogBackground"
+                          BackgroundSource="Backdrop"
+                          TintColor="Black"
+                          TintOpacity="0.01" 
+                          FallbackColor="Black"/>
+                    <SolidColorBrush x:Key="SideBar"
+                          Color="#001439"/>
+                    <AcrylicBrush x:Key="MainBackground"
+                          BackgroundSource="HostBackdrop"
+                          TintColor="#000F2D"
+                          TintOpacity="0.1" 
+                          FallbackColor="#000F2D"/>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid Background="{ThemeResource MainBackground}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="OwO" FontSize="180" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        <controls:TabView x:Name="MainTabView" TabCloseRequested="Tabs_TabCloseRequested" Background="{ThemeResource SideBar}" Foreground="White"
+                          AddTabButtonClick="TabView_AddTabButtonClick" TabWidthMode="SizeToContent" Height="{muxc:Binding ActualHeight, ElementName=page, Mode=OneWay}"
+                          CanDragTabs="True"
+                          CanReorderTabs="True">
+        </controls:TabView>
+    </Grid>
+</Page>

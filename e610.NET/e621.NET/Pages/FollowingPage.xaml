@@ -1,0 +1,225 @@
+﻿<Page x:Name="FollowsPage"
+    x:Class="e610.NET.Pages.FollowingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:e610.NET.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:control="using:Microsoft.UI.Xaml.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:uwpcontrols="using:Microsoft.Toolkit.Uwp.UI.Controls" xmlns:local1="using:e610.NET"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Default">
+                    <SolidColorBrush x:Key="SideBar"
+                          Color="#001439"/>
+                    <SolidColorBrush x:Key="MainBackground"
+                          Color="#000F2D"/>
+                    <SolidColorBrush x:Key="TextBackgound" Color="#FF464646"/>
+                    <AcrylicBrush x:Key="DialogBackground"
+                          BackgroundSource="Backdrop"
+                          TintColor="Black"
+                          TintOpacity="0.01" 
+                          FallbackColor="Black"/>
+                    <SolidColorBrush x:Key="DescBackground"
+                          Color="#0B2C5F"/>
+                    <SolidColorBrush x:Key="CommentBackground"
+                          Color="#052049"/>
+                    <SolidColorBrush x:Key="SideLine"
+                                     Color="#009CB4"/>
+                    <AcrylicBrush x:Key="ImageBackground"
+                          BackgroundSource="Backdrop"
+                          TintColor="Black"
+                          TintOpacity="0.3" 
+                          FallbackColor="Black"/>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource SideBar}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" MinWidth="150"/>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+        <Border x:Name="InfoPopup" Background="{ThemeResource ImageBackground}" CornerRadius="15" Canvas.ZIndex="100" BorderBrush="Gray" BorderThickness="2"
+                HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="1" Margin="20" Visibility="Collapsed"
+                Grid.ColumnSpan="2">
+            <TextBlock x:Name="InfoPopupText" FontSize="24" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+        </Border>
+        <Button x:Name="BackPage" Margin="10" Tapped="BackPage_Tapped" VerticalAlignment="Top">
+            <SymbolIcon Symbol="Back"/>
+        </Button>
+        <Button x:Name="AddButton" Margin="10" Tapped="AddButton_Tapped" VerticalAlignment="Top" HorizontalAlignment="Right">
+            <SymbolIcon Symbol="Add"/>
+            <Button.Resources>
+                <control:TeachingTip x:Name="AddTagToolTip" 
+                                          Target="{x:Bind AddButton}"
+                                          Title="Add a new tag:"
+                                          Subtitle=""
+                                          PreferredPlacement="Right">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox x:Name="AddTagTextBox" Height="20" MinWidth="150"/>
+                        <Button x:Name="AdNewbutton" Margin="10" Tapped="AdNewbutton_Tapped" VerticalAlignment="Top" HorizontalAlignment="Right">
+                            <SymbolIcon Symbol="Add"/>
+                        </Button>
+                    </StackPanel>
+                </control:TeachingTip>
+            </Button.Resources>
+        </Button>
+        <control:ProgressBar VerticalAlignment="Top" Margin="10,50,10,00" Height="3" Foreground="White"
+                     x:Name="LoadingBar" Visibility="Collapsed"/>
+        <control:ProgressBar VerticalAlignment="Top" Margin="10,58,10,00" Height="3" Foreground="White"
+                     x:Name="SecondLoadingBar" Visibility="Collapsed"/>
+        <ScrollViewer VerticalScrollBarVisibility="Visible" Margin="0,70,0,0" Background="{ThemeResource SideBar}">
+            <StackPanel Grid.Column="0" Orientation="Vertical" Translation="0,0,52">
+                <ListView x:Name="FollowedTags" ItemClick="FollowedTags_ItemClick" IsItemClickEnabled="True" RightTapped="FollowedTags_RightTapped"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Grid Background="{ThemeResource MainBackground}" Grid.Column="1" VerticalAlignment="Stretch" x:Name="MainPanel" >
+            <Button Canvas.ZIndex="15" x:Name="CloseButton" Click="CloseButton_Click" Visibility="Collapsed"
+                    VerticalAlignment="Top" Margin="10,10,10,10" Background="Black">
+                <SymbolIcon Symbol="Cancel"/>
+            </Button>
+            <StackPanel Background="Transparent" x:Name="TopBar" Visibility="Collapsed"
+                        Margin="0,0,0,10" Grid.Column="1" Canvas.ZIndex="10" Height="55" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="CommandBar">
+                    <Button x:Name="PoolButton" Margin="10,10,5,10" Visibility="Visible" HorizontalAlignment="Center" Background="Black"
+                                    Tapped="PoolButton_Tapped">
+                        <FlyoutBase.AttachedFlyout>
+                            <MenuFlyout x:Name="PoolsMenu" Placement="Bottom" ShowMode="TransientWithDismissOnPointerMoveAway" />
+                        </FlyoutBase.AttachedFlyout>
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Symbol="Library" Margin="0,0,5,0"/>
+                            <TextBlock Text="Pools"/>
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="ImageSize" Margin="0,0,5,0" Tapped="ImageSize_Tapped" Background="Black">
+                        <SymbolIcon Symbol="Pictures"/>
+                        <FlyoutBase.AttachedFlyout>
+                            <MenuFlyout x:Name="ImageSizeMenu" Placement="Bottom" ShowMode="TransientWithDismissOnPointerMoveAway">
+                                <MenuFlyoutItem Text="Page Height" Click="ImageMenuItem_Click"/>
+                                <MenuFlyoutItem Text="Sample Height" Click="ImageMenuItem_Click"/>
+                                <MenuFlyoutItem Text="Full Height" Click="ImageMenuItem_Click"/>
+                            </MenuFlyout>
+                        </FlyoutBase.AttachedFlyout>
+                    </Button>
+                    <Button x:Name="BackPost" Margin="0,0,5,0" Tapped="BackPost_Tapped" Background="Black">
+                        <SymbolIcon Symbol="Back"/>
+                    </Button>
+                    <TextBlock x:Name="SearchName" Margin="5,5,5,8" VerticalAlignment="Center" FontSize="18" TextDecorations="Underline">
+                    </TextBlock>
+                    <Button x:Name="ForwardPost" Tapped="ForwardPost_Tapped" Margin="5,0,5,0" Background="Black">
+                        <SymbolIcon Symbol="Forward"/>
+                    </Button>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Background="Black" Canvas.ZIndex="20" Margin="0,10,5,10" x:Name="VoteUpButton" Tapped="VoteUpButton_Tapped">
+                            <StackPanel Orientation="Horizontal">
+                                <SymbolIcon Symbol="Like"/>
+                                <TextBlock x:Name="VoteUpCount"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Background="Black" Canvas.ZIndex="20" Margin="0,10,5,10" x:Name="VoteDownButton" Tapped="VoteDownButton_Tapped">
+                            <StackPanel Orientation="Horizontal">
+                                <SymbolIcon Symbol="Dislike"/>
+                                <TextBlock x:Name="VoteDownCount"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Background="Black" Canvas.ZIndex="20" Margin="0,10,0,10" x:Name="FavoiteButton" Tapped="FavoiteButton_Tapped">
+                            <StackPanel Orientation="Horizontal">
+                                <SymbolIcon Symbol="Add" Margin="0,0,10,0"/>
+                                <TextBlock Text="Favorite"/>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <Grid>
+                <control:ProgressRing x:Name="ImageLoadProgress" Width="80" Height="80" IsActive="True" IsIndeterminate="True"
+                                          Foreground="White" Visibility="Collapsed" Canvas.ZIndex="20"/>
+                <ScrollViewer x:Name="ImageScrollViewer">
+                    <StackPanel Margin="0,60,0,0">
+                        <uwpcontrols:ImageEx x:Name="bigpicture" Source=""
+                                             Canvas.ZIndex="1" Visibility="Collapsed"
+                                             RightTapped="bigpicture_RightTapped" ImageExOpened="bigpicture_ImageExOpened"
+                                             ManipulationMode="TranslateX,TranslateInertia,System" ManipulationDelta="bigpicture_ManipulationDelta"
+                                             ManipulationCompleted="bigpicture_ManipulationCompleted"/>
+                        <uwpcontrols:ImageEx x:Name="smallpicture" Source="{x:Bind singlePost.preview.url}" Width="{x:Bind singlePost.preview.width}" Height="{x:Bind singlePost.preview.height}" 
+                                                Canvas.ZIndex="1" Visibility="Collapsed"
+                                                RightTapped="bigpicture_RightTapped" ManipulationMode="TranslateX,TranslateInertia,System" ManipulationDelta="bigpicture_ManipulationDelta"
+                                             ManipulationCompleted="bigpicture_ManipulationCompleted"/>
+                        <MediaElement Visibility="Collapsed" Canvas.ZIndex="40" Width="auto"
+                                      AutoPlay="False" x:Name="bigvideo" PosterSource="{x:Bind singlePost.preview.url}"
+                                      AreTransportControlsEnabled="True" RightTapped="bigpicture_RightTapped" IsLooping="True" ManipulationMode="TranslateX,TranslateInertia,System" ManipulationDelta="bigpicture_ManipulationDelta"
+                                      ManipulationCompleted="bigpicture_ManipulationCompleted"/>
+                        <StackPanel x:Name="DescRect" Visibility="Collapsed" Orientation="Horizontal" Background="{ThemeResource DescBackground}" CornerRadius="10" Margin="10,10,15,10">
+                            <Rectangle Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
+                            <StackPanel Orientation="Vertical">
+                                <HyperlinkButton x:Name="DescHyperlink" FontSize="28" Margin="10" FontWeight="SemiBold" Foreground="White" Click="DescHyperlink_Click">
+                                    <TextBlock Text="Description: "/>
+                                </HyperlinkButton>
+                                <TextBlock x:Name="DescText" Margin="10" Width="{x:Bind singlePost.sample.width}" TextWrapping="WrapWholeWords" FontSize="18"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <ListView x:Name="CommentsListView" IsItemClickEnabled="True" ItemsSource="{x:Bind CommentsSource}" SelectionChanged="CommentsListView_SelectionChanged">
+                            <ListView.ItemTemplate>
+                                <DataTemplate x:DataType="local1:Comment">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <StackPanel Grid.Column="0" Orientation="Vertical">
+                                            <HyperlinkButton Content="{x:Bind creator_name}" FontSize="18" FontWeight="SemiBold" Foreground="White"/>
+                                            <!--<controls:ImageEx BorderBrush="{ThemeResource SystemControlBackgroundListMediumRevealBorderBrush}" Source="{x:Bind Avatar_Url}" Width="150" Height="150" Margin="0,0,0,10"/>-->
+                                        </StackPanel>
+                                        <StackPanel Grid.Column="1">
+                                            <Grid Margin="10,0,0,-25" Background="{ThemeResource DescBackground}" CornerRadius="10" Visibility="{x:Bind quotevis}">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition/>
+                                                    <ColumnDefinition Width="50*"/>
+                                                </Grid.ColumnDefinitions>
+                                                <Rectangle Grid.Column="0" Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
+                                                <StackPanel Grid.Column="1" Orientation="Vertical">
+                                                    <HyperlinkButton Content="{x:Bind quotedName}" Foreground="White" Margin="10,0,0,0" FontSize="16"/>
+                                                    <TextBlock Text="{x:Bind quote}" Margin="0,0,10,10" TextWrapping="WrapWholeWords"/>
+                                                </StackPanel>
+                                            </Grid>
+                                            <TextBlock Grid.Column="1" Text="{x:Bind body}" Margin="10,10,10,10" TextWrapping="WrapWholeWords" />
+                                        </StackPanel>
+                                    </Grid>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="Background" Value="{ThemeResource CommentBackground}"/>
+                                    <Setter Property="Margin" Value="10"/>
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                        </ListView>
+                    </StackPanel>
+                </ScrollViewer>
+                <GridView x:Name="ImageGrid" ItemsSource="{x:Bind SortedViewModel.Posts}" Grid.Column="1"
+                  HorizontalAlignment="Stretch"
+                  ItemClick="ImageGrid_ItemClick" IsItemClickEnabled="True"
+                  Background="{ThemeResource MainBackground}">
+                    <GridView.ItemTemplate>
+                        <DataTemplate x:DataType="local1:Post">
+                            <Grid Margin="10,0,0,10" Width="150" Height="150" Visibility="{Binding ItemVis}">
+                                <uwpcontrols:ImageEx Source="{Binding preview.url}" Width="{x:Bind preview.width}" Height="{x:Bind preview.height}" x:Phase="2"/>
+                                <StackPanel HorizontalAlignment="Right" VerticalAlignment="Bottom" Background="{ThemeResource TextBackgound}">
+                                    <TextBlock Text="{x:Bind file.ext}" Margin="0,-4,0,0" x:Phase="1"/>
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </GridView.ItemTemplate>
+                </GridView>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

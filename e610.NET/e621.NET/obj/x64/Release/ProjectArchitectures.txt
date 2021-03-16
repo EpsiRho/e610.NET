@@ -1,0 +1,2 @@
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\BackgroundNotificationHandler\BackgroundNotificationHandler.csproj;x64
+C:\Users\jhset\Documents\GitHub\e610.NET\e610.NET\e621.NET\e610.NET.csproj;x64
