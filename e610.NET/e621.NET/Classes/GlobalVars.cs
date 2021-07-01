@@ -41,5 +41,7 @@ namespace e610.NET
         public static string Binding;
 
         public static bool MuteVolume;
+
+        public static bool ShowSauceNao;
     }
 }

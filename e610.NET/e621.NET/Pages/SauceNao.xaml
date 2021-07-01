@@ -5,7 +5,8 @@
     xmlns:local="using:e610.NET.Pages"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions"
+    xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.Resources>
@@ -40,7 +41,7 @@
     
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto" MinWidth="400"/>
+            <ColumnDefinition Width="300"/>
             <ColumnDefinition Width="100*"/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" Orientation="Vertical" Background="{ThemeResource SideBar}" Translation="0,0,52">
@@ -48,23 +49,59 @@
                 <SymbolIcon Symbol="Back"/>
             </Button>
             <StackPanel Margin="10">
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="API Key:" FontSize="18" Margin="5,0,5,0"/>
-                    <TextBlock Text="?" FontSize="12" extensions:Mouse.Cursor="Help"
-                               ToolTipService.ToolTip="Using the saucenao API requires your api key, which can be obtained by making an account on saucenao.com"/>
-                </StackPanel>
-                <TextBox x:Name="APITextBox"/>
+                <controls:Expander HorizontalAlignment="Stretch"
+                                   IsExpanded="False">
+                    <controls:Expander.Header>
+                        <TextBlock Text="Authentication Settings" FontSize="18"/>
+                    </controls:Expander.Header>
+                    <controls:Expander.Content>
+                        <StackPanel>
+                            <TextBlock Text="API Key:" FontSize="18" Margin="5,0,5,0" HorizontalAlignment="Center"/>
+                            <TextBox x:Name="APITextBox" TextChanged="APITextBox_TextChanged" FontSize="14" Width="240"/>
+                        </StackPanel>
+                    </controls:Expander.Content>
+                </controls:Expander>
+
+                <controls:Expander HorizontalAlignment="Stretch"
+                                   IsExpanded="True">
+                    <controls:Expander.Header>
+                        <TextBlock Text="Search Settings" FontSize="18"/>
+                    </controls:Expander.Header>
+                    <controls:Expander.Content>
+                        <StackPanel>
+                            <Button Content="Choose File" Click="ChooseFileButton_Click" Margin="0,10,0,0"/>
+                            <TextBlock x:Name="ChosenFile" Text="No file chosen" Margin="2,0,0,0"/>
+                        </StackPanel>
+                    </controls:Expander.Content>
+                </controls:Expander>
+                <Button x:Name="SearchButton" Content="Search Saucenao" HorizontalAlignment="Stretch" FontSize="18" Margin="0,10,0,0" Click="SearchButton_Click"/>
             </StackPanel>
-            <Pivot MaxWidth="400">
-                <PivotItem Header="Search with URL">
-                    <StackPanel>
-                        <TextBlock Text="URL:" Margin="5,10,10,0"/>
-                        <TextBox x:Name="ImageURL"/>
-                    </StackPanel>
-                </PivotItem>
-            </Pivot>
-            <Button x:Name="SearchButton" Content="Search Saucenao" 
-                    HorizontalAlignment="Center" Margin="10" Click="SearchButton_Click"/>
         </StackPanel>
+        <controls:Expander HorizontalAlignment="Stretch" 
+                           Grid.Column="0" 
+                           VerticalAlignment="Bottom"
+                           ExpandDirection="Up">
+            <controls:Expander.Header>
+                <TextBlock Text="Api Info" FontSize="18"/>
+            </controls:Expander.Header>
+            <controls:Expander.Content>
+                <StackPanel>
+                    <TextBlock x:Name="ShortApiLimit" Text="Short Api Limit: NaN" Margin="10"/>
+                    <TextBlock x:Name="LongApiLimit" Text="Long Api Limit: NaN" Margin="10"/>
+                </StackPanel>
+            </controls:Expander.Content>
+        </controls:Expander>
+
+        <controls:ProgressRing x:Name="ResultLoadProgress" 
+                              Width="80" Height="80" 
+                              IsActive="True" IsIndeterminate="True"
+                              Foreground="White" Visibility="Collapsed" 
+                              Canvas.ZIndex="20" Grid.Column="1"
+                              HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <ScrollViewer Grid.Column="1" Background="{ThemeResource MainBackground}">
+            <StackPanel x:Name="ResultsView" Margin="10">
+                
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Page>

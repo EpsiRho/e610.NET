@@ -1,0 +1,71 @@
+﻿<Page
+    x:Class="e610.NET.Pages.SauceNao"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:e610.NET.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Default">
+                    <SolidColorBrush x:Key="SideBar"
+                          Color="#001439"/>
+                    <SolidColorBrush x:Key="MainBackground"
+                          Color="#000F2D"/>
+                    <SolidColorBrush x:Key="TextBackgound" Color="#FF464646"/>
+                    <AcrylicBrush x:Key="DialogBackground"
+                          BackgroundSource="Backdrop"
+                          TintColor="Black"
+                          TintOpacity="0.01" 
+                          FallbackColor="Black"/>
+                    <SolidColorBrush x:Key="DescBackground"
+                          Color="#0B2C5F"/>
+                    <SolidColorBrush x:Key="CommentBackground"
+                          Color="#052049"/>
+                    <SolidColorBrush x:Key="SideLine"
+                                     Color="#009CB4"/>
+                    <AcrylicBrush x:Key="ImageBackground"
+                          BackgroundSource="Backdrop"
+                          TintColor="Black"
+                          TintOpacity="0.3" 
+                          FallbackColor="Black"/>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" MinWidth="400"/>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Orientation="Vertical" Background="{ThemeResource SideBar}" Translation="0,0,52">
+            <Button x:ConnectionId='2' x:Name="BackPage" Margin="10"                          VerticalAlignment="Top">
+                <SymbolIcon Symbol="Back"/>
+            </Button>
+            <StackPanel Margin="10">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="API Key:" FontSize="18" Margin="5,0,5,0"/>
+                    <TextBlock Text="?" FontSize="12" extensions:Mouse.Cursor="Help"
+                               ToolTipService.ToolTip="Using the saucenao API requires your api key, which can be obtained by making an account on saucenao.com"/>
+                </StackPanel>
+                <TextBox x:ConnectionId='5' x:Name="APITextBox"/>
+            </StackPanel>
+            <Pivot MaxWidth="400">
+                <PivotItem Header="Search with URL">
+                    <StackPanel>
+                        <TextBlock Text="URL:" Margin="5,10,10,0"/>
+                        <TextBox x:ConnectionId='4' x:Name="ImageURL"/>
+                    </StackPanel>
+                </PivotItem>
+            </Pivot>
+            <Button x:ConnectionId='3' x:Name="SearchButton" Content="Search Saucenao" 
+                    HorizontalAlignment="Center" Margin="10"                           />
+        </StackPanel>
+    </Grid>
+</Page>
+

@@ -26,6 +26,8 @@ namespace e610.NET
 
             MainTabViewAccess = MainTabView;
 
+            Window.Current.SizeChanged += OnWindowSizeChanged;
+
             InitializeGlobalVars();
 
             var newTab = new Microsoft.UI.Xaml.Controls.TabViewItem();
@@ -92,6 +94,26 @@ namespace e610.NET
             GlobalVars.Binding = "Sample Height";
         }
 
+        private void OnWindowSizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
+        {
+            Size window = GetCurrentDisplaySize();
+            try
+            {
+                MainTabView.Width = window.Width;
+                MainTabView.Height = window.Height;
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+        public static Size GetCurrentDisplaySize()
+        {
+            var bounds = ApplicationView.GetForCurrentView().VisibleBounds;
+            var scaleFactor = DisplayInformation.GetForCurrentView().RawPixelsPerViewPixel;
+            var size = new Size((int)(bounds.Width * scaleFactor), (int)(bounds.Height * scaleFactor));
+            return size;
+        }
 
         private void RatingSelection_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -100,7 +122,7 @@ namespace e610.NET
 
         private void TabView_AddTabButtonClick(object sender, object args)
         {
-            var newTab = new Microsoft.UI.Xaml.Controls.TabViewItem();
+            var newTab = new TabViewItem();
             //newTab.IconSource = new SymbolIconSource() { Symbol = Symbol.Document };
             newTab.Header = "Latest Posts";
 

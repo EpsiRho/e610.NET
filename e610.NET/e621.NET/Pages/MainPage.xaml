@@ -22,9 +22,9 @@
                           Color="#001439"/>
                     <AcrylicBrush x:Key="MainBackground"
                           BackgroundSource="HostBackdrop"
-                          TintColor="#000F2D"
-                          TintOpacity="0.1" 
-                          FallbackColor="#000F2D"/>
+                          TintColor="#001439"
+                          TintOpacity="1" 
+                          FallbackColor="#001439"/>
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
         </ResourceDictionary>
@@ -33,7 +33,6 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="100*"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="OwO" FontSize="180" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         <controls:TabView x:Name="MainTabView" TabCloseRequested="Tabs_TabCloseRequested" Background="{ThemeResource SideBar}" Foreground="White"
                           AddTabButtonClick="TabView_AddTabButtonClick" TabWidthMode="SizeToContent" Height="{muxc:Binding ActualHeight, ElementName=page, Mode=OneWay}"

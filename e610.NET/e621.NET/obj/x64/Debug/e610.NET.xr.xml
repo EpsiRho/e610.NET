@@ -36,6 +36,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="CornerRadius" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="ManipulationMode" />
       <RootProperty Name="Resources" />
       <RootEvent Name="KeyDown" />
@@ -58,7 +59,6 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Resources" />
       <RootProperty Name="Visibility" />
-      <RootProperty Name="Background" />
       <RootEvent Name="Tapped" />
       <RootEvent Name="Click" />
     </RootType>
@@ -73,8 +73,8 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Height" />
-      <RootProperty Name="CornerRadius" />
       <RootProperty Name="Translation" />
+      <RootProperty Name="Width" />
       <RootProperty Name="Shadow" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
@@ -88,9 +88,9 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="ShowPaused" />
       <RootProperty Name="ShowError" />
-      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="FontSize" />
@@ -100,19 +100,19 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Width" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="TextDecorations" />
       <RootProperty Name="FontWeight" />
+      <RootProperty Name="IsTextSelectionEnabled" />
       <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
       <RootProperty Name="Content" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="Padding" />
       <RootProperty Name="Margin" />
       <RootProperty Name="FontWeight" />
-      <RootProperty Name="IsEnabled" />
       <RootProperty Name="Visibility" />
       <RootEvent Name="Click" />
     </RootType>
@@ -167,7 +167,6 @@
       <RootProperty Name="FontSize" />
       <RootEvent Name="TextChanged" />
       <RootEvent Name="KeyDown" />
-      <RootEvent Name="KeyUp" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
       <RootProperty Name="Symbol" />
@@ -208,6 +207,8 @@
       <RootProperty Name="IsIndeterminate" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Visibility" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.MediaElement">
       <RootProperty Name="Visibility" />
@@ -239,10 +240,12 @@
       <RootProperty Name="Width" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Fill" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
       <RootProperty Name="Background" />
+      <RootProperty Name="CornerRadius" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Margin" />
@@ -294,25 +297,32 @@
       <RootProperty Name="Content" />
       <RootEvent Name="PrimaryButtonClick" />
     </RootType>
+    <RootType FullName="Microsoft.UI.Xaml.Controls.Expander">
+      <RootProperty Name="IsExpanded" />
+      <RootProperty Name="ExpandDirection" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Header" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="IsEnabled" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
       <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="IsChecked" />
       <RootProperty Name="IsEnabled" />
       <RootProperty Name="Foreground" />
     </RootType>
-    <RootType FullName="Microsoft.Toolkit.Uwp.UI.Extensions.Mouse">
-      <RootMethod Name="GetCursor" />
-      <RootMethod Name="SetCursor" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
-      <RootMethod Name="GetToolTip" />
-      <RootMethod Name="SetToolTip" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="Width" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Header" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Items" />
     </RootType>
@@ -321,22 +331,17 @@
       <RootProperty Name="Maximum" />
       <RootProperty Name="Minimum" />
       <RootProperty Name="StepFrequency" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
-      <RootProperty Name="Header" />
-      <RootProperty Name="Margin" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="System.String" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
+      <RootMethod Name="GetToolTip" />
+      <RootMethod Name="SetToolTip" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.ThemeShadow" />
     <RootType FullName="e610.NET.PostsViewPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
-      <RootProperty Name="MaxWidth" />
-      <RootProperty Name="Items" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
-      <RootProperty Name="Header" />
-      <RootProperty Name="Content" />
-    </RootType>
     <RootType FullName="e610.NET.Pages.SauceNao" />
   </Roots.RootTypes>
 </Roots>
