@@ -65,4 +65,15 @@
 - Added Tabs
   - Middle click posts to open them in another tab
   - Middle click/right click tags to open then in another tab
-  - 
+
+# Version 1.7
+
+* Updated controls to use WinUI 2.6 (Windows 11 Style)
+* Made description and comment Text selectable
+* Made image saving more memory efficient and progress is more informative
+* Added Experimental menu to settings
+  * Here you can enable a beta version of the SauceNao Integration
+    * SauceNao can be queried from within e610! Simply input your SauceNao API Key select an image from your desktop. 
+    * Any e621 links found with a SauceNao query are opened in app, others are opened in your default browser.
+* Fixed description text not wrapping when resizing the window
+* Fixed Loading bar when e621 doesn't respond

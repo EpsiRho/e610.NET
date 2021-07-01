@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
-using System.Net.Http;
+using Windows.Web.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading;
@@ -30,6 +30,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -110,6 +111,23 @@ namespace e610.NET
             { 
                 GlobalVars.MuteVolume = (bool)localSettings.Values["volume"];
                 VolumeSwitch.IsOn = GlobalVars.MuteVolume;
+            }
+            catch (Exception)
+            {
+
+            }
+            try
+            {
+                GlobalVars.ShowSauceNao = (bool)localSettings.Values["SauceNaoShown"];
+                SauceNaoSwitch.IsOn = GlobalVars.ShowSauceNao;
+                if (SauceNaoSwitch.IsOn)
+                {
+                    SauceNao.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    SauceNao.Visibility = Visibility.Collapsed;
+                }
             }
             catch (Exception)
             {
@@ -359,7 +377,13 @@ namespace e610.NET
             }
             catch (Exception)
             {
-
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => // Call Shit needed from UI Thread
+                {
+                    LoadingBar.Visibility = Visibility.Collapsed;
+                    SearchTagAutoComplete.Items.Clear();
+                });
+                GC.Collect();
+                loadingPosts = false;
             }
         }
 
@@ -477,7 +501,6 @@ namespace e610.NET
         {
             if (e.Key == Windows.System.VirtualKey.Enter)
             {
-                eraseButton.Visibility = Visibility.Collapsed;
                 SearchTagAutoComplete.Items.Clear();
                 ViewModel.ClearPosts();
                 int tabIndex = MainPage.MainTabViewAccess.SelectedIndex;
@@ -971,11 +994,48 @@ namespace e610.NET
 
                 await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
                 {
+                    ImageLoadProgress.Foreground = new SolidColorBrush(Colors.White);
+                    ImageLoadProgress.IsIndeterminate = false;
+                    ImageLoadProgress.Value = 0;
                     ImageLoadProgress.Visibility = Visibility.Visible;
                 });
-                HttpClient client = new HttpClient(); // Create HttpClient
-                byte[] ByteArray = await client.GetByteArrayAsync(singlePost.file.url); // Download file
-                IBuffer buffer = ByteArray.AsBuffer();
+                var filter = new Windows.Web.Http.Filters.HttpBaseProtocolFilter()
+                {
+                    CookieUsageBehavior = Windows.Web.Http.Filters.HttpCookieUsageBehavior.Default
+                };
+                HttpClient client = new HttpClient(filter); // Create HttpClient
+                Uri requestUri = new Uri(singlePost.file.url);
+                HttpResponseMessage httpResponse = new HttpResponseMessage();
+                string httpResponseBody = "";
+
+                try
+                {
+                    //Send the GET request
+                    var pb = client.GetAsync(requestUri);
+                    pb.Progress = async (res, progressInfo) =>
+                    {
+                        try
+                        {
+                            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                            {
+                                ImageLoadProgress.Value = (double)(100.0 * progressInfo.BytesReceived / singlePost.file.size);
+                            });
+                        }
+                        catch (Exception)
+                        {
+
+                        }
+                        Thread.Sleep(100);
+                    };
+                    httpResponse = await pb;
+                    httpResponse.EnsureSuccessStatusCode();
+                }
+                catch (Exception)
+                {
+                    ShowInfoPopup("Downloading Error: Couldn't get file");
+                }
+                //byte[] ByteArray = await client.GetByteArrayAsync(singlePost.file.url); // Download file
+                //IBuffer buffer = ByteArray.AsBuffer();
 
                 StorageFile file = null;
                 try
@@ -988,19 +1048,44 @@ namespace e610.NET
                     return;
                 }
 
-                if (singlePost.file.ext == "webm")
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    ImageLoadProgress.Foreground = new SolidColorBrush(Colors.Blue);
+                    ImageLoadProgress.IsIndeterminate = true;
+                });
+
+                if (singlePost.file.ext == "webm" || singlePost.file.ext == "gif")
                 {
                     using (IRandomAccessStream stream = await file.OpenAsync(FileAccessMode.ReadWrite))
                     {
-                        await stream.WriteAsync(buffer); // Save
+                        IInputStream inputStream = await httpResponse.Content.ReadAsInputStreamAsync();
+                        ulong totalBytesRead = 0;
+                        await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                        {
+                            ImageLoadProgress.Foreground = new SolidColorBrush(Colors.Magenta);
+                            ImageLoadProgress.IsIndeterminate = false;
+                            ImageLoadProgress.Value = 0;
+                        });
+                        while (true)
+                        {
+                            // Read from the web.
+                            IBuffer buffer = new Windows.Storage.Streams.Buffer(1024);
+                            buffer = await inputStream.ReadAsync(buffer, buffer.Capacity, InputStreamOptions.None);
+                            if (buffer.Length == 0)
+                            {
+                                break;
+                            }
+                            totalBytesRead += buffer.Length;
+                            await stream.WriteAsync(buffer);
+                            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                            {
+                                ImageLoadProgress.Value = (double)(100.0 * totalBytesRead / singlePost.file.size);
+                            });
+                        }
+                        inputStream.Dispose();
+                        await stream.FlushAsync();
                     }
-                    //VideoProperties videoProperties = await file.Properties.GetVideoPropertiesAsync();
-                    ////foreach (string tag in tags)
-                    ////{
-                    ////    videoProperties.Keywords.Add(tag);
-                    ////}
-                    ////}
-                    //await videoProperties.SavePropertiesAsync();
+
                     ShowInfoPopup("Post saved to downloads (Without tags)");
                     return;
                 }
@@ -1017,7 +1102,31 @@ namespace e610.NET
 
                     using (IRandomAccessStream stream = await file.OpenAsync(FileAccessMode.ReadWrite))
                     {
-                        await stream.WriteAsync(buffer); // Save
+                        IInputStream inputStream = await httpResponse.Content.ReadAsInputStreamAsync();
+                        ulong totalBytesRead = 0;
+                        await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                        {
+                            ImageLoadProgress.Foreground = new SolidColorBrush(Colors.Magenta);
+                            ImageLoadProgress.IsIndeterminate = false;
+                            ImageLoadProgress.Value = 0;
+                        });
+                        while (true)
+                        {
+                            // Read from the web.
+                            IBuffer buffer = new Windows.Storage.Streams.Buffer(1024);
+                            buffer = await inputStream.ReadAsync(buffer, buffer.Capacity, InputStreamOptions.None);
+                            if (buffer.Length == 0)
+                            {
+                                break;
+                            }
+                            totalBytesRead += buffer.Length;
+                            await stream.WriteAsync(buffer);
+                            await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                            {
+                                ImageLoadProgress.Value = (double)(100.0 * totalBytesRead / singlePost.file.size);
+                            });
+                        }
+                        inputStream.Dispose();
                         BitmapDecoder decoder = await BitmapDecoder.CreateAsync(stream);
 
                         // Get the SoftwareBitmap representation of the file
@@ -1037,6 +1146,13 @@ namespace e610.NET
                     }
                 }
 
+                await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () =>
+                {
+                    ImageLoadProgress.IsIndeterminate = true;
+                    ImageLoadProgress.Foreground = new SolidColorBrush(Colors.White);
+                    ImageLoadProgress.Visibility = Visibility.Collapsed;
+                });
+                client.Dispose();
                 ShowInfoPopup("Post saved to downloads");
             }
             catch (Exception e)
@@ -1603,8 +1719,15 @@ namespace e610.NET
             }
             else
             {
-                Post pick = ViewModel.Posts[singlePost.index - 1];
-                singlePost = pick;
+                try
+                {
+                    Post pick = ViewModel.Posts[singlePost.index - 1];
+                    singlePost = pick;
+                }
+                catch (Exception)
+                {
+                    return;
+                }
             }
             await Dispatcher.RunAsync(Windows.UI.Core.CoreDispatcherPriority.Normal, () => // Call Shit needed from UI Thread
             {
@@ -1911,6 +2034,16 @@ namespace e610.NET
             localSettings.Values["comments"] = GlobalVars.ShowComments;
             GlobalVars.MuteVolume = VolumeSwitch.IsOn;
             localSettings.Values["volume"] = GlobalVars.MuteVolume;
+            GlobalVars.ShowSauceNao = SauceNaoSwitch.IsOn;
+            localSettings.Values["SauceNaoShown"] = GlobalVars.ShowSauceNao;
+            if (SauceNaoSwitch.IsOn)
+            {
+                SauceNao.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                SauceNao.Visibility = Visibility.Collapsed;
+            }
         }
 
         // Top Bar Functions //
@@ -2227,28 +2360,6 @@ namespace e610.NET
             NotificationTime.SelectionStart = NotificationTime.Text.Length;
             NotificationTime.SelectionLength = 0;
         }
-        private void AppHyperlinkClick(object sender, RoutedEventArgs e)
-        {
-            if (AppSettingsPanel.Visibility == Visibility.Visible)
-            {
-                AppSettingsPanel.Visibility = Visibility.Collapsed;
-            }
-            else
-            {
-                AppSettingsPanel.Visibility = Visibility.Visible;
-            }
-        }
-        private void NotificationHyperlinkClick(object sender, RoutedEventArgs e)
-        {
-            if (NotificationsSettingsPanel.Visibility == Visibility.Visible)
-            {
-                NotificationsSettingsPanel.Visibility = Visibility.Collapsed;
-            }
-            else
-            {
-                NotificationsSettingsPanel.Visibility = Visibility.Visible;
-            }
-        }
 
         private void Following_Click(object sender, RoutedEventArgs e)
         {
@@ -2371,7 +2482,7 @@ namespace e610.NET
             {
                 try
                 {
-                    HttpClient client = new HttpClient(); // Create HttpClient
+                    System.Net.Http.HttpClient client = new System.Net.Http.HttpClient(); // Create HttpClient
                     byte[] buffer = await client.GetByteArrayAsync(DownloadPostHolder.posts[viewPosts].file.url); // Download file
                     StorageFile file = await folder.CreateFileAsync(postCount.ToString() + "." + DownloadPostHolder.posts[viewPosts].file.ext);
 
@@ -2411,21 +2522,6 @@ namespace e610.NET
                 DownloadPool.Visibility = Visibility.Collapsed;
             });
             ShowInfoPopup("Posts saved to downloads");
-        }
-
-        private void erase_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            eraseButton.Visibility = Visibility.Collapsed;
-            SearchBox.Text = "";
-        }
-
-        private void SearchBox_KeyUp(object sender, KeyRoutedEventArgs e)
-        {
-            eraseButton.Visibility = Visibility.Visible;
-            if (SearchBox.Text == "")
-            {
-                eraseButton.Visibility = Visibility.Collapsed;
-            }
         }
 
         private void SauceNao_Click(object sender, RoutedEventArgs e)

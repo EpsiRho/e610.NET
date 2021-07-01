@@ -80,13 +80,13 @@
 
         <Grid Background="{ThemeResource MainBackground}" Grid.Column="1" VerticalAlignment="Stretch" x:Name="MainPanel" >
             <Button Canvas.ZIndex="15" x:Name="CloseButton" Click="CloseButton_Click" Visibility="Collapsed"
-                    VerticalAlignment="Top" Margin="10,10,10,10" Background="Black">
+                    VerticalAlignment="Top" Margin="10,10,10,10">
                 <SymbolIcon Symbol="Cancel"/>
             </Button>
-            <StackPanel Background="Transparent" x:Name="TopBar" Visibility="Collapsed"
+            <StackPanel Background="#000F2D" x:Name="TopBar" Visibility="Collapsed"
                         Margin="0,0,0,10" Grid.Column="1" Canvas.ZIndex="10" Height="55" VerticalAlignment="Top">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="CommandBar">
-                    <Button x:Name="PoolButton" Margin="10,10,5,10" Visibility="Visible" HorizontalAlignment="Center" Background="Black"
+                    <Button x:Name="PoolButton" Margin="10,10,5,10" Visibility="Visible" HorizontalAlignment="Center"
                                     Tapped="PoolButton_Tapped">
                         <FlyoutBase.AttachedFlyout>
                             <MenuFlyout x:Name="PoolsMenu" Placement="Bottom" ShowMode="TransientWithDismissOnPointerMoveAway" />
@@ -96,7 +96,7 @@
                             <TextBlock Text="Pools"/>
                         </StackPanel>
                     </Button>
-                    <Button x:Name="ImageSize" Margin="0,0,5,0" Tapped="ImageSize_Tapped" Background="Black">
+                    <Button x:Name="ImageSize" Margin="0,0,5,0" Tapped="ImageSize_Tapped">
                         <SymbolIcon Symbol="Pictures"/>
                         <FlyoutBase.AttachedFlyout>
                             <MenuFlyout x:Name="ImageSizeMenu" Placement="Bottom" ShowMode="TransientWithDismissOnPointerMoveAway">
@@ -106,28 +106,28 @@
                             </MenuFlyout>
                         </FlyoutBase.AttachedFlyout>
                     </Button>
-                    <Button x:Name="BackPost" Margin="0,0,5,0" Tapped="BackPost_Tapped" Background="Black">
+                    <Button x:Name="BackPost" Margin="0,0,5,0" Tapped="BackPost_Tapped">
                         <SymbolIcon Symbol="Back"/>
                     </Button>
                     <TextBlock x:Name="SearchName" Margin="5,5,5,8" VerticalAlignment="Center" FontSize="18" TextDecorations="Underline">
                     </TextBlock>
-                    <Button x:Name="ForwardPost" Tapped="ForwardPost_Tapped" Margin="5,0,5,0" Background="Black">
+                    <Button x:Name="ForwardPost" Tapped="ForwardPost_Tapped" Margin="5,0,5,0">
                         <SymbolIcon Symbol="Forward"/>
                     </Button>
                     <StackPanel Orientation="Horizontal">
-                        <Button Background="Black" Canvas.ZIndex="20" Margin="0,10,5,10" x:Name="VoteUpButton" Tapped="VoteUpButton_Tapped">
+                        <Button Canvas.ZIndex="20" Margin="0,10,5,10" x:Name="VoteUpButton" Tapped="VoteUpButton_Tapped">
                             <StackPanel Orientation="Horizontal">
                                 <SymbolIcon Symbol="Like"/>
                                 <TextBlock x:Name="VoteUpCount"/>
                             </StackPanel>
                         </Button>
-                        <Button Background="Black" Canvas.ZIndex="20" Margin="0,10,5,10" x:Name="VoteDownButton" Tapped="VoteDownButton_Tapped">
+                        <Button Canvas.ZIndex="20" Margin="0,10,5,10" x:Name="VoteDownButton" Tapped="VoteDownButton_Tapped">
                             <StackPanel Orientation="Horizontal">
                                 <SymbolIcon Symbol="Dislike"/>
                                 <TextBlock x:Name="VoteDownCount"/>
                             </StackPanel>
                         </Button>
-                        <Button Background="Black" Canvas.ZIndex="20" Margin="0,10,0,10" x:Name="FavoiteButton" Tapped="FavoiteButton_Tapped">
+                        <Button Canvas.ZIndex="20" Margin="0,10,0,10" x:Name="FavoiteButton" Tapped="FavoiteButton_Tapped">
                             <StackPanel Orientation="Horizontal">
                                 <SymbolIcon Symbol="Add" Margin="0,0,10,0"/>
                                 <TextBlock Text="Favorite"/>
@@ -154,15 +154,15 @@
                                       AutoPlay="False" x:Name="bigvideo" PosterSource="{x:Bind singlePost.preview.url}"
                                       AreTransportControlsEnabled="True" RightTapped="bigpicture_RightTapped" IsLooping="True" ManipulationMode="TranslateX,TranslateInertia,System" ManipulationDelta="bigpicture_ManipulationDelta"
                                       ManipulationCompleted="bigpicture_ManipulationCompleted"/>
-                        <StackPanel x:Name="DescRect" Visibility="Collapsed" Orientation="Horizontal" Background="{ThemeResource DescBackground}" CornerRadius="10" Margin="10,10,15,10">
-                            <Rectangle Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
+                        <Grid x:Name="DescRect" Visibility="Collapsed" Background="{ThemeResource DescBackground}" CornerRadius="10" Margin="10,10,15,10">
+                            <Rectangle Width="5" VerticalAlignment="Stretch" HorizontalAlignment="Left" Fill="{ThemeResource SideLine}"/>
                             <StackPanel Orientation="Vertical">
-                                <HyperlinkButton x:Name="DescHyperlink" FontSize="28" Margin="10" FontWeight="SemiBold" Foreground="White" Click="DescHyperlink_Click">
+                                <HyperlinkButton x:Name="DescHyperlink" FontSize="28" Margin="10" Padding="0,5,5,5" FontWeight="SemiBold" Foreground="White" Click="DescHyperlink_Click">
                                     <TextBlock Text="Description: "/>
                                 </HyperlinkButton>
-                                <TextBlock x:Name="DescText" Margin="10" Width="{x:Bind singlePost.sample.width}" TextWrapping="WrapWholeWords" FontSize="18"/>
+                                <TextBlock x:Name="DescText" Margin="10,0,10,10" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="18"/>
                             </StackPanel>
-                        </StackPanel>
+                        </Grid>
                         <ListView x:Name="CommentsListView" IsItemClickEnabled="True" ItemsSource="{x:Bind CommentsSource}" SelectionChanged="CommentsListView_SelectionChanged">
                             <ListView.ItemTemplate>
                                 <DataTemplate x:DataType="local1:Comment">
@@ -175,7 +175,7 @@
                                             <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
                                         <StackPanel Grid.Column="0" Orientation="Vertical">
-                                            <HyperlinkButton Content="{x:Bind creator_name}" FontSize="18" FontWeight="SemiBold" Foreground="White"/>
+                                            <HyperlinkButton Content="{x:Bind creator_name}" Padding="0,5,5,5" FontSize="18" FontWeight="SemiBold" Foreground="White"/>
                                             <!--<controls:ImageEx BorderBrush="{ThemeResource SystemControlBackgroundListMediumRevealBorderBrush}" Source="{x:Bind Avatar_Url}" Width="150" Height="150" Margin="0,0,0,10"/>-->
                                         </StackPanel>
                                         <StackPanel Grid.Column="1">
@@ -186,8 +186,8 @@
                                                 </Grid.ColumnDefinitions>
                                                 <Rectangle Grid.Column="0" Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
                                                 <StackPanel Grid.Column="1" Orientation="Vertical">
-                                                    <HyperlinkButton Content="{x:Bind quotedName}" Foreground="White" Margin="10,0,0,0" FontSize="16"/>
-                                                    <TextBlock Text="{x:Bind quote}" Margin="0,0,10,10" TextWrapping="WrapWholeWords"/>
+                                                    <HyperlinkButton Content="{x:Bind quotedName}" Padding="0,5,5,5" Foreground="White" Margin="10,0,0,0" FontSize="16"/>
+                                                    <TextBlock Text="{x:Bind quote}" Margin="10,0,10,10" TextWrapping="WrapWholeWords"/>
                                                 </StackPanel>
                                             </Grid>
                                             <TextBlock Grid.Column="1" Text="{x:Bind body}" Margin="10,10,10,10" TextWrapping="WrapWholeWords" />

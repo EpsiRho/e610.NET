@@ -15,11 +15,13 @@
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
           "C:\\Users\\jhset\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -28,6 +30,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\jhset\\Documents\\GitHub\\E621-C-Sharp-Api-Wrapper\\e6API\\e6API\\bin\\Release": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -98,11 +101,13 @@
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
         ],
         "configFilePaths": [
           "C:\\Users\\jhset\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -111,6 +116,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\jhset\\Documents\\GitHub\\E621-C-Sharp-Api-Wrapper\\e6API\\e6API\\bin\\Release": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -132,19 +138,19 @@
             },
             "Microsoft.Toolkit.Uwp.UI": {
               "target": "Package",
-              "version": "[6.1.1, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.Toolkit.Uwp.UI.Controls": {
               "target": "Package",
-              "version": "[6.1.1, )"
+              "version": "[7.0.2, )"
             },
             "Microsoft.UI.Xaml": {
               "target": "Package",
-              "version": "[2.5.0, )"
+              "version": "[2.6.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[12.0.3, )"
+              "version": "[13.0.1, )"
             },
             "RestSharp": {
               "target": "Package",

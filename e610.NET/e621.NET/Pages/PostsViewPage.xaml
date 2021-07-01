@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     xmlns:control="using:Microsoft.UI.Xaml.Controls"
     xmlns:uwpcontrols="using:Microsoft.Toolkit.Uwp.UI.Controls"
-    xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions"
+    xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" KeyDown="page_KeyDown">
     <Page.Resources>
         <ResourceDictionary>
@@ -55,31 +55,32 @@
 
         <!--Sidebar StackPanel-->
         <ScrollViewer Margin="0,0,0,53" Canvas.ZIndex="10">
-            <StackPanel Grid.Column="0" Orientation="Vertical" Background="{ThemeResource SideBar}" Translation="0,0,52">
+            <StackPanel Grid.Column="0" Orientation="Vertical" Background="{ThemeResource SideBar}" 
+                        Translation="0,0,52">
                 <StackPanel.Shadow>
                     <ThemeShadow x:Name="SidePanelShadow"/>
                 </StackPanel.Shadow>
                 <!--Search Title, Box, and Button-->
                 <TextBlock Text="Search" FontSize="18" Margin="10,10,10,0" HorizontalAlignment="Center"/>
                 <StackPanel Orientation="Vertical" Margin="10,10,10,10">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBox Width="auto" Height="Auto" x:Name="SearchBox" 
-                     VerticalAlignment="Top" HorizontalAlignment="Stretch" MinWidth="180"
-                     TextWrapping="Wrap" KeyDown="SearchBox_KeyDown" TextChanged="SearchBox_TextChanged" KeyUp="SearchBox_KeyUp"/>
-                        <Button x:Name="eraseButton" Tapped="erase_Tapped" HorizontalAlignment="Center" Margin="5,0,0,0"
-                                Visibility="Collapsed">
-                            <SymbolIcon Symbol="Cancel" Margin="-6,-3,-6,-3"/>
-                        </Button>
-                    </StackPanel>
+                    <TextBox Width="205" 
+                             Margin="0,0,6,0"
+                             Height="Auto" 
+                             x:Name="SearchBox" 
+                             VerticalAlignment="Top" 
+                             HorizontalAlignment="Stretch" 
+                             TextWrapping="NoWrap" 
+                             KeyDown="SearchBox_KeyDown" 
+                             TextChanged="SearchBox_TextChanged"/>
                     <ListView x:Name="SearchTagAutoComplete" Visibility="Visible" IsItemClickEnabled="True" ItemClick="SearchTagAutoComplete_ItemClick"/>
-                    <Button x:Name="SearchButton" Tapped="SearchButton_Tapped" HorizontalAlignment="Stretch" Margin="0,5,0,0" >
+                    <Button x:Name="SearchButton" Tapped="SearchButton_Tapped" HorizontalAlignment="Stretch" Margin="0,10,6,0" >
                         <SymbolIcon Symbol="Accept"/>
                     </Button>
                 </StackPanel>
 
                 <!--Progressbar, Hidden under Search Button-->
-                <control:ProgressBar x:Name="LoadingBar" IsIndeterminate="True" Visibility="Collapsed"  Margin="0,0,0,0"
-                         Height="3" Foreground="White" Width="150"
+                <control:ProgressBar x:Name="LoadingBar" IsIndeterminate="True" Visibility="Collapsed"  Margin="10,0,10,0"
+                         Height="3" Foreground="White" HorizontalAlignment="Stretch"
                          ShowPaused="False" ShowError="False"/>
 
                 <!--Page controls and number-->
@@ -109,21 +110,21 @@
                     </Grid>
                 </Button>
                 <StackPanel Orientation="Vertical">
-                    <HyperlinkButton x:Name="ArtistsTitle" Foreground="White" Content="Artists:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
+                    <HyperlinkButton x:Name="ArtistsTitle" Foreground="White" Content="Artists:" FontSize="24" Margin="0,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
                     <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="ArtistsTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True" PointerReleased="Tags_PointerReleased"/>
-                    <HyperlinkButton x:Name="CopyrightsTitle" Foreground="White" Content="Copyrights:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
+                    <HyperlinkButton x:Name="CopyrightsTitle" Foreground="White" Content="Copyrights:" FontSize="24" Margin="0,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
                     <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="CopyrightsTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True" PointerReleased="Tags_PointerReleased"/>
-                    <HyperlinkButton x:Name="CharactersTitle" Foreground="White" Content="Characters:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
+                    <HyperlinkButton x:Name="CharactersTitle" Foreground="White" Content="Characters:" FontSize="24" Margin="0,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
                     <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="CharactersTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True" PointerReleased="Tags_PointerReleased"/>
-                    <HyperlinkButton x:Name="SpeciesTitle" Foreground="White" Content="Species:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
+                    <HyperlinkButton x:Name="SpeciesTitle" Foreground="White" Content="Species:" FontSize="24" Margin="0,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
                     <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="SpeciesTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True" PointerReleased="Tags_PointerReleased"/>
-                    <HyperlinkButton x:Name="GeneralTitle" Foreground="White" Content="General:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
+                    <HyperlinkButton x:Name="GeneralTitle" Foreground="White" Content="General:" FontSize="24" Margin="0,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
                     <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="GeneralTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True" PointerReleased="Tags_PointerReleased"/>
-                    <HyperlinkButton x:Name="MetaTitle" Foreground="White" Content="Meta:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
+                    <HyperlinkButton x:Name="MetaTitle" Foreground="White" Content="Meta:" FontSize="24" Margin="0,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
                     <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="MetaTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True" PointerReleased="Tags_PointerReleased"/>
-                    <HyperlinkButton x:Name="LoreTitle" Foreground="White" Content="Lore:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
+                    <HyperlinkButton x:Name="LoreTitle" Foreground="White" Content="Lore:" FontSize="24" Margin="0,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
                     <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="LoreTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True" PointerReleased="Tags_PointerReleased"/>
-                    <HyperlinkButton x:Name="InvalidTitle" Foreground="White" Content="Invalid:" FontSize="24" Margin="10,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
+                    <HyperlinkButton x:Name="InvalidTitle" Foreground="White" Content="Invalid:" FontSize="24" Margin="0,0,0,0" Visibility="Collapsed" Click="Title_Click"/>
                     <ListView Grid.Column="0" CanDragItems="False" AllowDrop="False" x:Name="InvalidTags" VerticalAlignment="Stretch" ItemClick="Tags_ItemClick" RightTapped="Tags_RightTapped" IsItemClickEnabled="True" PointerReleased="Tags_PointerReleased"/>
                 </StackPanel>
             </StackPanel>
@@ -144,7 +145,7 @@
                 </Button>
                 <Button Margin="0,0,10,0" x:Name="SauceNao" Click="SauceNao_Click" IsEnabled="True" Visibility="Collapsed">
                     <StackPanel Orientation="Horizontal">
-                        <SymbolIcon Symbol="SelectAll"/>
+                        <SymbolIcon Symbol="BrowsePhotos"/>
                     </StackPanel>
                 </Button>
                 <Button x:Name="Settings" Click="Settings_Click"
@@ -159,13 +160,13 @@
         <!--Posts View-->
         <Grid Background="{ThemeResource MainBackground}" Grid.Column="1" VerticalAlignment="Stretch" x:Name="MainPanel" KeyDown="page_KeyDown">
             <Button Canvas.ZIndex="15" x:Name="CloseButton" Click="CloseButton_Click" Visibility="Collapsed"
-                    VerticalAlignment="Top" Margin="10,10,10,10" Background="Black">
+                    VerticalAlignment="Top" Margin="10,10,10,10">
                 <SymbolIcon Symbol="Cancel"/>
             </Button>
-            <StackPanel Background="Transparent" x:Name="TopBar" Visibility="Collapsed"
+            <StackPanel Background="#000F2D" x:Name="TopBar" Visibility="Collapsed"
                         Margin="0,0,0,10" Grid.Column="1" Canvas.ZIndex="10" Height="55" VerticalAlignment="Top">
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" x:Name="CommandBar">
-                    <Button x:Name="PoolButton" Margin="10,10,5,10" Visibility="Visible" HorizontalAlignment="Center" Background="Black"
+                    <Button x:Name="PoolButton" Margin="10,10,5,10" Visibility="Visible" HorizontalAlignment="Center"
                                     Tapped="PoolButton_Tapped">
                         <FlyoutBase.AttachedFlyout>
                             <MenuFlyout x:Name="PoolsMenu" Placement="Bottom" ShowMode="TransientWithDismissOnPointerMoveAway" />
@@ -175,7 +176,7 @@
                             <TextBlock Text="Pools"/>
                         </StackPanel>
                     </Button>
-                    <Button x:Name="ImageSize" Margin="0,0,5,0" Tapped="ImageSize_Tapped" Background="Black">
+                    <Button x:Name="ImageSize" Margin="0,0,5,0" Tapped="ImageSize_Tapped">
                         <SymbolIcon Symbol="Pictures"/>
                         <FlyoutBase.AttachedFlyout>
                             <MenuFlyout x:Name="ImageSizeMenu" Placement="Bottom" ShowMode="TransientWithDismissOnPointerMoveAway">
@@ -185,28 +186,28 @@
                             </MenuFlyout>
                         </FlyoutBase.AttachedFlyout>
                     </Button>
-                    <Button x:Name="BackPost" Margin="0,0,5,0" Tapped="BackPost_Tapped" Background="Black">
+                    <Button x:Name="BackPost" Margin="0,0,5,0" Tapped="BackPost_Tapped">
                         <SymbolIcon Symbol="Back"/>
                     </Button>
                     <TextBlock x:Name="SearchName" Margin="5,5,5,8" VerticalAlignment="Center" FontSize="18" TextDecorations="Underline">
                     </TextBlock>
-                    <Button x:Name="ForwardPost" Tapped="ForwardPost_Tapped" Margin="5,0,5,0" Background="Black">
+                    <Button x:Name="ForwardPost" Tapped="ForwardPost_Tapped" Margin="5,0,5,0">
                         <SymbolIcon Symbol="Forward"/>
                     </Button>
                     <StackPanel Orientation="Horizontal">
-                        <Button Background="Black" Canvas.ZIndex="20" Margin="0,10,5,10" x:Name="VoteUpButton" Tapped="VoteUpButton_Tapped">
+                        <Button Canvas.ZIndex="20" Margin="0,10,5,10" x:Name="VoteUpButton" Tapped="VoteUpButton_Tapped">
                             <StackPanel Orientation="Horizontal">
                                 <SymbolIcon Symbol="Like"/>
                                 <TextBlock x:Name="VoteUpCount"/>
                             </StackPanel>
                         </Button>
-                        <Button Background="Black" Canvas.ZIndex="20" Margin="0,10,5,10" x:Name="VoteDownButton" Tapped="VoteDownButton_Tapped">
+                        <Button Canvas.ZIndex="20" Margin="0,10,5,10" x:Name="VoteDownButton" Tapped="VoteDownButton_Tapped">
                             <StackPanel Orientation="Horizontal">
                                 <SymbolIcon Symbol="Dislike"/>
                                 <TextBlock x:Name="VoteDownCount"/>
                             </StackPanel>
                         </Button>
-                        <Button Background="Black" Canvas.ZIndex="20" Margin="0,10,0,10" x:Name="FavoiteButton" Tapped="FavoiteButton_Tapped">
+                        <Button Canvas.ZIndex="20" Margin="0,10,0,10" x:Name="FavoiteButton" Tapped="FavoiteButton_Tapped">
                             <StackPanel Orientation="Horizontal">
                                 <SymbolIcon Symbol="Add" Margin="0,0,10,0"/>
                                 <TextBlock Text="Favorite"/>
@@ -233,15 +234,15 @@
                                       AutoPlay="False" x:Name="bigvideo" PosterSource="{x:Bind singlePost.preview.url}"
                                       AreTransportControlsEnabled="True" RightTapped="bigpicture_RightTapped" IsLooping="True" ManipulationMode="TranslateX,TranslateInertia,System" ManipulationDelta="bigpicture_ManipulationDelta"
                                       ManipulationCompleted="bigpicture_ManipulationCompleted"/>
-                        <StackPanel x:Name="DescRect" Visibility="Collapsed" Orientation="Horizontal" Background="{ThemeResource DescBackground}" CornerRadius="10" Margin="10,10,15,10">
-                            <Rectangle Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
+                        <Grid x:Name="DescRect" Visibility="Collapsed" Background="{ThemeResource DescBackground}" CornerRadius="10" Margin="10,10,15,10">
+                            <Rectangle Width="5" VerticalAlignment="Stretch" HorizontalAlignment="Left" Fill="{ThemeResource SideLine}"/>
                             <StackPanel Orientation="Vertical">
-                                <HyperlinkButton x:Name="DescHyperlink" FontSize="28" Margin="10" FontWeight="SemiBold" Foreground="White" Click="DescHyperlink_Click">
+                                <HyperlinkButton x:Name="DescHyperlink" FontSize="28" Margin="10" Padding="0,5,5,5" FontWeight="SemiBold" Foreground="White" Click="DescHyperlink_Click">
                                     <TextBlock Text="Description: "/>
                                 </HyperlinkButton>
-                                <TextBlock x:Name="DescText" Margin="10" Width="{x:Bind singlePost.sample.width}" TextWrapping="WrapWholeWords" FontSize="18"/>
+                                <TextBlock x:Name="DescText" Margin="10,0,10,10" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="18"/>
                             </StackPanel>
-                        </StackPanel>
+                        </Grid>
                         <ListView x:Name="CommentsListView" IsItemClickEnabled="True" ItemsSource="{x:Bind CommentsSource}" SelectionChanged="CommentsListView_SelectionChanged">
                             <ListView.ItemTemplate>
                                 <DataTemplate x:DataType="local:Comment">
@@ -254,7 +255,7 @@
                                             <ColumnDefinition/>
                                         </Grid.ColumnDefinitions>
                                         <StackPanel Grid.Column="0" Orientation="Vertical">
-                                            <HyperlinkButton Content="{x:Bind creator_name}" FontSize="18" FontWeight="SemiBold" Foreground="White"/>
+                                            <HyperlinkButton Content="{x:Bind creator_name}" FontSize="18" FontWeight="SemiBold" Foreground="White" Padding="0,5,5,5"/>
                                             <!--<controls:ImageEx BorderBrush="{ThemeResource SystemControlBackgroundListMediumRevealBorderBrush}" Source="{x:Bind Avatar_Url}" Width="150" Height="150" Margin="0,0,0,10"/>-->
                                         </StackPanel>
                                         <StackPanel Grid.Column="1">
@@ -265,11 +266,14 @@
                                                 </Grid.ColumnDefinitions>
                                                 <Rectangle Grid.Column="0" Width="7" VerticalAlignment="Stretch" Fill="{ThemeResource SideLine}"/>
                                                 <StackPanel Grid.Column="1" Orientation="Vertical">
-                                                    <HyperlinkButton Content="{x:Bind quotedName}" Foreground="White" Margin="10,0,0,0" FontSize="16"/>
-                                                    <TextBlock Text="{x:Bind quote}" Margin="0,0,10,10" TextWrapping="WrapWholeWords"/>
+                                                    <HyperlinkButton Content="{x:Bind quotedName}" Foreground="White" 
+                                                                     Margin="10,0,0,0" FontSize="16" Padding="0,5,5,5"/>
+                                                    <TextBlock Text="{x:Bind quote}" Margin="10,0,10,10" TextWrapping="WrapWholeWords"
+                                                               IsTextSelectionEnabled="True"/>
                                                 </StackPanel>
                                             </Grid>
-                                            <TextBlock Grid.Column="1" Text="{x:Bind body}" Margin="10,10,10,10" TextWrapping="WrapWholeWords" />
+                                            <TextBlock Grid.Column="1" Text="{x:Bind body}" IsTextSelectionEnabled="True"
+                                                       Margin="10,10,10,10" TextWrapping="WrapWholeWords" />
                                         </StackPanel>
                                     </Grid>
                                 </DataTemplate>
@@ -278,6 +282,7 @@
                                 <Style TargetType="ListViewItem">
                                     <Setter Property="Background" Value="{ThemeResource CommentBackground}"/>
                                     <Setter Property="Margin" Value="10"/>
+                                    <Setter Property="CornerRadius" Value="10"/>
                                 </Style>
                             </ListView.ItemContainerStyle>
                         </ListView>
@@ -305,49 +310,90 @@
         </Grid>
 
         <ContentDialog Grid.ColumnSpan="2" Visibility="Visible" Grid.Column="0"
-            x:Name="SettingsDialog"
-            Title="Settings"
-            PrimaryButtonText="Save"
-            PrimaryButtonClick="SettingsDialog_PrimaryButtonClick"
-            CloseButtonText="Cancel"
-            DefaultButton="Primary"
-            Background="{ThemeResource DialogBackground}"
-            BorderThickness="0">
-            <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
-                <TextBlock Text="e610 v1.6" FontSize="11" Margin="0,-17,0,0"/>
-                <HyperlinkButton Content="App Settings" FontSize="18" Foreground="White" Click="AppHyperlinkClick"/>
-                <StackPanel x:Name="AppSettingsPanel" Visibility="Visible">
-                    <ComboBox x:Name="RatingSelection" Width="200" VerticalAlignment="Top" 
-                          HorizontalAlignment="Left" Header="Highest Rating allowed" Margin="0,10,0,0" >
-                        <x:String>rating:safe</x:String>
-                        <x:String>rating:questionable</x:String>
-                        <x:String>rating:explicit</x:String>
-                    </ComboBox>
-                    <TextBlock Text="Post Count" Margin="10,0,10,0"/>
-                    <Slider x:Name="PostCountSlider" Margin="10,0,10,0" Maximum="300" Minimum="25" StepFrequency="5"/>
-                    <ToggleSwitch x:Name="CommentSwitch" Header="Show Comments" Margin="0,10,0,0"/>
-                    <ToggleSwitch x:Name="VolumeSwitch" Header="Mute Videos By Default" Margin="0,10,0,0"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal">
-                    <HyperlinkButton Content="Notifications" FontSize="18" IsEnabled="True"
-                                     Foreground="White" Click="NotificationHyperlinkClick"/>
-                    <TextBlock Text="?" FontSize="12" VerticalAlignment="Center" Margin="0,0,0,5" extensions:Mouse.Cursor="Help"
-                               ToolTipService.ToolTip="Get notifications on new posts from tags you follow"/>
-                </StackPanel>
-                <StackPanel x:Name="NotificationsSettingsPanel" Visibility="Visible">
-                    <TextBlock Text="Time between updates (In Minutes)" VerticalAlignment="Center" Margin="0,0,0,5"/>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBox x:Name="NotificationTime" TextChanged="NotificationTime_TextChanged"/>
-                        <TextBlock Text="(must be >15)" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                       x:Name="SettingsDialog"
+                       Title="Settings"
+                       PrimaryButtonText="Save"
+                       PrimaryButtonClick="SettingsDialog_PrimaryButtonClick"
+                       CloseButtonText="Cancel"
+                       DefaultButton="Primary"
+                       Background="{ThemeResource DialogBackground}"
+                       BorderThickness="0">
+            <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="375" Height="400">
+                <TextBlock Text="e610 v1.7" FontSize="11" Margin="0,-17,0,0"/>
+                <ScrollViewer>
+                    <StackPanel>
+                        <control:Expander IsExpanded="False"
+                                          ExpandDirection="Down"
+                                          Margin="-3,0,0,0"
+                                          Width="365">
+                            <control:Expander.Header>
+                                <TextBlock Text="App Settings" FontSize="18"/>
+                            </control:Expander.Header>
+                            <control:Expander.Content>
+                                <StackPanel HorizontalAlignment="Left" Width="350">
+                                    <TextBlock Text="Highest Rating allowed" Margin="10,0,10,0" FontSize="16"/>
+                                    <ComboBox x:Name="RatingSelection" Width="220" VerticalAlignment="Top"  FontSize="14"
+                                          HorizontalAlignment="Left" Margin="10,10,0,0">
+                                        <x:String>rating:safe</x:String>
+                                        <x:String>rating:questionable</x:String>
+                                        <x:String>rating:explicit</x:String>
+                                    </ComboBox>
+                                    <TextBlock Text="Post Count" Margin="10,0,10,0" FontSize="16"/>
+                                    <Slider x:Name="PostCountSlider" Margin="10,0,10,0" Maximum="300" Minimum="25" StepFrequency="5" Value="75" Width="200" HorizontalAlignment="Left"/>
+                                    <TextBlock Text="Show Comments" Margin="10,0,10,0" FontSize="16"/>
+                                    <ToggleSwitch x:Name="CommentSwitch" Margin="10,0,0,0"/>
+                                    <TextBlock Text="Mute Videos By Default" Margin="10,0,10,0" FontSize="16"/>
+                                    <ToggleSwitch x:Name="VolumeSwitch" Margin="10,0,0,0"/>
+                                </StackPanel>
+                            </control:Expander.Content>
+                        </control:Expander>
+                        
+                        <control:Expander IsExpanded="False"
+                                  ExpandDirection="Down"
+                                  Margin="-3,0,0,0"
+                                          Width="365">
+                            <control:Expander.Header>
+                                <TextBlock Text="Notification Settings" FontSize="18"/>
+                            </control:Expander.Header>
+                            <control:Expander.Content>
+                                <StackPanel Width="360">
+                                    <TextBlock Text="Time between updates (In Minutes)" VerticalAlignment="Center" Margin="10,0,0,5" FontSize="16"/>
+                                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                                        <TextBox x:Name="NotificationTime" TextChanged="NotificationTime_TextChanged"/>
+                                        <TextBlock Text="(must be >15)" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal" Margin="10,0,0,0">
+                                        <Button x:Name="RegisterButton" Content="Turn on Notifications" Margin="0,10,10,0" Click="RegisterButton_Click"/>
+                                        <Button x:Name="DeregisterButton" Content="Turn off Notifications" Margin="0,10,0,0" Click="DeregisterButton_Click"/>
+                                    </StackPanel>
+                                    <TextBlock Text="Notification Status" FontSize="16" Margin="10,0,0,0"/>
+                                    <RadioButton x:Name="NotificationStatus" Content="Notifications Off" Margin="10,0,0,0"
+                                     IsChecked="False" IsEnabled="False" Foreground="White"/>
+                                </StackPanel>
+                            </control:Expander.Content>
+                        </control:Expander>
+                        
+                        <control:Expander IsExpanded="False"
+                                  ExpandDirection="Down"
+                                  Margin="-3,0,0,0"
+                                          Width="365">
+                            <control:Expander.Header>
+                                <TextBlock Text="Experimental Settings" FontSize="18"/>
+                            </control:Expander.Header>
+                            <control:Expander.Content>
+                                <StackPanel Width="350">
+                                    <TextBlock Text="Enable Experimental Features" Margin="10,0,10,0" FontSize="17"/>
+                                    <TextBlock Text="These features may be incomplete, or buggy" Margin="10,0,10,10" FontSize="14"/>
+                                    <TextBlock Text="SauceNao" Margin="10,0,10,-5" FontSize="16"/>
+                                    <ToggleSwitch x:Name="SauceNaoSwitch" Margin="10,0,0,0"/>
+                                    <TextBlock Text="New Download Queue" Margin="10,0,10,-5" FontSize="16"/>
+                                    <ToggleSwitch x:Name="NewDownloadSwitch" Margin="10,0,0,0" IsEnabled="False"/>
+                                </StackPanel>
+                            </control:Expander.Content>
+                        </control:Expander>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Button x:Name="RegisterButton" Content="Turn on Notifications" Margin="0,10,10,0" Click="RegisterButton_Click"/>
-                        <Button x:Name="DeregisterButton" Content="Turn off Notifications" Margin="0,10,0,0" Click="DeregisterButton_Click"/>
-                    </StackPanel>
-                    <TextBlock Text="Notification Status"/>
-                    <RadioButton x:Name="NotificationStatus" Content="Notifications Off" IsChecked="False" IsEnabled="False" Foreground="White"/>
-                </StackPanel>
-            </StackPanel>
+                </ScrollViewer>
+            </Grid>
         </ContentDialog>
     </Grid>
 </Page>

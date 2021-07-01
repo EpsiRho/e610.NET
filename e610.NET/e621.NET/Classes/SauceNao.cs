@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace e610.NET.Classes
+namespace e610.NET
 {
     public class Header
     {
@@ -68,7 +68,7 @@ namespace e610.NET.Classes
         public Data data { get; set; }
     }
 
-    public class SauceNao
+    public class SauceNaoJSON
     {
         public Header header { get; set; }
         public List<Result> results { get; set; }
